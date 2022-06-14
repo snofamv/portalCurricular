@@ -6,6 +6,7 @@ class SuccessMessages
     const SUCCESS_REGISTROELIMINADO_ALUMNO = "5845kkdkjh698de2bce4FF73dd7478cd" ;
     const SUCCESS_REGISTROACTUALIZADO_ALUMNO = "5845kkdkjh698dBJN777FF73dd7478cd" ;
     const SUCCESS_CIERREDESESION_CORRECTAMENTE = "5845kkdkjh698dkjHY798K73dd7478cd" ;
+    const SUCCESS_ALUMNO_ENCONTADO_RUT= "5845kkdkjh698dkjHY98KKK0dd7478cd" ;
 
     private $successList = array();
     function __construct()
@@ -16,6 +17,7 @@ class SuccessMessages
             SuccessMessages::SUCCESS_REGISTROELIMINADO_ALUMNO => "Alumno eliminado correctamente.",
             SuccessMessages::SUCCESS_REGISTROACTUALIZADO_ALUMNO => "Alumno modificado correctamente.",
             SuccessMessages::SUCCESS_CIERREDESESION_CORRECTAMENTE => "Sesion finalizada correctamente.",
+            SuccessMessages::SUCCESS_ALUMNO_ENCONTADO_RUT => "Alumno encontrado con exito, cargando informacion."
 
         ];
     }

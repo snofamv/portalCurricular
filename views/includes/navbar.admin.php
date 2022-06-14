@@ -20,7 +20,7 @@
                 <div class="collapse navbar-collapse ms-5 mx-auto" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <button class="btn btn-outline-primary" style="width: 200px;"><a class="nav-link fs-5 fw-normal" href="/panel">Inicio</a></button>
+                            <a class="nav-link fw-bolder btn btn-outline-primary" style="width: 150px;" href="/panel">Inicio</a>
                         </li>
 
                     </ul>

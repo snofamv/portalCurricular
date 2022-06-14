@@ -3,7 +3,7 @@ require "views/includes/navbar.admin.php";
 ?>
 
 <!-- CONTENIDO DE LA VISTA -->
-<div class="container mx-auto mt-3">
+<div class="container mx-auto mt-3 mb-5">
     <span class="h3">
 
         <?php if (!empty($this->datos) && isset($this->datos["success"])) : ?>
@@ -32,9 +32,9 @@ require "views/includes/navbar.admin.php";
     </span>
 
 
-    <div class="row gap-5 mb-5">
-        <div class="col shadow-lg bg-body rounded">
-            <div class="card mx-auto" style="width: 370px; height: 400px; padding-bottom: 15px;">
+    <div class="row gap-5 m-0 p-0">
+        <div class="col shadow-lg bg-body rounded pt-2">
+            <div class="card mx-auto" style="width: 370px; height: 400px;">
                 <img src="https://www.svgrepo.com/show/125846/graduate.svg" class="card-img-top mx-auto" alt="..." style="max-width: 200px;">
                 <div class="card-body">
                     <h5 class="card-title">Alumnos</h5>
@@ -46,8 +46,8 @@ require "views/includes/navbar.admin.php";
                 </div>
             </div>
         </div>
-        <div class="col shadow-lg bg-body rounded">
-            <div class="card mx-auto" style=" width: 370px; height: 400px; padding-bottom: 15px;">
+        <div class="col shadow-lg bg-body rounded p-2">
+            <div class="card mx-auto" style=" width: 370px; height: 400px;">
                 <img src="https://www.svgrepo.com/show/3907/search.svg" class="card-img-top mx-auto" alt="..." style="max-width: 200px;">
                 <div class="card-body">
                     <h5 class="card-title">Buscar informacion</h5>
@@ -58,8 +58,8 @@ require "views/includes/navbar.admin.php";
                 </div>
             </div>
         </div>
-        <div class="col shadow-lg bg-body rounded ">
-            <div class="card mx-auto" style="width: 370px; height: 400px; padding-bottom: 15px;">
+        <div class="col shadow-lg bg-body rounded p-2 ">
+            <div class="card mx-auto" style="width: 370px; height: 400px;">
                 <img src="https://www.svgrepo.com/show/216744/add.svg" class="card-img-top mx-auto" alt="..." style="max-width: 200px;">
                 <div class="card-body">
                     <h5 class="card-title">Agregar informacion</h5>
@@ -72,8 +72,8 @@ require "views/includes/navbar.admin.php";
             </div>
         </div>
 
-        <div class="col shadow-lg bg-body rounded">
-            <div class="card mx-auto" style="width: 370px; height: 400px; padding-bottom: 15px;">
+        <div class="col shadow-lg bg-body rounded p-2">
+            <div class="card mx-auto" style="width: 370px; height: 400px;">
                 <img src="https://www.svgrepo.com/show/286737/update-repeat.svg" class="card-img-top mx-auto" alt="..." style="max-width: 200px;">
                 <div class="card-body">
                     <h5 class="card-title">Actualizar informacion</h5>
@@ -87,8 +87,8 @@ require "views/includes/navbar.admin.php";
         </div>
 
 
-        <div class="col shadow-lg bg-body rounded">
-            <div class="card mx-auto" style="width: 370px; height: 400px; padding-bottom: 15px;">
+        <div class="col shadow-lg bg-body rounded p-2">
+            <div class="card mx-auto" style="width: 370px; height: 400px;">
                 <img src="https://www.svgrepo.com/show/207527/settings-configuration.svg" class="card-img-top mx-auto mx-auto" alt="..." style="max-width: 200px;">
                 <div class="card-body">
                     <h5 class="card-title">Configuracion de cuenta</h5>
@@ -101,8 +101,8 @@ require "views/includes/navbar.admin.php";
             </div>
         </div>
 
-        <div class="col shadow-lg bg-body rounded">
-            <div class="card mx-auto" style="width: 370px; height: 400px; padding-bottom: 15px;">
+        <div class="col shadow-lg bg-body rounded p-2">
+            <div class="card mx-auto" style="width: 370px; height: 400px;">
                 <img src="https://www.svgrepo.com/show/94002/logout.svg" class="card-img-top mx-auto" alt="..." style="max-width: 200px;">
                 <div class="card-body">
                     <h5 class="card-title">Cerrar sesion</h5>

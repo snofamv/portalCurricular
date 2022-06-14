@@ -16,6 +16,7 @@ class ErrorMessages
     const ERROR_ACTUALIZAR_ALUMNO = "986b82d511f14de2KKJKJI88YQKT71576" ;
     const ERROR_RUTA_NOENCONTRADA = "886b82d511f14de2LKPPI88YQKT71576" ;
     const ERROR_MODULO_DESHABILITADO = "886b82d511f14de2876JJK8YQKT71576" ;
+    const ERROR_BUSCAR_ALUMNO_NOENCONTRADO_RUT = "886b82d511f14de2987JJK8YQKT71576" ;
     private $errorList = array();
 
     function __construct()
@@ -35,6 +36,7 @@ class ErrorMessages
             ErrorMessages::ERROR_ACTUALIZAR_ALUMNO=> "No se puede actualizar informacion la informacion del alumno.",
             ErrorMessages::ERROR_RUTA_NOENCONTRADA=> "No se puede procesar la solicitud. Ruta o pagina no encontrada.",
             ErrorMessages::ERROR_MODULO_DESHABILITADO=> "Este modulo se encuentra temporalmente deshabilitado.",
+            ErrorMessages::ERROR_BUSCAR_ALUMNO_NOENCONTRADO_RUT => "No se puede encontrar el rut ingresado o no existe."
         ];
     }
 

@@ -36,7 +36,6 @@ require "views/includes/navbar.admin.php";
     <div class="container center">
         <div class="row justify-content-md-center">
             <div>
-
             </div>
 
             <table class="table table-success table-striped table-hover table-bordered border-primary ">
