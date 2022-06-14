@@ -11,6 +11,6 @@ class Errores extends Controller
     }
     function render()
     {
-        $this->vista->render("error/index", ["error" => "Controlador no encontrado.", "tipo" => 404]);
+        $this->vista->render("error/index", $d = "Controlador no encontrado.");
     }
 }

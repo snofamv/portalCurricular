@@ -19,7 +19,7 @@ class Panel extends Controller
         $_SESSION["usuario_id"] = null;
         $_SESSION["usuario_rol"] = null;
         $_SESSION = null;
-        header("Location: /login", 301);
+        $this->redirect("login", ["success"=> SuccessMessages::SUCCESS_CIERREDESESION_CORRECTAMENTE]);
         exit();
     }
 }

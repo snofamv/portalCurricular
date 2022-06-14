@@ -65,10 +65,6 @@ require "views/includes/navbar.admin.php";
                                     <input type="text" name="rut" id="rut" value="<?php echo $alumno->getRut(); ?>" hidden>
                                     <input type="submit" value="Modificar" name="btnModificar"></input>
                                 </form>
-                                <form action="/lista/eliminarAlumno" method="post">
-                                    <input type="text" name="rut" id="rut" value="<?php echo $alumno->getRut(); ?>" hidden>
-                                    <input type="submit" value="Eliminar" name="btnEliminar"></input>
-                                </form>
                             </td>
                         </tr>
                     <?php endforeach; ?>

@@ -6,7 +6,7 @@ require "views/includes/navbar.admin.php";
 <div class="container mt-3">
 
     <div class="mx-auto">
-        <h1 class="text-center">Config page</h1>
+        <h1 class="text-center">Config account page</h1>
     </div>
 
 </div>

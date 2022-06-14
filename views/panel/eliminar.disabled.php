@@ -1,6 +1,5 @@
 <?php
 require "views/includes/navbar.admin.php";
-#D is a data global variable;
 ?>
 <!-- Tabla de datos -->
 <div class="container-fluid">
