@@ -127,6 +127,16 @@ class Alumno extends Model implements IModel
         $this->setSede($array[4]);
         $this->setCarrera($array[5]);
     }
+    public function __getDatosToArray()
+    {
+        return array(
+        "codigo" => $this->getCodigo(),
+        "rut" => $this->getRut(),
+        "nombres" => $this->getNombres(),
+        "apellidos" => $this->getApellidos(),
+        "sede" => $this->getSede(),
+        "carrera" => $this->getCarrera());
+    }
 
 
     /*          getter y setters        */

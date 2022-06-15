@@ -9,19 +9,19 @@ class Buscar extends Controller
 
     public function render()
     {
-        $this->vista->render("panel/buscar", []);
+        $this->vista->render("panel/buscar", $d = []);
     }
 
     public function rut()
-    {   
-        if($_POST){
-
-            echo $_POST['rut'];
-           $obj = $this->modelo->__getDatoById($_POST['rut']);
-            var_dump($obj);
-            // echo $_POST['rut'];
-            // echo "<br>";
-            // print_r($this->modelo);
+    {
+        if ($_GET && $rut = $this->getGET("rut")) {
+            $alumno = new Alumno();
+            $alumno->__getDatoById($rut);
+            $d = $alumno->__getDatosToArray();
+            #var_dump($this->vista->datos);
+            $this->vista->render("panel/buscar", $d);
+        } else {
+            $this->redirect("buscar", ["error" => ErrorMessages::ERROR_BUSCAR_ALUMNO_NOENCONTRADO_CAMPO_RUT]);
         }
     }
 }
