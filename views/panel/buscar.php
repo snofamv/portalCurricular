@@ -45,12 +45,6 @@ require "views/includes/navbar.admin.php";
                 </form>
             </div>
             <div>
-                <form class="d-flex pb-1" action="/buscar/alumnoNombres" role="search" method="GET">
-                    <input class="form-control" type="search" placeholder="Buscar Nombre y apellido" aria-label="Buscar" name="nombres">
-                    <button class="btn btn-success ms-1" type="submit">Buscar</button>
-                </form>
-            </div>
-            <div>
                 <form class="d-flex pb-1" action="/buscar/alumnoSede" role="search" method="GET">
                     <input class="form-control" type="search" placeholder="Buscar Sedes" aria-label="Buscar" name="sede">
                     <button class="btn btn-success ms-1" type="submit">Buscar</button>
@@ -78,10 +72,10 @@ require "views/includes/navbar.admin.php";
                         <th>Carrera</th>
                         <th>Opciones</th>
                     </tr>
-                    <?php if (isset($d) && isset($_GET["rut"])) : echo "rut aca";
+                    <?php if (isset($d) && isset($_GET["rut"])) :
                         #var_dump($d);
                     ?>
-                    <!-- Resolve this into an objetc:: fabian -->
+                        <!-- Resolve this into an objetc:: fabian -->
                         <tr>
                             <td><?php echo $d["codigo"]; ?></td>
                             <td><?php echo $d["rut"]; ?></td>
@@ -97,6 +91,23 @@ require "views/includes/navbar.admin.php";
                             </td>
                         </tr>
                     <?php elseif (isset($d) && isset($_GET["sede"])) : ?>
+                        <?php foreach ($d as  $alumno) : ?>
+                            <tr>
+                                <td> <?php echo $alumno->getCodigo(); ?></td>
+                                <td> <?php echo $alumno->getRut(); ?></td>
+                                <td> <?php echo $alumno->getNombres(); ?></td>
+                                <td> <?php echo $alumno->getApellidos(); ?></td>
+                                <td> <?php echo $alumno->getCarrera(); ?></td>
+                                <td> <?php echo $alumno->getSede(); ?></td>
+                                <td>
+                                    <form action="/lista/modificarAlumno" method="post">
+                                        <input type="text" name="rut" id="rut" value="<?php echo $alumno->getRut(); ?>" hidden>
+                                        <input type="submit" value="Modificar" name="btnModificar"></input>
+                                    </form>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                    <?php elseif (isset($d) && isset($_GET["carrera"])) : ?>
                         <?php foreach ($d as  $alumno) : ?>
                             <tr>
                                 <td> <?php echo $alumno->getCodigo(); ?></td>
@@ -133,7 +144,7 @@ require "views/includes/navbar.admin.php";
 
     <!--  -->
     <div class="container me-5">
-        <?php if (!empty($d)) : ?>
+        <?php if ($_GET["rut"]) : ?>
             <div class="card text-center mx-auto shadow p-3 mb-5 bg-body rounded" style="width: 22rem;">
                 <img src="https://www.svgrepo.com/show/128306/graduate.svg" height="250px;" class="card-img-top" alt="carta alumno<?php echo "$d[nombres] $d[apellidos]"; ?>">
                 <div class="card-body">
@@ -155,13 +166,29 @@ require "views/includes/navbar.admin.php";
                     </li>
                 </ul>
             </div>
+        <?php elseif ($_GET["sede"]) : ?>
+            <div class="card text-center mx-auto shadow p-3 mb-5 bg-body rounded" style="width: 22rem;">
+                <img src="https://www.svgrepo.com/show/128306/graduate.svg" height="250px;" class="card-img-top" alt="carta alumno">
+                <div class="card-body">
+                    <h5 class="card-title"><span></h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        <?php elseif ($_GET["carrera"]) : ?>
+            <div class="card text-center mx-auto shadow p-3 mb-5 bg-body rounded" style="width: 22rem;">
+                <img src="https://www.svgrepo.com/show/128306/graduate.svg" height="250px;" class="card-img-top" alt="carta alumno">
+                <div class="card-body">
+                    <h5 class="card-title"><span></h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
         <?php else : ?>
             <div class="card text-center mx-auto shadow p-3 mb-5 bg-body rounded" style="width: 22rem;">
-                <img src="https://www.svgrepo.com/show/128306/graduate.svg" height="250px;" class="card-img-top" alt="carta alumno" ; ?>">
+                <img src="https://www.svgrepo.com/show/128306/graduate.svg" height="250px;" class="card-img-top" alt="carta alumno"; ?>
                 <div class="card-body">
-                    <h5 class="card-title"><span>No hay datos</span></h5>
+                    <h5 class="card-title" hidden><span>No hay datos</span></h5>
                 </div>
-                <ul class="list-group list-group-flush">
+                <ul class="list-group list-group-flush" hidden>
                     <li class="list-group-item">
                         <p class="fw-bold">Codigo: <span class="fw-normal">No hay datos</span></p>
                     </li>

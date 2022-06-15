@@ -47,7 +47,9 @@ class Buscar extends Controller
     {
         if ($_GET && $carrera = $this->getGET("carrera")) {
             $alumno = new Alumno();
-            if ($d = $alumno->__getAlumnosByCarrera($carrera)) {
+            $d = $alumno->__getAlumnosByCarrera($carrera);
+            #var_dump($d);
+            if (count($d) > 0) {
                 $this->vista->render("panel/buscar", $d);
             } else {
                 $this->redirect("buscar", ["error" => ErrorMessages::ERROR_BUSCAR_ALUMNO_CARRERA_NOEXISTE]);
