@@ -40,7 +40,7 @@ class Alumno extends Model implements IModel
             }
             return $items;
         } catch (PDOException $th) {
-            error_log("USER_MODELO => METODO_GETALL::PDOException => " . $th->getMessage());
+            error_log("ALUMNO::MODELO => METODO_GETALL::PDOException => " . $th->getMessage());
         }
     }
     public function __getDatoById($rut)
@@ -59,7 +59,49 @@ class Alumno extends Model implements IModel
             $this->setCarrera($alumno["carrera"]);
             return $this;
         } catch (PDOException $th) {
-            error_log("USER_MODELO => METODO_GET::PDOException => " . $th->getMessage());
+            error_log("ALUMNO::MODELO => METODO_GetByRut::PDOException => " . $th->getMessage());
+        }
+    }
+    public function __getAlumnosBySede($sede)
+    {
+        $items = array();
+        try {
+            $query = $this->query("SELECT * FROM data WHERE sede LIKE '%$sede%'");
+            while ($p = $query->fetch(PDO::FETCH_ASSOC)) {
+                $objeto = new Alumno();
+                $objeto->setRut($p["rut"]);
+                $objeto->setCodigo($p["codigo"]);
+                $objeto->setNombres($p["nom"]);
+                $objeto->setApellidos($p["ape"]);
+                $objeto->setSede($p["sede"]);
+                $objeto->setCarrera($p["carrera"]);
+
+                array_push($items, $objeto);
+            }
+            return $items;
+        } catch (PDOException $th) {
+            error_log("ALUMNO::MODELO => METODO_GetBySede::PDOException => " . $th->getMessage());
+        }
+    }
+    public function __getAlumnosByCarrera($carrera)
+    {
+        $items = array();
+        try {
+            $query = $this->query("SELECT * FROM data WHERE carrera LIKE '%$carrera%'");
+            while ($p = $query->fetch(PDO::FETCH_ASSOC)) {
+                $objeto = new Alumno();
+                $objeto->setRut($p["rut"]);
+                $objeto->setCodigo($p["codigo"]);
+                $objeto->setNombres($p["nom"]);
+                $objeto->setApellidos($p["ape"]);
+                $objeto->setSede($p["sede"]);
+                $objeto->setCarrera($p["carrera"]);
+
+                array_push($items, $objeto);
+            }
+            return $items;
+        } catch (PDOException $th) {
+            error_log("ALUMNO::MODELO => METODO_GetByCarrera::PDOException => " . $th->getMessage());
         }
     }
     //antes de utilizar esta funcion se debe crear previamente el objeto
@@ -77,7 +119,7 @@ class Alumno extends Model implements IModel
             ]);
             return true;
         } catch (PDOException $th) {
-            error_log("USER_MODELO::PDOException => " . $th->getMessage());
+            error_log("ALUMNO::MODELO::GuardarDato -> PDOException => " . $th->getMessage());
             return false;
         }
     }
@@ -102,7 +144,7 @@ class Alumno extends Model implements IModel
             // $this->setCarrera($alumno["carrera"]);
             return true;
         } catch (PDOException $th) {
-            error_log("USER_MODELO => METODO_GET::PDOException => " . $th->getMessage());
+            error_log("ALUMNO::MODELO => METODO_GETActualizarDato::PDOException => " . $th->getMessage());
             return false;
         }
     }
@@ -130,12 +172,13 @@ class Alumno extends Model implements IModel
     public function __getDatosToArray()
     {
         return array(
-        "codigo" => $this->getCodigo(),
-        "rut" => $this->getRut(),
-        "nombres" => $this->getNombres(),
-        "apellidos" => $this->getApellidos(),
-        "sede" => $this->getSede(),
-        "carrera" => $this->getCarrera());
+            "codigo" => $this->getCodigo(),
+            "rut" => $this->getRut(),
+            "nombres" => $this->getNombres(),
+            "apellidos" => $this->getApellidos(),
+            "sede" => $this->getSede(),
+            "carrera" => $this->getCarrera()
+        );
     }
 
 

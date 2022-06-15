@@ -18,6 +18,10 @@ class ErrorMessages
     const ERROR_MODULO_DESHABILITADO = "886b82d511f14de2876JJK8YQKT71576" ;
     const ERROR_BUSCAR_ALUMNO_NOENCONTRADO_RUT = "886b82d511f14de2987JJK8YQKT71576" ;
     const ERROR_BUSCAR_ALUMNO_NOENCONTRADO_CAMPO_RUT = "886b82d511f1487KKy76LK8YQKT71576" ;
+    const ERROR_BUSCAR_ALUMNO_NOENCONTRADO_CAMPO_SEDE = "886b82d511f1487KKy76LK8YLLL01576" ;
+    const ERROR_BUSCAR_ALUMNO_NOENCONTRADO_CAMPO_CARRERA = "886987K511f1487KKy76LK8YLLL01576" ;
+    const ERROR_BUSCAR_ALUMNO_SEDE_NOEXISTE = "886987K511172KKKKy76LK8YLLL01576" ;
+    const ERROR_BUSCAR_ALUMNO_CARRERA_NOEXISTE = "886987K511172KKKLO00087p0LLL01576" ;
     private $errorList = array();
 
     function __construct()
@@ -39,6 +43,10 @@ class ErrorMessages
             ErrorMessages::ERROR_MODULO_DESHABILITADO=> "Este modulo se encuentra temporalmente deshabilitado.",
             ErrorMessages::ERROR_BUSCAR_ALUMNO_NOENCONTRADO_RUT => "No se puede encontrar el rut ingresado o no existe.",
             ErrorMessages::ERROR_BUSCAR_ALUMNO_NOENCONTRADO_CAMPO_RUT => "No se encontraron datos en el campo RUT.",
+            ErrorMessages::ERROR_BUSCAR_ALUMNO_NOENCONTRADO_CAMPO_SEDE => "No se encontraron datos en el campo SEDE.",
+            ErrorMessages::ERROR_BUSCAR_ALUMNO_NOENCONTRADO_CAMPO_CARRERA => "No se encontraron datos en el campo CARRERA.",
+            ErrorMessages::ERROR_BUSCAR_ALUMNO_SEDE_NOEXISTE => "No se pueden encontrar datos en la sede ingresada o no existe.",
+            ErrorMessages::ERROR_BUSCAR_ALUMNO_CARRERA_NOEXISTE => "No se pueden encontrar datos en la carrera ingresada o no existe.",
         ];
     }
 

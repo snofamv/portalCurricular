@@ -35,29 +35,29 @@ require "views/includes/navbar.admin.php";
 <!--  -->
 <div class="d-flex pt-5">
 
-    <div class="container m-5" style="width: 130%;">
+    <div class="container m-3" style="width: 170%;">
 
         <div class="">
             <div>
-                <form class="d-flex pb-1" action="/buscar/rut" role="search" method="GET">
-                    <input class="form-control" type="text" placeholder="Buscar RUT" aria-label="Buscar" name="rut">
+                <form class="d-flex pb-1" action="/buscar/alumnoRut" role="search" method="GET">
+                    <input class="form-control" type="search" placeholder="Buscar RUT" aria-label="Buscar" name="rut">
                     <input class="btn btn-success ms-1" type="submit" value="Buscar"></input>
                 </form>
             </div>
             <div>
-                <form class="d-flex pb-1" method="POST">
+                <form class="d-flex pb-1" action="/buscar/alumnoNombres" role="search" method="GET">
                     <input class="form-control" type="search" placeholder="Buscar Nombre y apellido" aria-label="Buscar" name="nombres">
                     <button class="btn btn-success ms-1" type="submit">Buscar</button>
                 </form>
             </div>
             <div>
-                <form class="d-flex pb-1" method="POST">
+                <form class="d-flex pb-1" action="/buscar/alumnoSede" role="search" method="GET">
                     <input class="form-control" type="search" placeholder="Buscar Sedes" aria-label="Buscar" name="sede">
                     <button class="btn btn-success ms-1" type="submit">Buscar</button>
                 </form>
             </div>
             <div>
-                <form class="d-flex mb-3 pb-1 " method="POST">
+                <form class="d-flex pb-1 mb-5" action="/buscar/alumnoCarrera" role="search" method="GET">
                     <input class="form-control" type="search" placeholder="Buscar Carreras" aria-label="Buscar" name="carrera">
                     <button class="btn btn-success ms-1" type="submit">Buscar</button>
                 </form>
@@ -78,7 +78,10 @@ require "views/includes/navbar.admin.php";
                         <th>Carrera</th>
                         <th>Opciones</th>
                     </tr>
-                    <?php if (!empty($d)) : ?>
+                    <?php if (isset($d) && isset($_GET["rut"])) : echo "rut aca";
+                        #var_dump($d);
+                    ?>
+                    <!-- Resolve this into an objetc:: fabian -->
                         <tr>
                             <td><?php echo $d["codigo"]; ?></td>
                             <td><?php echo $d["rut"]; ?></td>
@@ -93,6 +96,23 @@ require "views/includes/navbar.admin.php";
                                 </form>
                             </td>
                         </tr>
+                    <?php elseif (isset($d) && isset($_GET["sede"])) : ?>
+                        <?php foreach ($d as  $alumno) : ?>
+                            <tr>
+                                <td> <?php echo $alumno->getCodigo(); ?></td>
+                                <td> <?php echo $alumno->getRut(); ?></td>
+                                <td> <?php echo $alumno->getNombres(); ?></td>
+                                <td> <?php echo $alumno->getApellidos(); ?></td>
+                                <td> <?php echo $alumno->getCarrera(); ?></td>
+                                <td> <?php echo $alumno->getSede(); ?></td>
+                                <td>
+                                    <form action="/lista/modificarAlumno" method="post">
+                                        <input type="text" name="rut" id="rut" value="<?php echo $alumno->getRut(); ?>" hidden>
+                                        <input type="submit" value="Modificar" name="btnModificar"></input>
+                                    </form>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
                     <?php else : ?>
                         <tr>
                             <td>No hay datos</td>
@@ -132,6 +152,27 @@ require "views/includes/navbar.admin.php";
                     </li>
                     <li class="list-group-item">
                         <p class="fw-bold">Carrera: <span class="fw-normal"><?php echo $d['carrera']; ?></span></p>
+                    </li>
+                </ul>
+            </div>
+        <?php else : ?>
+            <div class="card text-center mx-auto shadow p-3 mb-5 bg-body rounded" style="width: 22rem;">
+                <img src="https://www.svgrepo.com/show/128306/graduate.svg" height="250px;" class="card-img-top" alt="carta alumno" ; ?>">
+                <div class="card-body">
+                    <h5 class="card-title"><span>No hay datos</span></h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p class="fw-bold">Codigo: <span class="fw-normal">No hay datos</span></p>
+                    </li>
+                    <li class="list-group-item">
+                        <p class="fw-bold">Rut: <span class="fw-normal">No hay datos</span></p>
+                    </li>
+                    <li class="list-group-item">
+                        <p class="fw-bold">Sede: <span class="fw-normal">No hay datos</span></p>
+                    </li>
+                    <li class="list-group-item">
+                        <p class="fw-bold">Carrera: <span class="fw-normal">No hay datos</span></p>
                     </li>
                 </ul>
             </div>
