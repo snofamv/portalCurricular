@@ -30,8 +30,8 @@ require "views/includes/navbar.admin.php";
         <?php endif; ?>
     </span>
 
-    <div class="text-center">
-        <h1 class=" pt-4">Formulario de Titulados</h1>
+    <div class="text-center mb-4">
+        <h1 class="pt-4" style="color: #FFFFFF;">Formulario</h1>
     </div>
 
     <div class="">
@@ -42,11 +42,11 @@ require "views/includes/navbar.admin.php";
 
             <div class="row m-3">
                 <div class="col">
-                    <label for="codigo">Codigo</label>
+                    <label class="m-2" for="codigo" style="color:#FFFFFF;">Codigo</label>
                     <input class="form-control" type="text" name="codigo" id="codigo" placeholder="Ej: 0001">
                 </div>
                 <div class="col">
-                    <label for="codigo">Rut</label>
+                    <label class="m-2" for="codigo" style="color:#FFFFFF;">Rut</label>
                     <input class="form-control" type="text" name="rut" placeholder="Ej: 11.111.111-0">
                 </div>
 
@@ -54,11 +54,11 @@ require "views/includes/navbar.admin.php";
 
             <div class="row m-3">
                 <div class="col">
-                    <label for="codigo">Nombres</label>
+                    <label class="m-2" for="codigo" style="color:#FFFFFF;">Nombres</label>
                     <input class="form-control" type="text" name="nombres" placeholder="Introducir Nombres">
                 </div>
                 <div class="col">
-                    <label for="codigo">Apellidos</label>
+                    <label class="m-2" for="codigo" style="color:#FFFFFF;">Apellidos</label>
                     <input class="form-control" type="text" name="apellidos" placeholder="Introducir Apellidos">
                 </div>
             </div>
@@ -66,7 +66,7 @@ require "views/includes/navbar.admin.php";
             <div class="row m-3">
                 <div class="col">
 
-                    <label for="sedes">Sede</label>
+                    <label class="m-2" for="sedes" style="color:#FFFFFF;">Sede</label>
                     <select class="form-select" name="sedes" id="sedes">
                         <option selected disabled hidden>Selecciona una sede</option>
                         <option value="La Calera">La Calera</option>
@@ -77,7 +77,7 @@ require "views/includes/navbar.admin.php";
 
                 <div class="col">
 
-                    <label class="label" for="carreras">Carrera</label>
+                    <label class="label m-2" for="carreras"  style="color:#FFFFFF;">Carrera</label>
                     <select class="form-select" name="carreras" id="carreras">
                         <option selected disabled hidden>Selecciona una carrera</option>
                         <option value="Tecnico en Informatica">Tecnico en informatica</option>
@@ -95,7 +95,7 @@ require "views/includes/navbar.admin.php";
                     <input class="btn btn-success" type="submit" value="Agregar Alumno">
                 </div>
                 <div class="col">
-                    <input class="btn btn-danger" type=" reset" value="Limpiar campos">
+                    <button class="btn btn-danger" type="reset">Limpiar campos</button>
                 </div>
                 <div class="col"></div>
 

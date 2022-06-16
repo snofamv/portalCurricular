@@ -39,12 +39,6 @@ require "views/includes/navbar.admin.php";
 
         <div class="">
             <div>
-                <form class="d-flex pb-1" action="/buscar/alumnoRut" role="search" method="GET">
-                    <input class="form-control" type="search" placeholder="Buscar RUT" aria-label="Buscar" name="rut">
-                    <input class="btn btn-success ms-1" type="submit" value="Buscar"></input>
-                </form>
-            </div>
-            <div>
                 <form class="d-flex pb-1" action="/buscar/alumnoSede" role="search" method="GET">
                     <input class="form-control" type="search" placeholder="Buscar Sedes" aria-label="Buscar" name="sede">
                     <button class="btn btn-success ms-1" type="submit">Buscar</button>
@@ -144,66 +138,11 @@ require "views/includes/navbar.admin.php";
 
     <!--  -->
     <div class="container me-5">
-        <?php if ($_GET["rut"]) : ?>
-            <div class="card text-center mx-auto shadow p-3 mb-5 bg-body rounded" style="width: 22rem;">
-                <img src="https://www.svgrepo.com/show/128306/graduate.svg" height="250px;" class="card-img-top" alt="carta alumno<?php echo "$d[nombres] $d[apellidos]"; ?>">
-                <div class="card-body">
-                    <h5 class="card-title"><span><?php echo "$d[nombres] $d[apellidos]"; ?></h5>
-                    <p class="card-text"></p>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">
-                        <p class="fw-bold">Codigo: <span class="fw-normal"><?php echo $d['codigo']; ?></span></p>
-                    </li>
-                    <li class="list-group-item">
-                        <p class="fw-bold">Rut: <span class="fw-normal"><?php echo $d['rut']; ?></span></p>
-                    </li>
-                    <li class="list-group-item">
-                        <p class="fw-bold">Sede: <span class="fw-normal"><?php echo $d['sede']; ?></span></p>
-                    </li>
-                    <li class="list-group-item">
-                        <p class="fw-bold">Carrera: <span class="fw-normal"><?php echo $d['carrera']; ?></span></p>
-                    </li>
-                </ul>
-            </div>
-        <?php elseif ($_GET["sede"]) : ?>
-            <div class="card text-center mx-auto shadow p-3 mb-5 bg-body rounded" style="width: 22rem;">
-                <img src="https://www.svgrepo.com/show/128306/graduate.svg" height="250px;" class="card-img-top" alt="carta alumno">
-                <div class="card-body">
-                    <h5 class="card-title"><span></h5>
-                    <p class="card-text"></p>
-                </div>
-            </div>
-        <?php elseif ($_GET["carrera"]) : ?>
-            <div class="card text-center mx-auto shadow p-3 mb-5 bg-body rounded" style="width: 22rem;">
-                <img src="https://www.svgrepo.com/show/128306/graduate.svg" height="250px;" class="card-img-top" alt="carta alumno">
-                <div class="card-body">
-                    <h5 class="card-title"><span></h5>
-                    <p class="card-text"></p>
-                </div>
-            </div>
-        <?php else : ?>
-            <div class="card text-center mx-auto shadow p-3 mb-5 bg-body rounded" style="width: 22rem;">
-                <img src="https://www.svgrepo.com/show/128306/graduate.svg" height="250px;" class="card-img-top" alt="carta alumno"; ?>
-                <div class="card-body">
-                    <h5 class="card-title" hidden><span>No hay datos</span></h5>
-                </div>
-                <ul class="list-group list-group-flush" hidden>
-                    <li class="list-group-item">
-                        <p class="fw-bold">Codigo: <span class="fw-normal">No hay datos</span></p>
-                    </li>
-                    <li class="list-group-item">
-                        <p class="fw-bold">Rut: <span class="fw-normal">No hay datos</span></p>
-                    </li>
-                    <li class="list-group-item">
-                        <p class="fw-bold">Sede: <span class="fw-normal">No hay datos</span></p>
-                    </li>
-                    <li class="list-group-item">
-                        <p class="fw-bold">Carrera: <span class="fw-normal">No hay datos</span></p>
-                    </li>
-                </ul>
-            </div>
-        <?php endif; ?>
+        <div class="mx-auto rounded border-bottom border-end" style="width: 22rem;">
+        
+            <img src="https://www.svgrepo.com/show/281692/id-card.svg" height="250px;" class="card-img-top m-3" alt="carta alumno">
+
+        </div>
     </div>
 
 </div>

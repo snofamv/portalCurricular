@@ -3,7 +3,7 @@ require "views/includes/navbar.admin.php";
 ?>
 
 <!-- CONTENIDO DE LA VISTA -->
-<div class="container mx-auto mt-3 mb-5">
+<div class="container mx-auto mt-3 mb-5 text-center">
     <span class="h3">
 
         <?php if (!empty($this->datos) && isset($this->datos["success"])) : ?>
@@ -33,8 +33,8 @@ require "views/includes/navbar.admin.php";
 
 
     <div class="row gap-5 m-0 p-0">
-        <div class="col shadow-lg bg-body rounded pt-2">
-            <div class="card mx-auto" style="width: 370px; height: 400px;">
+        <div class="col rounded pt-2">
+            <div class="card mx-auto shadow p-2" style="width: 370px; height: 400px; background-color: #8CC0DE;">
                 <img src="https://www.svgrepo.com/show/125846/graduate.svg" class="card-img-top mx-auto" alt="..." style="max-width: 200px;">
                 <div class="card-body">
                     <h5 class="card-title">Alumnos</h5>
@@ -42,38 +42,12 @@ require "views/includes/navbar.admin.php";
                 </div>
                 <div class="d-grid">
 
-                    <a href="/lista" class="btn btn-secondary btn-lg  ">Ver listado alumnos</a>
+                    <a href="/lista" class="btn btn-primary btn-lg">Ver listado alumnos</a>
                 </div>
             </div>
         </div>
-        <div class="col shadow-lg bg-body rounded p-2">
-            <div class="card mx-auto" style=" width: 370px; height: 400px;">
-                <img src="https://www.svgrepo.com/show/3907/search.svg" class="card-img-top mx-auto" alt="..." style="max-width: 200px;">
-                <div class="card-body">
-                    <h5 class="card-title">Buscar informacion</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-                <div class="d-grid">
-                    <a href="/buscar" class="btn btn-primary btn-lg  ">Buscar</a>
-                </div>
-            </div>
-        </div>
-        <div class="col shadow-lg bg-body rounded p-2 ">
-            <div class="card mx-auto" style="width: 370px; height: 400px;">
-                <img src="https://www.svgrepo.com/show/216744/add.svg" class="card-img-top mx-auto" alt="..." style="max-width: 200px;">
-                <div class="card-body">
-                    <h5 class="card-title">Agregar informacion</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-                <div class="d-grid">
-
-                    <a href="/agregar" class="btn btn-success btn-lg  ">Agregar</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col shadow-lg bg-body rounded p-2">
-            <div class="card mx-auto" style="width: 370px; height: 400px;">
+        <div class="col rounded p-2">
+            <div class="card mx-auto shadow p-2" style="width: 370px; height: 400px; background-color: #8CC0DE;">
                 <img src="https://www.svgrepo.com/show/286737/update-repeat.svg" class="card-img-top mx-auto" alt="..." style="max-width: 200px;">
                 <div class="card-body">
                     <h5 class="card-title">Actualizar informacion</h5>
@@ -81,14 +55,51 @@ require "views/includes/navbar.admin.php";
                 </div>
                 <div class="d-grid">
 
-                    <a href="/actualizar" class="btn btn-secondary btn-lg  ">Actualizar</a>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Actualizar
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content" style="background-color: #A5BECC;">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Actualizar informacion</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body mx-auto">
+                                    <p><span class="fs-4">Seleccionar metodo de busqueda</span></p>
+
+                                </div>
+                                <div class="modal-footer mx-auto">
+                                    <a type="button" class="btn btn-warning" href="/lista">Buscar RUT/Nombre/Codigo</a>
+                                    <a type="button" class="btn btn-warning" href="/buscar">Buscar Sedes/Carreras</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col rounded p-2">
+            <div class="card mx-auto shadow p-2" style="width: 370px; height: 400px; background-color: #8CC0DE;">
+                <img src="https://www.svgrepo.com/show/216744/add.svg" class="card-img-top mx-auto" alt="..." style="max-width: 200px;">
+                <div class="card-body">
+                    <h5 class="card-title">Agregar informacion</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="d-grid">
+
+                    <a href="/agregar" class="btn btn-primary btn-lg">Agregar</a>
                 </div>
             </div>
         </div>
 
 
-        <div class="col shadow-lg bg-body rounded p-2">
-            <div class="card mx-auto" style="width: 370px; height: 400px;">
+
+        <div class="col rounded p-2">
+            <div class="card mx-auto shadow p-2" style="width: 370px; height: 400px; background-color: #8CC0DE;">
                 <img src="https://www.svgrepo.com/show/207527/settings-configuration.svg" class="card-img-top mx-auto mx-auto" alt="..." style="max-width: 200px;">
                 <div class="card-body">
                     <h5 class="card-title">Configuracion de cuenta</h5>
@@ -96,14 +107,14 @@ require "views/includes/navbar.admin.php";
                 </div>
                 <div class="d-grid">
 
-                    <a href="#" class="btn btn-warning btn-lg ">Configuracion de cuenta</a>
+                    <a href="#" class="btn btn-secondary btn-lg disabled">Configuracion de cuenta</a>
                 </div>
             </div>
         </div>
 
-        <div class="col shadow-lg bg-body rounded p-2">
-            <div class="card mx-auto" style="width: 370px; height: 400px;">
-                <img src="https://www.svgrepo.com/show/94002/logout.svg" class="card-img-top mx-auto" alt="..." style="max-width: 200px;">
+        <div class="col rounded p-2">
+            <div class="card mx-auto shadow p-2" style="width: 370px; height: 400px; background-color: #8CC0DE;">
+                <img src="https://www.svgrepo.com/show/94002/logout.svg" class="card-img-top ms-5" alt="..." style="max-width: 200px;">
                 <div class="card-body">
                     <h5 class="card-title">Cerrar sesion</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
