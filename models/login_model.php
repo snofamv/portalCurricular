@@ -1,5 +1,6 @@
 <?php
-class Login extends Model
+require_once "models/usuario_model.php";
+class LoginModel extends Model
 {
     function __construct()
     {
@@ -14,11 +15,11 @@ class Login extends Model
 
             if($query->rowCount() > 0){
                 $item = $query->fetch(PDO::FETCH_ASSOC);
-                $usuario = new Usuario();
+                $usuario = new UsuarioModel();
                 $usuario->__setDatosDesdeArray($item);
 
                 if(password_verify($clave, $usuario->getClave())){
-                    error_log("LoginModel::Login -> credenciales validadas  .");
+                    error_log("LoginModel::Login -> credenciales validadas.");
                     return $usuario;
                 }else{
                     error_log("LoginModel::Login -> Password incorrecto.");
@@ -27,7 +28,6 @@ class Login extends Model
             }
         } catch (PDOException $th) {
            error_log("LoginModelo:: Login-> ". $th->getMessage());
-           return NULL;
         }
     }
 }

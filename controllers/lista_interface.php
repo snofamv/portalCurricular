@@ -1,6 +1,6 @@
 <?php 
 
-interface ILista
+interface ListaInterface
 {
     public function eliminarAlumno();
     public function modificarAlumno();

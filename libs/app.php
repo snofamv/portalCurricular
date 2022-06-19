@@ -1,5 +1,5 @@
 <?php
-require_once "controllers/errores.php";
+require_once "controllers/errores_controller.php";
 class App
 {
     function __construct()
@@ -17,18 +17,19 @@ class App
         if (empty($url[0])) {
             #index.php/
             error_log("APP::CARGANDO CONTROLADOR LOGIN");
-            require_once "controllers/login.php";
-            $controlador = new Login();
+            require_once "controllers/login_controller.php";
+            $controlador = new LoginController();
             $controlador->render();
             return false;
         }
 
-        $controladorRuta = "controllers/$url[0].php";
+        $controladorRuta = "controllers/$url[0]_controller.php";
         //si existe controlador
         if (file_exists($controladorRuta)) {
             //se ejecuta controlador encontrado
             require_once $controladorRuta;
-            $controlador = new $url[0];
+            $objeto = $url[0]."Controller";
+            $controlador = new $objeto;
 
             //si una segunda url
             //  /login/salir
@@ -57,7 +58,7 @@ class App
                 } else {
                     //SI no existe el metodo URL[1] envia ERROR
                     error_log("APP::METODO EN CONTROLADOR NO ENCONTRADO.");
-                    $controlador = new Errores();
+                    $controlador = new ErroresController();
                     $controlador->render();
                 }
             } else {
@@ -70,7 +71,7 @@ class App
         } else {
             //no existe el controlador.
             error_log("APP::CONTROLADOR NO ENCONTRADO.");
-            $controlador = new Errores();
+            $controlador = new ErroresController();
             $controlador->render();
         }
     }

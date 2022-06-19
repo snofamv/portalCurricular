@@ -12,10 +12,10 @@
     <title>Portal Curricular</title>
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column">
 
     <!-- Section: Design Block -->
-    <section class="background-radial-gradient overflow-hidden">
+    <section class="background-radial-gradient overflow-hidden min-vh-100">
         <style>
             .background-radial-gradient {
                 background-color: hsl(37, 90%, 61%);

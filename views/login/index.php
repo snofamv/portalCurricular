@@ -107,7 +107,7 @@
                                 <?php endif; ?>
                             </span>
 
-                            <form action="<?php echo URLBASE; ?>/autentificador/acceder" method="POST">
+                            <form action="<?php echo URLBASE; ?>/login/acceder" method="POST">
                                 <!-- 2 column grid layout with text inputs for the first and last names -->
                                 <div class="row">
                                     <!-- Email input -->
@@ -128,7 +128,7 @@
                                     <!-- Register buttons -->
                                     <div class="text-center p-2">
                                         <p>¿Olvidaste tu contraseña?</p>
-                                        <a class="btn btn-secondary btn-block mb-4 " href="#">Recuperar contraseña</a>
+                                        <a class="btn btn-secondary btn-block mb-4" hidden href="#">Recuperar contraseña</a>
                                         <a class="btn btn-secondary btn-block mb-4 " href="/registro">Solicitar registro</a>
                                     </div>
                             </form>

@@ -1,5 +1,6 @@
 <?php
 require "views/includes/navbar.admin.php";
+
 ?>
 
 <!-- CONTENIDO DE LA VISTA -->

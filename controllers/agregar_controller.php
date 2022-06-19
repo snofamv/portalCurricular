@@ -1,5 +1,5 @@
 <?php
-class Agregar extends Controller
+class AgregarController extends Controller
 {
     function __construct()
     {

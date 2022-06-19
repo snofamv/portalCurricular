@@ -1,30 +1,65 @@
-<?php 
+<?php
 
-    class Session
+class Session
+{
+    private $nomSesion = NULL;
+
+    public function __construct()
     {
-        private $nombreSesion = "user";
-
-        public function __construct()
-        {
-            if(session_status() == PHP_SESSION_NONE){
-                session_start();
-            }
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
         }
-        public function setCurrentUser($usuario){
-            $_SESSION[$this->nombreSesion] = $usuario;
-        }
-
-        public function getCurrentUser(){
-            return $_SESSION[$this->nombreSesion];
-        }
-
-        public function closeSession(){
-            session_unset();
-            session_destroy();
-        }
-
-        public function exists(){
-            return isset($_SESSION[$this->nombreSesion]);
-        }
-
     }
+
+    public function existeSesion()
+    {
+        return isset($_SESSION[$this->nomSesion]);
+    }
+
+    public function cerrarSesion()
+    {
+        $this->nomSesion = NULL;
+        session_unset();
+        session_destroy();
+    }
+
+    /**
+     * Get the value of Sesion
+     */
+    public function getSesion()
+    {
+        return $_SESSION[$this->nomSesion];
+    }
+
+    /**
+     * Set the value of Sesion
+     *
+     * @return  self
+     */
+    public function setSesion($nom)
+    {
+        $_SESSION[$this->nomSesion] = $_SESSION[$nom];
+
+        return $this;
+    }
+
+    /**
+     * Get the value of nomSesion
+     */ 
+    public function getNomSesion()
+    {
+        return $this->nomSesion;
+    }
+
+    /**
+     * Set the value of nomSesion
+     *
+     * @return  self
+     */ 
+    public function setNomSesion($nomSesion)
+    {
+        $this->nomSesion = $nomSesion;
+
+        return $this;
+    }
+}

@@ -1,5 +1,5 @@
 <?php
-class Alumno extends Model implements IModel
+class AlumnoModel extends Model implements IModel
 {
     //class atributos
     private $codigo;
@@ -28,7 +28,7 @@ class Alumno extends Model implements IModel
         try {
             $query = parent::query("SELECT * FROM data");
             while ($p = $query->fetch(PDO::FETCH_ASSOC)) {
-                $objeto = new Alumno();
+                $objeto = new AlumnoModel();
                 $objeto->setRut($p["rut"]);
                 $objeto->setCodigo($p["codigo"]);
                 $objeto->setNombres($p["nom"]);
@@ -68,7 +68,7 @@ class Alumno extends Model implements IModel
         try {
             $query = $this->query("SELECT * FROM data WHERE sede LIKE '%$sede%'");
             while ($p = $query->fetch(PDO::FETCH_ASSOC)) {
-                $objeto = new Alumno();
+                $objeto = new AlumnoModel();
                 $objeto->setRut($p["rut"]);
                 $objeto->setCodigo($p["codigo"]);
                 $objeto->setNombres($p["nom"]);
@@ -89,7 +89,7 @@ class Alumno extends Model implements IModel
         try {
             $query = $this->query("SELECT * FROM data WHERE carrera LIKE '%$carrera%'");
             while ($p = $query->fetch(PDO::FETCH_ASSOC)) {
-                $objeto = new Alumno();
+                $objeto = new AlumnoModel();
                 $objeto->setRut($p["rut"]);
                 $objeto->setCodigo($p["codigo"]);
                 $objeto->setNombres($p["nom"]);

@@ -1,5 +1,5 @@
 <?php
-class Usuario extends Model implements IModel
+class UsuarioModel extends Model implements IModel
 {
     private $rut, $clave, $rol, $foto, $nombre;
 

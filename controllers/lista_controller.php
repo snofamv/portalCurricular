@@ -1,6 +1,6 @@
 <?php
-require_once "controllers/ilista.php";
-class Lista extends Controller implements ILista
+require_once "controllers/lista_interface.php";
+class ListaController extends Controller implements ListaInterface
 {
     function __construct()
     {

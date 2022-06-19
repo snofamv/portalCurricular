@@ -9,7 +9,7 @@ class ErrorMessages
     const ERROR_REGISTRO_NUEVOUSUARIO_EXISTE = "672b82d511f14de2vvc96f26ff702000" ;
     const ERROR_REGISTRO_NUEVOUSUARIO_ERROR = "672b82d511f14de2vvc96f26QQ7067672" ;
     const ERROR_AUTENTICACION_CAMPOS_VACIOS = "672b82d511f14de2BBC99f26QQ7067672" ;
-    const ERROR_AUTENTICACION_LOGIN_DATOS = "672b82d511f14de2BBC99f26QQKT76272" ;
+    const ERROR_AUTENTICACION_LOGIN = "672b82d511f14de2BBC99f26QQKT76272" ;
     const ERROR_AUTENTICACION_LOGIN_INVALIDO = "672b82d511f14de2BBC99f26QQKT76272" ;
     const ERROR_ELIMINARALUMNO_ERROR = "986b82d511f14de2BBC99f26QQKT71576" ;
     const ERROR_REGISTRAR_NUEVOALUMNO = "986b82d511f14de2KKJ69f26QQKT71576" ;
@@ -33,8 +33,8 @@ class ErrorMessages
             ErrorMessages::ERROR_REGISTRO_NUEVOUSUARIO_ERROR => "Hubo un error al registrar el nuevo usuario, intenta nuevamente.",
             ErrorMessages::ERROR_REGISTRO_NUEVOUSUARIO_CAMPOS_MINIMOS => "Ingresa un rut valido y una contraseña mas larga.",
             ErrorMessages::ERROR_AUTENTICACION_CAMPOS_VACIOS => "Los campos rut y/o contraseña se encuentran vacios.",
-            ErrorMessages::ERROR_AUTENTICACION_LOGIN_DATOS => "Rut y/o contraseña invalidos.",
-            ErrorMessages::ERROR_AUTENTICACION_LOGIN_INVALIDO => "No se puede procesar la solicitud. Ingresa rut y contraseña.",
+            ErrorMessages::ERROR_AUTENTICACION_LOGIN => "No se puede procesar la solicitud, intenta nuevamente.",
+            ErrorMessages::ERROR_AUTENTICACION_LOGIN_INVALIDO => "Rut y/o contraseña invalidos. Intenta nuevamente.",
             ErrorMessages::ERROR_CONTROLADOR_NOENCONTRADO => "No se puede procesar la solicitud. Pagina no encontrada. >404<.",
             ErrorMessages::ERROR_ELIMINARALUMNO_ERROR => "No se puede procesar la solicitud. Alumno no eliminado.",
             ErrorMessages::ERROR_REGISTRAR_NUEVOALUMNO => "Error al ingresar un nuevo alumno.",

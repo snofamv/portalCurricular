@@ -1,5 +1,5 @@
 <?php
-class Actualizar extends Controller
+class ActualizarController extends Controller
 {
     function __construct()
     {
@@ -21,7 +21,7 @@ class Actualizar extends Controller
     {
         //esto debe ser validado por si recibe campos o valores vacios en la vista
         if ($_POST && $this->getPOST("btnActualizarAlumno")) {
-            $m = new Alumno();
+            $m = new AlumnoModel();
             $m->setCodigo($_POST["codigo"]);
             $m->setRut($this->getPOST("rutModificar"));
             $m->setNombres($this->getPOST("nombres"));

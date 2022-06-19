@@ -1,7 +1,7 @@
 <?php
-require_once "models/usuario.php";
+require_once "models/usuario_model.php";
 
-class Registro extends Controller
+class RegistroController extends Controller
 {
     function __construct()
     {
@@ -27,7 +27,7 @@ class Registro extends Controller
             } else {
 
 
-                $objUsuario = new Usuario();
+                $objUsuario = new UsuarioModel();
                 $objUsuario->setRut($rut);
                 $objUsuario->setClave($clave);
                 $objUsuario->setRol("user");

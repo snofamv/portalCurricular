@@ -1,5 +1,5 @@
 <?php
-class Buscar extends Controller
+class BuscarController extends Controller
 {
     function __construct()
     {
@@ -15,7 +15,7 @@ class Buscar extends Controller
     public function alumnoSede()
     {
         if ($_GET && $sede = $this->getGET("sede")) {
-            $alumno = new Alumno();
+            $alumno = new AlumnoModel();
             if ($d = $alumno->__getAlumnosBySede($sede)) {
                 $this->vista->render("panel/buscar", $d);
             } else {
@@ -30,7 +30,7 @@ class Buscar extends Controller
     public function alumnoCarrera()
     {
         if ($_GET && $carrera = $this->getGET("carrera")) {
-            $alumno = new Alumno();
+            $alumno = new AlumnoModel();
             $d = $alumno->__getAlumnosByCarrera($carrera);
             #var_dump($d);
             if (count($d) > 0) {

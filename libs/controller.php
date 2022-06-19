@@ -10,13 +10,14 @@ class Controller
 
     public function cargarModelo($nomModelo)
     {
-        $ruta = "models/" . $nomModelo . ".php";
+        $ruta = "models/" . $nomModelo . "_model.php";
         if ($nomModelo != null) {
             # code...
             if (file_exists($ruta)) {
                 error_log("Controller::CargarModelo $nomModelo.");
                 require_once $ruta;
-                $this->modelo = new $nomModelo();
+                $objeto = $nomModelo."Model";
+                $this->modelo = new $objeto();
             }
         }
     }
@@ -66,5 +67,12 @@ class Controller
             $params = "?" . $params;
         }
         header("Location: " . URLBASE. "/" . $ruta . $params);
+    }
+
+    public function depurar($dato)
+    {
+        echo "<pre>";
+        var_dump($dato);
+        echo "</pre>";
     }
 }
