@@ -1,5 +1,5 @@
 <?php
-class AgregarController extends Controller
+class AgregarController extends SessionController
 {
     function __construct()
     {
@@ -21,7 +21,7 @@ class AgregarController extends Controller
             $this->modelo->setApellidos($this->getPOST("apellidos"));
             $this->modelo->setSede($this->getPOST("sedes"));
             $this->modelo->setCarrera($this->getPOST("carreras"));
-            if($this->modelo->__guardarDato()){
+            if($this->modelo->save()){
                 $this->redirect("agregar", ["success" => SuccessMessages::SUCCESS_REGISTRO_NUEVOALUMNO]);
             }else{
                 $this->redirect("lista", ["error" => ErrorMessages::ERROR_REGISTRAR_NUEVOALUMNO]);

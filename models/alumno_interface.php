@@ -1,5 +1,5 @@
 <?php 
-    interface IModel{
+    interface AlumnoInterface{
         public function save();
         public function getAll();
         public function get($id);

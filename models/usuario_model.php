@@ -1,112 +1,130 @@
 <?php
 class UsuarioModel extends Model implements IModel
 {
-    private $rut, $clave, $rol, $foto, $nombre;
+    private $id, $usuario, $contrasena, $rol, $nombre, $foto;
 
     function __construct()
     {
-        error_log("USER::MODELO => Cargada");
+        error_log("UserModel => Cargado.");
         parent::__construct();
-        $this->rut = "";
-        $this->clave = "";
+        $this->id = "";
+        $this->usuario = "";
+        $this->contrasena = "";
         $this->rol = "user";
         $this->foto = "";
         $this->nombre = "";
     }
 
-    public function __guardarDato()
+    public function save()
     {
         try {
-            $query = $this->prepare("INSERT INTO usuarios values(:rut, :clave, :rol, :foto, :nombre)");
+            $query = $this->prepare("INSERT INTO usuarios values (:id, :usuario, :contrasena, :rol, :foto, :nombre)");
             $query->execute([
-                ":rut" => $this->rut,
-                ":clave" => $this->clave,
+
+                ":id" => $this->id,
+                ":usuario" => $this->usuario,
+                ":contrasena" => $this->contrasena,
                 ":rol" => $this->rol,
                 ":foto" => $this->foto,
-                ":nombre" => $this->nombre,
+                ":nombre" => $this->nombre
             ]);
             return true;
         } catch (PDOException $th) {
-            error_log("USER_MODELO::PDOException => " . $th->getMessage());
+            error_log("UsuarioModelo::PDOException -> " . $th->getMessage());
             return false;
         }
     }
-    public function __getTodosLosDatos()
+    public function getAll()
     {
         $items = array();
         try {
             $query = $this->query("SELECT * FROM usuarios");
             while ($p = $query->fetch(PDO::FETCH_ASSOC)) {
                 $objeto = new self();
-                $objeto->setRut($p["rut"]);
-                $objeto->setClave($p["clave"]);
+                $objeto->setId($p["id"]);
+                $objeto->setUsuario($p["usuario"]);
+                $objeto->setContrasena($p["contrasena"]);
                 $objeto->setRol($p["rol"]);
                 $objeto->setFoto($p["foto"]);
                 $objeto->setNombre($p["nombre"]);
-
                 array_push($items, $objeto);
             }
             return $items;
         } catch (PDOException $th) {
-            error_log("USER_MODELO => METODO_GETALL::PDOException => " . $th->getMessage());
+            error_log("UsuarioModelo => METODO_GETALL::PDOException => " . $th->getMessage());
         }
     }
-    public function __getDatoById($rut)
+    public function get($usuario)
     {
         try {
-            $query = $this->prepare("SELECT * FROM usuarios WHERE rut=:rut");
-            $query->execute([":rut" => $rut]);
-            $user = $query->fetch(PDO::FETCH_ASSOC);
+            $query = $this->prepare("SELECT * FROM usuarios WHERE usuario=:usuario");
+            $query->execute([":usuario" => $usuario]);
+            $res = $query->fetch(PDO::FETCH_ASSOC);
             //set data object
-            $this->setRut($user["rut"]);
-            $this->setClave($user["clave"]);
-            $this->setRol($user["rol"]);
-            $this->setFoto($user["foto"]);
-            $this->setNombre($user["nombre"]);
+            $this->setId($res["id"]);
+            $this->setUsuario($res["usuario"]);
+            $this->setContrasena($res["contrasena"]);
+            $this->setRol($res["rol"]);
+            $this->setFoto($res["foto"]);
+            $this->setNombre($res["nombre"]);
             return $this;
         } catch (PDOException $th) {
-            error_log("USER_MODELO => METODO_GET::PDOException => " . $th->getMessage());
+            error_log("UsuarioModelo => METODO_GET_ID::PDOException -> " . $th->getMessage());
         }
+        // try {
+        //     $query = $this->prepare("SELECT * FROM usuarios WHERE usuario=:usuario");
+        //     $query->execute([":usuario" => $usuario]);
+        //     $res = $query->fetch(PDO::FETCH_ASSOC);
+        //     $usuario = new UsuarioModel();
+        //     //set data object
+        //     $usuario->setId($res["id"]);
+        //     $usuario->setUsuario($res["usuario"]);
+        //     $usuario->setContrasena($res["contrasena"]);
+        //     $usuario->setRol($res["rol"]);
+        //     $usuario->setFoto($res["foto"]);
+        //     $usuario->setNombre($res["nombre"]);
+        //     return $usuario;
+        // } catch (PDOException $th) {
+        //     error_log("UsuarioModelo => METODO_GET_ID::PDOException -> " . $th->getMessage());
+        // }
     }
-    public function __borrarDatoById($rut)
+    public function delete($usuario)
     {
         try {
-            $query = $this->prepare("DELETE FROM usuarios WHERE rut=:rut");
-            $query->execute([":rut" => $rut]);
+            $query = $this->prepare("DELETE FROM usuarios WHERE usuario=:usuario");
+            $query->execute([":usuario" => $usuario]);
 
             return true;
         } catch (PDOException $th) {
-            error_log("USER_MODELO => METODO_DELETE::PDOException => " . $th->getMessage());
+            error_log("UsuarioModelo => METODO_DELETE::PDOException => " . $th->getMessage());
             return false;
         }
     }
-    public function __actualizarDato(){
+    public function update()
+    {
+        #para usar el update primero se utiliza el GET para crear un objeto en el propio modelo
         try {
-            $query = $this->prepare("UPDATE usuarios SET clave=:clave, rol=:rol, foto=:foto, nombre=:nombre WHERE rut=:rut");
+            $query = $this->prepare("UPDATE usuarios SET usuario=:usuario, contrasena=:contrasena, rol=:rol, foto=:foto, nombre=:nombre WHERE id=:id");
             $query->execute([
-                ":rut"=> $this->rut,
-                ":clave" => $this->clave,
+                ":id" => $this->id,
+                ":usuario" => $this->usuario,
+                ":contrasena" => $this->contrasena,
                 ":rol" => $this->rol,
                 ":foto" => $this->foto,
-                ":nombre" => $this->nombre,
+                ":nombre" => $this->nombre
             ]);
-            $user = $query->fetch(PDO::FETCH_ASSOC);
-            //set data object
-            $this->setRut($user["rut"]);
-            $this->setClave($user["clave"]);
-            $this->setRol($user["rol"]);
-            $this->setFoto($user["foto"]);
-            $this->setNombre($user["nombre"]);
+
             return true;
         } catch (PDOException $th) {
-            error_log("USER_MODELO => METODO_GET::PDOException => " . $th->getMessage());
+            error_log("UsuarioModelo => METODO_GET::PDOException => " . $th->getMessage());
             return false;
         }
     }
-    public function __setDatosDesdeArray($array)
+    public function from($array)
     {
-        $this->rut = $array["rut"];
-        $this->clave = $array["clave"];
+        $this->id = $array["id"];
+        $this->usuario = $array["usuario"];
+        $this->contrasena = $array["contrasena"];
         $this->rol = $array["rol"];
         $this->foto = $array["foto"];
         $this->nombre = $array["nombre"];
@@ -120,51 +138,96 @@ class UsuarioModel extends Model implements IModel
 
 
 
-    public function existeUsuario($rut){
+    public function existeUsuario($usuario)
+    {
         try {
-            $query = $this->prepare("SELECT * FROM usuarios WHERE rut=:rut");
-            $query->execute([":rut"=>$rut]);
-            if($query->rowCount()>0){
+            $query = $this->prepare("SELECT * FROM usuarios WHERE usuario=:usuario");
+            $query->execute([":usuario" => $usuario]);
+            if ($query->rowCount() > 0) {
                 return true;
-            }else{
+            } else {
                 return false;
             }
         } catch (PDOException $th) {
-            error_log("USER_MODELO => METODO_EXISTS:: ".$th->getMessage());
+            error_log("UsuarioModelo => METODO_EXISTS:: " . $th->getMessage());
             return false;
         }
     }
-    public function comparePassword($clave, $rut){
-        try {
-            $usuario = $this->__getDatoById($rut);
-            return password_verify($clave, "$usuario->getClave()");
-        } catch (PDOException $th) {
-            error_log("USER_MODELO => METODO_EXISTS:: ".$th->getMessage());
-            return false;
-        }
-    }
-    
-    /********************GETTER SETTER*************************/
- 
-
-
-    public function getClave()
+    public function comparePassword($clave, $usuario)
     {
-        return $this->clave;
+        try {
+            $usr = $this->get($usuario);
+            return password_verify($clave, $usr->getContrasena());
+        } catch (PDOException $th) {
+            error_log("UsuarioModelo => METODO_EXISTS:: " . $th->getMessage());
+            return false;
+        }
+    }
+
+    /********************GETTER SETTER*************************/
+
+
+
+
+    /**
+     * Get the value of id
+     */
+    public function getId()
+    {
+        return $this->id;
     }
 
     /**
-     * Set the value of password
+     * Set the value of id
      *
      * @return  self
      */
-    public function setClave($clave)
+    public function setId($id)
     {
-        $this->clave = $this->getHashedPassword($clave);
+        $this->id = $id;
 
         return $this;
     }
-   
+
+    /**
+     * Get the value of usuario
+     */
+    public function getUsuario()
+    {
+        return $this->usuario;
+    }
+
+    /**
+     * Set the value of usuario
+     *
+     * @return  self
+     */
+    public function setUsuario($usuario)
+    {
+        $this->usuario = $usuario;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of contrasena
+     */
+    public function getContrasena()
+    {
+        return $this->contrasena;
+    }
+
+    /**
+     * Set the value of contrasena
+     *
+     * @return  self
+     */
+    public function setContrasena($contrasena)
+    {
+        $this->contrasena = $this->getHashedPassword($contrasena);
+
+        return $this;
+    }
 
     /**
      * Get the value of rol
@@ -187,27 +250,7 @@ class UsuarioModel extends Model implements IModel
     }
 
     /**
-     * Get the value of photo
-     */
-    public function getFoto()
-    {
-        return $this->foto;
-    }
-
-    /**
-     * Set the value of photo
-     *
-     * @return  self
-     */
-    public function setFoto($photo)
-    {
-        $this->foto = $photo;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of name
+     * Get the value of nombre
      */
     public function getNombre()
     {
@@ -215,7 +258,7 @@ class UsuarioModel extends Model implements IModel
     }
 
     /**
-     * Set the value of name
+     * Set the value of nombre
      *
      * @return  self
      */
@@ -227,21 +270,21 @@ class UsuarioModel extends Model implements IModel
     }
 
     /**
-     * Get the value of rut
-     */ 
-    public function getRut()
+     * Get the value of foto
+     */
+    public function getFoto()
     {
-        return $this->rut;
+        return $this->foto;
     }
 
     /**
-     * Set the value of rut
+     * Set the value of foto
      *
      * @return  self
-     */ 
-    public function setRut($rut)
+     */
+    public function setFoto($foto)
     {
-        $this->rut = $rut;
+        $this->foto = $foto;
 
         return $this;
     }

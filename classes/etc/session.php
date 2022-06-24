@@ -2,7 +2,7 @@
 
 class Session
 {
-    private $nomSesion = NULL;
+    private $sessionName = "user";
 
     public function __construct()
     {
@@ -11,55 +11,23 @@ class Session
         }
     }
 
-    public function existeSesion()
+    public function setCurrentUser($user)
     {
-        return isset($_SESSION[$this->nomSesion]);
+        $_SESSION[$this->sessionName] = $user;
+    }
+    public function getCurrentUser()
+    {
+        return $_SESSION[$this->sessionName];
     }
 
-    public function cerrarSesion()
+    public function closeSession ()
     {
-        $this->nomSesion = NULL;
         session_unset();
         session_destroy();
     }
 
-    /**
-     * Get the value of Sesion
-     */
-    public function getSesion()
+    public function exists()
     {
-        return $_SESSION[$this->nomSesion];
-    }
-
-    /**
-     * Set the value of Sesion
-     *
-     * @return  self
-     */
-    public function setSesion($nom)
-    {
-        $_SESSION[$this->nomSesion] = $_SESSION[$nom];
-
-        return $this;
-    }
-
-    /**
-     * Get the value of nomSesion
-     */ 
-    public function getNomSesion()
-    {
-        return $this->nomSesion;
-    }
-
-    /**
-     * Set the value of nomSesion
-     *
-     * @return  self
-     */ 
-    public function setNomSesion($nomSesion)
-    {
-        $this->nomSesion = $nomSesion;
-
-        return $this;
+        return isset($_SESSION[$this->sessionName]);
     }
 }

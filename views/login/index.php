@@ -107,18 +107,18 @@
                                 <?php endif; ?>
                             </span>
 
-                            <form action="<?php echo URLBASE; ?>/login/acceder" method="POST">
+                            <form action="<?php echo URLBASE; ?>/login/authenticate" method="POST">
                                 <!-- 2 column grid layout with text inputs for the first and last names -->
                                 <div class="row">
                                     <!-- Email input -->
                                     <div class="form-outline mb-4">
-                                        <input type="text" id="form3Example3" class="form-control" placeholder="Rut aqui" name="rut" />
+                                        <input type="text" id="form3Example3" class="form-control" placeholder="Rut aqui" name="usuario" />
                                         <label class="form-label" for="form3Example3" hidden>Rut</label>
                                     </div>
 
                                     <!-- Password input -->
                                     <div class="form-outline mb-4">
-                                        <input type="password" id="form3Example4" class="form-control" placeholder="Contraseña aqui" name="clave" />
+                                        <input type="password" id="form3Example4" class="form-control" placeholder="Contraseña aqui" name="contrasena" />
                                         <label class="form-label" for="form3Example4" hidden>Contraseña</label>
                                     </div>
 

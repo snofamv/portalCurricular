@@ -1,5 +1,5 @@
 <?php
-class ActualizarController extends Controller
+class ActualizarController extends SessionController
 {
     function __construct()
     {
@@ -10,7 +10,7 @@ class ActualizarController extends Controller
     public function render()
     {
         if ($rut = $this->getGET("rut")) {
-            $d = $this->modelo->__getDatoById($rut);
+            $d = $this->modelo->get($rut);
             $this->vista->render("panel/actualizar", $d);
         } else {
             $this->redirect("lista", []);
@@ -28,7 +28,7 @@ class ActualizarController extends Controller
             $m->setApellidos($this->getPOST("apellidos"));
             $m->setSede($this->getPOST("sedes"));
             $m->setCarrera($this->getPOST("carreras"));
-            if($m->__actualizarDato()){
+            if($m->update()){
                 $this->redirect("lista", ["success" => SuccessMessages::SUCCESS_REGISTROACTUALIZADO_ALUMNO]);
                 error_log("ActualizarController::Alumno actualizado con exito.");
             }else{

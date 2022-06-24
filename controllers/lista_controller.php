@@ -1,6 +1,6 @@
 <?php
 require_once "controllers/lista_interface.php";
-class ListaController extends Controller implements ListaInterface
+class ListaController extends SessionController implements ListaInterface
 {
     function __construct()
     {
@@ -10,7 +10,7 @@ class ListaController extends Controller implements ListaInterface
 
     function render()
     {
-        $d = $this->modelo->__getTodosLosDatos();
+        $d = $this->modelo->getAll();
         $this->vista->render("panel/lista", $d);
     }
 

@@ -99,13 +99,13 @@
                                 <div class="row">
                                     <!-- Email input -->
                                     <div class="form-outline mb-4">
-                                        <input type="text" id="form3Example3" class="form-control" placeholder="Rut aqui" name="rut" required/>
+                                        <input type="text" id="form3Example3" class="form-control" placeholder="Usuario aqui" name="usuario" required/>
                                         <label class="form-label" for="form3Example3" hidden>Rut</label>
                                     </div>
 
                                     <!-- Password input -->
                                     <div class="form-outline mb-4">
-                                        <input type="password" id="form3Example4" class="form-control" placeholder="Contraseña aqui" name="clave" required/>
+                                        <input type="password" id="form3Example4" class="form-control" placeholder="Contraseña aqui" name="contrasena" required/>
                                         <label class="form-label" for="form3Example4" hidden>Contraseña</label>
                                     </div>
                                     <!-- Submit button -->

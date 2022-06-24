@@ -2,23 +2,22 @@
 
 class Controller
 {
-    function __construct()
+     function __construct()
     {
-       
+
         $this->vista = new View();
     }
 
     public function cargarModelo($nomModelo)
     {
         $ruta = "models/" . $nomModelo . "_model.php";
-        if ($nomModelo != null) {
-            # code...
-            if (file_exists($ruta)) {
-                error_log("Controller::CargarModelo $nomModelo.");
-                require_once $ruta;
-                $objeto = $nomModelo."Model";
-                $this->modelo = new $objeto();
-            }
+
+        # code...
+        if (file_exists($ruta)) {
+            error_log("Controller::CargarModelo $nomModelo.");
+            require_once $ruta;
+            $nameModel = $nomModelo . "Model";
+            $this->modelo = new $nameModel();
         }
     }
 
@@ -66,7 +65,7 @@ class Controller
         if ($params != "") {
             $params = "?" . $params;
         }
-        header("Location: " . URLBASE. "/" . $ruta . $params);
+        header("Location: " . URLBASE . "/" . $ruta . $params);
     }
 
     public function depurar($dato)

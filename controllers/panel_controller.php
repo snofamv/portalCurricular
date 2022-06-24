@@ -1,5 +1,5 @@
 <?php
-class PanelController extends Controller 
+class PanelController extends SessionController 
 {
     public function __construct()
     {

@@ -1,0 +1,43 @@
+{
+    "sites": [
+        {
+            "site": "",
+            "access": "public",
+            "rol": ""
+        },
+        {
+            "site": "registro",
+            "access": "public",
+            "rol": ""
+        },
+        {
+            "site": "panel",
+            "access": "private",
+            "rol": "user"
+        },
+        {
+            "site": "lista",
+            "access": "private",
+            "rol": "user"
+        },
+        {
+            "site": "buscar",
+            "access": "private",
+            "rol": "user"
+        },
+        {
+            "site": "actualizar",
+            "access": "private",
+            "rol": "user"
+        },
+        {
+            "site": "agregar",
+            "access": "private",
+            "rol": "user"
+        }
+    ],
+    "default-sites": {
+        "user": "panel",
+        "admin": "panel"
+    }
+}

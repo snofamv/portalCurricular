@@ -1,5 +1,4 @@
 <?php
-require_once "models/usuario_model.php";
 class LoginModel extends Model
 {
     function __construct()
@@ -7,18 +6,19 @@ class LoginModel extends Model
         parent::__construct();
     }
 
-    public function login($rut, $clave)
+    public function login($usuario, $clave)
     {
+        error_log("LoginModel::Login -> 1.");
         try {
-            $query = $this->prepare("select * from usuarios where rut=:rut");
-            $query->execute([":rut" => $rut]);
+            $query = $this->prepare("select * from usuarios where usuario=:usuario");
+            $query->execute([":usuario" => $usuario]);
 
-            if($query->rowCount() > 0){
+            if($query->rowCount() == 1){
                 $item = $query->fetch(PDO::FETCH_ASSOC);
                 $usuario = new UsuarioModel();
-                $usuario->__setDatosDesdeArray($item);
+                $usuario->from($item);
 
-                if(password_verify($clave, $usuario->getClave())){
+                if(password_verify($clave, $usuario->getContrasena())){
                     error_log("LoginModel::Login -> credenciales validadas.");
                     return $usuario;
                 }else{

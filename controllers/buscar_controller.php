@@ -1,14 +1,14 @@
 <?php
-class BuscarController extends Controller
+class BuscarController extends SessionController
 {
     function __construct()
     {
         parent::__construct();
-        $this->cargarModelo("alumno");
     }
 
     public function render()
     {
+        $this->cargarModelo("alumno");
         $this->vista->render("panel/buscar", $d = []);
     }
     

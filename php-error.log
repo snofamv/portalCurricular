@@ -1,121 +1,108 @@
-[17-Jun-2022 22:29:18 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[17-Jun-2022 22:29:18 Europe/Berlin] ##############################################
-[17-Jun-2022 22:29:18 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[17-Jun-2022 22:29:18 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
-[17-Jun-2022 22:29:18 Europe/Berlin] SessionController::ValidandoSesion() -> 1
-[17-Jun-2022 22:29:18 Europe/Berlin] SessionController::ValidandoSesion() -> 2. Dentro del if existeSesion()
-[17-Jun-2022 22:29:18 Europe/Berlin] Controller::CargarModelo login.
-[17-Jun-2022 22:29:18 Europe/Berlin] Conexion a BD Exitosa.
-[17-Jun-2022 22:29:18 Europe/Berlin] USER::MODELO => Cargada
-[17-Jun-2022 22:29:18 Europe/Berlin] LoginModel::Login -> credenciales validadas.
-[17-Jun-2022 22:29:18 Europe/Berlin] Conexion a BD Exitosa.
-[17-Jun-2022 22:29:18 Europe/Berlin] USER::MODELO => Cargada
-[17-Jun-2022 22:29:18 Europe/Berlin] LoginModel::Login -> credenciales validadas.
-[17-Jun-2022 22:29:19 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[17-Jun-2022 22:29:19 Europe/Berlin] ##############################################
-[17-Jun-2022 22:29:19 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[17-Jun-2022 22:29:19 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[17-Jun-2022 22:29:19 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[17-Jun-2022 22:32:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[17-Jun-2022 22:32:12 Europe/Berlin] ##############################################
-[17-Jun-2022 22:32:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[17-Jun-2022 22:32:12 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
-[17-Jun-2022 22:32:12 Europe/Berlin] SessionController::ValidandoSesion() -> 1
-[17-Jun-2022 22:32:12 Europe/Berlin] SessionController::ValidandoSesion() -> 2. Dentro del if existeSesion()
-[17-Jun-2022 22:32:12 Europe/Berlin] Controller::CargarModelo login.
-[17-Jun-2022 22:32:12 Europe/Berlin] Conexion a BD Exitosa.
-[17-Jun-2022 22:32:12 Europe/Berlin] USER::MODELO => Cargada
-[17-Jun-2022 22:32:12 Europe/Berlin] LoginModel::Login -> credenciales validadas.
-[17-Jun-2022 22:32:12 Europe/Berlin] Conexion a BD Exitosa.
-[17-Jun-2022 22:32:12 Europe/Berlin] USER::MODELO => Cargada
-[17-Jun-2022 22:32:12 Europe/Berlin] LoginModel::Login -> credenciales validadas.
-[17-Jun-2022 22:32:13 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[17-Jun-2022 22:32:13 Europe/Berlin] ##############################################
-[17-Jun-2022 22:32:13 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[17-Jun-2022 22:32:13 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[17-Jun-2022 22:32:13 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[17-Jun-2022 22:34:07 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[17-Jun-2022 22:34:07 Europe/Berlin] ##############################################
-[17-Jun-2022 22:34:07 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[17-Jun-2022 22:34:07 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
-[17-Jun-2022 22:34:07 Europe/Berlin] SessionController::ValidandoSesion() -> 1
-[17-Jun-2022 22:34:07 Europe/Berlin] SessionController::ValidandoSesion() -> 2. Dentro del if existeSesion()
-[17-Jun-2022 22:34:07 Europe/Berlin] Controller::CargarModelo login.
-[17-Jun-2022 22:34:07 Europe/Berlin] Conexion a BD Exitosa.
-[17-Jun-2022 22:34:07 Europe/Berlin] USER::MODELO => Cargada
-[17-Jun-2022 22:34:07 Europe/Berlin] LoginModel::Login -> credenciales validadas.
-[17-Jun-2022 22:34:07 Europe/Berlin] Conexion a BD Exitosa.
-[17-Jun-2022 22:34:07 Europe/Berlin] USER::MODELO => Cargada
-[17-Jun-2022 22:34:08 Europe/Berlin] LoginModel::Login -> credenciales validadas.
-[17-Jun-2022 22:34:08 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[17-Jun-2022 22:34:08 Europe/Berlin] ##############################################
-[17-Jun-2022 22:34:08 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[17-Jun-2022 22:34:08 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[17-Jun-2022 22:34:08 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[17-Jun-2022 22:34:30 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[17-Jun-2022 22:34:30 Europe/Berlin] ##############################################
-[17-Jun-2022 22:34:30 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[17-Jun-2022 22:34:30 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
-[17-Jun-2022 22:34:30 Europe/Berlin] SessionController::ValidandoSesion() -> 1
-[17-Jun-2022 22:34:30 Europe/Berlin] SessionController::ValidandoSesion() -> 2. Dentro del if existeSesion()
-[17-Jun-2022 22:34:30 Europe/Berlin] Controller::CargarModelo login.
-[17-Jun-2022 22:34:30 Europe/Berlin] Conexion a BD Exitosa.
-[17-Jun-2022 22:34:30 Europe/Berlin] USER::MODELO => Cargada
-[17-Jun-2022 22:34:30 Europe/Berlin] LoginModel::Login -> credenciales validadas.
-[17-Jun-2022 22:34:30 Europe/Berlin] Conexion a BD Exitosa.
-[17-Jun-2022 22:34:30 Europe/Berlin] USER::MODELO => Cargada
-[17-Jun-2022 22:34:31 Europe/Berlin] LoginModel::Login -> credenciales validadas.
-[17-Jun-2022 22:34:31 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[17-Jun-2022 22:34:31 Europe/Berlin] ##############################################
-[17-Jun-2022 22:34:31 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[17-Jun-2022 22:34:31 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[17-Jun-2022 22:34:31 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[17-Jun-2022 22:34:41 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[17-Jun-2022 22:34:41 Europe/Berlin] ##############################################
-[17-Jun-2022 22:34:42 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[17-Jun-2022 22:34:42 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
-[17-Jun-2022 22:34:42 Europe/Berlin] SessionController::ValidandoSesion() -> 1
-[17-Jun-2022 22:34:42 Europe/Berlin] SessionController::ValidandoSesion() -> 2. Dentro del if existeSesion()
-[17-Jun-2022 22:34:42 Europe/Berlin] Controller::CargarModelo login.
-[17-Jun-2022 22:34:42 Europe/Berlin] Conexion a BD Exitosa.
-[17-Jun-2022 22:34:42 Europe/Berlin] USER::MODELO => Cargada
-[17-Jun-2022 22:34:42 Europe/Berlin] LoginModel::Login -> credenciales validadas.
-[17-Jun-2022 22:34:42 Europe/Berlin] Conexion a BD Exitosa.
-[17-Jun-2022 22:34:42 Europe/Berlin] USER::MODELO => Cargada
-[17-Jun-2022 22:34:42 Europe/Berlin] LoginModel::Login -> credenciales validadas.
-[17-Jun-2022 22:34:42 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[17-Jun-2022 22:34:42 Europe/Berlin] ##############################################
-[17-Jun-2022 22:34:42 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[17-Jun-2022 22:34:42 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[17-Jun-2022 22:34:42 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[17-Jun-2022 22:36:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[17-Jun-2022 22:36:12 Europe/Berlin] ##############################################
-[17-Jun-2022 22:36:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[17-Jun-2022 22:36:12 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
-[17-Jun-2022 22:36:12 Europe/Berlin] SessionController::ValidandoSesion() -> 1
-[17-Jun-2022 22:36:12 Europe/Berlin] SessionController::ValidandoSesion() -> 2. Dentro del if existeSesion()
-[17-Jun-2022 22:36:12 Europe/Berlin] Controller::CargarModelo login.
-[17-Jun-2022 22:36:12 Europe/Berlin] APP::RENDERIZANDO VISTA -> [login]
-[17-Jun-2022 22:36:12 Europe/Berlin] LOGIN::CONTROLLER -> VISTA CARGADA.
-[17-Jun-2022 22:36:13 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[17-Jun-2022 22:36:13 Europe/Berlin] ##############################################
-[17-Jun-2022 22:36:13 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[17-Jun-2022 22:36:13 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panel]
-[17-Jun-2022 22:36:13 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in C:\xampp\htdocs\views\includes\navbar.admin.php on line 31
-[17-Jun-2022 22:36:13 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\views\includes\navbar.admin.php on line 31
-[17-Jun-2022 22:36:14 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[17-Jun-2022 22:36:14 Europe/Berlin] ##############################################
-[17-Jun-2022 22:36:14 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[17-Jun-2022 22:36:14 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[17-Jun-2022 22:36:14 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[17-Jun-2022 22:36:16 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[17-Jun-2022 22:36:16 Europe/Berlin] ##############################################
-[17-Jun-2022 22:36:16 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[17-Jun-2022 22:36:16 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panel]
-[17-Jun-2022 22:36:16 Europe/Berlin] PHP Warning:  Undefined global variable $_SESSION in C:\xampp\htdocs\views\includes\navbar.admin.php on line 31
-[17-Jun-2022 22:36:16 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\views\includes\navbar.admin.php on line 31
-[17-Jun-2022 22:36:16 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[17-Jun-2022 22:36:16 Europe/Berlin] ##############################################
-[17-Jun-2022 22:36:16 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[17-Jun-2022 22:36:16 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[17-Jun-2022 22:36:16 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[22-Jun-2022 22:41:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[22-Jun-2022 22:41:12 Europe/Berlin] ##############################################
+[22-Jun-2022 22:41:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[22-Jun-2022 22:41:12 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[22-Jun-2022 22:41:12 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[22-Jun-2022 22:41:12 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[22-Jun-2022 22:41:12 Europe/Berlin] PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\classes\etc\session_controller.php on line 66
+[22-Jun-2022 22:41:12 Europe/Berlin] SESSIONCONTROLLER::GetCurrentPage -> 
+[22-Jun-2022 22:41:12 Europe/Berlin] PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\classes\etc\session_controller.php on line 67
+[22-Jun-2022 22:41:12 Europe/Berlin] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\xampp\htdocs\classes\etc\session_controller.php on line 53
+[22-Jun-2022 22:41:12 Europe/Berlin] Controller::CargarModelo login.
+[22-Jun-2022 22:41:12 Europe/Berlin] LOGIN::CONTROLLER -> VISTA CARGADA.
+[22-Jun-2022 22:41:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[22-Jun-2022 22:41:12 Europe/Berlin] ##############################################
+[22-Jun-2022 22:41:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[22-Jun-2022 22:41:12 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[22-Jun-2022 22:41:12 Europe/Berlin] PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\classes\etc\session_controller.php on line 66
+[22-Jun-2022 22:41:12 Europe/Berlin] SESSIONCONTROLLER::GetCurrentPage -> 
+[22-Jun-2022 22:41:12 Europe/Berlin] PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\classes\etc\session_controller.php on line 67
+[22-Jun-2022 22:41:12 Europe/Berlin] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\xampp\htdocs\classes\etc\session_controller.php on line 53
+[22-Jun-2022 22:41:12 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[22-Jun-2022 22:46:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[22-Jun-2022 22:46:23 Europe/Berlin] ##############################################
+[22-Jun-2022 22:46:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[22-Jun-2022 22:46:23 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[22-Jun-2022 22:46:23 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[22-Jun-2022 22:46:23 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[22-Jun-2022 22:46:23 Europe/Berlin] PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\classes\etc\session_controller.php on line 67
+[22-Jun-2022 22:46:23 Europe/Berlin] SESSIONCONTROLLER::GetCurrentPage -> 
+[22-Jun-2022 22:46:23 Europe/Berlin] PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\classes\etc\session_controller.php on line 68
+[22-Jun-2022 22:46:23 Europe/Berlin] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\xampp\htdocs\classes\etc\session_controller.php on line 54
+[22-Jun-2022 22:46:23 Europe/Berlin] Controller::CargarModelo login.
+[22-Jun-2022 22:46:23 Europe/Berlin] LOGIN::CONTROLLER -> VISTA CARGADA.
+[22-Jun-2022 22:46:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[22-Jun-2022 22:46:24 Europe/Berlin] ##############################################
+[22-Jun-2022 22:46:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[22-Jun-2022 22:46:24 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[22-Jun-2022 22:46:24 Europe/Berlin] PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\classes\etc\session_controller.php on line 67
+[22-Jun-2022 22:46:24 Europe/Berlin] SESSIONCONTROLLER::GetCurrentPage -> 
+[22-Jun-2022 22:46:24 Europe/Berlin] PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\classes\etc\session_controller.php on line 68
+[22-Jun-2022 22:46:24 Europe/Berlin] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\xampp\htdocs\classes\etc\session_controller.php on line 54
+[22-Jun-2022 22:46:24 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[22-Jun-2022 22:46:26 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[22-Jun-2022 22:46:26 Europe/Berlin] ##############################################
+[22-Jun-2022 22:46:26 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[22-Jun-2022 22:46:26 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[22-Jun-2022 22:46:26 Europe/Berlin] SESSIONCONTROLLER::GetCurrentPage -> authenticate
+[22-Jun-2022 22:46:26 Europe/Berlin] PHP Warning:  Undefined property: LoginController::$modelo in C:\xampp\htdocs\controllers\login_controller.php on line 29
+[22-Jun-2022 22:46:26 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function login() on null in C:\xampp\htdocs\controllers\login_controller.php:29
+Stack trace:
+#0 C:\xampp\htdocs\libs\app.php(56): LoginController->authenticate()
+#1 C:\xampp\htdocs\index.php(4): App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\controllers\login_controller.php on line 29
+[22-Jun-2022 22:46:26 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[22-Jun-2022 22:46:26 Europe/Berlin] ##############################################
+[22-Jun-2022 22:46:26 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[22-Jun-2022 22:46:26 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[22-Jun-2022 22:46:26 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[22-Jun-2022 22:46:26 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[22-Jun-2022 22:46:26 Europe/Berlin] PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\classes\etc\session_controller.php on line 67
+[22-Jun-2022 22:46:26 Europe/Berlin] SESSIONCONTROLLER::GetCurrentPage -> 
+[22-Jun-2022 22:46:26 Europe/Berlin] PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\classes\etc\session_controller.php on line 68
+[22-Jun-2022 22:46:26 Europe/Berlin] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\xampp\htdocs\classes\etc\session_controller.php on line 54
+[22-Jun-2022 22:46:26 Europe/Berlin] Controller::CargarModelo login.
+[22-Jun-2022 22:46:26 Europe/Berlin] LOGIN::CONTROLLER -> VISTA CARGADA.
+[22-Jun-2022 22:46:26 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[22-Jun-2022 22:46:26 Europe/Berlin] ##############################################
+[22-Jun-2022 22:46:26 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[22-Jun-2022 22:46:26 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[22-Jun-2022 22:46:26 Europe/Berlin] PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\classes\etc\session_controller.php on line 67
+[22-Jun-2022 22:46:26 Europe/Berlin] SESSIONCONTROLLER::GetCurrentPage -> 
+[22-Jun-2022 22:46:26 Europe/Berlin] PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\classes\etc\session_controller.php on line 68
+[22-Jun-2022 22:46:26 Europe/Berlin] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\xampp\htdocs\classes\etc\session_controller.php on line 54
+[22-Jun-2022 22:46:26 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[22-Jun-2022 22:46:28 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[22-Jun-2022 22:46:28 Europe/Berlin] ##############################################
+[22-Jun-2022 22:46:28 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[22-Jun-2022 22:46:28 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[22-Jun-2022 22:46:28 Europe/Berlin] SESSIONCONTROLLER::GetCurrentPage -> authenticate
+[22-Jun-2022 22:46:28 Europe/Berlin] PHP Warning:  Undefined property: LoginController::$modelo in C:\xampp\htdocs\controllers\login_controller.php on line 29
+[22-Jun-2022 22:46:28 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function login() on null in C:\xampp\htdocs\controllers\login_controller.php:29
+Stack trace:
+#0 C:\xampp\htdocs\libs\app.php(56): LoginController->authenticate()
+#1 C:\xampp\htdocs\index.php(4): App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\controllers\login_controller.php on line 29
+[22-Jun-2022 22:46:28 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[22-Jun-2022 22:46:28 Europe/Berlin] ##############################################
+[22-Jun-2022 22:46:28 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[22-Jun-2022 22:46:28 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[22-Jun-2022 22:46:28 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[22-Jun-2022 22:46:28 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[22-Jun-2022 22:46:28 Europe/Berlin] PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\classes\etc\session_controller.php on line 67
+[22-Jun-2022 22:46:28 Europe/Berlin] SESSIONCONTROLLER::GetCurrentPage -> 
+[22-Jun-2022 22:46:28 Europe/Berlin] PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\classes\etc\session_controller.php on line 68
+[22-Jun-2022 22:46:28 Europe/Berlin] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\xampp\htdocs\classes\etc\session_controller.php on line 54
+[22-Jun-2022 22:46:28 Europe/Berlin] Controller::CargarModelo login.
+[22-Jun-2022 22:46:28 Europe/Berlin] LOGIN::CONTROLLER -> VISTA CARGADA.
+[22-Jun-2022 22:46:28 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[22-Jun-2022 22:46:28 Europe/Berlin] ##############################################
+[22-Jun-2022 22:46:28 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[22-Jun-2022 22:46:28 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[22-Jun-2022 22:46:28 Europe/Berlin] PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\classes\etc\session_controller.php on line 67
+[22-Jun-2022 22:46:28 Europe/Berlin] SESSIONCONTROLLER::GetCurrentPage -> 
+[22-Jun-2022 22:46:28 Europe/Berlin] PHP Warning:  Undefined array key 2 in C:\xampp\htdocs\classes\etc\session_controller.php on line 68
+[22-Jun-2022 22:46:28 Europe/Berlin] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in C:\xampp\htdocs\classes\etc\session_controller.php on line 54
+[22-Jun-2022 22:46:28 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA

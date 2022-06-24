@@ -1,5 +1,6 @@
 <?php
-class AlumnoModel extends Model implements IModel
+require_once "models/alumno_interface.php";
+class AlumnoModel extends Model implements AlumnoInterface
 {
     //class atributos
     private $codigo;
@@ -22,7 +23,7 @@ class AlumnoModel extends Model implements IModel
         $this->rut = "";
     }
 
-    public function __getTodosLosDatos()
+    public function getAll()
     {
         $items = array();
         try {
@@ -43,7 +44,7 @@ class AlumnoModel extends Model implements IModel
             error_log("ALUMNO::MODELO => METODO_GETALL::PDOException => " . $th->getMessage());
         }
     }
-    public function __getDatoById($rut)
+    public function get($rut)
     {
         try {
             $query = $this->prepare("SELECT * FROM data WHERE rut=:rut");
@@ -105,7 +106,7 @@ class AlumnoModel extends Model implements IModel
         }
     }
     //antes de utilizar esta funcion se debe crear previamente el objeto
-    public function __guardarDato()
+    public function save()
     {
         try {
             $query = $this->prepare("INSERT INTO data values(:codigo, :nom, :ape, :sede, :carrera, :rut)");
@@ -123,7 +124,7 @@ class AlumnoModel extends Model implements IModel
             return false;
         }
     }
-    public function __actualizarDato()
+    public function update()
     {
         try {
             $query = $this->prepare("UPDATE data SET codigo=:codigo, nom=:nom, ape=:ape, sede=:sede, carrera=:carrera WHERE rut=:rut");
@@ -148,7 +149,7 @@ class AlumnoModel extends Model implements IModel
             return false;
         }
     }
-    public function __borrarDatoById($rut)
+    public function delete($rut)
     {
         try {
             $query = $this->prepare("DELETE FROM data WHERE rut=:rut");
@@ -160,7 +161,7 @@ class AlumnoModel extends Model implements IModel
             return false;
         }
     }
-    public function __setDatosDesdeArray($array)
+    public function from($array)
     {
         $this->setCodigo($array[0]);
         $this->setRut($array[1]);
