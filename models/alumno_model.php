@@ -181,7 +181,21 @@ class AlumnoModel extends Model implements AlumnoInterface
             "carrera" => $this->getCarrera()
         );
     }
-
+    public function existeAlumno($rut)
+    {
+        try {
+            $query = $this->prepare("SELECT * FROM data WHERE rut=:rut");
+            $query->execute([":rut" => $rut]);
+            if ($query->rowCount() > 0) {
+                return true;
+            } else {
+                return false;
+            }
+        } catch (PDOException $th) {
+            error_log("UsuarioModelo => METODO_EXISTS:: " . $th->getMessage());
+            return false;
+        }
+    }
 
     /*          getter y setters        */
 

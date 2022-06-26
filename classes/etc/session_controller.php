@@ -4,9 +4,6 @@ require_once "models/usuario_model.php";
 class SessionController extends Controller
 {
     private $usuario;
-    private $nomUsuario;
-    private $idUsuario;
-    private $sessionUsuario;
     private $session;
     private $sitios = array(
         [
@@ -69,7 +66,7 @@ class SessionController extends Controller
         $url = "";
         for ($i = 0; $i < sizeOf($this->sitios); $i++) {
             if ($this->sitios[$i]["rol"] == $rol) {
-                $url = "" . $this->sitio[$i]['sitio'];
+                $url = "" . $this->sitios[$i]['sitio'];
                 break;
             }
         }
@@ -89,7 +86,7 @@ class SessionController extends Controller
         return false;
     }
 
-    public function initialize($user)
+    public function iniciar($user)
     {
         #solo se guarda el id
         $this->session->setCurrentUser($user->getId(), $user->getNombre());
@@ -98,7 +95,7 @@ class SessionController extends Controller
 
     public function autorizarAcceso($rol)
     {
-        switch ($$rol) {
+        switch ($rol) {
             case 'user':
                 $this->redirect("panel", []);
 
@@ -117,7 +114,7 @@ class SessionController extends Controller
     }
     public function salir()
     {
-        $this->session->closeSession();
+        $this->session->finalizarSesion();
     }
 
     private function existeSesion()
@@ -156,14 +153,10 @@ class SessionController extends Controller
         if ($this->existeSesion()) {
             error_log("SessionController::ValidarSesion() Existe sesion.");
             $rol = $this->getUsuarioSessionData()->getRol();
-            error_log("SessionController::ValidarSesion() Existe rol sesion. -> $rol");
-
             if ($this->isPublic()) {
                 $this->redirect("", []);
             } else {
-                error_log("SessionController::ValidarSesion() -> El sitio es privado.");
                 if ($this->isAuthorized($rol)) {
-                    error_log("SessionController::ValidarSesion() -> El usuario esta autorizado.");
                 } else {
                     $this->redirectDefaultSiteByRol($rol);
                 }

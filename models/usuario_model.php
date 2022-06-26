@@ -18,6 +18,7 @@ class UsuarioModel extends Model implements IModel
     public function save()
     {
         try {
+            
             $query = $this->prepare("INSERT INTO usuarios values (null, :usuario, :contrasena, :rol, :foto, :nombre)");
             $query->execute([
 
@@ -53,39 +54,24 @@ class UsuarioModel extends Model implements IModel
             error_log("UsuarioModelo => METODO_GETALL::PDOException => " . $th->getMessage());
         }
     }
-    public function get($usuario)
+    public function get($param)
     {
         try {
             $query = $this->prepare("SELECT * FROM usuarios WHERE usuario=:usuario");
-            $query->execute([":usuario" => $usuario]);
-            $res = $query->fetch(PDO::FETCH_ASSOC);
+            $query->execute([":usuario" => $param]);
+            $usuario = $query->fetch(PDO::FETCH_ASSOC);
             //set data object
-            $this->setId($res["id"]);
-            $this->setUsuario($res["usuario"]);
-            $this->setContrasena($res["contrasena"]);
-            $this->setRol($res["rol"]);
-            $this->setFoto($res["foto"]);
-            $this->setNombre($res["nombre"]);
+            $this->setId($usuario["id"]);
+            $this->setUsuario($usuario["usuario"]);
+            $this->setContrasena($usuario["contrasena"]);
+            $this->setRol($usuario["rol"]);
+            $this->setFoto($usuario["foto"]);
+            $this->setNombre($usuario["nombre"]);
             return $this;
         } catch (PDOException $th) {
             error_log("UsuarioModelo => METODO_GET_ID::PDOException -> " . $th->getMessage());
+            return NULL;
         }
-        // try {
-        //     $query = $this->prepare("SELECT * FROM usuarios WHERE usuario=:usuario");
-        //     $query->execute([":usuario" => $usuario]);
-        //     $res = $query->fetch(PDO::FETCH_ASSOC);
-        //     $usuario = new UsuarioModel();
-        //     //set data object
-        //     $usuario->setId($res["id"]);
-        //     $usuario->setUsuario($res["usuario"]);
-        //     $usuario->setContrasena($res["contrasena"]);
-        //     $usuario->setRol($res["rol"]);
-        //     $usuario->setFoto($res["foto"]);
-        //     $usuario->setNombre($res["nombre"]);
-        //     return $usuario;
-        // } catch (PDOException $th) {
-        //     error_log("UsuarioModelo => METODO_GET_ID::PDOException -> " . $th->getMessage());
-        // }
     }
     public function delete($usuario)
     {

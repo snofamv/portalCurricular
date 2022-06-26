@@ -9,7 +9,7 @@ class App
         //la segunda posicion llama a los metodos
         //la tercera y cuarta corresponde a parametros etc // -> aun no implementado <-
         $url = isset($_GET["url"]) ? $_GET["url"] : NULL;
-        $url = rtrim($url, "/");
+        $url = trim(rtrim($url, "/"));
         $url = explode("/", $url);
 
         //$controladorBase = "controllers/$url[0].php";

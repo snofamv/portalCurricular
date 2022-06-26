@@ -28,8 +28,7 @@
                     <div class="d-flex m-2">
                         <div class="mt-2 me-3">
                             <p class="fw-bold">
-                                <span style="color: #1966a0;">Sesion: <?php #echo $_SESSION["usuario"]; 
-                                print_r($_SESSION)?></span>
+                                <span style="color: #1966a0;">Sesion: <?php echo $_SESSION["usuario"]["nombre"]; ?></span>
                             </p>
                         </div>
                         <form action="/panel/salir" method="POST">

@@ -14,12 +14,7 @@ class PanelController extends SessionController
     public function salir()
     {
         error_log("PanelController::Salir()->cerrando sesion.");
-        session_unset();
-        session_destroy();
-        $_SESSION["usuario_id"] = null;
-        $_SESSION["usuario_rol"] = null;
-        $_SESSION = null;
-        $this->redirect("login", ["success"=> SuccessMessages::SUCCESS_CIERREDESESION_CORRECTAMENTE]);
-        exit();
+        parent::salir();
+        $this->redirect("", ["success"=> SuccessMessages::SUCCESS_CIERREDESESION_CORRECTAMENTE]);
     }
 }

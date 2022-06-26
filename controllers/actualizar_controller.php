@@ -19,21 +19,22 @@ class ActualizarController extends SessionController
 
     public function actualizarAlumno()
     {
+        $errores = [];
         //esto debe ser validado por si recibe campos o valores vacios en la vista
         if ($_POST && $this->getPOST("btnActualizarAlumno")) {
-            $m = new AlumnoModel();
-            $m->setCodigo($_POST["codigo"]);
-            $m->setRut($this->getPOST("rutModificar"));
-            $m->setNombres($this->getPOST("nombres"));
-            $m->setApellidos($this->getPOST("apellidos"));
-            $m->setSede($this->getPOST("sedes"));
-            $m->setCarrera($this->getPOST("carreras"));
-            if($m->update()){
-                $this->redirect("lista", ["success" => SuccessMessages::SUCCESS_REGISTROACTUALIZADO_ALUMNO]);
+            $this->modelo->setCodigo($_POST["codigo"]);
+            $this->modelo->setRut($this->getPOST("rutModificar"));
+            $this->modelo->setNombres($this->getPOST("nombres"));
+            $this->modelo->setApellidos($this->getPOST("apellidos"));
+            $this->modelo->setSede($this->getPOST("sedes"));
+            $this->modelo->setCarrera($this->getPOST("carreras"));
+
+            if($this->modelo->update()){
                 error_log("ActualizarController::Alumno actualizado con exito.");
+                $this->redirect("lista", ["success" => SuccessMessages::SUCCESS_REGISTROACTUALIZADO_ALUMNO]);
             }else{
-                $this->redirect("lista", ["error" => ErrorMessages::ERROR_ACTUALIZAR_ALUMNO]);
                 error_log("ActualizarController::Error al actualizar el alumno.");
+                $this->redirect("lista", ["error" => ErrorMessages::ERROR_ACTUALIZAR_ALUMNO]);
             }
         }
     }
