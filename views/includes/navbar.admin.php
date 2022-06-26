@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
-
+<?php 
+// echo "<pre>";
+// print_r($_SESSION);
+// echo "</pre>";
+?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

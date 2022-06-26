@@ -12,9 +12,7 @@ class AlumnoModel extends Model implements AlumnoInterface
 
     public function __construct()
     {
-        error_log("Alumno::Modelo Alumno Instanciado.");
         parent::__construct();
-
         $this->codigo = "";
         $this->nombres = "";
         $this->apellidos = "";

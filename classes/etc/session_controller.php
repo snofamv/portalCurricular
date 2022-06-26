@@ -129,13 +129,16 @@ class SessionController extends Controller
     }
     private function getUsuarioSessionData()
     {
-        $id = $this->session->getCurrentUser();
+        #Se encarga de recibir el nombre de la session desde el objeto session y se rescata el id.
+        $usrId = $this->session->getCurrentUser()["id"];
         $this->usuario = new UsuarioModel();
-        $this->usuario->get($id);
+        #el parametro es el RUT
+        $this->usuario->getById($usrId);
         return $this->usuario;
     }
     private function isPublic()
     {
+        #metodo encargado de recorrer array de sitios y verificar si segun su acceso es publico o privado.
         $url = $this->getPaginaActual();
         $url = preg_replace("/\?.*/", "", $url);
 
@@ -149,23 +152,28 @@ class SessionController extends Controller
 
     private function validarSession()
     {
-        error_log("SessionController::ValidarSesion()");
+        #Validar sesion
         if ($this->existeSesion()) {
-            error_log("SessionController::ValidarSesion() Existe sesion.");
+            #si existe sesion obtenemos los datos del usuario objeto y su dato Rol
             $rol = $this->getUsuarioSessionData()->getRol();
             if ($this->isPublic()) {
+                #se verifica si el sitio es publico y se redirecciona
                 $this->redirect("", []);
             } else {
+                #si es privado se verifica segun el ROL si esta autorizado al sitio.
                 if ($this->isAuthorized($rol)) {
+                    #si esta autorizado lo dejo continuar en el flujo.
                 } else {
+                    #si no esta autorizado se redirecciona al sitio por rol.
                     $this->redirectDefaultSiteByRol($rol);
                 }
             }
         } else {
             #no existe session
             if ($this->isPublic()) {
-                //no pasa nada, lo deja entrar;
+                #no pasa nada, lo deja entrar al sitio publico;
             } else {
+                #si no tiene sesion y tampoco est en un sitio publico lo redirecciono al index
                 header("Location: " . URLBASE . "");
             }
         }

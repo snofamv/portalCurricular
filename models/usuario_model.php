@@ -5,7 +5,6 @@ class UsuarioModel extends Model implements IModel
 
     function __construct()
     {
-        error_log("UserModel => Cargado.");
         parent::__construct();
         $this->id = "";
         $this->usuario = "";
@@ -57,8 +56,27 @@ class UsuarioModel extends Model implements IModel
     public function get($param)
     {
         try {
-            $query = $this->prepare("SELECT * FROM usuarios WHERE usuario=:usuario");
-            $query->execute([":usuario" => $param]);
+            $query = $this->prepare("SELECT * FROM usuarios WHERE usuario=:param");
+            $query->execute([":param" => $param]);
+            $usuario = $query->fetch(PDO::FETCH_ASSOC);
+            //set data object
+            $this->setId($usuario["id"]);
+            $this->setUsuario($usuario["usuario"]);
+            $this->setContrasena($usuario["contrasena"]);
+            $this->setRol($usuario["rol"]);
+            $this->setFoto($usuario["foto"]);
+            $this->setNombre($usuario["nombre"]);
+            return $this;
+        } catch (PDOException $th) {
+            error_log("UsuarioModelo => METODO_GET::PDOException -> " . $th->getMessage());
+            return NULL;
+        }
+    }
+    public function getById($param)
+    {
+        try {
+            $query = $this->prepare("SELECT * FROM usuarios WHERE id=:param");
+            $query->execute([":param" => $param]);
             $usuario = $query->fetch(PDO::FETCH_ASSOC);
             //set data object
             $this->setId($usuario["id"]);
