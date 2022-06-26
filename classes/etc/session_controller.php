@@ -63,16 +63,6 @@ class SessionController extends Controller
         $this->validarSession();
     }
 
-    // private function existsSession()
-    // {
-    //     if (!$this->session->exists()) return false;
-    //     if ($this->session->getCurrentUser() == NULL) return false;
-
-    //     $userid = $this->session->getCurrentUser();
-    //     if ($userid) return true;
-
-    //     return false;
-    // }
 
     private function redirectDefaultSiteByRol($rol)
     {
@@ -102,23 +92,27 @@ class SessionController extends Controller
     public function initialize($user)
     {
         #solo se guarda el id
-        $this->session->setCurrentUser($user->getId());
+        $this->session->setCurrentUser($user->getId(), $user->getNombre());
         $this->autorizarAcceso($user->getRol());
     }
 
     public function autorizarAcceso($rol)
     {
-        if ($rol === "user") {
-            $this->redirect("panel", []);
-        } else {
-            $this->redirect("", []);
+        switch ($$rol) {
+            case 'user':
+                $this->redirect("panel", []);
+
+                break;
+            default:
+                $this->redirect("", []);
+                break;
         }
     }
     private function getPaginaActual()
     {
         $actualLink = trim("$_SERVER[REQUEST_URI]");
         $url = explode("/", $actualLink);
-        isset($url[2]) ? error_log("SessionController::getPaginaActual -> /" . $url[1] . "/".$url[2]) : error_log("SessionController::getPaginaActual -> /" . $url[1]);
+        isset($url[2]) ? error_log("SessionController::getPaginaActual -> /" . $url[1] . "/" . $url[2]) : error_log("SessionController::getPaginaActual -> /" . $url[1]);
         return isset($url[2]) ? $url[2] : $url[1];
     }
     public function salir()
@@ -128,7 +122,13 @@ class SessionController extends Controller
 
     private function existeSesion()
     {
-        return $this->session->existeSesion();
+        if (!$this->session->existeSesion()) return false;
+        if ($this->session->getCurrentUser() == NULL) return false;
+
+        $idUsuario = $this->session->getCurrentUser();
+        if ($idUsuario) return true;
+
+        return false;
     }
     private function getUsuarioSessionData()
     {
@@ -173,7 +173,7 @@ class SessionController extends Controller
             if ($this->isPublic()) {
                 //no pasa nada, lo deja entrar;
             } else {
-                header("Location: ". URLBASE . "");
+                header("Location: " . URLBASE . "");
             }
         }
     }

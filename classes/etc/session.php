@@ -11,7 +11,7 @@ class Session
         }
     }
 
-    public function setCurrentUser($user)
+    public function setCurrentUser($user, $name)
     {
         $_SESSION[$this->sessionName] = $user;
     }
