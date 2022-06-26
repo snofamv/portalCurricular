@@ -19,7 +19,6 @@ class App
             error_log("APP::CARGANDO CONTROLADOR LOGIN");
             require_once "controllers/login_controller.php";
             $controlador = new LoginController();
-            $controlador->cargarModelo("login");
             $controlador->render();
             return false;
         }

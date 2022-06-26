@@ -8,7 +8,6 @@ class LoginModel extends Model
 
     public function login($usuario, $clave)
     {
-        error_log("LoginModel::Login -> 1.");
         try {
             $query = $this->prepare("select * from usuarios where usuario=:usuario");
             $query->execute([":usuario" => $usuario]);
@@ -27,7 +26,7 @@ class LoginModel extends Model
                 }
             }
         } catch (PDOException $th) {
-           error_log("LoginModelo:: Login-> ". $th->getMessage());
+           error_log("LoginModelo:: Error -> ". $th->getMessage());
         }
     }
 }

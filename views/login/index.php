@@ -107,7 +107,7 @@
                                 <?php endif; ?>
                             </span>
 
-                            <form action="<?php echo URLBASE; ?>/login/authenticate" method="POST">
+                            <form action="<?php echo URLBASE; ?>/login/autenticar" method="POST">
                                 <!-- 2 column grid layout with text inputs for the first and last names -->
                                 <div class="row">
                                     <!-- Email input -->

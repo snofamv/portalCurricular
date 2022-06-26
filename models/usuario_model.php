@@ -18,10 +18,9 @@ class UsuarioModel extends Model implements IModel
     public function save()
     {
         try {
-            $query = $this->prepare("INSERT INTO usuarios values (:id, :usuario, :contrasena, :rol, :foto, :nombre)");
+            $query = $this->prepare("INSERT INTO usuarios values (null, :usuario, :contrasena, :rol, :foto, :nombre)");
             $query->execute([
 
-                ":id" => $this->id,
                 ":usuario" => $this->usuario,
                 ":contrasena" => $this->contrasena,
                 ":rol" => $this->rol,

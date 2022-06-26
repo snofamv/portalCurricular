@@ -3,13 +3,53 @@ require_once "classes/etc/session.php";
 require_once "models/usuario_model.php";
 class SessionController extends Controller
 {
-    private $userSession;
-    private $username;
-    private $userId;
+    private $usuario;
+    private $nomUsuario;
+    private $idUsuario;
+    private $sessionUsuario;
     private $session;
-    private $sites;
-    private $defaultSites;
-    private $user;
+    private $sitios = array(
+        [
+            "sitio" => "",
+            "acceso" => "publico",
+            "rol" => "",
+        ],
+        [
+            "sitio" => "login",
+            "acceso" => "publico",
+            "rol" => "",
+        ],
+        [
+            "sitio" => "registro",
+            "acceso" => "publico",
+            "rol" => "",
+        ],
+        [
+            "sitio" => "panel",
+            "acceso" => "privado",
+            "rol" => "user",
+        ],
+        [
+            "sitio" => "lista",
+            "acceso" => "privado",
+            "rol" => "user",
+        ],
+        [
+            "sitio" => "buscar",
+            "acceso" => "privado",
+            "rol" => "user",
+        ],
+        [
+            "sitio" => "actualizar",
+            "acceso" => "privado",
+            "rol" => "user",
+        ],
+        [
+            "sitio" => "agregar",
+            "acceso" => "privado",
+            "rol" => "user",
+        ],
+    );
 
     public function __construct()
     {
@@ -20,72 +60,39 @@ class SessionController extends Controller
     function init()
     {
         $this->session = new Session();
-        $json = $this->getJSONFileConfig();
-        $this->sites = $json["sites"];
-        $this->defaultSites = $json["default-sites"];
-        $this->validateSession();
+        $this->validarSession();
     }
-    private function getJSONFileConfig()
-    {
-        $string = file_get_contents("config/access.json");
-        $json = json_decode($string, true);
-        return $json;
-    }
-    private function existsSession()
-    {
-        if (!$this->session->exists()) return false;
-        if ($this->session->getCurrentUser() == NULL) return false;
 
-        $userid = $this->session->getCurrentUser();
-        if ($userid) return true;
+    // private function existsSession()
+    // {
+    //     if (!$this->session->exists()) return false;
+    //     if ($this->session->getCurrentUser() == NULL) return false;
 
-        return false;
-    }
-    private function getUserSessionData()
-    {
-        $id = $this->session->getCurrentUser();
-        $this->user = new UsuarioModel();
-        $this->user->get($id);
-        return $this->user;
-    }
-    private function isPublic()
-    {
-        $currentURL = $this->getCurrentPage();
-        $currentURL = preg_replace("/\?.*/", "", $currentURL);
+    //     $userid = $this->session->getCurrentUser();
+    //     if ($userid) return true;
 
-        for ($i = 0; $i < sizeof($this->sites); $i++) {
-            if ($currentURL == $this->sites[$i]['site'] && $this->sites[$i]["access"] == "public") {
-                return true;
-            }
-        }
-        return false;
-    }
-    private function getCurrentPage()
-    {
-        $actualLink = trim("$_SERVER[REQUEST_URI]");
-        $url = explode("/", $actualLink);
-        error_log("SESSIONCONTROLLER::GetCurrentPage -> " . $url[2]);
-        return $url[2];
-    }
+    //     return false;
+    // }
+
     private function redirectDefaultSiteByRol($rol)
     {
         $url = "";
-        for ($i = 0; $i < sizeOf($this->sites); $i++) {
-            if ($this->sites[$i]["rol"] == $rol) {
-                $url = "" . $this->sites[$i]['site'];
+        for ($i = 0; $i < sizeOf($this->sitios); $i++) {
+            if ($this->sitios[$i]["rol"] == $rol) {
+                $url = "" . $this->sitio[$i]['sitio'];
                 break;
             }
         }
 
-        header("location: " .$url);
+        header("location: " . $url, 301);
     }
     private function isAuthorized($rol)
     {
-        $currentURL = $this->getCurrentPage();
-        $currentURL = preg_replace("/\?.*/", "", $currentURL);
+        $url = $this->getPaginaActual();
+        $url = preg_replace("/\?.*/", "", $url);
 
-        for ($i = 0; $i < sizeof($this->sites); $i++) {
-            if ($currentURL == $this->sites[$i]['site'] && $this->sites[$i]["rol"] == $rol) {
+        for ($i = 0; $i < sizeof($this->sitios); $i++) {
+            if ($url == $this->sitios[$i]['sitio'] && $this->sitios[$i]["rol"] == $rol) {
                 return true;
             }
         }
@@ -96,47 +103,77 @@ class SessionController extends Controller
     {
         #solo se guarda el id
         $this->session->setCurrentUser($user->getId());
-        $this->authorizeAccess($user->getRol());
+        $this->autorizarAcceso($user->getRol());
     }
 
-    private function authorizeAccess($rol)
+    public function autorizarAcceso($rol)
     {
-        switch($rol){
-            case "user":
-                $this->redirect($this->defaultSites["user"], []);
-                break;
-            case "admin":
-                $this->redirect($this->defaultSites["admin"], []);
-                break;
+        if ($rol === "user") {
+            $this->redirect("panel", []);
+        } else {
+            $this->redirect("", []);
         }
     }
-
-    public function logout()
+    private function getPaginaActual()
+    {
+        $actualLink = trim("$_SERVER[REQUEST_URI]");
+        $url = explode("/", $actualLink);
+        isset($url[2]) ? error_log("SessionController::getPaginaActual -> /" . $url[1] . "/".$url[2]) : error_log("SessionController::getPaginaActual -> /" . $url[1]);
+        return isset($url[2]) ? $url[2] : $url[1];
+    }
+    public function salir()
     {
         $this->session->closeSession();
     }
 
-
-    private function validateSession()
+    private function existeSesion()
     {
-        if ($this->existsSession()) {
-            $rol = $this->getUserSessionData()->getRol();
+        return $this->session->existeSesion();
+    }
+    private function getUsuarioSessionData()
+    {
+        $id = $this->session->getCurrentUser();
+        $this->usuario = new UsuarioModel();
+        $this->usuario->get($id);
+        return $this->usuario;
+    }
+    private function isPublic()
+    {
+        $url = $this->getPaginaActual();
+        $url = preg_replace("/\?.*/", "", $url);
+
+        for ($i = 0; $i < sizeof($this->sitios); $i++) {
+            if ($url == $this->sitios[$i]['sitio'] && $this->sitios[$i]["acceso"] == "publico") {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private function validarSession()
+    {
+        error_log("SessionController::ValidarSesion()");
+        if ($this->existeSesion()) {
+            error_log("SessionController::ValidarSesion() Existe sesion.");
+            $rol = $this->getUsuarioSessionData()->getRol();
+            error_log("SessionController::ValidarSesion() Existe rol sesion. -> $rol");
 
             if ($this->isPublic()) {
-                $this->redirectDefaultSiteByRol($rol);
-            }else{
-                if($this->isAuthorized($rol) ){
-
-                }else{
+                $this->redirect("", []);
+            } else {
+                error_log("SessionController::ValidarSesion() -> El sitio es privado.");
+                if ($this->isAuthorized($rol)) {
+                    error_log("SessionController::ValidarSesion() -> El usuario esta autorizado.");
+                } else {
                     $this->redirectDefaultSiteByRol($rol);
                 }
             }
         } else {
             #no existe session
-            if($this->isPublic()){
+            if ($this->isPublic()) {
                 //no pasa nada, lo deja entrar;
-            }else{
-                header("location: ". URLBASE . "");
+            } else {
+                header("Location: ". URLBASE . "");
             }
         }
     }

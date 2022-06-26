@@ -2,7 +2,7 @@
 
 class Session
 {
-    private $sessionName = "user";
+    private $sessionName = "usuario";
 
     public function __construct()
     {
@@ -20,13 +20,13 @@ class Session
         return $_SESSION[$this->sessionName];
     }
 
-    public function closeSession ()
+    public function finalizarSesion ()
     {
         session_unset();
         session_destroy();
     }
 
-    public function exists()
+    public function existeSesion()
     {
         return isset($_SESSION[$this->sessionName]);
     }
