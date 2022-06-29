@@ -110,7 +110,8 @@ class SessionController extends Controller
         $actualLink = trim("$_SERVER[REQUEST_URI]");
         $url = explode("/", $actualLink);
         isset($url[2]) ? error_log("SessionController::getPaginaActual -> /" . $url[1] . "/" . $url[2]) : error_log("SessionController::getPaginaActual -> /" . $url[1]);
-        return isset($url[2]) ? $url[2] : $url[1];
+        #return isset($url[2]) ? $url[2] : $url[1];
+        return $url[1];
     }
     public function salir()
     {

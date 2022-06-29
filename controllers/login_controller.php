@@ -6,18 +6,17 @@ class LoginController extends SessionController
     {
         error_log("LOGIN::CONTROLLER => CONTROLADOR INICIADO.");
         parent::__construct();
-        $this->cargarModelo("login");
-
     }
 
     public function render()
     {
-        error_log("LOGIN::CONTROLLER -> VISTA CARGADA.");
         $this->vista->render("login/index", []);
+        error_log("LOGIN::CONTROLLER -> VISTA CARGADA.");
     }
 
     public function autenticar()
     {
+        $this->cargarModelo("login");
         if ($this->existsPOST(["usuario", "contrasena"])) {
             $usuarioParam = $this->getPOST("usuario");
             $contrasenaParam = $this->getPOST("contrasena");
@@ -29,5 +28,4 @@ class LoginController extends SessionController
             }
         }
     }
-
 }

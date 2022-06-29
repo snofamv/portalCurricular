@@ -3,7 +3,6 @@ require "views/includes/navbar.admin.php";
 ?>
 <style>
     .myInput {
-        background-image: url('/css/searchicon.png');
         /* Add a search icon to input */
         background-position: 10px 12px;
         /* Position the search icon */
@@ -59,15 +58,15 @@ require "views/includes/navbar.admin.php";
 
         <div class="">
             <div>
-                <form class="d-flex pb-1" action="/buscar/alumnoSede" role="search" method="GET">
+                <form class="d-flex pb-1" action="/buscar/alumnoSede" role="search" method="POST" target="_self">
                     <input class="form-control" type="search" placeholder="Buscar Sedes" aria-label="Buscar" name="sede">
-                    <button class="btn btn-success ms-1" type="submit">Buscar</button>
+                    <input class="btn btn-success ms-1" type="submit" name="btnBuscar" value="Buscar"></input>
                 </form>
             </div>
             <div>
-                <form class="d-flex pb-1 mb-5" action="/buscar/alumnoCarrera" role="search" method="GET">
+                <form class="d-flex pb-1 mb-5" action="/buscar/alumnoCarrera" role="search" method="POST" target="_self">
                     <input class="form-control" type="search" placeholder="Buscar Carreras" aria-label="Buscar" name="carrera">
-                    <button class="btn btn-success ms-1" type="submit">Buscar</button>
+                    <input class="btn btn-success ms-1" type="submit" name="btnBuscar" value="Buscar"></input>
                 </form>
             </div>
 
@@ -90,52 +89,35 @@ require "views/includes/navbar.admin.php";
                         <th>Carrera</th>
                         <th>Opciones</th>
                     </tr>
-                    <?php if (isset($d) && isset($_GET["rut"])) :
-                        #var_dump($d);
-                    ?>
-                        <!-- Resolve this into an objetc:: fabian -->
-                        <tr>
-                            <td><?php echo $d["codigo"]; ?></td>
-                            <td><?php echo $d["rut"]; ?></td>
-                            <td><?php echo $d["nombres"]; ?></td>
-                            <td><?php echo $d["apellidos"]; ?></td>
-                            <td><?php echo $d["sede"]; ?></td>
-                            <td><?php echo $d["carrera"]; ?></td>
-                            <td>
-                                <form action="/lista/modificarAlumno" method="post">
-                                    <input type="text" name="rut" id="rut" value="<?php echo $d["rut"]; ?>" hidden>
-                                    <input type="submit" value="Modificar" name="btnModificar"></input>
-                                </form>
-                            </td>
-                        </tr>
-                    <?php elseif (isset($d) && isset($_GET["sede"])) : ?>
+                    
+                    <?php if (isset($d) && isset($_POST["sede"])) : ?>
                         <?php foreach ($d as  $alumno) : ?>
                             <tr>
                                 <td> <?php echo $alumno->getCodigo(); ?></td>
                                 <td> <?php echo $alumno->getRut(); ?></td>
                                 <td> <?php echo $alumno->getNombres(); ?></td>
                                 <td> <?php echo $alumno->getApellidos(); ?></td>
-                                <td> <?php echo $alumno->getCarrera(); ?></td>
                                 <td> <?php echo $alumno->getSede(); ?></td>
+                                <td> <?php echo $alumno->getCarrera(); ?></td>
                                 <td>
-                                    <form action="/lista/modificarAlumno" method="post">
+                                    <form action="/buscar/modificarAlumno" method="post">
                                         <input type="text" name="rut" id="rut" value="<?php echo $alumno->getRut(); ?>" hidden>
                                         <input type="submit" value="Modificar" name="btnModificar"></input>
                                     </form>
                                 </td>
                             </tr>
                         <?php endforeach; ?>
-                    <?php elseif (isset($d) && isset($_GET["carrera"])) : ?>
+                    <?php elseif (isset($d) && isset($_POST["carrera"])) : ?>
                         <?php foreach ($d as  $alumno) : ?>
                             <tr>
                                 <td> <?php echo $alumno->getCodigo(); ?></td>
                                 <td> <?php echo $alumno->getRut(); ?></td>
                                 <td> <?php echo $alumno->getNombres(); ?></td>
                                 <td> <?php echo $alumno->getApellidos(); ?></td>
-                                <td> <?php echo $alumno->getCarrera(); ?></td>
                                 <td> <?php echo $alumno->getSede(); ?></td>
+                                <td> <?php echo $alumno->getCarrera(); ?></td>
                                 <td>
-                                    <form action="/lista/modificarAlumno" method="post">
+                                    <form action="/buscar/modificarAlumno" method="post">
                                         <input type="text" name="rut" id="rut" value="<?php echo $alumno->getRut(); ?>" hidden>
                                         <input type="submit" value="Modificar" name="btnModificar"></input>
                                     </form>

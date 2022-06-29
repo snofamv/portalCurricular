@@ -14,6 +14,7 @@ class ErrorMessages
     const ERROR_ELIMINARALUMNO_ERROR = "986b82d511f14de2BBC99f26QQKT71576" ;
     const ERROR_REGISTRAR_NUEVOALUMNO = "986b82d511f14de2KKJ69f26QQKT71576" ;
     const ERROR_REGISTRAR_YA_EXISTE_ALUMNO = "986b82d511f14de2KKJ69f26QKK87LO089" ;
+    const ERROR_REGISTRAR_ALUMNO_CAMPOS_VACIOS = "986b82d511f14de2KKJ69f2LK99KJ009P9" ;
     const ERROR_ACTUALIZAR_ALUMNO = "986b82d511f14de2KKJKJI88YQKT71576" ;
     const ERROR_RUTA_NOENCONTRADA = "886b82d511f14de2LKPPI88YQKT71576" ;
     const ERROR_MODULO_DESHABILITADO = "886b82d511f14de2876JJK8YQKT71576" ;
@@ -49,6 +50,7 @@ class ErrorMessages
             ErrorMessages::ERROR_BUSCAR_ALUMNO_SEDE_NOEXISTE => "No se pueden encontrar datos en la sede ingresada o no existe.",
             ErrorMessages::ERROR_BUSCAR_ALUMNO_CARRERA_NOEXISTE => "No se pueden encontrar datos en la carrera ingresada o no existe.",
             ErrorMessages::ERROR_REGISTRAR_YA_EXISTE_ALUMNO => "El alumno ya existe en nuestros registros.",
+            ErrorMessages::ERROR_REGISTRAR_ALUMNO_CAMPOS_VACIOS => "Error, porfavor rellenar los campos vacios.",
         ];
     }
 

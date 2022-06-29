@@ -12,7 +12,7 @@ require "views/includes/navbar.admin.php";
         <!--  -->
         <div class="col">
 
-            <form action="<?php echo URLBASE;?>/actualizar/actualizarAlumno" method="POST" target="_self">
+            <form action="/actualizar/actualizarAlumno" method="POST" target="_self">
                 <!--  -->
                 <!--  -->
 

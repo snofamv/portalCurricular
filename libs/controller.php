@@ -68,10 +68,4 @@ class Controller
         header("Location: " . URLBASE . "/" . $ruta . $params);
     }
 
-    public function depurar($dato)
-    {
-        echo "<pre>";
-        var_dump($dato);
-        echo "</pre>";
-    }
 }
