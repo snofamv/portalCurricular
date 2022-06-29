@@ -22,7 +22,7 @@ class ActualizarController extends SessionController
         $this->cargarModelo("alumno");
         $elementoAnterior = NULL;
         //esto debe ser validado por si recibe campos o valores vacios en la vista
-        if ($_POST && $this->existsPOST(["btnActualizarAlumno"])) {
+        if ($this->existsPOST(["btnActualizarAlumno"])) {
             $elementoAnterior = $this->modelo->get($this->getPOST("rutModificar"));
             $this->modelo->setRut($this->getPOST("rutModificar"));
             empty($this->getPOST("codigo"))  ? $this->modelo->setCodigo($elementoAnterior->getCodigo()) :  $this->modelo->setCodigo($this->getPOST("codigo"));

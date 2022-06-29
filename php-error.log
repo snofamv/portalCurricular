@@ -7364,3 +7364,338 @@ Stack trace:
 [29-Jun-2022 03:14:15 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
 [29-Jun-2022 03:14:15 Europe/Berlin] SessionController::getPaginaActual -> /
 [29-Jun-2022 03:14:15 Europe/Berlin] LOGIN::CONTROLLER -> VISTA CARGADA.
+[29-Jun-2022 03:15:50 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:50 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:50 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:50 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[29-Jun-2022 03:15:50 Europe/Berlin] SessionController::getPaginaActual -> /login/autenticar
+[29-Jun-2022 03:15:50 Europe/Berlin] Controller::CargarModelo login.
+[29-Jun-2022 03:15:50 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:50 Europe/Berlin] LoginModel::Login -> credenciales validadas.
+[29-Jun-2022 03:15:50 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:50 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:50 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:50 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:50 Europe/Berlin] SessionController::getPaginaActual -> /panel
+[29-Jun-2022 03:15:50 Europe/Berlin] SessionController::getPaginaActual -> /panel
+[29-Jun-2022 03:15:50 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panel]
+[29-Jun-2022 03:15:50 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:50 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:50 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:50 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:50 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:50 Europe/Berlin] SessionController::getPaginaActual -> /favicon.ico
+[29-Jun-2022 03:15:50 Europe/Berlin] SessionController::getPaginaActual -> /favicon.ico
+[29-Jun-2022 03:15:50 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:50 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:50 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:50 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:50 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:50 Europe/Berlin] SessionController::getPaginaActual -> /panel
+[29-Jun-2022 03:15:50 Europe/Berlin] SessionController::getPaginaActual -> /panel
+[29-Jun-2022 03:15:50 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panel]
+[29-Jun-2022 03:15:52 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:52 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:52 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:52 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:52 Europe/Berlin] SessionController::getPaginaActual -> /lista
+[29-Jun-2022 03:15:52 Europe/Berlin] SessionController::getPaginaActual -> /lista
+[29-Jun-2022 03:15:52 Europe/Berlin] APP::RENDERIZANDO VISTA -> [lista]
+[29-Jun-2022 03:15:52 Europe/Berlin] Controller::CargarModelo alumno.
+[29-Jun-2022 03:15:52 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:52 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:52 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:52 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:52 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:52 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:52 Europe/Berlin] SessionController::getPaginaActual -> /css/searchicon.png
+[29-Jun-2022 03:15:52 Europe/Berlin] SessionController::getPaginaActual -> /css/searchicon.png
+[29-Jun-2022 03:15:52 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:52 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:52 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:52 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:52 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:52 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:52 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:52 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:52 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:52 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:52 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:52 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:52 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:52 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:52 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:52 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:52 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:52 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:52 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:52 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:52 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:52 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:52 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:52 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:52 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:52 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:52 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:52 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:52 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:52 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:53 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:53 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:53 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:53 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:53 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:53 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:53 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:53 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:53 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:53 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:53 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:53 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:53 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:53 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:53 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:53 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:53 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:54 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:54 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:54 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:54 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:54 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:54 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:54 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:54 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:54 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:54 Europe/Berlin] SessionController::getPaginaActual -> /css/panel
+[29-Jun-2022 03:15:54 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:54 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:54 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:54 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:54 Europe/Berlin] SessionController::getPaginaActual -> /favicon.ico
+[29-Jun-2022 03:15:54 Europe/Berlin] SessionController::getPaginaActual -> /favicon.ico
+[29-Jun-2022 03:15:54 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:54 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:54 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:54 Europe/Berlin] SessionController::getPaginaActual -> /panel
+[29-Jun-2022 03:15:54 Europe/Berlin] SessionController::getPaginaActual -> /panel
+[29-Jun-2022 03:15:54 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panel]
+[29-Jun-2022 03:15:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:54 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:54 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:54 Europe/Berlin] SessionController::getPaginaActual -> /panel
+[29-Jun-2022 03:15:54 Europe/Berlin] SessionController::getPaginaActual -> /panel
+[29-Jun-2022 03:15:54 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panel]
+[29-Jun-2022 03:15:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:54 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:54 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:54 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:54 Europe/Berlin] SessionController::getPaginaActual -> /favicon.ico
+[29-Jun-2022 03:15:54 Europe/Berlin] SessionController::getPaginaActual -> /favicon.ico
+[29-Jun-2022 03:15:54 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:54 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:54 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:54 Europe/Berlin] SessionController::getPaginaActual -> /panel
+[29-Jun-2022 03:15:54 Europe/Berlin] SessionController::getPaginaActual -> /panel
+[29-Jun-2022 03:15:54 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panel]
+[29-Jun-2022 03:15:56 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:56 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:56 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:56 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:56 Europe/Berlin] SessionController::getPaginaActual -> /buscar
+[29-Jun-2022 03:15:56 Europe/Berlin] SessionController::getPaginaActual -> /buscar
+[29-Jun-2022 03:15:56 Europe/Berlin] APP::RENDERIZANDO VISTA -> [buscar]
+[29-Jun-2022 03:15:56 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:56 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:56 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:56 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:56 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:56 Europe/Berlin] SessionController::getPaginaActual -> /favicon.ico
+[29-Jun-2022 03:15:56 Europe/Berlin] SessionController::getPaginaActual -> /favicon.ico
+[29-Jun-2022 03:15:56 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:56 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:56 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:56 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:56 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:56 Europe/Berlin] SessionController::getPaginaActual -> /panel
+[29-Jun-2022 03:15:56 Europe/Berlin] SessionController::getPaginaActual -> /panel
+[29-Jun-2022 03:15:56 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panel]
+[29-Jun-2022 03:15:57 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:57 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:57 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:57 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:57 Europe/Berlin] SessionController::getPaginaActual -> /buscar/alumnoSede
+[29-Jun-2022 03:15:57 Europe/Berlin] SessionController::getPaginaActual -> /buscar/alumnoSede
+[29-Jun-2022 03:15:57 Europe/Berlin] Controller::CargarModelo alumno.
+[29-Jun-2022 03:15:57 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:57 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:57 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:57 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:57 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:57 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:57 Europe/Berlin] SessionController::getPaginaActual -> /favicon.ico
+[29-Jun-2022 03:15:57 Europe/Berlin] SessionController::getPaginaActual -> /favicon.ico
+[29-Jun-2022 03:15:57 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:57 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:57 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:57 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:57 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:57 Europe/Berlin] SessionController::getPaginaActual -> /panel
+[29-Jun-2022 03:15:57 Europe/Berlin] SessionController::getPaginaActual -> /panel
+[29-Jun-2022 03:15:57 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panel]
+[29-Jun-2022 03:15:58 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:58 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:58 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:58 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:58 Europe/Berlin] SessionController::getPaginaActual -> /buscar/alumnoCarrera
+[29-Jun-2022 03:15:58 Europe/Berlin] SessionController::getPaginaActual -> /buscar/alumnoCarrera
+[29-Jun-2022 03:15:58 Europe/Berlin] Controller::CargarModelo alumno.
+[29-Jun-2022 03:15:58 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:58 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:58 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:58 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:58 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:58 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:58 Europe/Berlin] SessionController::getPaginaActual -> /favicon.ico
+[29-Jun-2022 03:15:58 Europe/Berlin] SessionController::getPaginaActual -> /favicon.ico
+[29-Jun-2022 03:15:58 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:15:58 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:58 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:58 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:58 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:58 Europe/Berlin] SessionController::getPaginaActual -> /panel
+[29-Jun-2022 03:15:58 Europe/Berlin] SessionController::getPaginaActual -> /panel
+[29-Jun-2022 03:15:58 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panel]
+[29-Jun-2022 03:15:59 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:59 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:59 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:59 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:59 Europe/Berlin] SessionController::getPaginaActual -> /buscar/alumnoSede
+[29-Jun-2022 03:15:59 Europe/Berlin] SessionController::getPaginaActual -> /buscar/alumnoSede
+[29-Jun-2022 03:15:59 Europe/Berlin] Controller::CargarModelo alumno.
+[29-Jun-2022 03:15:59 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:15:59 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:15:59 Europe/Berlin] ##############################################
+[29-Jun-2022 03:15:59 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:15:59 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[29-Jun-2022 03:15:59 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:16:00 Europe/Berlin] SessionController::getPaginaActual -> /favicon.ico
+[29-Jun-2022 03:16:00 Europe/Berlin] SessionController::getPaginaActual -> /favicon.ico
+[29-Jun-2022 03:16:00 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[29-Jun-2022 03:16:00 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[29-Jun-2022 03:16:00 Europe/Berlin] ##############################################
+[29-Jun-2022 03:16:00 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[29-Jun-2022 03:16:00 Europe/Berlin] Conexion a BD Exitosa.
+[29-Jun-2022 03:16:00 Europe/Berlin] SessionController::getPaginaActual -> /panel
+[29-Jun-2022 03:16:00 Europe/Berlin] SessionController::getPaginaActual -> /panel
+[29-Jun-2022 03:16:00 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panel]

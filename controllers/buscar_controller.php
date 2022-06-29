@@ -9,7 +9,6 @@ class BuscarController extends SessionController implements ListaInterface
 
     public function render()
     {
-        $this->cargarModelo("alumno");
         $this->vista->render("panel/buscar", $d = []);
     }
 
