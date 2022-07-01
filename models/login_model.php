@@ -9,8 +9,8 @@ class LoginModel extends Model
     public function login($usuario, $clave)
     {
         try {
-            $query = $this->prepare("select * from usuarios where usuario=:usuario");
-            $query->execute([":usuario" => $usuario]);
+            $query = $this->prepare("select * from usuarios where usuario=:usuario and estado=:estado");
+            $query->execute([":usuario" => $usuario, ":estado"=>1]);
 
             if($query->rowCount() == 1){
                 $item = $query->fetch(PDO::FETCH_ASSOC);

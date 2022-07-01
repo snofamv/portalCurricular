@@ -1,5 +1,5 @@
 <?php
-require "views/includes/navbar.admin.php";
+require "views/includes/navbar.user.php";
 ?>
 <style>
     .myInput {

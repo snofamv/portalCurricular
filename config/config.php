@@ -22,7 +22,7 @@ function autoLoad()
 define("URLBASE", "http://localhost:80");
 define("BASETITLE", "Portal curricular");
 define("USERDB", "root");
-define("PASSDB", "fabiancl1");
+define("PASSDB", "");
 define("HOSTDB", "localhost");
 define("NAMEDB", "test");
 define("CHARSETDB", "utf8mb4");

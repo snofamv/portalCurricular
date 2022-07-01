@@ -11,13 +11,12 @@ class LoginController extends SessionController
     public function render()
     {
         $this->vista->render("login/index", []);
-        error_log("LOGIN::CONTROLLER -> VISTA CARGADA.");
     }
 
     public function autenticar()
     {
-        $this->cargarModelo("login");
         if ($this->existsPOST(["usuario", "contrasena"])) {
+            $this->cargarModelo("login");
             $usuarioParam = $this->getPOST("usuario");
             $contrasenaParam = $this->getPOST("contrasena");
             $usuario = $this->modelo->login($usuarioParam, $contrasenaParam);

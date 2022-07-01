@@ -46,6 +46,13 @@ class SessionController extends Controller
             "acceso" => "privado",
             "rol" => "user",
         ],
+        
+        [
+            "sitio" => "admin",
+            "acceso" => "privado",
+            "rol" => "admin",
+        ],
+
     );
 
     public function __construct()
@@ -100,8 +107,9 @@ class SessionController extends Controller
                 $this->redirect("panel", []);
 
                 break;
-            default:
-                $this->redirect("", []);
+            case 'admin':
+                $this->redirect("admin", []);
+
                 break;
         }
     }
@@ -109,8 +117,6 @@ class SessionController extends Controller
     {
         $actualLink = trim("$_SERVER[REQUEST_URI]");
         $url = explode("/", $actualLink);
-        isset($url[2]) ? error_log("SessionController::getPaginaActual -> /" . $url[1] . "/" . $url[2]) : error_log("SessionController::getPaginaActual -> /" . $url[1]);
-        #return isset($url[2]) ? $url[2] : $url[1];
         return $url[1];
     }
     public function salir()

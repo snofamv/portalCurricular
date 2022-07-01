@@ -1,5 +1,5 @@
 <?php
-require "views/includes/navbar.user.php";
+require "views/includes/navbar.admin.php";
 
 ?>
 
@@ -93,6 +93,22 @@ require "views/includes/navbar.user.php";
                 <div class="d-grid">
 
                     <a href="/agregar" class="btn btn-primary btn-lg">Agregar</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col rounded p-2">
+            <div class="card mx-auto shadow p-2" style="width: 370px; height: 400px; background-color: #8CC0DE;">
+                <img src="https://www.svgrepo.com/show/207527/settings-configuration.svg" class="card-img-top mx-auto mx-auto" alt="..." style="max-width: 200px;">
+                <div class="card-body">
+                    <h5 class="card-title">Configuracion de cuenta</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="d-grid">
+
+                    <a href="/admin/config" class="btn btn-secondary btn-lg">Configuracion de cuenta</a>
                 </div>
             </div>
         </div>
