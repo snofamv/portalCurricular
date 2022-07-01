@@ -12,10 +12,10 @@
     <title>Portal Curricular</title>
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column ">
 
     <!-- Section: Design Block -->
-    <section class="background-radial-gradient overflow-hidden">
+    <section class="background-radial-gradient overflow-hidden min-vh-100">
         <style>
             .background-radial-gradient {
                 background-color: hsl(37, 90%, 61%);
@@ -80,44 +80,45 @@
                                 <a class="navbar-brand" href="/"><img class="row" src="https://cftpucv.cl/wp-content/uploads/2020/10/logo-CFT-PUCV-con-catolica.png" alt="" width="500px"></a>
                             </div>
 
+                            <span class="h5">
 
+                                <?php if (!empty($this->datos) && isset($this->datos["success"])) : ?>
+                
+                                    <div class="alert alert-success alert-dismissible d-flex align-items-center" style="width: 100%;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="currentColor" class="bi bi-information-triangle-fill" viewBox="0 0 16 16">
+                                            <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg>
+                                        <p class="ps-4 font-monospace">
+                                            <strong><?php $this->showMessages(); ?></strong>
+                                        </p>
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                    </div>
 
-                            <?php if (!empty($this->datos) && isset($this->datos["success"])) : ?>
+                                <?php elseif (!empty($this->datos) && isset($this->datos["error"])) : ?>
+                                    <div class="alert alert-danger alert-dismissible d-flex justify-content-center mx-auto" style="width: 100%;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="currentColor" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                                            <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                        </svg>
+                                        <p class="ps-4 font-monospace">
+                                            <strong><?php $this->showMessages(); ?></strong>
+                                        </p>
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                    </div>
+                                <?php endif; ?>
+                            </span>
 
-                                <div class="alert alert-success alert-dismissible d-flex justify-content-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
-                                        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                                    </svg>
-                                    <p class="ps-4 font-monospace">
-                                        <strong><?php $this->showMessages(); ?></strong>
-                                    </p>
-                                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                                </div>
-
-                            <?php elseif (!empty($this->datos) && isset($this->datos["error"])) : ?>
-                                <div class="alert alert-danger alert-dismissible d-flex justify-content-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
-                                        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                                    </svg>
-                                    <p class="ps-4 font-monospace">
-                                        <strong><?php $this->showMessages(); ?></strong>
-                                    </p>
-                                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                                </div>
-                            <?php endif; ?>
-
-                            <form action="<?php echo URLBASE; ?>/autentificador/acceder" method="POST">
+                            <form action="<?php echo URLBASE; ?>/login/autenticar" method="POST">
                                 <!-- 2 column grid layout with text inputs for the first and last names -->
                                 <div class="row">
                                     <!-- Email input -->
                                     <div class="form-outline mb-4">
-                                        <input type="text" id="form3Example3" class="form-control" placeholder="Rut aqui" name="rut" />
+                                        <input type="text" id="form3Example3" class="form-control" placeholder="Rut aqui" name="usuario" />
                                         <label class="form-label" for="form3Example3" hidden>Rut</label>
                                     </div>
 
                                     <!-- Password input -->
                                     <div class="form-outline mb-4">
-                                        <input type="password" id="form3Example4" class="form-control" placeholder="Contraseña aqui" name="clave" />
+                                        <input type="password" id="form3Example4" class="form-control" placeholder="Contraseña aqui" name="contrasena" />
                                         <label class="form-label" for="form3Example4" hidden>Contraseña</label>
                                     </div>
 
@@ -127,7 +128,7 @@
                                     <!-- Register buttons -->
                                     <div class="text-center p-2">
                                         <p>¿Olvidaste tu contraseña?</p>
-                                        <a class="btn btn-secondary btn-block mb-4 " href="#">Recuperar contraseña</a>
+                                        <a class="btn btn-secondary btn-block mb-4" hidden href="#">Recuperar contraseña</a>
                                         <a class="btn btn-secondary btn-block mb-4 " href="/registro">Solicitar registro</a>
                                     </div>
                             </form>
@@ -139,6 +140,4 @@
     </section>
     <!-- Section: Design Block -->
 
-</body>
-
-</html>
+    <?php require "views/includes/footer.template.php"; ?>

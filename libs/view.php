@@ -10,13 +10,24 @@ class View
     }
 
     //metodo render muestra una vista segun el parametro definido (url)
-    function render($nombre, $d = [], $d2 = null)
+    function render($nombre, $d = [])
     {
-        
+
         $this->datos = $d;
-        $this->datos2 = $d2;
         $this->handleMessages();
         require "views/$nombre.php";
+    }
+
+    public function hashearDato($dato)
+    {
+        #se almacena el parametro en una variable ya hasheado.
+        $datoHasheado = crypt($dato, PASSWORD_DEFAULT); // dejar que el salt se genera automáticamente
+
+        if (hash_equals($datoHasheado, crypt($dato, $datoHasheado))) {
+            return true;
+        } else {
+            return false;
+        }
     }
     public function showMessages()
     {
@@ -26,13 +37,13 @@ class View
     public function showErrors()
     {
         if (array_key_exists("error", $this->datos)) {
-            echo "<div class='error'> {$this->datos['error']} </div>";
+            echo "<div > {$this->datos['error']} </div>";
         }
     }
     public function showSuccess()
     {
         if (array_key_exists("success", $this->datos)) {
-            echo "<div class='success'> {$this->datos['success']} </div>";
+            echo "<div > {$this->datos['success']} </div>";
         }
     }
 
@@ -62,6 +73,4 @@ class View
             $this->datos["success"] = $success->get($hash);
         }
     }
-
-
 }

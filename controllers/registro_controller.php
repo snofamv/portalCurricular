@@ -1,7 +1,7 @@
 <?php
-require_once "models/usuario.php";
+require_once "models/usuario_model.php";
 
-class Registro extends Controller
+class RegistroController extends Controller
 {
     function __construct()
     {
@@ -15,26 +15,27 @@ class Registro extends Controller
 
     function nuevoUsuario()
     {
-        if ($this->existsPOST(["rut", "clave"])) {
-            $rut = $this->getPOST("rut");
-            $clave = $this->getPOST("clave");
+        $this->cargarModelo("usuario");
+        if ($this->existsPOST(["usuario", "contrasena"])) {
+            $usuario = $this->getPOST("usuario");
+            $contrasena = $this->getPOST("contrasena");
 
             //esto se debe validar aun mas desde elservidor y front con js
-            if ($rut == "" || empty($rut) || $clave == "" || empty($clave)) {
+            if ($usuario == "" || empty($usuario) || $contrasena == "" || empty($contrasena)) {
                 $this->redirect("registro", ["error" => ErrorMessages::ERROR_REGISTRO_NUEVOUSUARIO_CAMPOS_VACIO]);
-            } else if (strlen($rut) < 4 || strlen($clave) < 4) {
+            } else if (strlen($usuario) < 4 || strlen($contrasena) < 4) {
                 $this->redirect("registro", ["error" => ErrorMessages::ERROR_REGISTRO_NUEVOUSUARIO_CAMPOS_MINIMOS]);
             } else {
 
 
-                $objUsuario = new Usuario();
-                $objUsuario->setRut($rut);
-                $objUsuario->setClave($clave);
+                $objUsuario = new UsuarioModel();
+                $objUsuario->setUsuario($usuario);
+                $objUsuario->setContrasena($contrasena);
                 $objUsuario->setRol("user");
                 //esto funciona correctamente al registrar un usuario pero no retorna el mensaje
-                if ($objUsuario->existeUsuario($rut)) {
+                if ($objUsuario->existeUsuario($usuario)) {
                     $this->redirect("registro", ["error" => ErrorMessages::ERROR_REGISTRO_NUEVOUSUARIO_EXISTE]);
-                } else if ($objUsuario->__guardarDato()) {
+                } else if ($objUsuario->save()) {
                     $this->redirect("", ["success" => SuccessMessages::SUCCESS_REGISTRO_NUEVOUSUARIO]);
                 } else {
                     $this->redirect("registro", ["error" => ErrorMessages::ERROR_REGISTRO_NUEVOUSUARIO_ERROR]);

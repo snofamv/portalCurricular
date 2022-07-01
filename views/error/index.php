@@ -14,11 +14,7 @@
     <div class="text-center m-5">
 
         <fieldset>
-            <h1 style="color:red;">Error: <?php echo $this->datos["tipo"]; ?></h1>
-            <p style="color:red;"><?php
-                                    // Plaintext password entered by the user
-                                    echo $this->datos["error"];
-                                    ?></p>
+            <h1 style="color:red;">Error: <?php echo $d; ?></h1>
             <div class="d-grid gap-2 col-3 mx-auto">
                 <a class="btn btn-primary" href="/">Volver a inicio</a>
             </div>

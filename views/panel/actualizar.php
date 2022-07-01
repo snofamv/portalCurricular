@@ -1,5 +1,5 @@
 <?php
-require "views/includes/navbar.admin.php";
+require "views/includes/navbar.user.php";
 #D is a data global variable;
 ?>
 <!-- Tabla de datos -->
@@ -12,7 +12,7 @@ require "views/includes/navbar.admin.php";
         <!--  -->
         <div class="col">
 
-            <form action="<?php echo URLBASE;?>/actualizar/actualizarAlumno" method="POST" target="_self">
+            <form action="/actualizar/actualizarAlumno" method="POST" target="_self">
                 <!--  -->
                 <!--  -->
 
@@ -21,7 +21,6 @@ require "views/includes/navbar.admin.php";
                         <label for="codigo">Nuevo codigo</label>
                         <input class="form-control" type="text" name="codigo" id="codigo" placeholder="Ej: 0001">
                     </div>
-
                 </div>
 
                 <div class="row m-3">
@@ -68,7 +67,7 @@ require "views/includes/navbar.admin.php";
                         <input class="btn btn-success" type="submit" name="btnActualizarAlumno" value="Actualizar Alumno">
                     </div>
                     <div class="col">
-                        <input class="btn btn-danger" type=" reset" value="Limpiar campos">
+                        <button class="btn btn-danger" type="reset">Limpiar campos</button>
                     </div>
                     <div class="col"></div>
 

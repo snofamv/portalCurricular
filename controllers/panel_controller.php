@@ -1,5 +1,5 @@
 <?php
-class Panel extends Controller 
+class PanelController extends SessionController 
 {
     public function __construct()
     {
@@ -14,12 +14,7 @@ class Panel extends Controller
     public function salir()
     {
         error_log("PanelController::Salir()->cerrando sesion.");
-        session_unset();
-        session_destroy();
-        $_SESSION["usuario_id"] = null;
-        $_SESSION["usuario_rol"] = null;
-        $_SESSION = null;
-        header("Location: /login", 301);
-        exit();
+        parent::salir();
+        $this->redirect("", ["success"=> SuccessMessages::SUCCESS_CIERREDESESION_CORRECTAMENTE]);
     }
 }

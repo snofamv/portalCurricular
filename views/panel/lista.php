@@ -1,6 +1,28 @@
 <?php
-require "views/includes/navbar.admin.php";
+require "views/includes/navbar.user.php";
 ?>
+
+<style>
+    .myInput {
+        background-image: url('/css/searchicon.png');
+        /* Add a search icon to input */
+        background-position: 10px 12px;
+        /* Position the search icon */
+        background-repeat: no-repeat;
+        /* Do not repeat the icon image */
+        width: 20%;
+        margin-right: 3rem;
+        /* Full-width */
+        font-size: 16px;
+        /* Increase font-size */
+        padding: 12px 20px 12px 40px;
+        /* Add some padding */
+        border: 1px solid #ddd;
+        /* Add a grey border */
+        margin-bottom: 12px;
+        /* Add some space below the input */
+    }
+</style>
 <!-- Tabla de datos -->
 <div class="mt-3 ">
 
@@ -33,27 +55,28 @@ require "views/includes/navbar.admin.php";
 
         </span class="h3">
     </div>
-    <div class="container center">
-        <div class="row justify-content-md-center">
-            <div>
-
+    <div class="container">
+        <div class="row">
+            <div class="d-flex justify-content-center" >
+                <input class="myInput" type="text" id="myInput" onkeyup="buscarDatoCodigo();" placeholder="Buscar por documento">
+                <input class="myInput" type="text" id="myInput2" onkeyup="buscarDatoRut();" placeholder="Buscar por RUT">
+                <input class="myInput" type="text" id="myInput3" onkeyup="buscarDatoNom();" placeholder="Buscar por nombre">
             </div>
 
-            <table class="table table-success table-striped table-hover table-bordered border-primary ">
+            <table id="myTable2" class="table table-success table-striped table-hover table-bordered border-primary">
 
                 <thead class="table-dark">
-                    <th>Nro Documento</th>
-                    <th>Rut</th>
-                    <th>Nombres</th>
-                    <th>Apellidos</th>
-                    <th>Sede</th>
-                    <th>Carrera</th>
+                    <th>Nro Documento <button id="orderCodigo" onclick="sortTable(0)">↓</button></th>
+                    <th>Rut <button id="orderRut" onclick="sortTable(1)">↓</button></th>
+                    <th>Nombres <button id="orderNom" onclick="sortTable(2)">↓</button></th>
+                    <th>Apellidos <button id="orderApe" onclick="sortTable(3)">↓</button></th>
+                    <th>Sede <button id="orderSede" onclick="sortTable(4)">↓</button></th>
+                    <th>Carrera <button id="orderCarrera" onclick="sortTable(5)">↓</button></th>
                     <th>Opciones</th>
                 </thead>
-
                 <tbody>
                     <?php foreach ($d as  $alumno) : ?>
-                        <tr>
+                        <tr class="tablaItem">
                             <td> <?php echo $alumno->getCodigo(); ?></td>
                             <td> <?php echo $alumno->getRut(); ?></td>
                             <td> <?php echo $alumno->getNombres(); ?></td>
@@ -65,10 +88,6 @@ require "views/includes/navbar.admin.php";
                                     <input type="text" name="rut" id="rut" value="<?php echo $alumno->getRut(); ?>" hidden>
                                     <input type="submit" value="Modificar" name="btnModificar"></input>
                                 </form>
-                                <form action="/lista/eliminarAlumno" method="post">
-                                    <input type="text" name="rut" id="rut" value="<?php echo $alumno->getRut(); ?>" hidden>
-                                    <input type="submit" value="Eliminar" name="btnEliminar"></input>
-                                </form>
                             </td>
                         </tr>
                     <?php endforeach; ?>
@@ -78,6 +97,123 @@ require "views/includes/navbar.admin.php";
         </div>
     </div>
 </div>
+
+
+<script>
+    function buscarDatoCodigo() {
+        // Declare variables
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable2");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+    function buscarDatoRut() {
+        // Declare variables
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput2");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable2");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[1];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+    function buscarDatoNom() {
+        // Declare variables
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput3");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable2");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[2];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+
+    function sortTable(n) {
+        var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+        table = document.getElementById("myTable2");
+        switching = true;
+        // Seleccionar una direccion a ordenar: asc:
+        dir = "asc";
+        /* Loop hasta que el switch se apague */
+        while (switching) {
+            // iniciando el validador en false para el bucle
+            switching = false;
+            rows = table.rows;
+            /*Se busca en todas las filas de las tablas exepto en la priemera que es la thead o cabezera */
+            for (i = 1; i < (rows.length - 1); i++) {
+                // Se inicializa el switch apagado nuevamente
+                shouldSwitch = false;
+                /* Se recojen los elementos a comparar para ir iterando */
+                x = rows[i].getElementsByTagName("TD")[n];
+                y = rows[i + 1].getElementsByTagName("TD")[n];
+                /* se valida la direccion de ordenamiento de las tablas segun asc o desc */
+                if (dir == "asc") {
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                        //Se activa el switch y se apaga el bucle con el ordenamiento finalizado
+                        shouldSwitch = true;
+                        break;
+                    }
+                } else if (dir == "desc") {
+                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+            }
+            if (shouldSwitch) {
+                /* If a switch has been marked, make the switch
+                and mark that a switch has been done: */
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+                // Each time a switch is done, increase this count by 1:
+                switchcount++;
+            } else {
+                /* If no switching has been done AND the direction is "asc",
+                set the direction to "desc" and run the while loop again. */
+                if (switchcount == 0 && dir == "asc") {
+                    dir = "desc";
+                    switching = true;
+                }
+            }
+        }
+    }
+</script>
 <?php
 require "views/includes/footer.template.php";
 ?>

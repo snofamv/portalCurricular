@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+<?php 
+// echo "<pre>";
+// print_r($_SESSION);
+// echo "</pre>";
+?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +24,7 @@
             <div class="collapse navbar-collapse ms-5 mx-auto" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link fw-bolder btn btn-primary" style="width: 150px; color: #FFFFFF;" href="/admin">Inicio</a>
+                        <a class="nav-link fw-bolder btn btn-primary" style="width: 150px; color: #FFFFFF;" href="/panel">Inicio</a>
                     </li>
 
                 </ul>

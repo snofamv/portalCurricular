@@ -1,5 +1,6 @@
 <?php
-class Alumno extends Model implements IModel
+require_once "models/alumno_interface.php";
+class AlumnoModel extends Model implements AlumnoInterface
 {
     //class atributos
     private $codigo;
@@ -11,9 +12,7 @@ class Alumno extends Model implements IModel
 
     public function __construct()
     {
-        error_log("Alumno::Modelo Alumno Instanciado.");
         parent::__construct();
-
         $this->codigo = "";
         $this->nombres = "";
         $this->apellidos = "";
@@ -22,13 +21,13 @@ class Alumno extends Model implements IModel
         $this->rut = "";
     }
 
-    public function __getTodosLosDatos()
+    public function getAll()
     {
         $items = array();
         try {
             $query = parent::query("SELECT * FROM data");
             while ($p = $query->fetch(PDO::FETCH_ASSOC)) {
-                $objeto = new Alumno();
+                $objeto = new AlumnoModel();
                 $objeto->setRut($p["rut"]);
                 $objeto->setCodigo($p["codigo"]);
                 $objeto->setNombres($p["nom"]);
@@ -40,10 +39,10 @@ class Alumno extends Model implements IModel
             }
             return $items;
         } catch (PDOException $th) {
-            error_log("USER_MODELO => METODO_GETALL::PDOException => " . $th->getMessage());
+            error_log("ALUMNO::MODELO => METODO_GETALL::PDOException => " . $th->getMessage());
         }
     }
-    public function __getDatoById($rut)
+    public function get($rut)
     {
         try {
             $query = $this->prepare("SELECT * FROM data WHERE rut=:rut");
@@ -59,11 +58,53 @@ class Alumno extends Model implements IModel
             $this->setCarrera($alumno["carrera"]);
             return $this;
         } catch (PDOException $th) {
-            error_log("USER_MODELO => METODO_GET::PDOException => " . $th->getMessage());
+            error_log("ALUMNO::MODELO => METODO_GetByRut::PDOException => " . $th->getMessage());
+        }
+    }
+    public function __getAlumnosBySede($sede)
+    {
+        $items = array();
+        try {
+            $query = $this->query("SELECT * FROM data WHERE sede LIKE '%$sede%'");
+            while ($p = $query->fetch(PDO::FETCH_ASSOC)) {
+                $objeto = new AlumnoModel();
+                $objeto->setRut($p["rut"]);
+                $objeto->setCodigo($p["codigo"]);
+                $objeto->setNombres($p["nom"]);
+                $objeto->setApellidos($p["ape"]);
+                $objeto->setSede($p["sede"]);
+                $objeto->setCarrera($p["carrera"]);
+
+                array_push($items, $objeto);
+            }
+            return $items;
+        } catch (PDOException $th) {
+            error_log("ALUMNO::MODELO => METODO_GetBySede::PDOException => " . $th->getMessage());
+        }
+    }
+    public function __getAlumnosByCarrera($carrera)
+    {
+        $items = array();
+        try {
+            $query = $this->query("SELECT * FROM data WHERE carrera LIKE '%$carrera%'");
+            while ($p = $query->fetch(PDO::FETCH_ASSOC)) {
+                $objeto = new AlumnoModel();
+                $objeto->setRut($p["rut"]);
+                $objeto->setCodigo($p["codigo"]);
+                $objeto->setNombres($p["nom"]);
+                $objeto->setApellidos($p["ape"]);
+                $objeto->setSede($p["sede"]);
+                $objeto->setCarrera($p["carrera"]);
+
+                array_push($items, $objeto);
+            }
+            return $items;
+        } catch (PDOException $th) {
+            error_log("ALUMNO::MODELO => METODO_GetByCarrera::PDOException => " . $th->getMessage());
         }
     }
     //antes de utilizar esta funcion se debe crear previamente el objeto
-    public function __guardarDato()
+    public function save()
     {
         try {
             $query = $this->prepare("INSERT INTO data values(:codigo, :nom, :ape, :sede, :carrera, :rut)");
@@ -77,11 +118,11 @@ class Alumno extends Model implements IModel
             ]);
             return true;
         } catch (PDOException $th) {
-            error_log("USER_MODELO::PDOException => " . $th->getMessage());
+            error_log("ALUMNO::MODELO::GuardarDato -> PDOException => " . $th->getMessage());
             return false;
         }
     }
-    public function __actualizarDato()
+    public function update()
     {
         try {
             $query = $this->prepare("UPDATE data SET codigo=:codigo, nom=:nom, ape=:ape, sede=:sede, carrera=:carrera WHERE rut=:rut");
@@ -102,11 +143,11 @@ class Alumno extends Model implements IModel
             // $this->setCarrera($alumno["carrera"]);
             return true;
         } catch (PDOException $th) {
-            error_log("USER_MODELO => METODO_GET::PDOException => " . $th->getMessage());
+            error_log("ALUMNO::MODELO => METODO_GETActualizarDato::PDOException => " . $th->getMessage());
             return false;
         }
     }
-    public function __borrarDatoById($rut)
+    public function delete($rut)
     {
         try {
             $query = $this->prepare("DELETE FROM data WHERE rut=:rut");
@@ -118,7 +159,7 @@ class Alumno extends Model implements IModel
             return false;
         }
     }
-    public function __setDatosDesdeArray($array)
+    public function from($array)
     {
         $this->setCodigo($array[0]);
         $this->setRut($array[1]);
@@ -127,7 +168,32 @@ class Alumno extends Model implements IModel
         $this->setSede($array[4]);
         $this->setCarrera($array[5]);
     }
-
+    public function __getDatosToArray()
+    {
+        return array(
+            "codigo" => $this->getCodigo(),
+            "rut" => $this->getRut(),
+            "nombres" => $this->getNombres(),
+            "apellidos" => $this->getApellidos(),
+            "sede" => $this->getSede(),
+            "carrera" => $this->getCarrera()
+        );
+    }
+    public function existeAlumno($rut)
+    {
+        try {
+            $query = $this->prepare("SELECT * FROM data WHERE rut=:rut");
+            $query->execute([":rut" => $rut]);
+            if ($query->rowCount() > 0) {
+                return true;
+            } else {
+                return false;
+            }
+        } catch (PDOException $th) {
+            error_log("UsuarioModelo => METODO_EXISTS:: " . $th->getMessage());
+            return false;
+        }
+    }
 
     /*          getter y setters        */
 

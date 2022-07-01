@@ -38,8 +38,8 @@ require "views/includes/navbar.admin.php";
             <div class="card mx-auto shadow p-2" style="width: 370px; height: 400px; background-color: #8CC0DE;">
                 <img src="https://www.svgrepo.com/show/125846/graduate.svg" class="card-img-top mx-auto" alt="..." style="max-width: 200px;">
                 <div class="card-body">
-                    <h5 class="card-title">Alumnos</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title">Ver Usuarios</h5>
+                    <p class="card-text">.</p>
                 </div>
                 <div class="d-grid">
 
@@ -52,7 +52,7 @@ require "views/includes/navbar.admin.php";
                 <img src="https://www.svgrepo.com/show/286737/update-repeat.svg" class="card-img-top mx-auto" alt="..." style="max-width: 200px;">
                 <div class="card-body">
                     <h5 class="card-title">Actualizar informacion</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">.</p>
                 </div>
                 <div class="d-grid">
 
@@ -88,7 +88,7 @@ require "views/includes/navbar.admin.php";
                 <img src="https://www.svgrepo.com/show/216744/add.svg" class="card-img-top mx-auto" alt="..." style="max-width: 200px;">
                 <div class="card-body">
                     <h5 class="card-title">Agregar informacion</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">.</p>
                 </div>
                 <div class="d-grid">
 
@@ -96,38 +96,6 @@ require "views/includes/navbar.admin.php";
                 </div>
             </div>
         </div>
-
-
-
-        <div class="col rounded p-2">
-            <div class="card mx-auto shadow p-2" style="width: 370px; height: 400px; background-color: #8CC0DE;">
-                <img src="https://www.svgrepo.com/show/207527/settings-configuration.svg" class="card-img-top mx-auto mx-auto" alt="..." style="max-width: 200px;">
-                <div class="card-body">
-                    <h5 class="card-title">Configuracion de cuenta</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-                <div class="d-grid">
-
-                    <a href="/admin/config" class="btn btn-secondary btn-lg">Configuracion de cuenta</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col rounded p-2">
-            <div class="card mx-auto shadow p-2" style="width: 370px; height: 400px; background-color: #8CC0DE;">
-                <img src="https://www.svgrepo.com/show/94002/logout.svg" class="card-img-top ms-5" alt="..." style="max-width: 200px;">
-                <div class="card-body">
-                    <h5 class="card-title">Cerrar sesion</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-                <div class="d-grid">
-
-                    <a href="/admin/salir" class="btn btn-danger btn-lg  ">Cerrar sesion</a>
-                </div>
-            </div>
-        </div>
-
-
 
     </div>
 
