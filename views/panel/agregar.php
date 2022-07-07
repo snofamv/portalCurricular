@@ -80,11 +80,11 @@ require "views/includes/navbar.user.php";
                     <label class="label m-2" for="carreras"  style="color:#FFFFFF;">Carrera</label>
                     <select class="form-select" name="carreras" id="carreras">
                         <option selected disabled hidden>Selecciona una carrera</option>
-                        <option value="Tecnico en Informatica">Tecnico en informatica</option>
-                        <option value="Tecnico en Enfermeria">Tecnico en enfermeria</option>
-                        <option value="construccion">Construccion</option>
-                        <option value="gastronomia">Gastronomia</option>
-                        <option value="Administracion de Empresas">Administrador de Empresas</option>
+                        <?php 
+                            foreach ($d as $sede) {
+                                echo "<option value='".$sede['carrera']."'>".$sede['carrera']."</option>";
+                            }
+                        ?>
                     </select>
                 </div>
 

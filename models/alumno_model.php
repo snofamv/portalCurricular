@@ -20,7 +20,18 @@ class AlumnoModel extends Model implements AlumnoInterface
         $this->carrera = "";
         $this->rut = "";
     }
-
+    public function getSedes(){
+        $items = array();
+        try {
+            $query = parent::query("SELECT * FROM carreras");
+            while ($p = $query->fetch(PDO::FETCH_ASSOC)) {
+               array_push($items, $p);
+            }
+            return $items;
+        } catch (PDOException $th) {
+            error_log("ALUMNO::MODELO => METODO_GETSEDES::PDOException => " . $th->getMessage());
+        }
+    }
     public function getAll()
     {
         $items = array();

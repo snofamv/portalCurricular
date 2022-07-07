@@ -1,7 +1,7 @@
 <?php
 class UsuarioModel extends Model implements IModel
 {
-    private $id, $usuario, $contrasena, $rol, $nombre, $foto;
+    private $id, $usuario, $contrasena, $rol, $nombre, $foto, $estado;
 
     function __construct()
     {
@@ -12,20 +12,22 @@ class UsuarioModel extends Model implements IModel
         $this->rol = "user";
         $this->foto = "";
         $this->nombre = "";
+        $this->estado = false;
     }
 
     public function save()
     {
         try {
             
-            $query = $this->prepare("INSERT INTO usuarios values (null, :usuario, :contrasena, :rol, :foto, :nombre)");
+            $query = $this->prepare("INSERT INTO usuarios values (null, :usuario, :contrasena, :rol, :foto, :nombre, :estado)");
             $query->execute([
 
                 ":usuario" => $this->usuario,
                 ":contrasena" => $this->contrasena,
                 ":rol" => $this->rol,
                 ":foto" => $this->foto,
-                ":nombre" => $this->nombre
+                ":nombre" => $this->nombre,
+                ":estado" => FALSE
             ]);
             return true;
         } catch (PDOException $th) {
@@ -288,6 +290,29 @@ class UsuarioModel extends Model implements IModel
     public function setFoto($foto)
     {
         $this->foto = $foto;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of estado
+     */
+
+
+    /**
+     * Get the value of estado
+     */
+    public function getEstado()
+    {
+        return $this->estado;
+    }
+
+    /**
+     * Set the value of estado
+     */
+    public function setEstado($estado): self
+    {
+        $this->estado = $estado;
 
         return $this;
     }

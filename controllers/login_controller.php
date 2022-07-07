@@ -12,13 +12,23 @@ class LoginController extends SessionController
     {
         $this->vista->render("login/index", []);
     }
-
+    private function validarCampo($dato)
+    {
+        if (!preg_match("/^[0-9]*$/", $dato)) {
+            return NULL;
+        }
+        $dato = rtrim($dato);
+        $dato = trim($dato);
+        $dato = stripslashes($dato);
+        $dato = htmlspecialchars($dato);
+        return $dato;
+    }
     public function autenticar()
     {
         if ($this->existsPOST(["usuario", "contrasena"])) {
             $this->cargarModelo("login");
-            $usuarioParam = $this->getPOST("usuario");
-            $contrasenaParam = $this->getPOST("contrasena");
+            $usuarioParam = $this->validarCampo($this->getPOST("usuario"));
+            $contrasenaParam = $this->validarCampo($this->getPOST("contrasena"));
             $usuario = $this->modelo->login($usuarioParam, $contrasenaParam);
             if ($usuario != NULL) {
                 $this->iniciar($usuario);
