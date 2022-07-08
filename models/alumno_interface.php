@@ -6,7 +6,7 @@
         public function delete($id);
         public function update();
         public function from($array);
-        public function getSedes();
+        public function getCarreras();
     }
 
 ?>

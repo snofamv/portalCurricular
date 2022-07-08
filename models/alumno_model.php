@@ -20,7 +20,7 @@ class AlumnoModel extends Model implements AlumnoInterface
         $this->carrera = "";
         $this->rut = "";
     }
-    public function getSedes(){
+    public function getCarreras(){
         $items = array();
         try {
             $query = parent::query("SELECT * FROM carreras");

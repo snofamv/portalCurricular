@@ -10,7 +10,9 @@ class ActualizarController extends SessionController
     {
         if ($this->existsGET(['rut'])) {
             $this->cargarModelo("alumno");
-            $d = $this->modelo->get($this->getGET('rut'));
+            $d = array();
+            $d['alumno'] = $this->modelo->get($this->getGET('rut'));
+            $d['carreras'] =  $this->modelo->getCarreras();
             $this->vista->render("panel/actualizar", $d);
         } else {
             $this->redirect("lista", []);
