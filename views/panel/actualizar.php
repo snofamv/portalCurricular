@@ -43,6 +43,7 @@ require "views/includes/navbar.user.php";
                             <option value="La Calera">La Calera</option>
                             <option value="Viña del Mar">Viña del Mar</option>
                             <option value="Valparaiso">Valparaiso</option>
+                            <option value="Quillota">Quillota</option>
                         </select>
                     </div>
 
@@ -53,6 +54,7 @@ require "views/includes/navbar.user.php";
                         <option selected disabled hidden>Selecciona una carrera</option>
                         <?php 
                             foreach ($d['carreras'] as $sede) {
+                            
                                 echo "<option value='".$sede['carrera']."'>".$sede['carrera']."</option>";
                             }
                         ?>
