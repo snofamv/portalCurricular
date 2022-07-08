@@ -9,7 +9,7 @@ class AgregarController extends SessionController
     public function render()
     {
         $this->cargarModelo("alumno");
-        $this->vista->render("panel/agregar", $d = $this->modelo->getSedes());
+        $this->vista->render("panel/agregar", $d = $this->modelo->getCarreras());
     }
 
 
