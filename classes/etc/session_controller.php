@@ -47,31 +47,10 @@ class SessionController extends Controller
             "rol" => "user",
         ],
         [
-            "sitio" => "lista",
-            "acceso" => "privado",
-            "rol" => "admin",
-        ],
-        [
-            "sitio" => "buscar",
-            "acceso" => "privado",
-            "rol" => "admin",
-        ],
-        [
-            "sitio" => "actualizar",
-            "acceso" => "privado",
-            "rol" => "admin",
-        ],
-        [
-            "sitio" => "agregar",
-            "acceso" => "privado",
-            "rol" => "admin",
-        ],
-        
-        [
             "sitio" => "admin",
             "acceso" => "privado",
             "rol" => "admin",
-        ],
+        ]
 
     );
 

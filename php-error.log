@@ -3912,3 +3912,587 @@ Stack trace:
 [09-Jul-2022 18:24:56 Europe/Berlin] ##############################################
 [09-Jul-2022 18:24:56 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
 [09-Jul-2022 18:24:56 Europe/Berlin] APP::RENDERIZANDO VISTA -> [registro]
+[09-Jul-2022 20:13:26 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:13:26 Europe/Berlin] ##############################################
+[09-Jul-2022 20:13:26 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:13:26 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:13:26 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:13:26 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:13:27 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:13:27 Europe/Berlin] ##############################################
+[09-Jul-2022 20:13:27 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:13:27 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[09-Jul-2022 20:13:27 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[09-Jul-2022 20:13:27 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:13:27 Europe/Berlin] ##############################################
+[09-Jul-2022 20:13:27 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:13:27 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:13:27 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:13:27 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:14:26 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:14:26 Europe/Berlin] ##############################################
+[09-Jul-2022 20:14:26 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:14:26 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:14:26 Europe/Berlin] Controller::CargarModelo login.
+[09-Jul-2022 20:14:27 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:14:27 Europe/Berlin] LoginModel::Login -> credenciales validadas.
+[09-Jul-2022 20:14:27 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:14:27 Europe/Berlin] ##############################################
+[09-Jul-2022 20:14:27 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:14:28 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:14:28 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panel]
+[09-Jul-2022 20:14:28 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:14:28 Europe/Berlin] ##############################################
+[09-Jul-2022 20:14:28 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:14:28 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[09-Jul-2022 20:14:29 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:14:29 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[09-Jul-2022 20:14:29 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:14:29 Europe/Berlin] ##############################################
+[09-Jul-2022 20:14:29 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:14:30 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:14:30 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panel]
+[09-Jul-2022 20:18:13 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:13 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:13 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:13 Europe/Berlin] APP::RENDERIZANDO VISTA -> [registro]
+[09-Jul-2022 20:18:13 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:13 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:13 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:13 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[09-Jul-2022 20:18:13 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:13 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[09-Jul-2022 20:18:13 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:13 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:13 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:14 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:14 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panel]
+[09-Jul-2022 20:18:18 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:18 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:18 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:18 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:18 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:18 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:19 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:19 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:19 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:19 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:19 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:19 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:19 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:19 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:20 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:20 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:20 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:20 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:20 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:20 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:20 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:21 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:21 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:21 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:21 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:21 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:21 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:21 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:21 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:21 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:22 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:22 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:22 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:22 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:22 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:22 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:23 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:23 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:23 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:23 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:23 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:24 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:24 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:24 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:24 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:24 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:24 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:24 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:24 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:24 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:25 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:25 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:25 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:25 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:25 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:25 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:25 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:25 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:26 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:26 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:26 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:26 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:26 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:26 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:26 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:26 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:26 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:26 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:26 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:26 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:26 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:27 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:27 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:27 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:27 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:27 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:27 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:27 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:28 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:28 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:28 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:28 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:28 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:28 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:28 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:28 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:29 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:29 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:29 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:29 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:29 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:29 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:29 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:29 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:29 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:29 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:29 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:29 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:29 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:30 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:30 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:30 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:30 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:30 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:30 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:30 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:31 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:31 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:31 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:31 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:31 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:31 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:31 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:31 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:32 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:32 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:32 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:32 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:32 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:32 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:32 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:32 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:32 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:32 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:32 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:32 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:32 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:33 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:33 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:33 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:33 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:33 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:33 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:33 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:34 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:34 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:34 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:34 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:34 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:34 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:34 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:34 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:35 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:35 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:35 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:35 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:35 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:35 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:35 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:35 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:35 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:35 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:35 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:35 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:35 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:36 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:36 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:36 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:36 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:36 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:36 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:36 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:37 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:37 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:37 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:37 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:37 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:37 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:37 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:37 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:38 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:38 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:38 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:38 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:38 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:38 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:38 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:38 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:38 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:38 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:38 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:38 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:38 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:39 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:39 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:39 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:39 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:39 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:39 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:39 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:40 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:41 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:41 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:41 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:41 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:41 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:41 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:41 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:42 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:42 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:42 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:42 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:42 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:42 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:42 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:42 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:42 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:42 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:42 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:42 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:42 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:43 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:43 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:43 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:43 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:43 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:43 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:43 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:44 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:44 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:44 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:44 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:44 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:44 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:44 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:44 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:45 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:45 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:45 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:45 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:45 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:45 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:45 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:45 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:45 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:45 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:45 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:45 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:45 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:46 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:46 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:46 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:46 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:46 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:46 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:46 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:47 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:47 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:47 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:47 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:47 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:47 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:48 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:48 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:48 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:48 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:48 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:48 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:48 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:48 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:48 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:49 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:49 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:49 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:49 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:49 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:50 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:50 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:50 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:50 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:50 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:50 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:50 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:50 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:51 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:51 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:51 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:51 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:51 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:51 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:51 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:51 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:51 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:51 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:51 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:51 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:51 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:52 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:52 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:52 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:52 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:52 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:52 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:52 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:53 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:53 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:53 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:53 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:53 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:53 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:54 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:54 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:54 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:54 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:54 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:54 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:54 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:54 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:54 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:55 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:18:55 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:18:55 Europe/Berlin] ##############################################
+[09-Jul-2022 20:18:55 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:18:55 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:18:55 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:18:55 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:18:56 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:01 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:01 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:01 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:01 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:19:01 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:19:01 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:19:01 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:02 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:02 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:02 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:02 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:19:02 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:19:02 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:19:02 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:03 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:03 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:03 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:03 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:19:03 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:19:03 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:19:03 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:03 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:03 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:03 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:03 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:19:03 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:19:03 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:19:04 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:04 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:04 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:04 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:04 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:19:04 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:19:04 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:19:04 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:05 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:05 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:05 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:05 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:19:05 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:19:05 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:19:05 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:06 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:06 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:06 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:06 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:19:06 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:19:06 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:19:06 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:06 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:06 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:06 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:06 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:19:06 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:19:06 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:19:07 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:07 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:07 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:07 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:07 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:19:07 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:19:07 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:19:07 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:08 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:08 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:08 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:08 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:19:08 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:19:08 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:19:08 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:09 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:09 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:09 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:09 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:19:09 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:19:09 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:19:09 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:09 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:09 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:09 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:09 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:19:09 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:19:09 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:19:10 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:10 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:10 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:10 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:10 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:19:10 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:19:10 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:19:10 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:11 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:11 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:11 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:11 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:19:11 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:19:11 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:19:11 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:11 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:11 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:11 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:12 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:12 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:19:12 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:19:12 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:19:12 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:12 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panel]
+[09-Jul-2022 20:19:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:12 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:13 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:13 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:14 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panel]
+[09-Jul-2022 20:19:14 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:14 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:14 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:14 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[09-Jul-2022 20:19:14 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:15 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[09-Jul-2022 20:19:15 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:15 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:15 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:15 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:15 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panel]
+[09-Jul-2022 20:19:17 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:17 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:17 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:17 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:17 Europe/Berlin] PanelController::Salir()->cerrando sesion.
+[09-Jul-2022 20:19:17 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:17 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:17 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:17 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:19:17 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:19:17 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:19:18 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:18 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:18 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:18 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[09-Jul-2022 20:19:18 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[09-Jul-2022 20:19:18 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:18 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:18 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:18 Europe/Berlin] PHP Deprecated:  rtrim(): Passing null to parameter #1 ($string) of type string is deprecated in C:\xampp\htdocs\libs\app.php on line 12
+[09-Jul-2022 20:19:18 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[09-Jul-2022 20:19:18 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:19:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:22 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:22 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[09-Jul-2022 20:19:22 Europe/Berlin] Controller::CargarModelo login.
+[09-Jul-2022 20:19:22 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:22 Europe/Berlin] LoginModel::Login -> credenciales validadas.
+[09-Jul-2022 20:19:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:22 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:23 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:23 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panel]
+[09-Jul-2022 20:19:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:23 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:23 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[09-Jul-2022 20:19:23 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:24 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[09-Jul-2022 20:19:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:24 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:24 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:25 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panel]
+[09-Jul-2022 20:19:25 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:25 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:25 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:25 Europe/Berlin] APP::RENDERIZANDO VISTA -> [registro]
+[09-Jul-2022 20:19:25 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:25 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:25 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:25 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[09-Jul-2022 20:19:26 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:26 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[09-Jul-2022 20:19:26 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[09-Jul-2022 20:19:26 Europe/Berlin] ##############################################
+[09-Jul-2022 20:19:26 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[09-Jul-2022 20:19:27 Europe/Berlin] Conexion a BD Exitosa.
+[09-Jul-2022 20:19:27 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panel]
