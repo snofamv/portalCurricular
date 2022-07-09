@@ -107,28 +107,22 @@
                                 <?php endif; ?>
                             </span>
 
-                            <form action="<?php echo URLBASE; ?>/login/autenticar" method="POST" id="formularioLogin" onsubmit="return validarLogin()">
+                            <form action="<?php echo URLBASE; ?>/login/autenticar" method="POST" id="formulario" onsubmit="return validarLogin()">
                                 <!-- 2 column grid layout with text inputs for the first and last names -->
                                 <div class="row">
                                     <!-- Email input -->
                                     <div class="form-outline mb-4">
-                                        <input type="text" id="usuario" class="form-control" placeholder="Usuario aqui" name="usuario" required minlength="3" maxlength="4" pattern="[0-9]{4}" title="La usuario solo contiene 4 caracteres de formato numerico." />
+                                        <input type="text" id="usuario" class="form-control" placeholder="Usuario aqui" name="usuario" required minlength="4" maxlength="9" pattern="[0-9]+" title="La usuario contiene 4 a 9 caracteres de formato numericos." />
                                         <label class="form-label" for="usuario" hidden>Usuario</label>
                                     </div>
 
                                     <!-- Password input -->
                                     <div class="form-outline mb-4">
-                                        <input type="password" id="contrasena" class="form-control" placeholder="Contraseña aqui" name="contrasena" required minlength="3" maxlength="4" pattern="[0-9]{4}" title="La contraseña solo contiene 4 caracteres." />
+                                        <input type="password" id="contrasena" class="form-control" placeholder="Contraseña aqui" name="contrasena" required minlength="4" maxlength="16" patter="[a-zA-Z0-9]+" title="La contraseña contiene 4 a 16 caracteres alfanumericos." />
                                         <label class="form-label" for="contrasena" hidden>Contraseña</label>
                                     </div>
-
-
                                     <!-- Submit button -->
                                     <input id="btnIniciarSesion" type="submit" value="Iniciar sesion" class="btn btn-primary">
-                                    <!-- Register buttons -->
-                                    <div class="text-center mt-4">
-                                        <a class="btn btn-secondary btn-block mb-4 " href="<?php echo URLBASE; ?>/registro">Solicitar registro</a>
-                                    </div>
                             </form>
                         </div>
                     </div>
@@ -138,45 +132,6 @@
     </section>
     <!-- Section: Design Block -->
     <script>
-        const btnEnviar = document.getElementById('btnIniciarSesion');
-
-        const validación = (e) => {
-            e.preventDefault();
-            const nombreDeUsuario = document.getElementById('usuario');
-            const contrasena = document.getElementById('contrasena');
-            if (usuario.value === "") {
-                alert("Por favor, escribe tu nombre de usuario.");
-                usuario.focus();
-                return false;
-            }
-
-            if (contrasena.value === "") {
-                alert("Por favor, escribe tu contrasena");
-                contrasena.focus();
-                return false;
-            }
-
-            if (!contrasenaValida(contrasena.value)) {
-                alert("Por favor, escribe una contraseña valida.");
-                contrasena.focus();
-                return false;
-            }
-            if (!usuarioValido(usuario.value)) {
-                alert("Por favor, escribe un usuario valido.");
-                contrasena.focus();
-                return false;
-            }
-
-            return true; //Se pueden enviar los datos del formulario al servidor
-        }
-
-        const contrasenaValida = contrasena => {
-            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contrasena);
-        }
-        const usuarioValido = usuario => {
-            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(usuario);
-        }
-
-        btnEnviar.addEventListener('click', validacion);
+        
     </script>
     <?php require "views/includes/footer.template.php"; ?>

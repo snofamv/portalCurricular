@@ -18,8 +18,8 @@ class SessionController extends Controller
         ],
         [
             "sitio" => "registro",
-            "acceso" => "publico",
-            "rol" => "",
+            "acceso" => "privado",
+            "rol" => "admin",
         ],
         [
             "sitio" => "panel",
@@ -45,6 +45,26 @@ class SessionController extends Controller
             "sitio" => "agregar",
             "acceso" => "privado",
             "rol" => "user",
+        ],
+        [
+            "sitio" => "lista",
+            "acceso" => "privado",
+            "rol" => "admin",
+        ],
+        [
+            "sitio" => "buscar",
+            "acceso" => "privado",
+            "rol" => "admin",
+        ],
+        [
+            "sitio" => "actualizar",
+            "acceso" => "privado",
+            "rol" => "admin",
+        ],
+        [
+            "sitio" => "agregar",
+            "acceso" => "privado",
+            "rol" => "admin",
         ],
         
         [
