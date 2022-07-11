@@ -73,6 +73,7 @@ require "views/includes/navbar.user.php";
                         <option value="Viña del Mar">Viña del Mar</option>
                         <option value="Valparaiso">Valparaiso</option>
                         <option value="Quillota">Quillota</option>
+                        <option value="Limache">Limache</option>
                     </select>
                 </div>
 
