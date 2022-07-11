@@ -8,6 +8,8 @@ class SuccessMessages
     const SUCCESS_CIERREDESESION_CORRECTAMENTE = "5845kkdkjh698dkjHY798K73dd7478cd" ;
     const SUCCESS_ALUMNO_ENCONTADO_RUT= "5845kkdkjh698dkjHY98KKK0dd7478cd" ;
     const SUCCESS_ACCESO_CONCEDIDO = "5845kkdkj09888KKL6Y8KKK0dd7478cd" ;
+    const SUCCESS_ACTIVACION_USUARIO = "5845kk10215LLLKKL6Y8KKK0dd7478cd" ;
+    const SUCCESS_DESACTIVACION_USUARIO = "5845kk10215LLLKKL6Y09OOOOd7478cd" ;
 
     private $successList = array();
     function __construct()
@@ -19,7 +21,9 @@ class SuccessMessages
             SuccessMessages::SUCCESS_REGISTROACTUALIZADO_ALUMNO => "Alumno modificado correctamente.",
             SuccessMessages::SUCCESS_CIERREDESESION_CORRECTAMENTE => "Sesion finalizada correctamente.",
             SuccessMessages::SUCCESS_ALUMNO_ENCONTADO_RUT => "Alumno encontrado con exito, cargando informacion.",
-            SuccessMessages::SUCCESS_ACCESO_CONCEDIDO => "Credenciales autorizadas. Bienvenido!"
+            SuccessMessages::SUCCESS_ACCESO_CONCEDIDO => "Credenciales autorizadas. Bienvenido!",
+            SuccessMessages::SUCCESS_ACTIVACION_USUARIO => "Usuario activado correctamente!",
+            SuccessMessages::SUCCESS_DESACTIVACION_USUARIO => "Usuario desactivado correctamente!"
 
         ];
     }

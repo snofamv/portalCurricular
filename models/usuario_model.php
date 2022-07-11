@@ -12,9 +12,31 @@ class UsuarioModel extends Model implements IModel
         $this->rol = "user";
         $this->foto = "";
         $this->nombre = "";
-        $this->estado = false;
+        $this->estado = 0;
     }
 
+    public function desactivarUsuario(){
+        try {
+            $query = $this->prepare("UPDATE usuarios SET estado=0 WHERE id=:id");
+            $query->bindParam(":id",$this->id);
+            $query->execute();
+            return true;
+        } catch (PDOException $th) {
+            error_log("UsuarioModelo => METODO_UPDATE::PDOException => " . $th->getMessage());
+            return false;
+        }
+    }
+    public function activarUsuario(){
+        try {
+            $query = $this->prepare("UPDATE usuarios SET estado=1 WHERE id=:id");
+            $query->bindParam(":id",$this->id);
+            $query->execute();
+            return true;
+        } catch (PDOException $th) {
+            error_log("UsuarioModelo => METODO_UPDATE::PDOException => " . $th->getMessage());
+            return false;
+        }
+    }
     public function save()
     {
         try {
@@ -27,7 +49,7 @@ class UsuarioModel extends Model implements IModel
                 ":rol" => $this->rol,
                 ":foto" => $this->foto,
                 ":nombre" => $this->nombre,
-                ":estado" => FALSE
+                ":estado" => $this->estado
             ]);
             return true;
         } catch (PDOException $th) {
@@ -48,6 +70,7 @@ class UsuarioModel extends Model implements IModel
                 $objeto->setRol($p["rol"]);
                 $objeto->setFoto($p["foto"]);
                 $objeto->setNombre($p["nombre"]);
+                $objeto->setEstado($p["estado"]);
                 array_push($items, $objeto);
             }
             return $items;
@@ -68,6 +91,7 @@ class UsuarioModel extends Model implements IModel
             $this->setRol($usuario["rol"]);
             $this->setFoto($usuario["foto"]);
             $this->setNombre($usuario["nombre"]);
+            $this->setEstado($usuario["estado"]);
             return $this;
         } catch (PDOException $th) {
             error_log("UsuarioModelo => METODO_GET::PDOException -> " . $th->getMessage());
@@ -87,6 +111,7 @@ class UsuarioModel extends Model implements IModel
             $this->setRol($usuario["rol"]);
             $this->setFoto($usuario["foto"]);
             $this->setNombre($usuario["nombre"]);
+            $this->setEstado($usuario["estado"]);
             return $this;
         } catch (PDOException $th) {
             error_log("UsuarioModelo => METODO_GET_ID::PDOException -> " . $th->getMessage());
@@ -105,23 +130,24 @@ class UsuarioModel extends Model implements IModel
             return false;
         }
     }
+
     public function update()
     {
         #para usar el update primero se utiliza el GET para crear un objeto en el propio modelo
         try {
-            $query = $this->prepare("UPDATE usuarios SET usuario=:usuario, contrasena=:contrasena, rol=:rol, foto=:foto, nombre=:nombre WHERE id=:id");
+            $query = $this->prepare("UPDATE usuarios SET usuario=:usuario, contrasena=:contrasena, rol=:rol, foto=:foto, nombre=:nombre, estado=:estado WHERE id=:id");
             $query->execute([
                 ":id" => $this->id,
                 ":usuario" => $this->usuario,
                 ":contrasena" => $this->contrasena,
                 ":rol" => $this->rol,
                 ":foto" => $this->foto,
-                ":nombre" => $this->nombre
+                ":estado" => $this->estado
             ]);
 
             return true;
         } catch (PDOException $th) {
-            error_log("UsuarioModelo => METODO_GET::PDOException => " . $th->getMessage());
+            error_log("UsuarioModelo => METODO_UPDATE::PDOException => " . $th->getMessage());
             return false;
         }
     }
@@ -310,10 +336,9 @@ class UsuarioModel extends Model implements IModel
     /**
      * Set the value of estado
      */
-    public function setEstado($estado): self
+    public function setEstado($estado)
     {
         $this->estado = $estado;
 
-        return $this;
     }
 }
