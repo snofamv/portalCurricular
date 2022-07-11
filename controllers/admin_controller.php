@@ -26,10 +26,14 @@ class AdminController extends SessionController
     }
     public function activar()
     {
-
-        if ($this->existsGET(["estado"])) {
+        if ($this->existsGET(["estado", "usuario"])) {
             $this->cargarModelo("usuario");
-            $this->redirect("admin", ["success" => SuccessMessages::SUCCESS_ACTIVACION_USUARIO]);
+            $this->modelo->get($this->getGET("usuario"));
+            if ($this->modelo->activarUsuario()) {
+                $this->redirect("admin", ["success" => SuccessMessages::SUCCESS_ACTIVACION_USUARIO]);
+            } else {
+                $this->redirect("admin", ["error" => ErrorMessages::ERROR_DESACTIVACION_USUARIO]);
+            }
         }
     }
     public function desactivar()
@@ -37,12 +41,11 @@ class AdminController extends SessionController
         if ($this->existsGET(["estado", "usuario"])) {
             $this->cargarModelo("usuario");
             $this->modelo->get($this->getGET("usuario"));
-            if($this->modelo->desactivarUsuario()){
+            if ($this->modelo->desactivarUsuario()) {
                 $this->redirect("admin", ["success" => SuccessMessages::SUCCESS_DESACTIVACION_USUARIO]);
-            }else{
+            } else {
                 $this->redirect("admin", ["error" => ErrorMessages::ERROR_DESACTIVACION_USUARIO]);
             }
-            
         }
     }
 
