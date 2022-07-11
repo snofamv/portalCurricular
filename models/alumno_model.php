@@ -1,5 +1,6 @@
 <?php
-class Alumno extends Model implements IModel
+require_once "models/alumno_interface.php";
+class AlumnoModel extends Model implements AlumnoInterface
 {
     //class atributos
     private $codigo;
@@ -11,9 +12,7 @@ class Alumno extends Model implements IModel
 
     public function __construct()
     {
-        error_log("Alumno::Modelo Alumno Instanciado.");
         parent::__construct();
-
         $this->codigo = "";
         $this->nombres = "";
         $this->apellidos = "";
@@ -21,14 +20,27 @@ class Alumno extends Model implements IModel
         $this->carrera = "";
         $this->rut = "";
     }
-
-    public function __getTodosLosDatos()
+  
+    public function getCarreras()
     {
         $items = array();
         try {
-            $query = parent::query("SELECT * FROM data");
+            $query = parent::query("SELECT * FROM carreras");
             while ($p = $query->fetch(PDO::FETCH_ASSOC)) {
-                $objeto = new Alumno();
+                array_push($items, $p);
+            }
+            return $items;
+        } catch (PDOException $th) {
+            error_log("ALUMNO::MODELO => METODO_GETSEDES::PDOException => " . $th->getMessage());
+        }
+    }
+    public function getAll()
+    {
+        $items = array();
+        try {
+            $query = parent::query("SELECT * FROM data ORDER BY codigo ASC");
+            while ($p = $query->fetch(PDO::FETCH_ASSOC)) {
+                $objeto = new AlumnoModel();
                 $objeto->setRut($p["rut"]);
                 $objeto->setCodigo($p["codigo"]);
                 $objeto->setNombres($p["nom"]);
@@ -43,7 +55,7 @@ class Alumno extends Model implements IModel
             error_log("ALUMNO::MODELO => METODO_GETALL::PDOException => " . $th->getMessage());
         }
     }
-    public function __getDatoById($rut)
+    public function get($rut)
     {
         try {
             $query = $this->prepare("SELECT * FROM data WHERE rut=:rut");
@@ -68,7 +80,7 @@ class Alumno extends Model implements IModel
         try {
             $query = $this->query("SELECT * FROM data WHERE sede LIKE '%$sede%'");
             while ($p = $query->fetch(PDO::FETCH_ASSOC)) {
-                $objeto = new Alumno();
+                $objeto = new AlumnoModel();
                 $objeto->setRut($p["rut"]);
                 $objeto->setCodigo($p["codigo"]);
                 $objeto->setNombres($p["nom"]);
@@ -89,7 +101,7 @@ class Alumno extends Model implements IModel
         try {
             $query = $this->query("SELECT * FROM data WHERE carrera LIKE '%$carrera%'");
             while ($p = $query->fetch(PDO::FETCH_ASSOC)) {
-                $objeto = new Alumno();
+                $objeto = new AlumnoModel();
                 $objeto->setRut($p["rut"]);
                 $objeto->setCodigo($p["codigo"]);
                 $objeto->setNombres($p["nom"]);
@@ -105,7 +117,7 @@ class Alumno extends Model implements IModel
         }
     }
     //antes de utilizar esta funcion se debe crear previamente el objeto
-    public function __guardarDato()
+    public function save()
     {
         try {
             $query = $this->prepare("INSERT INTO data values(:codigo, :nom, :ape, :sede, :carrera, :rut)");
@@ -123,7 +135,7 @@ class Alumno extends Model implements IModel
             return false;
         }
     }
-    public function __actualizarDato()
+    public function update()
     {
         try {
             $query = $this->prepare("UPDATE data SET codigo=:codigo, nom=:nom, ape=:ape, sede=:sede, carrera=:carrera WHERE rut=:rut");
@@ -148,7 +160,7 @@ class Alumno extends Model implements IModel
             return false;
         }
     }
-    public function __borrarDatoById($rut)
+    public function delete($rut)
     {
         try {
             $query = $this->prepare("DELETE FROM data WHERE rut=:rut");
@@ -160,7 +172,7 @@ class Alumno extends Model implements IModel
             return false;
         }
     }
-    public function __setDatosDesdeArray($array)
+    public function from($array)
     {
         $this->setCodigo($array[0]);
         $this->setRut($array[1]);
@@ -180,7 +192,21 @@ class Alumno extends Model implements IModel
             "carrera" => $this->getCarrera()
         );
     }
-
+    public function existeAlumno($rut)
+    {
+        try {
+            $query = $this->prepare("SELECT * FROM data WHERE rut=:rut");
+            $query->execute([":rut" => $rut]);
+            if ($query->rowCount() > 0) {
+                return true;
+            } else {
+                return false;
+            }
+        } catch (PDOException $th) {
+            error_log("UsuarioModelo => METODO_EXISTS:: " . $th->getMessage());
+            return false;
+        }
+    }
 
     /*          getter y setters        */
 

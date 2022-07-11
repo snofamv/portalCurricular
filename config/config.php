@@ -15,13 +15,14 @@ function autoLoad()
     require_once("libs/controller.php");
     require_once("libs/model.php");
     require_once("libs/view.php");
+    require_once("classes/etc/session_controller.php");
     require_once("libs/app.php");
 }
 
-define("URLBASE", "http://localhost:80");
+define("URLBASE", "http://localhost");
 define("BASETITLE", "Portal curricular");
-define("USERDB", "root");
-define("PASSDB", "");
-define("HOSTDB", "localhost");
-define("NAMEDB", "test");
+define("USERDB", "b5c77f95f075d6");
+define("PASSDB", "c143cf89");
+define("HOSTDB", "us-cdbr-east-06.cleardb.net");
+define("NAMEDB", "heroku_60415f786969d9d");
 define("CHARSETDB", "utf8mb4");

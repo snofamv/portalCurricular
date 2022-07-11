@@ -1,7 +1,26 @@
 <?php
-require "views/includes/navbar.admin.php";
+require "views/includes/navbar.user.php";
 ?>
-
+<style>
+    .myInput {
+        /* Add a search icon to input */
+        background-position: 10px 12px;
+        /* Position the search icon */
+        background-repeat: no-repeat;
+        /* Do not repeat the icon image */
+        width: 25%;
+        margin-right: 3rem;
+        /* Full-width */
+        font-size: 12px;
+        /* Increase font-size */
+        padding: 12px 20px 12px 15px;
+        /* Add some padding */
+        border: 1px solid #ddd;
+        /* Add a grey border */
+        margin-bottom: 12px;
+        /* Add some space below the input */
+    }
+</style>
 
 <span class="h3">
     <?php if (!empty($this->datos) && isset($this->datos["success"])) : ?>
@@ -39,23 +58,27 @@ require "views/includes/navbar.admin.php";
 
         <div class="">
             <div>
-                <form class="d-flex pb-1" action="/buscar/alumnoSede" role="search" method="GET">
+                <form class="d-flex pb-1" action="/buscar/alumnoSede" role="search" method="POST" target="_self">
                     <input class="form-control" type="search" placeholder="Buscar Sedes" aria-label="Buscar" name="sede">
-                    <button class="btn btn-success ms-1" type="submit">Buscar</button>
+                    <input class="btn btn-success ms-1" type="submit" name="btnBuscar" value="Buscar"></input>
                 </form>
             </div>
             <div>
-                <form class="d-flex pb-1 mb-5" action="/buscar/alumnoCarrera" role="search" method="GET">
+                <form class="d-flex pb-1 mb-5" action="/buscar/alumnoCarrera" role="search" method="POST" target="_self">
                     <input class="form-control" type="search" placeholder="Buscar Carreras" aria-label="Buscar" name="carrera">
-                    <button class="btn btn-success ms-1" type="submit">Buscar</button>
+                    <input class="btn btn-success ms-1" type="submit" name="btnBuscar" value="Buscar"></input>
                 </form>
             </div>
 
             <!--  -->
 
             <div class="justify-content-md-center">
-
-                <table class="table table-success table-striped table-hover table-bordered border-primary">
+                <div class="d-flex justify-content-center">
+                    <input class="myInput" type="text" id="myInput" onkeyup="buscarDatoCodigo();" placeholder="Buscar por documento">
+                    <input class="myInput" type="text" id="myInput2" onkeyup="buscarDatoRut();" placeholder="Buscar por RUT">
+                    <input class="myInput" type="text" id="myInput3" onkeyup="buscarDatoNom();" placeholder="Buscar por nombre">
+                </div>
+                <table id="myTable2" class="table table-success table-striped table-hover table-bordered border-primary">
 
                     <tr>
                         <th>Nro Documento</th>
@@ -66,52 +89,35 @@ require "views/includes/navbar.admin.php";
                         <th>Carrera</th>
                         <th>Opciones</th>
                     </tr>
-                    <?php if (isset($d) && isset($_GET["rut"])) :
-                        #var_dump($d);
-                    ?>
-                        <!-- Resolve this into an objetc:: fabian -->
-                        <tr>
-                            <td><?php echo $d["codigo"]; ?></td>
-                            <td><?php echo $d["rut"]; ?></td>
-                            <td><?php echo $d["nombres"]; ?></td>
-                            <td><?php echo $d["apellidos"]; ?></td>
-                            <td><?php echo $d["sede"]; ?></td>
-                            <td><?php echo $d["carrera"]; ?></td>
-                            <td>
-                                <form action="/lista/modificarAlumno" method="post">
-                                    <input type="text" name="rut" id="rut" value="<?php echo $d["rut"]; ?>" hidden>
-                                    <input type="submit" value="Modificar" name="btnModificar"></input>
-                                </form>
-                            </td>
-                        </tr>
-                    <?php elseif (isset($d) && isset($_GET["sede"])) : ?>
+                    
+                    <?php if (isset($d) && isset($_POST["sede"])) : ?>
                         <?php foreach ($d as  $alumno) : ?>
                             <tr>
                                 <td> <?php echo $alumno->getCodigo(); ?></td>
                                 <td> <?php echo $alumno->getRut(); ?></td>
                                 <td> <?php echo $alumno->getNombres(); ?></td>
                                 <td> <?php echo $alumno->getApellidos(); ?></td>
-                                <td> <?php echo $alumno->getCarrera(); ?></td>
                                 <td> <?php echo $alumno->getSede(); ?></td>
+                                <td> <?php echo $alumno->getCarrera(); ?></td>
                                 <td>
-                                    <form action="/lista/modificarAlumno" method="post">
+                                    <form action="/buscar/modificarAlumno" method="post">
                                         <input type="text" name="rut" id="rut" value="<?php echo $alumno->getRut(); ?>" hidden>
                                         <input type="submit" value="Modificar" name="btnModificar"></input>
                                     </form>
                                 </td>
                             </tr>
                         <?php endforeach; ?>
-                    <?php elseif (isset($d) && isset($_GET["carrera"])) : ?>
+                    <?php elseif (isset($d) && isset($_POST["carrera"])) : ?>
                         <?php foreach ($d as  $alumno) : ?>
                             <tr>
                                 <td> <?php echo $alumno->getCodigo(); ?></td>
                                 <td> <?php echo $alumno->getRut(); ?></td>
                                 <td> <?php echo $alumno->getNombres(); ?></td>
                                 <td> <?php echo $alumno->getApellidos(); ?></td>
-                                <td> <?php echo $alumno->getCarrera(); ?></td>
                                 <td> <?php echo $alumno->getSede(); ?></td>
+                                <td> <?php echo $alumno->getCarrera(); ?></td>
                                 <td>
-                                    <form action="/lista/modificarAlumno" method="post">
+                                    <form action="/buscar/modificarAlumno" method="post">
                                         <input type="text" name="rut" id="rut" value="<?php echo $alumno->getRut(); ?>" hidden>
                                         <input type="submit" value="Modificar" name="btnModificar"></input>
                                     </form>
@@ -139,7 +145,7 @@ require "views/includes/navbar.admin.php";
     <!--  -->
     <div class="container me-5">
         <div class="mx-auto rounded border-bottom border-end" style="width: 22rem;">
-        
+
             <img src="https://www.svgrepo.com/show/281692/id-card.svg" height="250px;" class="card-img-top m-3" alt="carta alumno">
 
         </div>
@@ -147,7 +153,125 @@ require "views/includes/navbar.admin.php";
 
 </div>
 
+<script>
 
+
+    function buscarDatoCodigo() {
+        // Declare variables
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable2");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+
+    function buscarDatoRut() {
+        // Declare variables
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput2");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable2");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[1];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+
+    function buscarDatoNom() {
+        // Declare variables
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput3");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable2");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[2];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+
+    function sortTable(n) {
+        var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+        table = document.getElementById("myTable2");
+        switching = true;
+        // Seleccionar una direccion a ordenar: asc:
+        dir = "asc";
+        /* Loop hasta que el switch se apague */
+        while (switching) {
+            // iniciando el validador en false para el bucle
+            switching = false;
+            rows = table.rows;
+            /*Se busca en todas las filas de las tablas exepto en la priemera que es la thead o cabezera */
+            for (i = 1; i < (rows.length - 1); i++) {
+                // Se inicializa el switch apagado nuevamente
+                shouldSwitch = false;
+                /* Se recojen los elementos a comparar para ir iterando */
+                x = rows[i].getElementsByTagName("TD")[n];
+                y = rows[i + 1].getElementsByTagName("TD")[n];
+                /* se valida la direccion de ordenamiento de las tablas segun asc o desc */
+                if (dir == "asc") {
+                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                        //Se activa el switch y se apaga el bucle con el ordenamiento finalizado
+                        shouldSwitch = true;
+                        break;
+                    }
+                } else if (dir == "desc") {
+                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+            }
+            if (shouldSwitch) {
+                /* If a switch has been marked, make the switch
+                and mark that a switch has been done: */
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+                // Each time a switch is done, increase this count by 1:
+                switchcount++;
+            } else {
+                /* If no switching has been done AND the direction is "asc",
+                set the direction to "desc" and run the while loop again. */
+                if (switchcount == 0 && dir == "asc") {
+                    dir = "desc";
+                    switching = true;
+                }
+            }
+        }
+    }
+</script>
 
 
 <?php

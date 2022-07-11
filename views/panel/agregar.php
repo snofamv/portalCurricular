@@ -1,5 +1,5 @@
 <?php
-require "views/includes/navbar.admin.php";
+require "views/includes/navbar.user.php";
 ?>
 
 <div class=" container-fluid mt-5">
@@ -72,6 +72,7 @@ require "views/includes/navbar.admin.php";
                         <option value="La Calera">La Calera</option>
                         <option value="Viña del Mar">Viña del Mar</option>
                         <option value="Valparaiso">Valparaiso</option>
+                        <option value="Quillota">Quillota</option>
                     </select>
                 </div>
 
@@ -80,11 +81,11 @@ require "views/includes/navbar.admin.php";
                     <label class="label m-2" for="carreras"  style="color:#FFFFFF;">Carrera</label>
                     <select class="form-select" name="carreras" id="carreras">
                         <option selected disabled hidden>Selecciona una carrera</option>
-                        <option value="Tecnico en Informatica">Tecnico en informatica</option>
-                        <option value="Tecnico en Enfermeria">Tecnico en enfermeria</option>
-                        <option value="construccion">Construccion</option>
-                        <option value="gastronomia">Gastronomia</option>
-                        <option value="Administracion de Empresas">Administrador de Empresas</option>
+                        <?php 
+                            foreach ($d as $sede) {
+                                echo "<option value='".$sede['carrera']."'>".$sede['carrera']."</option>";
+                            }
+                        ?>
                     </select>
                 </div>
 

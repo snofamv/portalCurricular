@@ -1,5 +1,5 @@
 <?php
-class Eliminar extends Controller
+class EliminarController extends SessionController
 {
     function __construct()
     {

@@ -1,6 +1,6 @@
 <?php
 
-class Errores extends Controller
+class ErroresController extends SessionController
 {
     function __construct()
     {

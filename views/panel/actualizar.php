@@ -1,5 +1,5 @@
 <?php
-require "views/includes/navbar.admin.php";
+require "views/includes/navbar.user.php";
 #D is a data global variable;
 ?>
 <!-- Tabla de datos -->
@@ -12,7 +12,7 @@ require "views/includes/navbar.admin.php";
         <!--  -->
         <div class="col">
 
-            <form action="<?php echo URLBASE;?>/actualizar/actualizarAlumno" method="POST" target="_self">
+            <form action="/actualizar/actualizarAlumno" method="POST" target="_self">
                 <!--  -->
                 <!--  -->
 
@@ -43,27 +43,29 @@ require "views/includes/navbar.admin.php";
                             <option value="La Calera">La Calera</option>
                             <option value="Viña del Mar">Viña del Mar</option>
                             <option value="Valparaiso">Valparaiso</option>
+                            <option value="Quillota">Quillota</option>
                         </select>
                     </div>
 
                     <div class="col">
 
                         <label class="label" for="carreras">Nueva Carrera</label>
-                        <select class="form-select" name="carreras" id="carreras" required>
-                            <option selected disabled hidden>Selecciona una carrera</option>
-                            <option value="Tecnico en Informatica">Tecnico en informatica</option>
-                            <option value="Tecnico en Enfermeria">Tecnico en enfermeria</option>
-                            <option value="construccion">Construccion</option>
-                            <option value="gastronomia">Gastronomia</option>
-                            <option value="Administracion de Empresas">Administrador de Empresas</option>
-                        </select>
+                        <select class="form-select" name="carreras" id="carreras">
+                        <option selected disabled hidden>Selecciona una carrera</option>
+                        <?php 
+                            foreach ($d['carreras'] as $sede) {
+                            
+                                echo "<option value='".$sede['carrera']."'>".$sede['carrera']."</option>";
+                            }
+                        ?>
+                    </select>
                     </div>
 
                 </div>
                 <div class="row p-4">
                     <div class="col"></div>
                     <div class="col">
-                        <input type="hidden" name="rutModificar" id="rutModificar" value="<?php echo $d->getRut();?>">
+                        <input type="hidden" name="rutModificar" id="rutModificar" value="<?php echo $d['alumno']->getRut();?>">
                         <input class="btn btn-success" type="submit" name="btnActualizarAlumno" value="Actualizar Alumno">
                     </div>
                     <div class="col">
@@ -77,23 +79,23 @@ require "views/includes/navbar.admin.php";
 
         <div class="col">
             <div class="card text-center mx-auto shadow p-3 mb-5 bg-body rounded" style="width: 22rem;">
-                <img src="https://www.svgrepo.com/show/128306/graduate.svg" height="250px;" class="card-img-top" alt="carta alumno<?php echo " {$d->getNombres()} {$d->getApellidos()}";?>">
+                <img src="https://www.svgrepo.com/show/128306/graduate.svg" height="250px;" class="card-img-top" alt="carta alumno<?php echo " {$d['alumno']->getNombres()} {$d['alumno']->getApellidos()}";?>">
                 <div class="card-body">
-                    <h5 class="card-title"><span><?php echo " {$d->getNombres()} {$d->getApellidos()}"; ?></h5>
+                    <h5 class="card-title"><span><?php echo " {$d['alumno']->getNombres()} {$d['alumno']->getApellidos()}"; ?></h5>
                     <p class="card-text"></p>
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
-                        <p class="fw-bold">Codigo: <span class="fw-normal"><?php echo $d->getCodigo(); ?></span></p>
+                        <p class="fw-bold">Codigo: <span class="fw-normal"><?php echo $d['alumno']->getCodigo(); ?></span></p>
                     </li>
                     <li class="list-group-item">
-                        <p class="fw-bold">Rut: <span class="fw-normal"><?php echo $d->getRut(); ?></span></p>
+                        <p class="fw-bold">Rut: <span class="fw-normal"><?php echo $d['alumno']->getRut(); ?></span></p>
                     </li>
                     <li class="list-group-item">
-                        <p class="fw-bold">Sede: <span class="fw-normal"><?php echo $d->getSede(); ?></span></p>
+                        <p class="fw-bold">Sede: <span class="fw-normal"><?php echo $d['alumno']->getSede(); ?></span></p>
                     </li>
                     <li class="list-group-item">
-                        <p class="fw-bold">Carrera: <span class="fw-normal"><?php echo $d->getCarrera(); ?></span></p>
+                        <p class="fw-bold">Carrera: <span class="fw-normal"><?php echo $d['alumno']->getCarrera(); ?></span></p>
                     </li>
                 </ul>
             </div>

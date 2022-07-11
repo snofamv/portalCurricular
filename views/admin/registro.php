@@ -12,10 +12,10 @@
     <title>Portal Curricular</title>
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column">
 
     <!-- Section: Design Block -->
-    <section class="background-radial-gradient overflow-hidden">
+    <section class="background-radial-gradient overflow-hidden min-vh-100">
         <style>
             .background-radial-gradient {
                 background-color: hsl(37, 90%, 61%);
@@ -77,7 +77,7 @@
                     <div class="card bg-glass">
                         <div class="card-body px-4 py-5 px-md-5">
                             <div class="mb-3">
-                                <a class="navbar-brand" href="/login"><img class="row" src="https://cftpucv.cl/wp-content/uploads/2020/10/logo-CFT-PUCV-con-catolica.png" alt="" width="500px"></a>
+                                <a class="navbar-brand" href="<?php echo URLBASE; ?>"><img class="row" src="https://cftpucv.cl/wp-content/uploads/2020/10/logo-CFT-PUCV-con-catolica.png" alt="" width="500px"></a>
                             </div>
 
                             <?php if (!empty($this->datos) && isset($this->datos["error"])) : ?>
@@ -94,22 +94,22 @@
                             <?php endif; ?>
 
 
-                            <form action="<?php echo URLBASE; ?>/registro/nuevoUsuario " method="POST">
+                            <form action="<?php echo htmlspecialchars(URLBASE); ?>/registro/nuevoUsuario" method="POST">
                                 <!-- 2 column grid layout with text inputs for the first and last names -->
                                 <div class="row">
                                     <!-- Email input -->
                                     <div class="form-outline mb-4">
-                                        <input type="text" id="form3Example3" class="form-control" placeholder="Rut aqui" name="rut" required/>
+                                        <input type="text" id="form3Example3" class="form-control" placeholder="Usuario aqui" name="usuario" required minlength="3" maxlength="9" pattern="[0-9]{0,9}" title="El usuario solo contiene 4 caracteres numericos." />
                                         <label class="form-label" for="form3Example3" hidden>Rut</label>
                                     </div>
 
                                     <!-- Password input -->
                                     <div class="form-outline mb-4">
-                                        <input type="password" id="form3Example4" class="form-control" placeholder="Contraseña aqui" name="clave" required/>
+                                        <input type="password" id="form3Example4" class="form-control" placeholder="Contraseña aqui" name="contrasena" required minlength="3" maxlength="16" title="La contraseña solo contiene 4 caracteres numericos." />
                                         <label class="form-label" for="form3Example4" hidden>Contraseña</label>
                                     </div>
                                     <!-- Submit button -->
-                                    <input type="submit" value="Registrar" class="btn btn-primary">
+                                    <input id="btnRegistrar" type="submit" value="Registrar" class="btn btn-primary">
                                     <div class="text-center mt-5">
                                         <a class="btn btn-secondary btn-block mb-4 " href="<?php echo URLBASE; ?>">Volver a pagina principal</a>
                                     </div>
@@ -121,7 +121,7 @@
         </div>
     </section>
     <!-- Section: Design Block -->
-
+    
 </body>
 
 </html>

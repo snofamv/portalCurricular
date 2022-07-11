@@ -1,5 +1,6 @@
 <?php
-require "views/includes/navbar.admin.php";
+
+require "views/includes/navbar.user.php";
 ?>
 
 <style>
@@ -57,7 +58,8 @@ require "views/includes/navbar.admin.php";
     </div>
     <div class="container">
         <div class="row">
-            <div class="d-flex justify-content-center" >
+
+            <div class="d-flex justify-content-between">
                 <input class="myInput" type="text" id="myInput" onkeyup="buscarDatoCodigo();" placeholder="Buscar por documento">
                 <input class="myInput" type="text" id="myInput2" onkeyup="buscarDatoRut();" placeholder="Buscar por RUT">
                 <input class="myInput" type="text" id="myInput3" onkeyup="buscarDatoNom();" placeholder="Buscar por nombre">
@@ -75,7 +77,7 @@ require "views/includes/navbar.admin.php";
                     <th>Opciones</th>
                 </thead>
                 <tbody>
-                    <?php foreach ($d as  $alumno) : ?>
+                    <?php foreach ($d["datos"] as  $alumno) : ?>
                         <tr class="tablaItem">
                             <td> <?php echo $alumno->getCodigo(); ?></td>
                             <td> <?php echo $alumno->getRut(); ?></td>
@@ -92,8 +94,24 @@ require "views/includes/navbar.admin.php";
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
-
             </table>
+            <div class="d-flex justify-content-between mb-5">
+                <?php $pagina_actual = isset($_GET["pagina"]) ? $_GET["pagina"] : 1; ?>
+
+                <?php if ($pagina_actual < $d["nroDatos"] && $pagina_actual > 1) : ?>
+                    <button><a href="/lista?pagina=<?php echo htmlspecialchars($pagina_actual-1); ?>">←Anterior</a></button>
+                <?php endif; ?>
+
+                <div>
+                    <?php for ($i = 1; $i < $d["nroDatos"]; $i++) : ?>
+                        <button class='me-2'><a href='/lista?pagina=<?php echo $i; ?>' style='text-decoration:none;'><?php echo $i; ?></a></button>
+                    <?php endfor; ?>
+                </div>
+
+                <?php if ($pagina_actual < $d["nroDatos"]-1) : ?>
+                    <button><a href="/lista?pagina=<?php echo htmlspecialchars($pagina_actual+1); ?>">Siguiente→ </a></button>
+                <?php endif ;?>
+            </div>
         </div>
     </div>
 </div>
@@ -121,6 +139,7 @@ require "views/includes/navbar.admin.php";
             }
         }
     }
+
     function buscarDatoRut() {
         // Declare variables
         var input, filter, table, tr, td, i, txtValue;
@@ -142,6 +161,7 @@ require "views/includes/navbar.admin.php";
             }
         }
     }
+
     function buscarDatoNom() {
         // Declare variables
         var input, filter, table, tr, td, i, txtValue;

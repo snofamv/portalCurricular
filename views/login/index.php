@@ -80,10 +80,10 @@
                                 <a class="navbar-brand" href="/"><img class="row" src="https://cftpucv.cl/wp-content/uploads/2020/10/logo-CFT-PUCV-con-catolica.png" alt="" width="500px"></a>
                             </div>
 
-                            <span class="h5">
+                            <span class="h5" id="alerta">
 
                                 <?php if (!empty($this->datos) && isset($this->datos["success"])) : ?>
-                
+
                                     <div class="alert alert-success alert-dismissible d-flex align-items-center" style="width: 100%;">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="currentColor" class="bi bi-information-triangle-fill" viewBox="0 0 16 16">
                                             <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
@@ -107,30 +107,22 @@
                                 <?php endif; ?>
                             </span>
 
-                            <form action="<?php echo URLBASE; ?>/autentificador/acceder" method="POST">
+                            <form action="<?php echo URLBASE; ?>/login/autenticar" method="POST" id="formulario" onsubmit="return validarLogin()">
                                 <!-- 2 column grid layout with text inputs for the first and last names -->
                                 <div class="row">
                                     <!-- Email input -->
                                     <div class="form-outline mb-4">
-                                        <input type="text" id="form3Example3" class="form-control" placeholder="Rut aqui" name="rut" />
-                                        <label class="form-label" for="form3Example3" hidden>Rut</label>
+                                        <input type="text" id="usuario" class="form-control" placeholder="Usuario aqui" name="usuario" required minlength="4" maxlength="9" pattern="[0-9]+" title="La usuario contiene 4 a 9 caracteres de formato numericos." />
+                                        <label class="form-label" for="usuario" hidden>Usuario</label>
                                     </div>
 
                                     <!-- Password input -->
                                     <div class="form-outline mb-4">
-                                        <input type="password" id="form3Example4" class="form-control" placeholder="Contraseña aqui" name="clave" />
-                                        <label class="form-label" for="form3Example4" hidden>Contraseña</label>
+                                        <input type="password" id="contrasena" class="form-control" placeholder="Contraseña aqui" name="contrasena" required minlength="4" maxlength="16" patter="[a-zA-Z0-9]+" title="La contraseña contiene 4 a 16 caracteres alfanumericos." />
+                                        <label class="form-label" for="contrasena" hidden>Contraseña</label>
                                     </div>
-
-
                                     <!-- Submit button -->
-                                    <input type="submit" value="Iniciar sesion" class="btn btn-primary">
-                                    <!-- Register buttons -->
-                                    <div class="text-center p-2">
-                                        <p>¿Olvidaste tu contraseña?</p>
-                                        <a class="btn btn-secondary btn-block mb-4 " href="#">Recuperar contraseña</a>
-                                        <a class="btn btn-secondary btn-block mb-4 " href="/registro">Solicitar registro</a>
-                                    </div>
+                                    <input id="btnIniciarSesion" type="submit" value="Iniciar sesion" class="btn btn-primary">
                             </form>
                         </div>
                     </div>
@@ -139,5 +131,7 @@
         </div>
     </section>
     <!-- Section: Design Block -->
-
+    <script>
+        
+    </script>
     <?php require "views/includes/footer.template.php"; ?>
