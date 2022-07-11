@@ -13,7 +13,7 @@ class PaginacionModel extends Model
     {
         $items = array();
         try {
-            $query = parent::query("SELECT * FROM data ORDER BY codigo ASC LIMIT ". $empezar_desde.",". $resultadosPorPagina);
+            $query = parent::query("SELECT * FROM data ORDER BY codigo DESC LIMIT ". $empezar_desde.",". $resultadosPorPagina);
             while ($p = $query->fetch(PDO::FETCH_ASSOC)) {
                 $objeto = new AlumnoModel();
                 $objeto->setRut($p["rut"]);
