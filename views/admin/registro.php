@@ -94,18 +94,18 @@
                             <?php endif; ?>
 
 
-                            <form action="<?php echo URLBASE; ?>/registro/nuevoUsuario" method="POST">
+                            <form action="<?php echo htmlspecialchars(URLBASE); ?>/registro/nuevoUsuario" method="POST">
                                 <!-- 2 column grid layout with text inputs for the first and last names -->
                                 <div class="row">
                                     <!-- Email input -->
                                     <div class="form-outline mb-4">
-                                        <input type="text" id="form3Example3" class="form-control" placeholder="Usuario aqui" name="usuario" required minlength="3" maxlength="4" pattern="[0-9]{4}" title="El usuario solo contiene 4 caracteres numericos." />
+                                        <input type="text" id="form3Example3" class="form-control" placeholder="Usuario aqui" name="usuario" required minlength="3" maxlength="9" pattern="[0-9]{0,9}" title="El usuario solo contiene 4 caracteres numericos." />
                                         <label class="form-label" for="form3Example3" hidden>Rut</label>
                                     </div>
 
                                     <!-- Password input -->
                                     <div class="form-outline mb-4">
-                                        <input type="password" id="form3Example4" class="form-control" placeholder="Contraseña aqui" name="contrasena" required minlength="3" maxlength="4" pattern="[0-9]{4}" title="La contraseña solo contiene 4 caracteres numericos." />
+                                        <input type="password" id="form3Example4" class="form-control" placeholder="Contraseña aqui" name="contrasena" required minlength="3" maxlength="16" title="La contraseña solo contiene 4 caracteres numericos." />
                                         <label class="form-label" for="form3Example4" hidden>Contraseña</label>
                                     </div>
                                     <!-- Submit button -->
@@ -121,48 +121,7 @@
         </div>
     </section>
     <!-- Section: Design Block -->
-    <script>
-        const btnEnviar = document.getElementById('btnRegistrar');
-
-        const validación = (e) => {
-            e.preventDefault();
-            const nombreDeUsuario = document.getElementById('usuario');
-            const contrasena = document.getElementById('contrasena');
-            if (usuario.value === "") {
-                alert("Por favor, escribe tu nombre de usuario.");
-                usuario.focus();
-                return false;
-            }
-
-            if (contrasena.value === "") {
-                alert("Por favor, escribe tu contrasena");
-                contrasena.focus();
-                return false;
-            }
-
-            if (!contrasenaValida(contrasena.value)) {
-                alert("Por favor, escribe una contraseña valida.");
-                contrasena.focus();
-                return false;
-            }
-            if (!usuarioValido(usuario.value)) {
-                alert("Por favor, escribe un usuario valido.");
-                contrasena.focus();
-                return false;
-            }
-
-            return true; //Se pueden enviar los datos del formulario al servidor
-        }
-
-        const contrasenaValida = contrasena => {
-            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contrasena);
-        }
-        const usuarioValido = usuario => {
-            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(usuario);
-        }
-
-        btnEnviar.addEventListener('click', validacion);
-    </script>
+    
 </body>
 
 </html>

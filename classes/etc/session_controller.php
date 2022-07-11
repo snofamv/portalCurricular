@@ -17,11 +17,6 @@ class SessionController extends Controller
             "rol" => "",
         ],
         [
-            "sitio" => "registro",
-            "acceso" => "publico",
-            "rol" => "",
-        ],
-        [
             "sitio" => "panel",
             "acceso" => "privado",
             "rol" => "user",
@@ -46,13 +41,16 @@ class SessionController extends Controller
             "acceso" => "privado",
             "rol" => "user",
         ],
-        
         [
             "sitio" => "admin",
             "acceso" => "privado",
             "rol" => "admin",
         ],
-
+        [
+            "sitio" => "registro",
+            "acceso" => "privado",
+            "rol" => "admin",
+        ]
     );
 
     public function __construct()
@@ -72,7 +70,7 @@ class SessionController extends Controller
     {
         $url = "";
         for ($i = 0; $i < sizeOf($this->sitios); $i++) {
-            if ($this->sitios[$i]["rol"] == $rol) {
+            if ($this->sitios[$i]["rol"] === $rol) {
                 $url = "" . $this->sitios[$i]['sitio'];
                 break;
             }
@@ -86,7 +84,7 @@ class SessionController extends Controller
         $url = preg_replace("/\?.*/", "", $url);
 
         for ($i = 0; $i < sizeof($this->sitios); $i++) {
-            if ($url == $this->sitios[$i]['sitio'] && $this->sitios[$i]["rol"] == $rol) {
+            if ($url === $this->sitios[$i]['sitio'] && $this->sitios[$i]["rol"] === $rol) {
                 return true;
             }
         }
@@ -109,7 +107,9 @@ class SessionController extends Controller
                 break;
             case 'admin':
                 $this->redirect("admin", []);
-
+                break;
+            case '':
+                $this->redirect("", []);
                 break;
         }
     }
@@ -127,7 +127,7 @@ class SessionController extends Controller
     private function existeSesion()
     {
         if (!$this->session->existeSesion()) return false;
-        if ($this->session->getCurrentUser() == NULL) return false;
+        if ($this->session->getCurrentUser() === NULL) return false;
 
         $idUsuario = $this->session->getCurrentUser();
         if ($idUsuario) return true;
@@ -150,7 +150,7 @@ class SessionController extends Controller
         $url = preg_replace("/\?.*/", "", $url);
 
         for ($i = 0; $i < sizeof($this->sitios); $i++) {
-            if ($url == $this->sitios[$i]['sitio'] && $this->sitios[$i]["acceso"] == "publico") {
+            if ($url === $this->sitios[$i]['sitio'] && $this->sitios[$i]["acceso"] === "publico") {
                 return true;
             }
         }
@@ -165,7 +165,7 @@ class SessionController extends Controller
             $rol = $this->getUsuarioSessionData()->getRol();
             if ($this->isPublic()) {
                 #se verifica si el sitio es publico y se redirecciona
-                $this->redirect("", []);
+                $this->redirectDefaultSiteByRol($rol);
             } else {
                 #si es privado se verifica segun el ROL si esta autorizado al sitio.
                 if ($this->isAuthorized($rol)) {

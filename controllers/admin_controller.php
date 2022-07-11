@@ -1,5 +1,5 @@
 <?php
-class AdminController extends SessionController 
+class AdminController extends SessionController
 {
     public function __construct()
     {
@@ -10,15 +10,46 @@ class AdminController extends SessionController
     {
         $this->vista->render("admin/index", []);
     }
+    public function registro()
+    {
+        $this->redirect("registro", []);
+    }
+    public function opciones()
+    {
+        $this->vista->render("admin/opciones", []);
+    }
+    public function activarUsuario()
+    {
+        $this->cargarModelo("usuario");
+        $d["usuarios"] = $this->modelo->getAll();
+        $this->vista->render("admin/activarUsuario", $d);
+    }
+    public function activar()
+    {
+
+        if ($this->existsGET(["estado"])) {
+            $this->cargarModelo("usuario");
+            $this->redirect("admin", ["success" => SuccessMessages::SUCCESS_ACTIVACION_USUARIO]);
+        }
+    }
+    public function desactivar()
+    {
+        if ($this->existsGET(["estado", "usuario"])) {
+            $this->cargarModelo("usuario");
+            $this->modelo->get($this->getGET("usuario"));
+            if($this->modelo->desactivarUsuario()){
+                $this->redirect("admin", ["success" => SuccessMessages::SUCCESS_DESACTIVACION_USUARIO]);
+            }else{
+                $this->redirect("admin", ["error" => ErrorMessages::ERROR_DESACTIVACION_USUARIO]);
+            }
+            
+        }
+    }
 
     public function salir()
     {
         error_log("AdminController::Salir()");
         parent::salir();
-        $this->redirect("", ["success"=> SuccessMessages::SUCCESS_CIERREDESESION_CORRECTAMENTE]);
-    }
-    public function config()
-    {
-        $this->vista->render("admin/configuracion", []);
+        $this->redirect("", ["success" => SuccessMessages::SUCCESS_CIERREDESESION_CORRECTAMENTE]);
     }
 }

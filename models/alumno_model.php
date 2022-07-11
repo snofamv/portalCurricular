@@ -20,12 +20,14 @@ class AlumnoModel extends Model implements AlumnoInterface
         $this->carrera = "";
         $this->rut = "";
     }
-    public function getCarreras(){
+  
+    public function getCarreras()
+    {
         $items = array();
         try {
             $query = parent::query("SELECT * FROM carreras");
             while ($p = $query->fetch(PDO::FETCH_ASSOC)) {
-               array_push($items, $p);
+                array_push($items, $p);
             }
             return $items;
         } catch (PDOException $th) {
@@ -36,7 +38,7 @@ class AlumnoModel extends Model implements AlumnoInterface
     {
         $items = array();
         try {
-            $query = parent::query("SELECT * FROM data");
+            $query = parent::query("SELECT * FROM data ORDER BY codigo ASC");
             while ($p = $query->fetch(PDO::FETCH_ASSOC)) {
                 $objeto = new AlumnoModel();
                 $objeto->setRut($p["rut"]);

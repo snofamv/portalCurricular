@@ -24,6 +24,7 @@ class ErrorMessages
     const ERROR_BUSCAR_ALUMNO_NOENCONTRADO_CAMPO_CARRERA = "886987K511f1487KKy76LK8YLLL01576" ;
     const ERROR_BUSCAR_ALUMNO_SEDE_NOEXISTE = "886987K511172KKKKy76LK8YLLL01576" ;
     const ERROR_BUSCAR_ALUMNO_CARRERA_NOEXISTE = "886987K511172KKKLO00087p0LLL01576" ;
+    const ERROR_DESACTIVACION_USUARIO = "886987K12154ññlpo12qu87p0LLL01576" ;
     private $errorList = array();
 
     function __construct()
@@ -51,6 +52,7 @@ class ErrorMessages
             ErrorMessages::ERROR_BUSCAR_ALUMNO_CARRERA_NOEXISTE => "No se pueden encontrar datos en la carrera ingresada o no existe.",
             ErrorMessages::ERROR_REGISTRAR_YA_EXISTE_ALUMNO => "El alumno ya existe en nuestros registros.",
             ErrorMessages::ERROR_REGISTRAR_ALUMNO_CAMPOS_VACIOS => "Error, porfavor rellenar los campos vacios.",
+            ErrorMessages::ERROR_DESACTIVACION_USUARIO => "Error, no se pudo desactivar el usuario.",
         ];
     }
 
