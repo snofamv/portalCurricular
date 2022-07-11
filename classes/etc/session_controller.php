@@ -50,7 +50,27 @@ class SessionController extends Controller
             "sitio" => "registro",
             "acceso" => "privado",
             "rol" => "admin",
-        ]
+        ],
+        [
+            "sitio" => "lista",
+            "acceso" => "privado",
+            "rol" => "admin",
+        ],
+        [
+            "sitio" => "buscar",
+            "acceso" => "privado",
+            "rol" => "admin",
+        ],
+        [
+            "sitio" => "actualizar",
+            "acceso" => "privado",
+            "rol" => "admin",
+        ],
+        [
+            "sitio" => "agregar",
+            "acceso" => "privado",
+            "rol" => "admin",
+        ],
     );
 
     public function __construct()
