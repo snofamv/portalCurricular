@@ -18,7 +18,7 @@ class ListaController extends SessionController implements ListaInterface
     {
         $query = $this->modelo->query("SELECT COUNT(*) AS total FROM data");
         $this->total_datos = $query->fetch(PDO::FETCH_OBJ)->total;
-        $this->totalPaginas = ceil($this->total_datos / $this->resultadosPorPagina);
+        $this->totalPaginas = ceil($this->total_datos / $this->resultadosPorPagina)+1;
     }
     function render()
     {
