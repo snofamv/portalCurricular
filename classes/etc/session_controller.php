@@ -57,7 +57,7 @@ class SessionController extends Controller
             "rol" => "usuario",
         ],
         [
-            "sitio" => "panel",
+            "sitio" => "panelAdmin",
             "acceso" => "privado",
             "rol" => "admin",
         ],
@@ -78,11 +78,6 @@ class SessionController extends Controller
         ],
         [
             "sitio" => "agregar",
-            "acceso" => "privado",
-            "rol" => "admin",
-        ],
-        [
-            "sitio" => "panelAdmin",
             "acceso" => "privado",
             "rol" => "admin",
         ],
@@ -150,7 +145,7 @@ class SessionController extends Controller
             case 'admin':
                 $this->redirect("panelAdmin", []);
                 break;
-            default:
+            case '':
                 $this->redirect("", []);
                 break;
         }

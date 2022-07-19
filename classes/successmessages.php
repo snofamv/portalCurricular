@@ -10,6 +10,7 @@ class SuccessMessages
     const SUCCESS_ACCESO_CONCEDIDO = "5845kkdkj09888KKL6Y8KKK0dd7478cd" ;
     const SUCCESS_ACTIVACION_USUARIO = "5845kk10215LLLKKL6Y8KKK0dd7478cd" ;
     const SUCCESS_DESACTIVACION_USUARIO = "5845kk10215LLLKKL6Y09OOOOd7478cd" ;
+    const SUCCESS_CAMBIO_ROL = "5845kk10215LLLKKL6054LLñju7478cd" ;
 
     private $successList = array();
     function __construct()
@@ -23,7 +24,8 @@ class SuccessMessages
             SuccessMessages::SUCCESS_ALUMNO_ENCONTADO_RUT => "Alumno encontrado con exito, cargando informacion.",
             SuccessMessages::SUCCESS_ACCESO_CONCEDIDO => "Credenciales autorizadas. Bienvenido!",
             SuccessMessages::SUCCESS_ACTIVACION_USUARIO => "Usuario activado correctamente!",
-            SuccessMessages::SUCCESS_DESACTIVACION_USUARIO => "Usuario desactivado correctamente!"
+            SuccessMessages::SUCCESS_DESACTIVACION_USUARIO => "Usuario desactivado correctamente!",
+            SuccessMessages::SUCCESS_CAMBIO_ROL => "Rol de Usuario modificado correctamente!",
 
         ];
     }

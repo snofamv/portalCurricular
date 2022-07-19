@@ -9,7 +9,7 @@ class UsuarioModel extends Model implements IModel
         $this->id = "";
         $this->usuario = "";
         $this->contrasena = "";
-        $this->rol = "user";
+        $this->rol = "lector";
         $this->foto = "";
         $this->nombre = "";
         $this->estado = 0;
@@ -30,6 +30,18 @@ class UsuarioModel extends Model implements IModel
         try {
             $query = $this->prepare("UPDATE usuarios SET estado=1 WHERE id=:id");
             $query->bindParam(":id",$this->id);
+            $query->execute();
+            return true;
+        } catch (PDOException $th) {
+            error_log("UsuarioModelo => METODO_UPDATE::PDOException => " . $th->getMessage());
+            return false;
+        }
+    }
+    public function cambiarRol($rol){
+        try {
+            $query = $this->prepare("UPDATE usuarios SET rol=:rol WHERE id=:id");
+            $query->bindParam(":id",$this->id);
+            $query->bindParam(":rol",$rol);
             $query->execute();
             return true;
         } catch (PDOException $th) {

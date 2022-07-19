@@ -39,10 +39,12 @@ require "views/includes/navbar.admin.php";
             <table id="myTable2" class="table table-success table-striped table-hover table-bordered border-primary">
 
                 <thead class="table-dark">
-                    <th>ID Usuario <button id="orderCodigo" onclick="sortTable(0)">↓</button></th>
-                    <th>Usuario <button id="orderRut" onclick="sortTable(1)">↓</button></th>
-                    <th>Estado <button id="orderNom" onclick="sortTable(2)">↓</button></th>
-                    <th>Opciones</th>
+                    <th>ID Usuario</button></th>
+                    <th>Usuario</button></th>
+                    <th>Estado</button></th>
+                    <th>Rol</th>
+                    <th>Estado de cuenta</th>
+                    <th>Modificar Rol</th>
                 </thead>
                 <tbody>
                     <?php if (isset($d["usuarios"])) : ?>
@@ -50,7 +52,8 @@ require "views/includes/navbar.admin.php";
                             <tr class="tablaItem">
                                 <td> <?php echo $usuario->getId(); ?></td>
                                 <td> <?php echo $usuario->getUsuario(); ?></td>
-                                <td> <?php echo $usuario->getEstado() == TRUE ? "Activado" : "Desactivado" ?></td>
+                                <td> <?php echo $usuario->getEstado() == TRUE ? "Activa" : "Inhabilitada" ?></td>
+                                <td> <?php echo ucfirst($usuario->getRol()) ?> </td>
                                 <td>
                                     <?php if ($usuario->getEstado() == TRUE) : ?>
                                         <form action="/panelAdmin/desactivar" method="GET">
@@ -63,6 +66,43 @@ require "views/includes/navbar.admin.php";
                                             <input type="boolval" name="estado" value="<?php echo 1; ?>" hidden>
                                             <input type="text" name="usuario" value="<?php echo $usuario->getUsuario(); ?>" hidden>
                                             <input type="submit" value="Activar"></input>
+                                        </form>
+                                    <?php endif; ?>
+                                </td>
+                                <td style="display: flex; justify-content: center; ">
+                                    <?php if ($usuario->getRol() === "usuario") : ?>
+                                        <form action="/panelAdmin/rol" method="GET">
+                                            <input type="text" name="rol" value="<?php echo "lector"; ?>" hidden>
+                                            <input type="text" name="usuario" value="<?php echo $usuario->getUsuario() ?>" hidden>
+                                            <input type="submit" value="Rol Lector"></input>
+                                        </form>
+                                        <form action="/panelAdmin/rol" method="GET">
+                                            <input type="text" name="rol" value="<?php echo "admin"; ?>" hidden>
+                                            <input type="text" name="usuario" value="<?php echo $usuario->getUsuario() ?>" hidden>
+                                            <input type="submit" value="Rol Admin"></input>
+                                        </form>
+                                    <?php elseif ($usuario->getRol() === "lector") : ?>
+                                        <form action="/panelAdmin/rol" method="GET">
+                                            <input type="text" name="rol" value="<?php echo "usuario"; ?>" hidden>
+                                            <input type="text" name="usuario" value="<?php echo $usuario->getUsuario(); ?>" hidden>
+                                            <input type="submit" value="Rol Usuario"></input>
+                                        </form>
+                                        <form action="/panelAdmin/rol" method="GET">
+                                        <input type="text" name="rol" value="<?php echo "admin"; ?>" hidden>
+                                            <input type="text" name="usuario" value="<?php echo $usuario->getUsuario(); ?>" hidden>
+                                            <input type="submit" value="Rol Admin"></input>
+                                        </form>
+
+                                    <?php elseif ($usuario->getRol() === "admin") : ?>
+                                        <form action="/panelAdmin/rol" method="GET">
+                                            <input type="text" name="rol" value="<?php echo "lector"; ?>" hidden>
+                                            <input type="text" name="usuario" value="<?php echo $usuario->getUsuario(); ?>" hidden>
+                                            <input type="submit" value="Rol Lector"></input>
+                                        </form>
+                                        <form action="/panelAdmin/rol" method="GET">
+                                            <input type="text" name="rol" value="<?php echo "usuario"; ?>" hidden>
+                                            <input type="text" name="usuario" value="<?php echo $usuario->getUsuario(); ?>" hidden>
+                                            <input type="submit" value="Rol Usuario"></input>
                                         </form>
                                     <?php endif; ?>
                                 </td>
