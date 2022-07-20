@@ -1,9 +1,6 @@
 <?php
 
-use Dompdf\Dompdf;
-
-ob_start();
-require "views/includes/navbar.user.php";
+require "views/includes/navbar.admin.php";
 ?>
 
 <style>
@@ -102,17 +99,17 @@ require "views/includes/navbar.user.php";
                 <?php $pagina_actual = isset($_GET["pagina"]) ? $_GET["pagina"] : 1; ?>
 
                 <?php if ($pagina_actual < $d["nroDatos"] && $pagina_actual > 1) : ?>
-                    <button><a href="/panelAdmin/lista?pagina=<?php echo htmlspecialchars($pagina_actual-1); ?>">←Anterior</a></button>
+                    <button><a href="/lista?pagina=<?php echo htmlspecialchars($pagina_actual-1); ?>">←Anterior</a></button>
                 <?php endif; ?>
 
                 <div>
                     <?php for ($i = 1; $i < $d["nroDatos"]; $i++) : ?>
-                        <button class='me-2'><a href='/panelAdmin/lista?pagina=<?php echo $i; ?>' style='text-decoration:none;'><?php echo $i; ?></a></button>
+                        <button class='me-2'><a href='/lista?pagina=<?php echo $i; ?>' style='text-decoration:none;'><?php echo $i; ?></a></button>
                     <?php endfor; ?>
                 </div>
 
                 <?php if ($pagina_actual < $d["nroDatos"]-1) : ?>
-                    <button><a href="/panelAdmin/lista?pagina=<?php echo htmlspecialchars($pagina_actual+1); ?>">Siguiente→ </a></button>
+                    <button><a href="/lista?pagina=<?php echo htmlspecialchars($pagina_actual+1); ?>">Siguiente→ </a></button>
                 <?php endif ;?>
             </div>
         </div>
@@ -239,16 +236,4 @@ require "views/includes/navbar.user.php";
 </script>
 <?php
 require "views/includes/footer.template.php";
-$html = ob_get_clean();
-
-require_once "views/panel-admin/pdf/lib/Cpdf.php";
-$dompdf = new Dompdf();
-$options = $dompdf->getOptions();
-$options->set(array("isRemoteEnabled" => true));
-$dompdf->setOptions($options);
-$dompdf->loadHtml("hola mundo en pdf");
-$dompdf->setPaper("letter");
-$dompdf->render();
-
-$dompdf->stream("archivo.pdf", array("Attachment"=>false));
 ?>

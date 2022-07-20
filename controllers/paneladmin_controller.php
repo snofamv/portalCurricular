@@ -52,7 +52,7 @@ class PanelAdminController extends SessionController
         $this->calcularPaginas();
         $d["datos"] = $this->modelo->getDatos($this->empezar_desde, $this->resultadosPorPagina);
         $d["nroDatos"] = $this->totalPaginas;
-        $this->vista->render("panel-admin/lista", $d);
+        $this->vista->render("panel-admin/pdf", $d);
     }
     public function activarUsuario()
     {

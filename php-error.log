@@ -1,32 +1,1225 @@
-[19-Jul-2022 22:51:18 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[19-Jul-2022 22:51:18 Europe/Berlin] ##############################################
-[19-Jul-2022 22:51:18 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[19-Jul-2022 22:51:18 Europe/Berlin] Conexion a BD Exitosa.
-[19-Jul-2022 22:51:19 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
-[19-Jul-2022 22:51:19 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[19-Jul-2022 22:51:19 Europe/Berlin] ##############################################
-[19-Jul-2022 22:51:19 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[19-Jul-2022 22:51:19 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[19-Jul-2022 22:51:19 Europe/Berlin] Conexion a BD Exitosa.
-[19-Jul-2022 22:51:19 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[19-Jul-2022 22:51:19 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[19-Jul-2022 22:51:19 Europe/Berlin] ##############################################
-[19-Jul-2022 22:51:19 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[19-Jul-2022 22:51:19 Europe/Berlin] Conexion a BD Exitosa.
-[19-Jul-2022 22:51:19 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
-[19-Jul-2022 22:51:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[19-Jul-2022 22:51:21 Europe/Berlin] ##############################################
-[19-Jul-2022 22:51:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[19-Jul-2022 22:51:21 Europe/Berlin] Conexion a BD Exitosa.
-[19-Jul-2022 22:51:21 Europe/Berlin] Controller::CargarModelo paginacion.
-[19-Jul-2022 22:51:21 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
-[19-Jul-2022 22:51:21 Europe/Berlin] Conexion a BD Exitosa.
-[19-Jul-2022 22:51:21 Europe/Berlin] Conexion a BD Exitosa.
-[19-Jul-2022 22:51:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "Dompdf\Dompdf" not found in C:\xampp\htdocs\views\panel-admin\lista.php:245
+[20-Jul-2022 22:18:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:18:21 Europe/Berlin] ##############################################
+[20-Jul-2022 22:18:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:18:21 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:18:21 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:18:21 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 40
+[20-Jul-2022 22:18:21 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:18:21 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:18:21 Europe/Berlin] PHP Warning:  require(views/panel-admin/lista.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\libs\view.php on line 18
+[20-Jul-2022 22:18:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'views/panel-admin/lista.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\libs\view.php:18
 Stack trace:
-#0 C:\xampp\htdocs\libs\view.php(18): require()
-#1 C:\xampp\htdocs\controllers\paneladmin_controller.php(55): View->render('panel-admin/lis...', Array)
-#2 C:\xampp\htdocs\libs\app.php(55): PanelAdminController->pdf()
-#3 C:\xampp\htdocs\index.php(4): App->__construct()
-#4 {main}
-  thrown in C:\xampp\htdocs\views\panel-admin\lista.php on line 245
+#0 C:\xampp\htdocs\controllers\paneladmin_controller.php(45): View->render('panel-admin/lis...', Array)
+#1 C:\xampp\htdocs\libs\app.php(55): PanelAdminController->lista()
+#2 C:\xampp\htdocs\index.php(4): App->__construct()
+#3 {main}
+  thrown in C:\xampp\htdocs\libs\view.php on line 18
+[20-Jul-2022 22:19:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:19:23 Europe/Berlin] ##############################################
+[20-Jul-2022 22:19:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:19:23 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:23 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:19:23 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 40
+[20-Jul-2022 22:19:23 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:23 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:19:23 Europe/Berlin] ##############################################
+[20-Jul-2022 22:19:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:19:23 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:19:23 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:23 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:19:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:19:23 Europe/Berlin] ##############################################
+[20-Jul-2022 22:19:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:19:23 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:19:23 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:23 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:19:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:19:23 Europe/Berlin] ##############################################
+[20-Jul-2022 22:19:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:19:23 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:19:23 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:23 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:19:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:19:23 Europe/Berlin] ##############################################
+[20-Jul-2022 22:19:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:19:23 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:19:23 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:23 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:19:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:19:23 Europe/Berlin] ##############################################
+[20-Jul-2022 22:19:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:19:23 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:19:23 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:23 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:19:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:19:23 Europe/Berlin] ##############################################
+[20-Jul-2022 22:19:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:19:23 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:19:23 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:23 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:19:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:19:23 Europe/Berlin] ##############################################
+[20-Jul-2022 22:19:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:19:23 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:19:23 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:23 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:19:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:19:23 Europe/Berlin] ##############################################
+[20-Jul-2022 22:19:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:19:23 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:19:23 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:24 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:19:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:19:24 Europe/Berlin] ##############################################
+[20-Jul-2022 22:19:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:19:24 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:19:24 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:24 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:19:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:19:24 Europe/Berlin] ##############################################
+[20-Jul-2022 22:19:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:19:24 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:19:24 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:24 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:19:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:19:24 Europe/Berlin] ##############################################
+[20-Jul-2022 22:19:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:19:24 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:19:24 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:24 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:19:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:19:24 Europe/Berlin] ##############################################
+[20-Jul-2022 22:19:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:19:24 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:19:24 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:24 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:19:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:19:24 Europe/Berlin] ##############################################
+[20-Jul-2022 22:19:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:19:24 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:19:24 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:24 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:19:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:19:24 Europe/Berlin] ##############################################
+[20-Jul-2022 22:19:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:19:24 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:19:24 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:24 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:19:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:19:24 Europe/Berlin] ##############################################
+[20-Jul-2022 22:19:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:19:24 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:19:24 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:24 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:19:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:19:24 Europe/Berlin] ##############################################
+[20-Jul-2022 22:19:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:19:24 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:19:24 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:24 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:19:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:19:24 Europe/Berlin] ##############################################
+[20-Jul-2022 22:19:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:19:24 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:19:24 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:24 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:19:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:19:24 Europe/Berlin] ##############################################
+[20-Jul-2022 22:19:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:19:24 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:19:24 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:24 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:19:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:19:24 Europe/Berlin] ##############################################
+[20-Jul-2022 22:19:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:19:24 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:19:24 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:24 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:19:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:19:24 Europe/Berlin] ##############################################
+[20-Jul-2022 22:19:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:19:24 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:19:24 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:25 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:19:25 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:19:25 Europe/Berlin] ##############################################
+[20-Jul-2022 22:19:25 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:19:25 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:19:25 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:25 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:19:25 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:19:25 Europe/Berlin] ##############################################
+[20-Jul-2022 22:19:25 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:19:25 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:19:25 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:25 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:19:25 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:19:25 Europe/Berlin] ##############################################
+[20-Jul-2022 22:19:25 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:19:25 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:19:25 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:20:03 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:03 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:03 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:03 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:03 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:20:03 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:20:03 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:03 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:03 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:03 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:03 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:03 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:20:03 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:03 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:20:03 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:03 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:03 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:03 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:04 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:20:10 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:10 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:10 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:10 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:10 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:20:10 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:20:10 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:10 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:10 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:10 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:10 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:10 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:20:10 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:10 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:20:10 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:10 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:10 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:10 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:10 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:20:17 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:17 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:17 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:17 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:17 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:20:17 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:20:17 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:17 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:17 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:17 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:17 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:17 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:20:17 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:17 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:20:17 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:17 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:17 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:17 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:17 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:20:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:23 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:23 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:23 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:20:23 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:20:23 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:23 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:23 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:23 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:20:23 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:23 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:20:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:23 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:23 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:23 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:20:29 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:29 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:29 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:29 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:29 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:20:29 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:20:29 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:29 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:29 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:29 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:29 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:29 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:20:29 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:29 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:20:29 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:29 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:29 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:29 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:29 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:20:38 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:38 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:38 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:38 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:38 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:20:38 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:20:38 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:38 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:38 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:38 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:38 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:38 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:20:38 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:38 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:20:38 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:38 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:38 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:38 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:38 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:20:42 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:42 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:42 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:42 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:42 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:20:42 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:20:42 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:42 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:42 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:42 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:42 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:42 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:20:42 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:42 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:20:42 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:42 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:42 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:42 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:43 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:20:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:48 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:48 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:48 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:20:48 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:20:48 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:48 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:48 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:48 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:20:48 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:20:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:48 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:48 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:48 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:20:59 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:59 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:59 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:59 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:59 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:20:59 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:20:59 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:59 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:59 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:59 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:59 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:59 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:20:59 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:59 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:20:59 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:20:59 Europe/Berlin] ##############################################
+[20-Jul-2022 22:20:59 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:20:59 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:20:59 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:21:05 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:21:05 Europe/Berlin] ##############################################
+[20-Jul-2022 22:21:05 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:21:05 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:05 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:21:05 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:21:05 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:05 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:05 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:21:05 Europe/Berlin] ##############################################
+[20-Jul-2022 22:21:05 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:21:05 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:21:05 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:05 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:21:05 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:21:05 Europe/Berlin] ##############################################
+[20-Jul-2022 22:21:05 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:21:05 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:05 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:21:10 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:21:10 Europe/Berlin] ##############################################
+[20-Jul-2022 22:21:10 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:21:10 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:10 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:21:10 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:21:10 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:10 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:10 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:21:10 Europe/Berlin] ##############################################
+[20-Jul-2022 22:21:10 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:21:10 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:21:10 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:10 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:21:10 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:21:10 Europe/Berlin] ##############################################
+[20-Jul-2022 22:21:10 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:21:10 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:10 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:21:16 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:21:16 Europe/Berlin] ##############################################
+[20-Jul-2022 22:21:16 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:21:16 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:16 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:21:16 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:21:16 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:16 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:16 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:21:16 Europe/Berlin] ##############################################
+[20-Jul-2022 22:21:16 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:21:16 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:21:16 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:16 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:21:16 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:21:16 Europe/Berlin] ##############################################
+[20-Jul-2022 22:21:16 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:21:16 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:16 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:21:35 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:21:35 Europe/Berlin] ##############################################
+[20-Jul-2022 22:21:35 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:21:35 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:35 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:21:35 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:21:35 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:35 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:35 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:21:35 Europe/Berlin] ##############################################
+[20-Jul-2022 22:21:35 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:21:35 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:21:35 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:35 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:21:35 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:21:35 Europe/Berlin] ##############################################
+[20-Jul-2022 22:21:35 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:21:35 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:35 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:21:38 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:21:38 Europe/Berlin] ##############################################
+[20-Jul-2022 22:21:38 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:21:38 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:38 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:21:38 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:21:38 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:38 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:38 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:21:38 Europe/Berlin] ##############################################
+[20-Jul-2022 22:21:38 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:21:38 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:21:38 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:39 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:21:39 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:21:39 Europe/Berlin] ##############################################
+[20-Jul-2022 22:21:39 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:21:39 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:39 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:21:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:21:48 Europe/Berlin] ##############################################
+[20-Jul-2022 22:21:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:21:48 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:48 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:21:48 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:21:48 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:48 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:21:48 Europe/Berlin] ##############################################
+[20-Jul-2022 22:21:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:21:48 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:21:48 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:49 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:21:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:21:49 Europe/Berlin] ##############################################
+[20-Jul-2022 22:21:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:21:49 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:21:49 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:22:20 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:22:20 Europe/Berlin] ##############################################
+[20-Jul-2022 22:22:20 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:22:20 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:22:20 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:22:20 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:22:20 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:22:20 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:22:20 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:22:20 Europe/Berlin] ##############################################
+[20-Jul-2022 22:22:20 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:22:20 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:22:20 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:22:20 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:22:20 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:22:20 Europe/Berlin] ##############################################
+[20-Jul-2022 22:22:20 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:22:20 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:22:20 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:22:27 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:22:27 Europe/Berlin] ##############################################
+[20-Jul-2022 22:22:27 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:22:27 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:22:27 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:22:27 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:22:27 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:22:27 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:22:27 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:22:27 Europe/Berlin] ##############################################
+[20-Jul-2022 22:22:27 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:22:27 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:22:27 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:22:27 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:22:27 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:22:27 Europe/Berlin] ##############################################
+[20-Jul-2022 22:22:27 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:22:27 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:22:27 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:22:41 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:22:41 Europe/Berlin] ##############################################
+[20-Jul-2022 22:22:41 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:22:41 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:22:41 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:22:41 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:22:41 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:22:41 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:22:42 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:22:42 Europe/Berlin] ##############################################
+[20-Jul-2022 22:22:42 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:22:42 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:22:42 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:22:42 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:22:42 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:22:42 Europe/Berlin] ##############################################
+[20-Jul-2022 22:22:42 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:22:42 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:22:42 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:22:52 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:22:52 Europe/Berlin] ##############################################
+[20-Jul-2022 22:22:52 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:22:52 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:22:52 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:22:52 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:22:52 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:22:52 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:22:52 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:22:52 Europe/Berlin] ##############################################
+[20-Jul-2022 22:22:52 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:22:52 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:22:52 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:22:52 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:22:52 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:22:52 Europe/Berlin] ##############################################
+[20-Jul-2022 22:22:52 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:22:52 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:22:52 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:23:31 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:23:31 Europe/Berlin] ##############################################
+[20-Jul-2022 22:23:31 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:23:31 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:23:31 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:23:31 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:23:31 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:23:31 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:23:32 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:23:32 Europe/Berlin] ##############################################
+[20-Jul-2022 22:23:32 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:23:32 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:23:32 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:23:32 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:23:32 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:23:32 Europe/Berlin] ##############################################
+[20-Jul-2022 22:23:32 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:23:32 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:23:32 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:23:40 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:23:40 Europe/Berlin] ##############################################
+[20-Jul-2022 22:23:40 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:23:40 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:23:41 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:23:41 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:23:41 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:23:41 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:23:41 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:23:41 Europe/Berlin] ##############################################
+[20-Jul-2022 22:23:41 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:23:41 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:23:41 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:23:41 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:23:41 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:23:41 Europe/Berlin] ##############################################
+[20-Jul-2022 22:23:41 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:23:41 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:23:41 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:23:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:23:53 Europe/Berlin] ##############################################
+[20-Jul-2022 22:23:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:23:53 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:23:53 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:23:53 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:23:53 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:23:53 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:23:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:23:54 Europe/Berlin] ##############################################
+[20-Jul-2022 22:23:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:23:54 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:23:54 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:23:54 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:23:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:23:54 Europe/Berlin] ##############################################
+[20-Jul-2022 22:23:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:23:54 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:23:54 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:24:03 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:24:03 Europe/Berlin] ##############################################
+[20-Jul-2022 22:24:03 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:24:03 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:03 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:24:03 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:24:03 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:03 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:04 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:24:04 Europe/Berlin] ##############################################
+[20-Jul-2022 22:24:04 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:24:04 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:24:04 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:04 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:24:04 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:24:04 Europe/Berlin] ##############################################
+[20-Jul-2022 22:24:04 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:24:04 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:04 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:24:07 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:24:07 Europe/Berlin] ##############################################
+[20-Jul-2022 22:24:07 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:24:07 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:07 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:24:07 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:24:07 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:07 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:07 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:24:07 Europe/Berlin] ##############################################
+[20-Jul-2022 22:24:07 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:24:07 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:24:07 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:07 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:24:07 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:24:07 Europe/Berlin] ##############################################
+[20-Jul-2022 22:24:07 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:24:07 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:08 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:24:14 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:24:14 Europe/Berlin] ##############################################
+[20-Jul-2022 22:24:14 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:24:14 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:14 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:24:14 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:24:14 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:14 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:14 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:24:14 Europe/Berlin] ##############################################
+[20-Jul-2022 22:24:14 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:24:14 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:24:14 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:14 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:24:14 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:24:14 Europe/Berlin] ##############################################
+[20-Jul-2022 22:24:14 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:24:14 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:14 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:24:20 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:24:20 Europe/Berlin] ##############################################
+[20-Jul-2022 22:24:20 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:24:20 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:20 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:24:20 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:24:20 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:20 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:20 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:24:20 Europe/Berlin] ##############################################
+[20-Jul-2022 22:24:20 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:24:20 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:24:20 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:20 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:24:20 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:24:20 Europe/Berlin] ##############################################
+[20-Jul-2022 22:24:20 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:24:20 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:20 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:24:31 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:24:31 Europe/Berlin] ##############################################
+[20-Jul-2022 22:24:31 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:24:31 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:32 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:24:32 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:24:32 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:32 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:32 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:24:32 Europe/Berlin] ##############################################
+[20-Jul-2022 22:24:32 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:24:32 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:24:32 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:32 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:24:32 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:24:32 Europe/Berlin] ##############################################
+[20-Jul-2022 22:24:32 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:24:32 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:32 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:24:44 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:24:44 Europe/Berlin] ##############################################
+[20-Jul-2022 22:24:44 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:24:44 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:44 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:24:44 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:24:44 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:44 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:44 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:24:44 Europe/Berlin] ##############################################
+[20-Jul-2022 22:24:44 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:24:44 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:24:45 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:45 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:24:45 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:24:45 Europe/Berlin] ##############################################
+[20-Jul-2022 22:24:45 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:24:45 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:45 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:24:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:24:49 Europe/Berlin] ##############################################
+[20-Jul-2022 22:24:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:24:49 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:49 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:24:49 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:24:49 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:49 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:24:49 Europe/Berlin] ##############################################
+[20-Jul-2022 22:24:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:24:49 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:24:49 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:49 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:24:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:24:49 Europe/Berlin] ##############################################
+[20-Jul-2022 22:24:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:24:49 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:49 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:24:58 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:24:58 Europe/Berlin] ##############################################
+[20-Jul-2022 22:24:58 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:24:58 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:58 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:24:58 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:24:58 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:58 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:59 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:24:59 Europe/Berlin] ##############################################
+[20-Jul-2022 22:24:59 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:24:59 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:24:59 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:59 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:24:59 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:24:59 Europe/Berlin] ##############################################
+[20-Jul-2022 22:24:59 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:24:59 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:24:59 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:26:36 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:26:36 Europe/Berlin] ##############################################
+[20-Jul-2022 22:26:36 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:26:36 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:26:36 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:26:36 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:26:36 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:26:36 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:26:36 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:26:36 Europe/Berlin] ##############################################
+[20-Jul-2022 22:26:36 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:26:36 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:26:36 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:26:36 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:26:36 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:26:36 Europe/Berlin] ##############################################
+[20-Jul-2022 22:26:36 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:26:36 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:26:36 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:26:44 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:26:44 Europe/Berlin] ##############################################
+[20-Jul-2022 22:26:44 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:26:44 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:26:44 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:26:44 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:26:44 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:26:44 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:26:44 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:26:44 Europe/Berlin] ##############################################
+[20-Jul-2022 22:26:44 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:26:44 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:26:44 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:26:44 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:26:44 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:26:44 Europe/Berlin] ##############################################
+[20-Jul-2022 22:26:44 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:26:44 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:26:45 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:27:02 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:27:02 Europe/Berlin] ##############################################
+[20-Jul-2022 22:27:02 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:27:02 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:02 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:27:02 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:27:02 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:02 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:03 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:27:03 Europe/Berlin] ##############################################
+[20-Jul-2022 22:27:03 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:27:03 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:27:03 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:03 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:27:03 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:27:03 Europe/Berlin] ##############################################
+[20-Jul-2022 22:27:03 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:27:03 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:03 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:27:08 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:27:08 Europe/Berlin] ##############################################
+[20-Jul-2022 22:27:08 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:27:08 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:08 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:27:08 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:27:08 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:08 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:08 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:27:08 Europe/Berlin] ##############################################
+[20-Jul-2022 22:27:08 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:27:08 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:27:08 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:08 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:27:08 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:27:08 Europe/Berlin] ##############################################
+[20-Jul-2022 22:27:08 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:27:08 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:08 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:27:13 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:27:13 Europe/Berlin] ##############################################
+[20-Jul-2022 22:27:13 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:27:13 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:13 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:27:13 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:27:13 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:13 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:13 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:27:13 Europe/Berlin] ##############################################
+[20-Jul-2022 22:27:13 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:27:13 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:27:13 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:13 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:27:13 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:27:13 Europe/Berlin] ##############################################
+[20-Jul-2022 22:27:13 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:27:13 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:13 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:27:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:27:23 Europe/Berlin] ##############################################
+[20-Jul-2022 22:27:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:27:23 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:23 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:27:23 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:27:24 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:24 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:27:24 Europe/Berlin] ##############################################
+[20-Jul-2022 22:27:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:27:24 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:27:24 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:24 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:27:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:27:24 Europe/Berlin] ##############################################
+[20-Jul-2022 22:27:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:27:24 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:24 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:27:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:27:47 Europe/Berlin] ##############################################
+[20-Jul-2022 22:27:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:27:47 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:47 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:27:47 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:27:47 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:47 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:27:48 Europe/Berlin] ##############################################
+[20-Jul-2022 22:27:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:27:48 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:27:48 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:27:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:27:48 Europe/Berlin] ##############################################
+[20-Jul-2022 22:27:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:27:48 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:48 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:27:55 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:27:55 Europe/Berlin] ##############################################
+[20-Jul-2022 22:27:55 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:27:55 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:56 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:27:56 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:27:56 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:56 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:56 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:27:56 Europe/Berlin] ##############################################
+[20-Jul-2022 22:27:56 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:27:56 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:27:56 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:56 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:27:56 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:27:56 Europe/Berlin] ##############################################
+[20-Jul-2022 22:27:56 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:27:56 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:27:56 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:28:28 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:28:28 Europe/Berlin] ##############################################
+[20-Jul-2022 22:28:28 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:28:28 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:28:28 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:28:28 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:28:28 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:28:28 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:28:28 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:28:28 Europe/Berlin] ##############################################
+[20-Jul-2022 22:28:28 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:28:28 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:28:28 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:28:28 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:28:28 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:28:28 Europe/Berlin] ##############################################
+[20-Jul-2022 22:28:28 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:28:28 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:28:28 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:29:56 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:29:56 Europe/Berlin] ##############################################
+[20-Jul-2022 22:29:56 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:29:56 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:29:56 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:29:56 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:29:56 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:29:56 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:29:56 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:29:56 Europe/Berlin] ##############################################
+[20-Jul-2022 22:29:56 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:29:56 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:29:56 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:29:56 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:29:56 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:29:56 Europe/Berlin] ##############################################
+[20-Jul-2022 22:29:56 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:29:56 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:29:56 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:30:02 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:02 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:02 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:02 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:02 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:30:02 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:30:02 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:02 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:02 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:02 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:02 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:02 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:30:02 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:02 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:30:02 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:02 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:02 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:02 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:02 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:30:08 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:08 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:08 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:08 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:08 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:30:08 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:30:08 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:08 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:08 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:08 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:08 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:08 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:30:08 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:08 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:30:08 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:08 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:08 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:08 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:08 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:30:13 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:13 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:13 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:13 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:13 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:30:13 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:30:13 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:13 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:13 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:13 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:13 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:13 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:30:13 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:13 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:30:13 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:13 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:13 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:13 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:13 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:30:17 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:17 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:17 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:17 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:17 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:30:17 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:30:17 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:17 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:17 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:17 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:17 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:17 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:30:17 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:17 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:30:17 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:17 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:17 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:17 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:17 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:30:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:21 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:21 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:21 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:30:21 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:30:21 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:21 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:21 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:21 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:30:21 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:21 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:30:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:21 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:21 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:22 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:30:25 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:25 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:25 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:25 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:25 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:30:25 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:30:25 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:25 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:25 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:25 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:25 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:25 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:30:25 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:25 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:30:25 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:25 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:25 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:25 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:25 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:30:29 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:29 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:30 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:30 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:30 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:30:30 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:30:30 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:30 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:30 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:30 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:30 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:30 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:30:30 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:30 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:30:30 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:30 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:30 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:30 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:30 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:30:35 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:35 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:35 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:35 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:35 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:30:35 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:30:35 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:35 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:36 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:36 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:36 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:36 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:30:36 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:36 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:30:36 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:36 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:36 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:36 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:36 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:30:45 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:45 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:45 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:45 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:45 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:30:45 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:30:45 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:45 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:45 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:45 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:45 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:45 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:30:45 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:45 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:30:45 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:45 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:45 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:45 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:45 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:30:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:54 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:54 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:54 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:30:54 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:30:54 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:54 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:54 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:54 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:30:54 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:54 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:30:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:30:54 Europe/Berlin] ##############################################
+[20-Jul-2022 22:30:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:30:54 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:30:54 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:31:01 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:31:01 Europe/Berlin] ##############################################
+[20-Jul-2022 22:31:01 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:31:01 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:31:01 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:31:01 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:31:01 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:31:01 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:31:01 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:31:01 Europe/Berlin] ##############################################
+[20-Jul-2022 22:31:01 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:31:01 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:31:01 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:31:01 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:31:01 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:31:01 Europe/Berlin] ##############################################
+[20-Jul-2022 22:31:01 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:31:01 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:31:01 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:32:18 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:32:18 Europe/Berlin] ##############################################
+[20-Jul-2022 22:32:18 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:32:18 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:32:18 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:32:18 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:32:18 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:32:18 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:32:19 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:32:19 Europe/Berlin] ##############################################
+[20-Jul-2022 22:32:19 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:32:19 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:32:19 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:32:19 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:32:19 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:32:19 Europe/Berlin] ##############################################
+[20-Jul-2022 22:32:19 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:32:19 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:32:19 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:33:08 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:33:08 Europe/Berlin] ##############################################
+[20-Jul-2022 22:33:08 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:33:08 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:33:08 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[20-Jul-2022 22:33:08 Europe/Berlin] PHP Warning:  require(views/admin/index.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\libs\view.php on line 18
+[20-Jul-2022 22:33:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'views/admin/index.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\libs\view.php:18
+Stack trace:
+#0 C:\xampp\htdocs\controllers\admin_controller.php(11): View->render('admin/index', Array)
+#1 C:\xampp\htdocs\libs\app.php(69): AdminController->render()
+#2 C:\xampp\htdocs\index.php(4): App->__construct()
+#3 {main}
+  thrown in C:\xampp\htdocs\libs\view.php on line 18
+[20-Jul-2022 22:33:08 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:33:08 Europe/Berlin] ##############################################
+[20-Jul-2022 22:33:08 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:33:09 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:33:09 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:33:09 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:33:09 Europe/Berlin] ##############################################
+[20-Jul-2022 22:33:09 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:33:09 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:33:09 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:33:09 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:33:09 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:33:09 Europe/Berlin] ##############################################
+[20-Jul-2022 22:33:09 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:33:09 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:33:09 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:33:11 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:33:11 Europe/Berlin] ##############################################
+[20-Jul-2022 22:33:11 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:33:11 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:33:11 Europe/Berlin] PHP Warning:  require(views/panel-admin/gdrive/googledrive.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\libs\view.php on line 18
+[20-Jul-2022 22:33:11 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'views/panel-admin/gdrive/googledrive.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\libs\view.php:18
+Stack trace:
+#0 C:\xampp\htdocs\controllers\paneladmin_controller.php(25): View->render('panel-admin/gdr...', Array)
+#1 C:\xampp\htdocs\libs\app.php(55): PanelAdminController->googledrive()
+#2 C:\xampp\htdocs\index.php(4): App->__construct()
+#3 {main}
+  thrown in C:\xampp\htdocs\libs\view.php on line 18
+[20-Jul-2022 22:33:13 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:33:13 Europe/Berlin] ##############################################
+[20-Jul-2022 22:33:13 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:33:13 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:33:13 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:33:13 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:33:13 Europe/Berlin] ##############################################
+[20-Jul-2022 22:33:13 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:33:13 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:33:13 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:33:13 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:33:13 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:33:13 Europe/Berlin] ##############################################
+[20-Jul-2022 22:33:13 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:33:13 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:33:13 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[20-Jul-2022 22:33:14 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:33:14 Europe/Berlin] ##############################################
+[20-Jul-2022 22:33:14 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:33:14 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:33:14 Europe/Berlin] Controller::CargarModelo paginacion.
+[20-Jul-2022 22:33:14 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 50
+[20-Jul-2022 22:33:14 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:33:14 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:33:14 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:33:14 Europe/Berlin] ##############################################
+[20-Jul-2022 22:33:14 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:33:14 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[20-Jul-2022 22:33:14 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:33:14 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[20-Jul-2022 22:33:14 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[20-Jul-2022 22:33:14 Europe/Berlin] ##############################################
+[20-Jul-2022 22:33:14 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[20-Jul-2022 22:33:14 Europe/Berlin] Conexion a BD Exitosa.
+[20-Jul-2022 22:33:14 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
