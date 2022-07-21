@@ -30,6 +30,7 @@ class PaginacionModel extends Model
                 $objeto = new AlumnoModel();
                 $objeto->setRut($p["rut"]);
                 $objeto->setCodigo($p["codigo"]);
+                $objeto->setPreCodigo($p["pre_cod"]);
                 $objeto->setNombres($p["nom"]);
                 $objeto->setApellidos($p["ape"]);
                 $objeto->setSede($p["sede"]);

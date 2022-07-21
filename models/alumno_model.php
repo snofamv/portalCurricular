@@ -4,6 +4,7 @@ class AlumnoModel extends Model implements AlumnoInterface
 {
     //class atributos
     private $codigo;
+    private $pre_codigo;
     private $nombres;
     private $apellidos;
     private $sede;
@@ -14,13 +15,14 @@ class AlumnoModel extends Model implements AlumnoInterface
     {
         parent::__construct();
         $this->codigo = "";
+        $this->pre_codigo = "";
         $this->nombres = "";
         $this->apellidos = "";
         $this->sede = "";
         $this->carrera = "";
         $this->rut = "";
     }
-  
+
     public function getCarreras()
     {
         $items = array();
@@ -43,6 +45,7 @@ class AlumnoModel extends Model implements AlumnoInterface
                 $objeto = new AlumnoModel();
                 $objeto->setRut($p["rut"]);
                 $objeto->setCodigo($p["codigo"]);
+                $objeto->setPreCodigo($p["pre_cod"]);
                 $objeto->setNombres($p["nom"]);
                 $objeto->setApellidos($p["ape"]);
                 $objeto->setSede($p["sede"]);
@@ -64,6 +67,7 @@ class AlumnoModel extends Model implements AlumnoInterface
             $alumno = $query->fetch(PDO::FETCH_ASSOC);
             //set data object
             $this->setCodigo($alumno["codigo"]);
+            $this->setPreCodigo($alumno["pre_cod"]);
             $this->setRut($alumno["rut"]);
             $this->setNombres($alumno["nom"]);
             $this->setApellidos($alumno["ape"]);
@@ -83,6 +87,7 @@ class AlumnoModel extends Model implements AlumnoInterface
                 $objeto = new AlumnoModel();
                 $objeto->setRut($p["rut"]);
                 $objeto->setCodigo($p["codigo"]);
+                $objeto->setPreCodigo($p["pre_cod"]);
                 $objeto->setNombres($p["nom"]);
                 $objeto->setApellidos($p["ape"]);
                 $objeto->setSede($p["sede"]);
@@ -104,6 +109,7 @@ class AlumnoModel extends Model implements AlumnoInterface
                 $objeto = new AlumnoModel();
                 $objeto->setRut($p["rut"]);
                 $objeto->setCodigo($p["codigo"]);
+                $objeto->setPreCodigo($p["pre_cod"]);
                 $objeto->setNombres($p["nom"]);
                 $objeto->setApellidos($p["ape"]);
                 $objeto->setSede($p["sede"]);
@@ -120,8 +126,9 @@ class AlumnoModel extends Model implements AlumnoInterface
     public function save()
     {
         try {
-            $query = $this->prepare("INSERT INTO data values(:codigo, :nom, :ape, :sede, :carrera, :rut)");
+            $query = $this->prepare("INSERT INTO data values(null, :precod, :codigo, :nom, :ape, :sede, :carrera, :rut)");
             $query->execute([
+                ":precod" => $this->getPreCodigo(),
                 ":codigo" => $this->getCodigo(),
                 ":rut" => $this->getRut(),
                 ":nom" => $this->getNombres(),
@@ -138,8 +145,9 @@ class AlumnoModel extends Model implements AlumnoInterface
     public function update()
     {
         try {
-            $query = $this->prepare("UPDATE data SET codigo=:codigo, nom=:nom, ape=:ape, sede=:sede, carrera=:carrera WHERE rut=:rut");
+            $query = $this->prepare("UPDATE data SET pre_cod=:precodigo, codigo=:codigo, nom=:nom, ape=:ape, sede=:sede, carrera=:carrera WHERE rut=:rut");
             $query->bindParam(":rut",  $this->rut);
+            $query->bindParam(":precodigo",  $this->pre_codigo);
             $query->bindParam(":codigo",  $this->codigo);
             $query->bindParam(":nom",  $this->nombres);
             $query->bindParam(":ape",  $this->apellidos);
@@ -326,6 +334,24 @@ class AlumnoModel extends Model implements AlumnoInterface
     public function setRut($rut)
     {
         $this->rut = $rut;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of pre_codigo
+     */
+    public function getPreCodigo()
+    {
+        return $this->pre_codigo;
+    }
+
+    /**
+     * Set the value of pre_codigo
+     */
+    public function setPreCodigo($pre_codigo): self
+    {
+        $this->pre_codigo = $pre_codigo;
 
         return $this;
     }

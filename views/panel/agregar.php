@@ -41,9 +41,10 @@ require "views/includes/navbar.user.php";
             <!--  -->
 
             <div class="row m-3">
+                
                 <div class="col">
                     <label class="m-2" for="codigo" style="color:#FFFFFF;">Codigo</label>
-                    <input class="form-control" type="text" name="codigo" id="codigo" placeholder="Ej: 0001">
+                    <input class="form-control" type="text" name="codigo" id="codigo" placeholder="Ej: 001-0001">
                 </div>
                 <div class="col">
                     <label class="m-2" for="codigo" style="color:#FFFFFF;">Rut</label>

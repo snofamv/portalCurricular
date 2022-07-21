@@ -79,7 +79,7 @@ require "views/includes/navbar.admin.php";
                 <tbody>
                     <?php foreach ($d["datos"] as  $alumno) : ?>
                         <tr class="tablaItem">
-                            <td> <?php echo $alumno->getCodigo(); ?></td>
+                            <td> <?php echo "<span style='color:red; '>{$alumno->getPreCodigo()}</span>-{$alumno->getCodigo()}" ?></td>
                             <td> <?php echo $alumno->getRut(); ?></td>
                             <td> <?php echo $alumno->getNombres(); ?></td>
                             <td> <?php echo $alumno->getApellidos(); ?></td>
