@@ -22,7 +22,7 @@ class Database
         try {
             //code...
             $conexionPDO = "mysql:host={$this->host};dbname={$this->db}";
-            $opciones = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::ATTR_EMULATE_PREPARES => false,];
+            $opciones = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::ATTR_EMULATE_PREPARES => false, PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8",];
             $pdo = new PDO($conexionPDO, $this->user, $this->pass, $opciones);
             error_log("Conexion a BD Exitosa.");
             return $pdo;

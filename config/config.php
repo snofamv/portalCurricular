@@ -25,4 +25,4 @@ define("USERDB", "root");
 define("PASSDB", "");
 define("HOSTDB", "localhost");
 define("NAMEDB", "test");
-define("CHARSETDB", "utf8mb4");
+define("CHARSETDB", "utf8");

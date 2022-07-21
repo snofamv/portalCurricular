@@ -38,7 +38,7 @@ class AlumnoModel extends Model implements AlumnoInterface
     {
         $items = array();
         try {
-            $query = parent::query("SELECT * FROM data ORDER BY codigo ASC");
+            $query = parent::query("SELECT * FROM `data` ORDER BY codigo DESC");
             while ($p = $query->fetch(PDO::FETCH_ASSOC)) {
                 $objeto = new AlumnoModel();
                 $objeto->setRut($p["rut"]);

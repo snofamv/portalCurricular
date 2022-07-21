@@ -2,11 +2,7 @@
 require_once "controllers/lista_interface.php";
 class ListaController extends SessionController implements ListaInterface
 {
-    private $pagina_inicial;
-    private $resultadosPorPagina  = 100;
-    private $empezar_desde;
-    private $total_datos;
-    private $totalPaginas;
+    
     function __construct()
     {
         parent::__construct();
@@ -14,20 +10,12 @@ class ListaController extends SessionController implements ListaInterface
     }
     
     
-    private function calcularPaginas()
-    {
-        $query = $this->modelo->query("SELECT COUNT(*) AS total FROM data");
-        $this->total_datos = $query->fetch(PDO::FETCH_OBJ)->total;
-        $this->totalPaginas = ceil($this->total_datos / $this->resultadosPorPagina);
-    }
+   
     function render()
     {
         $this->cargarModelo("paginacion");
-        $this->pagina_inicial = $_GET["pagina"] ?: 1;
-        $this->empezar_desde = ($this->pagina_inicial - 1) * $this->resultadosPorPagina;
-        $this->calcularPaginas();
-        $d["datos"] = $this->modelo->getDatos($this->empezar_desde, $this->resultadosPorPagina);
-        $d["nroDatos"] = $this->totalPaginas;
+        $d["datos"] = $this->modelo->getDatos($this->modelo->getEmpezarDesde(), $this->modelo->getResultadosPorPagina());
+        $d["nroDatos"] = $this->modelo->getTotalPaginas();
         $this->vista->render("panel/lista", $d);
     }
 
