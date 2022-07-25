@@ -23,6 +23,10 @@ class AdminController extends SessionController
     {
         $this->vista->render("admin/registro", []);
     }
+    public function buscar()
+    {
+        $this->vista->render("admin/buscar", []);
+    }
     public function googledrive()
     {
 

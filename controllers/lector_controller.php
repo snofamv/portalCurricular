@@ -10,6 +10,14 @@ class LectorController extends SessionController
     {
         $this->vista->render("lector/index", []);
     }
+    public function buscar()
+    {
+        $this->vista->render("lector/buscar", []);
+    }
+    public function lista()
+    {
+        $this->vista->render("lector/lista", []);
+    }
     
     public function salir()
     {

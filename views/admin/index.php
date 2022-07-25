@@ -74,8 +74,8 @@ require "views/includes/navbar.admin.php";
 
                                 </div>
                                 <div class="modal-footer mx-auto">
-                                    <a type="button" class="btn btn-warning" href="/lista">Buscar RUT/Nombre/Codigo</a>
-                                    <a type="button" class="btn btn-warning" href="/buscar">Buscar Sedes/Carreras</a>
+                                    <a type="button" class="btn btn-warning" href="/admin/lista">Buscar RUT/Nombre/Codigo</a>
+                                    <a type="button" class="btn btn-warning" href="/admin/buscar">Buscar Sedes/Carreras</a>
                                 </div>
                             </div>
                         </div>
