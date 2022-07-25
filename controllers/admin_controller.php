@@ -15,6 +15,10 @@ class AdminController extends SessionController
     {
         $this->vista->render("admin/index", []);
     }
+    public function agregar()
+    {
+        $this->vista->render("admin/agregar", []);
+    }
     public function registro()
     {
         $this->vista->render("admin/registro", []);

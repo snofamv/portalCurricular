@@ -92,7 +92,7 @@ require "views/includes/navbar.admin.php";
                 </div>
                 <div class="d-grid">
 
-                    <a href="/agregar" class="btn btn-primary btn-lg">Agregar</a>
+                    <a href="/admin/agregar" class="btn btn-primary btn-lg">Agregar</a>
                 </div>
             </div>
         </div>
