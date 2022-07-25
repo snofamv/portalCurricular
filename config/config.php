@@ -21,9 +21,9 @@ function autoLoad()
 
 define("URLBASE", "https://dev-portalcurricular.herokuapp.com");
 define("BASETITLE", "Portal curricular");
-define("USERDB", "o88247xtea5ax8pq");
-define("PASSDB", "kfvtqhzeuujgk9o5");
-define("HOSTDB", "ckshdphy86qnz0bj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com");
-define("NAMEDB", "x3gkem3qpzwwh5o2");
+define("USERDB", "kjbjoiuszzve1ph1");
+define("PASSDB", "hrmtv8naal552pxa");
+define("HOSTDB", "lcpbq9az4jklobvq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com");
+define("NAMEDB", "inyz5u2ef0mbxjiq");
 
 define("CHARSETDB", "utf8mb4");
