@@ -98,17 +98,6 @@ class PanelAdminController extends SessionController
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
     public function salir()
     {
         error_log("AdminController::Salir()");

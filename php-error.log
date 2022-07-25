@@ -322,3 +322,1473 @@ Stack trace:
 [21-Jul-2022 21:58:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
 [21-Jul-2022 21:58:53 Europe/Berlin] Conexion a BD Exitosa.
 [21-Jul-2022 21:58:53 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 17:54:38 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:38 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:38 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:38 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 17:54:38 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 17:54:38 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:38 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:38 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:38 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:54:38 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:54:38 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:38 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:38 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:38 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 17:54:38 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 17:54:42 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:42 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:42 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:42 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 17:54:42 Europe/Berlin] Controller::CargarModelo login.
+[25-Jul-2022 17:54:42 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:42 Europe/Berlin] LoginModel::Login -> credenciales validadas.
+[25-Jul-2022 17:54:42 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:42 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:42 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:42 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:42 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelLector]
+[25-Jul-2022 17:54:42 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:42 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:42 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:42 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:54:42 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:42 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:54:42 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:42 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:42 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:42 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:42 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelLector]
+[25-Jul-2022 17:54:46 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:46 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:46 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:46 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:46 Europe/Berlin] APP::RENDERIZANDO VISTA -> [lista]
+[25-Jul-2022 17:54:46 Europe/Berlin] Controller::CargarModelo paginacion.
+[25-Jul-2022 17:54:46 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:46 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\models\paginacion_model.php on line 15
+[25-Jul-2022 17:54:46 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:46 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:46 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:46 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:46 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:54:46 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:46 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:54:46 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:46 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:46 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:46 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:47 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:54:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:47 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:47 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:54:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:47 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:47 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:54:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:47 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:47 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:54:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:47 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:47 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:54:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:47 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:47 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:54:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:47 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:47 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:54:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:47 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:47 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:54:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:47 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:47 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:54:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:47 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:47 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:54:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:47 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:47 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:54:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:47 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:47 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:54:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:47 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:47 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:54:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:47 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:54:47 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:54:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:48 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:48 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:54:48 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:54:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:48 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:48 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:54:48 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:54:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:48 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:48 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:54:48 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:54:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:48 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:48 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:54:48 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:54:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:48 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:48 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:54:48 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:54:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:48 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:48 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:54:48 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:54:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:48 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:48 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:54:48 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:54:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:54:48 Europe/Berlin] ##############################################
+[25-Jul-2022 17:54:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:54:48 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:54:48 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelLector]
+[25-Jul-2022 17:55:05 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:05 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:05 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:05 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:05 Europe/Berlin] PanelController::Salir()->cerrando sesion.
+[25-Jul-2022 17:55:05 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:05 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:05 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:05 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 17:55:05 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 17:55:05 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:05 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:05 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:05 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:55:05 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:55:05 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:05 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:05 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:05 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 17:55:05 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 17:55:08 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:08 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:08 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:08 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 17:55:08 Europe/Berlin] Controller::CargarModelo login.
+[25-Jul-2022 17:55:08 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:08 Europe/Berlin] LoginModel::Login -> credenciales validadas.
+[25-Jul-2022 17:55:08 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:08 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:08 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:08 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:08 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 17:55:08 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:08 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:08 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:08 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:55:08 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:08 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:55:08 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:08 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:08 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:08 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:08 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 17:55:11 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:11 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:11 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:11 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:11 Europe/Berlin] Controller::CargarModelo paginacion.
+[25-Jul-2022 17:55:11 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:11 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\models\paginacion_model.php on line 15
+[25-Jul-2022 17:55:11 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 40
+[25-Jul-2022 17:55:11 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:11 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:11 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:11 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:11 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:11 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:55:11 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:11 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:55:11 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:11 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:11 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:11 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:55:11 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:11 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:55:11 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:11 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:11 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:11 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:55:11 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:11 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:55:11 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:11 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:11 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:11 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:55:11 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:11 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:55:11 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:11 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:11 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:11 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:55:11 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:11 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:55:11 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:11 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:11 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:11 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:55:11 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:11 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:55:11 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:11 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:11 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:11 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:55:11 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:11 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:55:11 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:11 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:11 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:11 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:55:12 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:12 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:55:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:12 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:12 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:55:12 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:12 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:55:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:12 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:12 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:55:12 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:12 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:55:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:12 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:12 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:55:12 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:12 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:55:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:12 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:12 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:55:12 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:12 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:55:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:12 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:12 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:55:12 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:12 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:55:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:12 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:12 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:55:12 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:12 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:55:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:12 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:12 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:55:12 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:12 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:55:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:12 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:12 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:55:12 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:12 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:55:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:12 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:12 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:55:12 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:12 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:55:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:12 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:12 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:55:12 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:12 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:55:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:12 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:12 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:55:12 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:12 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:55:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:12 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:12 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:55:12 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:13 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:55:13 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:13 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:13 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:13 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:55:13 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:13 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:55:13 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:13 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:13 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:13 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 17:55:13 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:13 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 17:55:13 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 17:55:13 Europe/Berlin] ##############################################
+[25-Jul-2022 17:55:13 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 17:55:13 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 17:55:13 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:23:55 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:23:55 Europe/Berlin] ##############################################
+[25-Jul-2022 18:23:55 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:23:55 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:23:55 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:25:20 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:25:20 Europe/Berlin] ##############################################
+[25-Jul-2022 18:25:20 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:25:20 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:25:20 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:25:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:25:22 Europe/Berlin] ##############################################
+[25-Jul-2022 18:25:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:25:22 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:25:22 Europe/Berlin] Controller::CargarModelo login.
+[25-Jul-2022 18:25:22 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:25:22 Europe/Berlin] LoginModel::Login -> credenciales validadas.
+[25-Jul-2022 18:25:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:25:22 Europe/Berlin] ##############################################
+[25-Jul-2022 18:25:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:25:22 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:25:22 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:25:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:25:22 Europe/Berlin] ##############################################
+[25-Jul-2022 18:25:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:25:22 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:25:22 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:25:22 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:25:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:25:22 Europe/Berlin] ##############################################
+[25-Jul-2022 18:25:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:25:22 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:25:22 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:25:25 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:25:25 Europe/Berlin] ##############################################
+[25-Jul-2022 18:25:25 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:25:25 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:25:25 Europe/Berlin] PanelController::Salir()->cerrando sesion.
+[25-Jul-2022 18:25:25 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:25:25 Europe/Berlin] ##############################################
+[25-Jul-2022 18:25:25 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:25:25 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:25:25 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:25:26 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:25:26 Europe/Berlin] ##############################################
+[25-Jul-2022 18:25:26 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:25:26 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:25:26 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:25:26 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:25:26 Europe/Berlin] ##############################################
+[25-Jul-2022 18:25:26 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:25:26 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:25:26 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:26:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:21 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:21 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:26:21 Europe/Berlin] PHP Warning:  Undefined array key "usuario" in C:\xampp\htdocs\views\includes\navbar.admin.php on line 33
+[25-Jul-2022 18:26:21 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\views\includes\navbar.admin.php on line 33
+[25-Jul-2022 18:26:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:21 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:21 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:26:21 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:26:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:21 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:21 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:26:21 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:26:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:21 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:21 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:26:21 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:26:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:23 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:23 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:26:23 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:26:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:24 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:24 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:26:24 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:26:44 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:44 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:44 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:44 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:26:44 Europe/Berlin] Controller::CargarModelo login.
+[25-Jul-2022 18:26:44 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:44 Europe/Berlin] LoginModel::Login -> credenciales validadas.
+[25-Jul-2022 18:26:44 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:44 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:44 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:44 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:44 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:26:45 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:45 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:45 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:45 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:26:46 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:46 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:26:46 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:46 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:46 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:46 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:46 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:26:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:47 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:47 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:47 Europe/Berlin] Controller::CargarModelo paginacion.
+[25-Jul-2022 18:26:47 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:47 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\models\paginacion_model.php on line 15
+[25-Jul-2022 18:26:47 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 40
+[25-Jul-2022 18:26:47 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:47 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:47 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:47 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:26:47 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:26:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:48 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:48 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:26:48 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:26:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:48 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:48 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:26:48 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:26:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:48 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:48 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:26:48 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:26:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:48 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:48 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:26:48 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:26:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:48 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:48 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:26:48 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:26:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:48 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:48 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:26:48 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:26:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:48 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:48 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:26:48 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:26:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:48 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:48 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:26:48 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:26:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:48 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:48 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:26:48 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:26:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:48 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:48 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:26:48 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:26:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:48 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:48 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:26:48 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:26:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:48 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:48 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:26:48 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:26:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:48 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:49 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:26:49 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:49 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:26:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:49 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:49 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:26:49 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:49 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:26:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:49 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:49 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:26:49 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:49 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:26:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:49 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:49 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:26:49 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:49 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:26:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:49 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:49 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:26:49 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:49 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:26:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:49 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:49 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:26:49 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:49 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:26:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:49 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:49 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:26:49 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:49 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:26:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:49 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:49 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:26:49 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:49 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:26:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:49 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:49 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:26:49 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:49 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:26:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:49 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:49 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:49 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:26:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:54 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:54 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:54 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:26:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:54 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:54 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:26:54 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:55 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:26:55 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:26:55 Europe/Berlin] ##############################################
+[25-Jul-2022 18:26:55 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:26:55 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:26:55 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:27:06 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:27:06 Europe/Berlin] ##############################################
+[25-Jul-2022 18:27:06 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:27:06 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:27:07 Europe/Berlin] PanelController::Salir()->cerrando sesion.
+[25-Jul-2022 18:27:07 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:27:07 Europe/Berlin] ##############################################
+[25-Jul-2022 18:27:07 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:27:07 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:27:07 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:27:07 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:27:07 Europe/Berlin] ##############################################
+[25-Jul-2022 18:27:07 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:27:07 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:27:07 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:27:07 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:27:07 Europe/Berlin] ##############################################
+[25-Jul-2022 18:27:07 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:27:07 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:27:07 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:27:10 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:27:10 Europe/Berlin] ##############################################
+[25-Jul-2022 18:27:10 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:27:10 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:27:10 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:27:46 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:27:46 Europe/Berlin] ##############################################
+[25-Jul-2022 18:27:46 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:27:46 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:27:46 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:27:51 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:27:51 Europe/Berlin] ##############################################
+[25-Jul-2022 18:27:51 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:27:51 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:27:51 Europe/Berlin] Controller::CargarModelo login.
+[25-Jul-2022 18:27:51 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:27:51 Europe/Berlin] LoginModel::Login -> credenciales validadas.
+[25-Jul-2022 18:27:51 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:27:51 Europe/Berlin] ##############################################
+[25-Jul-2022 18:27:51 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:27:51 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:27:51 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:27:51 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:27:51 Europe/Berlin] ##############################################
+[25-Jul-2022 18:27:51 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:27:51 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:27:51 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:27:51 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:27:51 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:27:51 Europe/Berlin] ##############################################
+[25-Jul-2022 18:27:51 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:27:51 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:27:51 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:27:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:27:53 Europe/Berlin] ##############################################
+[25-Jul-2022 18:27:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:27:53 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:27:53 Europe/Berlin] PanelController::Salir()->cerrando sesion.
+[25-Jul-2022 18:27:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:27:53 Europe/Berlin] ##############################################
+[25-Jul-2022 18:27:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:27:53 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:27:53 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:27:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:27:53 Europe/Berlin] ##############################################
+[25-Jul-2022 18:27:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:27:53 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:27:53 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:27:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:27:53 Europe/Berlin] ##############################################
+[25-Jul-2022 18:27:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:27:53 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:27:53 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:27:58 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:27:58 Europe/Berlin] ##############################################
+[25-Jul-2022 18:27:58 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:27:58 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:27:58 Europe/Berlin] PHP Warning:  Undefined array key "usuario" in C:\xampp\htdocs\views\includes\navbar.admin.php on line 33
+[25-Jul-2022 18:27:58 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\views\includes\navbar.admin.php on line 33
+[25-Jul-2022 18:27:58 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:27:58 Europe/Berlin] ##############################################
+[25-Jul-2022 18:27:58 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:27:58 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:27:58 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:27:58 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:27:58 Europe/Berlin] ##############################################
+[25-Jul-2022 18:27:58 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:27:58 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:27:58 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:27:58 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:27:58 Europe/Berlin] ##############################################
+[25-Jul-2022 18:27:58 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:27:58 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:27:58 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:27:59 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:27:59 Europe/Berlin] ##############################################
+[25-Jul-2022 18:27:59 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:27:59 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:27:59 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:28:10 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:10 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:10 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:10 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:28:10 Europe/Berlin] Controller::CargarModelo login.
+[25-Jul-2022 18:28:10 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:10 Europe/Berlin] LoginModel::Login -> credenciales validadas.
+[25-Jul-2022 18:28:10 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:10 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:10 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:10 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:11 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:28:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:12 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:12 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:12 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:12 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:12 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:12 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:12 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:28:14 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:14 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:14 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:14 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:14 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:28:14 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:14 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:14 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:14 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:14 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:14 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:14 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:14 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:14 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:14 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:14 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:28:19 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:19 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:19 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:19 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:19 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:28:19 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:19 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:19 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:19 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:19 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:19 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:19 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:19 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:19 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:19 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:19 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:28:20 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:20 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:20 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:20 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:20 Europe/Berlin] Controller::CargarModelo paginacion.
+[25-Jul-2022 18:28:20 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:20 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\models\paginacion_model.php on line 15
+[25-Jul-2022 18:28:20 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 40
+[25-Jul-2022 18:28:20 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:20 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:20 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:20 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:20 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:20 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:20 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:20 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:20 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:20 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:20 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:20 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:20 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:20 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:20 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:20 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:20 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:20 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:20 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:20 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:20 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:20 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:20 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:20 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:20 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:21 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:21 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:21 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:21 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:21 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:21 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:21 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:21 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:21 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:21 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:21 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:21 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:21 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:21 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:21 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:21 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:21 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:21 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:21 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:21 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:21 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:21 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:21 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:21 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:21 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:21 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:21 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:22 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:22 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:22 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:22 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:22 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:22 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:22 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:22 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:22 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:22 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:22 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:22 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:22 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:22 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:22 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:22 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:22 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:22 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:22 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:22 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:22 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:22 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:22 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:22 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:28:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:22 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:22 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:28:22 Europe/Berlin] PanelController::Salir()->cerrando sesion.
+[25-Jul-2022 18:28:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:22 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:22 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:28:22 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:28:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:22 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:22 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:28:22 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:28:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:28:22 Europe/Berlin] ##############################################
+[25-Jul-2022 18:28:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:28:22 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:28:22 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:40:00 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:40:00 Europe/Berlin] ##############################################
+[25-Jul-2022 18:40:00 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:40:00 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:40:00 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:40:03 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:40:03 Europe/Berlin] ##############################################
+[25-Jul-2022 18:40:03 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:40:03 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:40:03 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:40:16 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:40:16 Europe/Berlin] ##############################################
+[25-Jul-2022 18:40:16 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:40:16 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:40:16 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:40:16 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:40:16 Europe/Berlin] ##############################################
+[25-Jul-2022 18:40:16 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:40:16 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:40:16 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:40:16 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:40:16 Europe/Berlin] ##############################################
+[25-Jul-2022 18:40:16 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:40:16 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:40:16 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:40:18 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:40:18 Europe/Berlin] ##############################################
+[25-Jul-2022 18:40:18 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:40:18 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:40:18 Europe/Berlin] Controller::CargarModelo login.
+[25-Jul-2022 18:40:19 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:40:19 Europe/Berlin] LoginModel::Login -> credenciales validadas.
+[25-Jul-2022 18:40:19 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:40:19 Europe/Berlin] ##############################################
+[25-Jul-2022 18:40:19 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:40:20 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:40:21 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:40:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:40:21 Europe/Berlin] ##############################################
+[25-Jul-2022 18:40:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:40:21 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:40:22 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:40:22 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:40:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:40:22 Europe/Berlin] ##############################################
+[25-Jul-2022 18:40:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:40:23 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:40:23 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:41:40 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:41:40 Europe/Berlin] ##############################################
+[25-Jul-2022 18:41:40 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:41:41 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:41:42 Europe/Berlin] Controller::CargarModelo paginacion.
+[25-Jul-2022 18:41:43 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:41:44 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\models\paginacion_model.php on line 15
+[25-Jul-2022 18:41:44 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 40
+[25-Jul-2022 18:41:44 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:41:45 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:41:45 Europe/Berlin] ##############################################
+[25-Jul-2022 18:41:45 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:41:45 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:41:48 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:41:49 Europe/Berlin] Controller::CargarModelo paginacion.
+[25-Jul-2022 18:41:50 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:41:50 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\models\paginacion_model.php on line 15
+[25-Jul-2022 18:41:50 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\controllers\paneladmin_controller.php on line 40
+[25-Jul-2022 18:41:51 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:41:53 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:41:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:41:54 Europe/Berlin] ##############################################
+[25-Jul-2022 18:41:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:41:54 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:41:56 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:41:58 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:41:58 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:41:58 Europe/Berlin] ##############################################
+[25-Jul-2022 18:41:58 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:41:58 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:41:59 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:42:00 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:42:00 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:42:00 Europe/Berlin] ##############################################
+[25-Jul-2022 18:42:00 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:42:00 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:42:00 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:42:01 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:42:01 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:42:01 Europe/Berlin] ##############################################
+[25-Jul-2022 18:42:01 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:42:01 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:42:02 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:42:02 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:42:02 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:42:02 Europe/Berlin] ##############################################
+[25-Jul-2022 18:42:02 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:42:02 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:42:03 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:42:03 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:42:03 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:42:03 Europe/Berlin] ##############################################
+[25-Jul-2022 18:42:03 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:42:03 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:42:04 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:42:05 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:42:05 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:42:05 Europe/Berlin] ##############################################
+[25-Jul-2022 18:42:05 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:42:05 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:42:07 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:42:07 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:42:07 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:42:07 Europe/Berlin] ##############################################
+[25-Jul-2022 18:42:07 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:42:07 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:42:08 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:42:09 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:42:09 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:42:09 Europe/Berlin] ##############################################
+[25-Jul-2022 18:42:09 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:42:09 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:42:10 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:42:12 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:42:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:42:12 Europe/Berlin] ##############################################
+[25-Jul-2022 18:42:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:42:12 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:42:13 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:42:14 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:42:14 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:42:14 Europe/Berlin] ##############################################
+[25-Jul-2022 18:42:14 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:42:14 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:42:15 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:42:15 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:42:15 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:42:15 Europe/Berlin] ##############################################
+[25-Jul-2022 18:42:15 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:42:15 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:42:16 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:42:17 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:42:17 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:42:17 Europe/Berlin] ##############################################
+[25-Jul-2022 18:42:17 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:42:17 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:42:18 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:42:19 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:42:19 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:42:19 Europe/Berlin] ##############################################
+[25-Jul-2022 18:42:19 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:42:19 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:42:20 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:42:20 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:42:20 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:42:20 Europe/Berlin] ##############################################
+[25-Jul-2022 18:42:20 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:42:20 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:42:22 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:42:22 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:42:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:42:22 Europe/Berlin] ##############################################
+[25-Jul-2022 18:42:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:42:22 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:42:23 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:42:23 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:42:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:42:23 Europe/Berlin] ##############################################
+[25-Jul-2022 18:42:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:42:23 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:42:25 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:42:26 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:42:26 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:42:26 Europe/Berlin] ##############################################
+[25-Jul-2022 18:42:26 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:42:26 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:42:27 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:42:27 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:42:27 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:42:27 Europe/Berlin] ##############################################
+[25-Jul-2022 18:42:27 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:42:27 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:42:48 Europe/Berlin] SQLSTATE[HY000] [2002] Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder
+[25-Jul-2022 18:42:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in C:\xampp\htdocs\libs\model.php:22
+Stack trace:
+#0 C:\xampp\htdocs\models\usuario_model.php(116): Model->prepare('SELECT * FROM u...')
+#1 C:\xampp\htdocs\classes\etc\session_controller.php(180): UsuarioModel->getById(2)
+#2 C:\xampp\htdocs\classes\etc\session_controller.php(202): SessionController->getUsuarioSessionData()
+#3 C:\xampp\htdocs\classes\etc\session_controller.php(100): SessionController->validarSession()
+#4 C:\xampp\htdocs\classes\etc\session_controller.php(94): SessionController->init()
+#5 C:\xampp\htdocs\controllers\errores_controller.php(9): SessionController->__construct()
+#6 C:\xampp\htdocs\libs\app.php(74): ErroresController->__construct()
+#7 C:\xampp\htdocs\index.php(4): App->__construct()
+#8 {main}
+  thrown in C:\xampp\htdocs\libs\model.php on line 22
+[25-Jul-2022 18:42:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:42:48 Europe/Berlin] ##############################################
+[25-Jul-2022 18:42:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:42:48 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:42:49 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:42:49 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:42:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:42:49 Europe/Berlin] ##############################################
+[25-Jul-2022 18:42:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:42:50 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:42:50 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:53:02 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:02 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:02 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:02 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:53:03 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:03 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:53:03 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:03 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:03 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:04 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:04 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:53:05 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:05 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:05 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:05 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:53:05 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:06 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:53:06 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:06 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:06 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:07 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:07 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:53:07 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:07 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:07 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:09 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:09 Europe/Berlin] APP::RENDERIZANDO VISTA -> [buscar]
+[25-Jul-2022 18:53:09 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:09 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:09 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:09 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:53:10 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:10 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:10 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:10 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:10 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:53:10 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:10 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:10 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:11 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:11 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panel]
+[25-Jul-2022 18:53:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:12 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:12 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:14 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:53:15 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:16 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panel]
+[25-Jul-2022 18:53:16 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:16 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:16 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:16 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:17 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:53:17 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:17 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:17 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:17 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:53:17 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:17 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:17 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:17 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:18 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:53:18 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:18 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:18 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:18 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:18 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:18 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:19 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:20 Europe/Berlin] PanelController::Salir()->cerrando sesion.
+[25-Jul-2022 18:53:21 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:21 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelAdmin]
+[25-Jul-2022 18:53:22 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:23 Europe/Berlin] PanelController::Salir()->cerrando sesion.
+[25-Jul-2022 18:53:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:23 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:23 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:53:23 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:53:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:23 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:23 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:53:23 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:53:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:23 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:23 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:53:23 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:53:26 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:26 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:26 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:26 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:53:26 Europe/Berlin] Controller::CargarModelo login.
+[25-Jul-2022 18:53:27 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:28 Europe/Berlin] LoginModel::Login -> credenciales validadas.
+[25-Jul-2022 18:53:28 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:28 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:28 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:29 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:30 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelLector]
+[25-Jul-2022 18:53:30 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:30 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:30 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:30 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:53:31 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:32 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:53:32 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:32 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:32 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:33 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:34 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panelLector]
+[25-Jul-2022 18:53:34 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:34 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:34 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:35 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:35 Europe/Berlin] PanelController::Salir()->cerrando sesion.
+[25-Jul-2022 18:53:35 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:35 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:35 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:35 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:53:35 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:53:35 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:35 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:35 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:35 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:53:35 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:53:35 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:35 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:35 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:35 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 18:53:35 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:53:43 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:43 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:43 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:43 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 18:53:43 Europe/Berlin] Controller::CargarModelo login.
+[25-Jul-2022 18:53:43 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:44 Europe/Berlin] LoginModel::Login -> credenciales validadas.
+[25-Jul-2022 18:53:44 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:44 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:44 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:44 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:45 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panel]
+[25-Jul-2022 18:53:45 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:45 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:45 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:45 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:53:46 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:46 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:53:46 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:46 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:46 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:49 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:49 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:49 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panel]
+[25-Jul-2022 18:53:51 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:52 Europe/Berlin] APP::RENDERIZANDO VISTA -> [lista]
+[25-Jul-2022 18:53:52 Europe/Berlin] Controller::CargarModelo paginacion.
+[25-Jul-2022 18:53:53 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:55 Europe/Berlin] PHP Warning:  Undefined array key "pagina" in C:\xampp\htdocs\models\paginacion_model.php on line 15
+[25-Jul-2022 18:53:56 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:56 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:56 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:56 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:56 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:53:57 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:53:58 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:53:58 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:53:58 Europe/Berlin] ##############################################
+[25-Jul-2022 18:53:58 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:53:58 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:53:59 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:54:00 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:54:00 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:54:00 Europe/Berlin] ##############################################
+[25-Jul-2022 18:54:00 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:54:00 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:54:02 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:54:03 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:54:03 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:54:03 Europe/Berlin] ##############################################
+[25-Jul-2022 18:54:03 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:54:03 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:54:03 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:54:04 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:54:04 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:54:04 Europe/Berlin] ##############################################
+[25-Jul-2022 18:54:04 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:54:04 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:54:08 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:54:09 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:54:09 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:54:09 Europe/Berlin] ##############################################
+[25-Jul-2022 18:54:09 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:54:09 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:54:09 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:54:10 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:54:10 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:54:10 Europe/Berlin] ##############################################
+[25-Jul-2022 18:54:10 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:54:10 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:54:12 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:54:12 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:54:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:54:12 Europe/Berlin] ##############################################
+[25-Jul-2022 18:54:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:54:12 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:54:14 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:54:14 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:54:14 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:54:14 Europe/Berlin] ##############################################
+[25-Jul-2022 18:54:14 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:54:14 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:54:15 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:54:15 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:54:15 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:54:15 Europe/Berlin] ##############################################
+[25-Jul-2022 18:54:15 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:54:15 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:54:16 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:54:16 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:54:16 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:54:16 Europe/Berlin] ##############################################
+[25-Jul-2022 18:54:16 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:54:16 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:54:17 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:54:17 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:54:17 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:54:17 Europe/Berlin] ##############################################
+[25-Jul-2022 18:54:17 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:54:17 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:54:18 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:54:18 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:54:18 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:54:18 Europe/Berlin] ##############################################
+[25-Jul-2022 18:54:18 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:54:18 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:54:19 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:54:20 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:54:20 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:54:20 Europe/Berlin] ##############################################
+[25-Jul-2022 18:54:20 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:54:20 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:54:20 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:54:21 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:54:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:54:21 Europe/Berlin] ##############################################
+[25-Jul-2022 18:54:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:54:21 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:54:21 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:54:22 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:54:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:54:22 Europe/Berlin] ##############################################
+[25-Jul-2022 18:54:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:54:22 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:54:22 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:54:23 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:54:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:54:23 Europe/Berlin] ##############################################
+[25-Jul-2022 18:54:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:54:23 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:54:24 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:54:25 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:54:25 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:54:25 Europe/Berlin] ##############################################
+[25-Jul-2022 18:54:25 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:54:25 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:54:25 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:54:26 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:54:26 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:54:26 Europe/Berlin] ##############################################
+[25-Jul-2022 18:54:26 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:54:26 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:54:27 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:54:27 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:54:27 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:54:27 Europe/Berlin] ##############################################
+[25-Jul-2022 18:54:27 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:54:27 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:54:28 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:54:28 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:54:28 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:54:28 Europe/Berlin] ##############################################
+[25-Jul-2022 18:54:28 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:54:28 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:54:29 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:54:29 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:54:29 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:54:29 Europe/Berlin] ##############################################
+[25-Jul-2022 18:54:29 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:54:29 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 18:54:30 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:54:30 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[25-Jul-2022 18:54:30 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 18:54:30 Europe/Berlin] ##############################################
+[25-Jul-2022 18:54:30 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 18:54:31 Europe/Berlin] Conexion a BD Exitosa.
+[25-Jul-2022 18:54:32 Europe/Berlin] APP::RENDERIZANDO VISTA -> [panel]
