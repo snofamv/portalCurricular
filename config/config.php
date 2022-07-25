@@ -25,4 +25,5 @@ define("USERDB", "o88247xtea5ax8pq");
 define("PASSDB", "kfvtqhzeuujgk9o5");
 define("HOSTDB", "ckshdphy86qnz0bj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com");
 define("NAMEDB", "x3gkem3qpzwwh5o2");
+
 define("CHARSETDB", "utf8mb4");

@@ -9,8 +9,6 @@ class ListaController extends SessionController implements ListaInterface
         
     }
     
-    
-   
     function render()
     {
         $this->cargarModelo("paginacion");
