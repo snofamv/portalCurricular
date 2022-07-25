@@ -1,5 +1,5 @@
 <?php
-class PanelLectorController extends SessionController
+class LectorController extends SessionController
 {
     public function __construct()
     {
@@ -8,7 +8,7 @@ class PanelLectorController extends SessionController
 
     public function render()
     {
-        $this->vista->render("panel-lector/index", []);
+        $this->vista->render("lector/index", []);
     }
     
     public function salir()

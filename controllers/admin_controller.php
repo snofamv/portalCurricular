@@ -1,5 +1,5 @@
 <?php
-class PanelAdminController extends SessionController
+class AdminController extends SessionController
 {
     private $pagina_inicial;
     private $resultadosPorPagina  = 100;
@@ -13,20 +13,20 @@ class PanelAdminController extends SessionController
 
     public function render()
     {
-        $this->vista->render("panel-admin/index", []);
+        $this->vista->render("admin/index", []);
     }
     public function registro()
     {
-        $this->vista->render("panel-admin/registro", []);
+        $this->vista->render("admin/registro", []);
     }
     public function googledrive()
     {
 
-        $this->vista->render("panel-admin/gdrive/googledrive", []);
+        $this->vista->render("admin/gdrive/googledrive", []);
     }
     public function opciones()
     {
-        $this->vista->render("panel-admin/opciones", []);
+        $this->vista->render("admin/opciones", []);
     }
     private function calcularPaginas()
     {
@@ -42,7 +42,7 @@ class PanelAdminController extends SessionController
         $this->calcularPaginas();
         $d["datos"] = $this->modelo->getDatos($this->empezar_desde, $this->resultadosPorPagina);
         $d["nroDatos"] = $this->totalPaginas;
-        $this->vista->render("panel-admin/lista", $d);
+        $this->vista->render("admin/lista", $d);
     }
     public function pdf()
     {
@@ -52,13 +52,13 @@ class PanelAdminController extends SessionController
         $this->calcularPaginas();
         $d["datos"] = $this->modelo->getDatos($this->empezar_desde, $this->resultadosPorPagina);
         $d["nroDatos"] = $this->totalPaginas;
-        $this->vista->render("panel-admin/pdf", $d);
+        $this->vista->render("admin/pdf", $d);
     }
     public function activarUsuario()
     {
         $this->cargarModelo("usuario");
         $d["usuarios"] = $this->modelo->getAll();
-        $this->vista->render("panel-admin/activarUsuario", $d);
+        $this->vista->render("admin/activarUsuario", $d);
     }
     public function activar()
     {

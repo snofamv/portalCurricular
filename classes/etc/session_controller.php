@@ -17,7 +17,7 @@ class SessionController extends Controller
             "rol" => "",
         ],
         [
-            "sitio" => "panelLector",
+            "sitio" => "lector",
             "acceso" => "privado",
             "rol" => "lector",
         ],
@@ -57,7 +57,7 @@ class SessionController extends Controller
             "rol" => "usuario",
         ],
         [
-            "sitio" => "panelAdmin",
+            "sitio" => "admin",
             "acceso" => "privado",
             "rol" => "admin",
         ],
@@ -85,27 +85,7 @@ class SessionController extends Controller
             "sitio" => "registro",
             "acceso" => "privado",
             "rol" => "admin",
-        ],
-        [
-            "sitio" => "lista",
-            "acceso" => "privado",
-            "rol" => "admin",
-        ],
-        [
-            "sitio" => "buscar",
-            "acceso" => "privado",
-            "rol" => "admin",
-        ],
-        [
-            "sitio" => "actualizar",
-            "acceso" => "privado",
-            "rol" => "admin",
-        ],
-        [
-            "sitio" => "agregar",
-            "acceso" => "privado",
-            "rol" => "admin",
-        ],
+        ]
     );
 
     public function __construct()
@@ -157,13 +137,13 @@ class SessionController extends Controller
     {
         switch ($rol) {
             case 'lector':
-                $this->redirect("panelLector", []);
+                $this->redirect("lector", []);
                 break;
             case 'usuario':
                 $this->redirect("panel", []);
                 break;
             case 'admin':
-                $this->redirect("panelAdmin", []);
+                $this->redirect("admin", []);
                 break;
             case '':
                 $this->redirect("", []);
