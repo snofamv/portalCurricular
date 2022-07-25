@@ -43,7 +43,7 @@ require "views/includes/navbar.admin.php";
                 </div>
                 <div class="d-grid">
 
-                    <a href="/lista" class="btn btn-primary btn-lg">Ver listado alumnos</a>
+                    <a href="/panelAdmin/lista" class="btn btn-primary btn-lg">Ver listado alumnos</a>
                 </div>
             </div>
         </div>
@@ -101,6 +101,32 @@ require "views/includes/navbar.admin.php";
 
         <div class="col rounded p-2">
             <div class="card mx-auto shadow p-2" style="width: 370px; height: 400px; background-color: #8CC0DE;">
+                <img src="https://www.svgrepo.com/show/303238/google-drive-logo.svg" class="card-img-top mx-auto mx-auto" alt="..." style="max-width: 200px;">
+                <div class="card-body">
+                    <h5 class="card-title">Buscar archivos</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="d-grid">
+
+                    <a href="/panelAdmin/googledrive" class="btn btn-success btn-lg">Ir a Google Drive</a>
+                </div>
+            </div>
+        </div>
+        <div class="col rounded p-2">
+            <div class="card mx-auto shadow p-2" style="width: 370px; height: 400px; background-color: #8CC0DE;">
+                <img src="https://www.svgrepo.com/show/112621/pdf.svg" class="card-img-top mx-auto mx-auto" alt="..." style="max-width: 200px;">
+                <div class="card-body">
+                    <h5 class="card-title">Exportar PDF</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="d-grid">
+
+                    <a href="/panelAdmin/pdf" class="btn btn-danger btn-lg">Ir a PDF</a>
+                </div>
+            </div>
+        </div>
+        <div class="col rounded p-2">
+            <div class="card mx-auto shadow p-2" style="width: 370px; height: 400px; background-color: #8CC0DE;">
                 <img src="https://www.svgrepo.com/show/207527/settings-configuration.svg" class="card-img-top mx-auto mx-auto" alt="..." style="max-width: 200px;">
                 <div class="card-body">
                     <h5 class="card-title">Opciones</h5>
@@ -108,7 +134,7 @@ require "views/includes/navbar.admin.php";
                 </div>
                 <div class="d-grid">
 
-                    <a href="/admin/opciones" class="btn btn-secondary btn-lg">Ver mas operaciones</a>
+                    <a href="/panelAdmin/opciones" class="btn btn-secondary btn-lg">Ver mas operaciones</a>
                 </div>
             </div>
         </div>
@@ -122,7 +148,7 @@ require "views/includes/navbar.admin.php";
                 </div>
                 <div class="d-grid">
 
-                    <a href="/admin/salir" class="btn btn-danger btn-lg  ">Cerrar sesion</a>
+                    <a href="/panelAdmin/salir" class="btn btn-danger btn-lg  ">Cerrar sesion</a>
                 </div>
             </div>
         </div>

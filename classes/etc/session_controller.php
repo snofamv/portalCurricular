@@ -17,32 +17,67 @@ class SessionController extends Controller
             "rol" => "",
         ],
         [
-            "sitio" => "panel",
+            "sitio" => "panelLector",
             "acceso" => "privado",
-            "rol" => "user",
+            "rol" => "lector",
         ],
         [
             "sitio" => "lista",
             "acceso" => "privado",
-            "rol" => "user",
+            "rol" => "lector",
         ],
         [
             "sitio" => "buscar",
             "acceso" => "privado",
-            "rol" => "user",
+            "rol" => "lector",
+        ],
+        [
+            "sitio" => "panel",
+            "acceso" => "privado",
+            "rol" => "usuario",
+        ],
+        [
+            "sitio" => "lista",
+            "acceso" => "privado",
+            "rol" => "usuario",
+        ],
+        [
+            "sitio" => "buscar",
+            "acceso" => "privado",
+            "rol" => "usuario",
         ],
         [
             "sitio" => "actualizar",
             "acceso" => "privado",
-            "rol" => "user",
+            "rol" => "usuario",
         ],
         [
             "sitio" => "agregar",
             "acceso" => "privado",
-            "rol" => "user",
+            "rol" => "usuario",
         ],
         [
-            "sitio" => "admin",
+            "sitio" => "panelAdmin",
+            "acceso" => "privado",
+            "rol" => "admin",
+        ],
+        [
+            "sitio" => "lista",
+            "acceso" => "privado",
+            "rol" => "admin",
+        ],
+        [
+            "sitio" => "buscar",
+            "acceso" => "privado",
+            "rol" => "admin",
+        ],
+        [
+            "sitio" => "actualizar",
+            "acceso" => "privado",
+            "rol" => "admin",
+        ],
+        [
+            "sitio" => "agregar",
             "acceso" => "privado",
             "rol" => "admin",
         ],
@@ -121,12 +156,14 @@ class SessionController extends Controller
     public function autorizarAcceso($rol)
     {
         switch ($rol) {
-            case 'user':
+            case 'lector':
+                $this->vista->render("panel-lector/index", []);
+                break;
+            case 'usuario':
                 $this->redirect("panel", []);
-
                 break;
             case 'admin':
-                $this->redirect("admin", []);
+                $this->redirect("panelAdmin", []);
                 break;
             case '':
                 $this->redirect("", []);

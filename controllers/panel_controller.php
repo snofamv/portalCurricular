@@ -10,7 +10,7 @@ class PanelController extends SessionController
     {
         $this->vista->render("panel/index", []);
     }
-
+    
     public function salir()
     {
         error_log("PanelController::Salir()->cerrando sesion.");

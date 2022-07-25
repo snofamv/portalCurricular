@@ -17,7 +17,11 @@ class AgregarController extends SessionController
     {
         $this->cargarModelo("alumno");
         if ($this->existsPOST(['codigo', 'rut', 'nombres', 'apellidos', 'sedes', 'carreras'])) {
-            $this->modelo->setCodigo($this->getPOST("codigo"));
+            $codigos = explode("-",$this->getPOST("codigo"));
+            $precodigo = $codigos[0];
+            $codigo = $codigos[1];
+            $this->modelo->setCodigo($codigo);
+            $this->modelo->setPreCodigo($precodigo);
             $this->modelo->setRut($this->getPOST("rut"));
             $this->modelo->setNombres($this->getPOST("nombres"));
             $this->modelo->setApellidos($this->getPOST("apellidos"));

@@ -11,8 +11,6 @@ class App
         $url = isset($_GET["url"]) ? $_GET["url"] : NULL;
         $url = trim(rtrim($url, "/"));
         $url = explode("/", $url);
-
-        //$controladorBase = "controllers/$url[0].php";
         //validacion URL
         if (empty($url[0])) {
             #index.php/

@@ -15,7 +15,6 @@ class Model
     function query($query)
     {
         return $this->db->conectar()->query($query);
-        $this->db->conectar->closeCursor();
     }
 
     function prepare($query)

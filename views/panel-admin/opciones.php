@@ -43,7 +43,7 @@ require "views/includes/navbar.admin.php";
                 </div>
                 <div class="d-grid">
 
-                    <a href="/admin/registro" class="btn btn-primary btn-lg">Crear un usuario nuevo</a>
+                    <a href="/panelAdmin/registro" class="btn btn-primary btn-lg">Crear un usuario nuevo</a>
                 </div>
             </div>
         </div>
@@ -57,7 +57,7 @@ require "views/includes/navbar.admin.php";
                 </div>
                 <div class="d-grid">
 
-                    <a href="/admin/activarUsuario" class="btn btn-primary btn-lg">Activar usuario</a>
+                    <a href="/panelAdmin/activarUsuario" class="btn btn-primary btn-lg">Activar usuario</a>
                 </div>
             </div>
         </div>
