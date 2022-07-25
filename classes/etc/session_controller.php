@@ -137,7 +137,7 @@ class SessionController extends Controller
     {
         switch ($rol) {
             case 'lector':
-                $this->redirect("panelLector", []);
+                $this->vista->render("panel-lector/index", []);
                 break;
             case 'usuario':
                 $this->redirect("panel", []);
