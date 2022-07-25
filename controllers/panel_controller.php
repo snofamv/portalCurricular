@@ -12,19 +12,19 @@ class PanelController extends SessionController
     }
     public function actualizar()
     {
-        $this->vista->render("panel/index", []);
+        $this->vista->render("panel/actualizar", []);
     }
     public function buscar()
     {
-        $this->vista->render("panel/index", []);
+        $this->vista->render("panel/buscar", []);
     }
     public function agregar()
     {
-        $this->vista->render("panel/index", []);
+        $this->vista->render("panel/agregar", []);
     }
     public function lista()
     {
-        $this->vista->render("panel/index", []);
+        $this->vista->render("panel/lista", []);
     }
     
     public function salir()

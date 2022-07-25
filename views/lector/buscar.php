@@ -87,7 +87,6 @@ require "views/includes/navbar.user.php";
                         <th>Apellidos</th>
                         <th>Sede</th>
                         <th>Carrera</th>
-                        <th>Opciones</th>
                     </tr>
                     
                     <?php if (isset($d) && isset($_POST["sede"])) : ?>
@@ -99,12 +98,6 @@ require "views/includes/navbar.user.php";
                                 <td> <?php echo $alumno->getApellidos(); ?></td>
                                 <td> <?php echo $alumno->getSede(); ?></td>
                                 <td> <?php echo $alumno->getCarrera(); ?></td>
-                                <td>
-                                    <form action="/buscar/modificarAlumno" method="post">
-                                        <input type="text" name="rut" id="rut" value="<?php echo $alumno->getRut(); ?>" hidden>
-                                        <input type="submit" value="Modificar" name="btnModificar"></input>
-                                    </form>
-                                </td>
                             </tr>
                         <?php endforeach; ?>
                     <?php elseif (isset($d) && isset($_POST["carrera"])) : ?>
@@ -116,17 +109,10 @@ require "views/includes/navbar.user.php";
                                 <td> <?php echo $alumno->getApellidos(); ?></td>
                                 <td> <?php echo $alumno->getSede(); ?></td>
                                 <td> <?php echo $alumno->getCarrera(); ?></td>
-                                <td>
-                                    <form action="/buscar/modificarAlumno" method="post">
-                                        <input type="text" name="rut" id="rut" value="<?php echo $alumno->getRut(); ?>" hidden>
-                                        <input type="submit" value="Modificar" name="btnModificar"></input>
-                                    </form>
-                                </td>
                             </tr>
                         <?php endforeach; ?>
                     <?php else : ?>
                         <tr>
-                            <td>No hay datos</td>
                             <td>No hay datos</td>
                             <td>No hay datos</td>
                             <td>No hay datos</td>

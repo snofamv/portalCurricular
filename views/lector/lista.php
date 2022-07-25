@@ -74,7 +74,6 @@ require "views/includes/navbar.user.php";
                     <th>Apellidos <button id="orderApe" onclick="sortTable(3)">↓</button></th>
                     <th>Sede <button id="orderSede" onclick="sortTable(4)">↓</button></th>
                     <th>Carrera <button id="orderCarrera" onclick="sortTable(5)">↓</button></th>
-                    <th>Opciones</th>
                 </thead>
                 <tbody>
                     <?php foreach ($d["datos"] as  $alumno) : ?>
@@ -85,12 +84,6 @@ require "views/includes/navbar.user.php";
                             <td> <?php echo $alumno->getApellidos(); ?></td>
                             <td> <?php echo $alumno->getCarrera(); ?></td>
                             <td> <?php echo $alumno->getSede(); ?></td>
-                            <td>
-                                <form action="/lista/modificarAlumno" method="post">
-                                    <input type="text" name="rut" id="rut" value="<?php echo $alumno->getRut(); ?>" hidden>
-                                    <input type="submit" value="Modificar" name="btnModificar"></input>
-                                </form>
-                            </td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>

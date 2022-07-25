@@ -43,7 +43,7 @@ require "views/includes/navbar.user.php";
                 </div>
                 <div class="d-grid">
 
-                    <a href="/lista" class="btn btn-primary btn-lg">Ver listado alumnos</a>
+                    <a href="/lector/lista" class="btn btn-primary btn-lg">Ver listado alumnos</a>
                 </div>
             </div>
         </div>
@@ -57,7 +57,7 @@ require "views/includes/navbar.user.php";
                 </div>
                 <div class="d-grid">
 
-                    <a href="/buscar" class="btn btn-primary btn-lg">Buscar</a>
+                    <a href="/lector/buscar" class="btn btn-primary btn-lg">Buscar</a>
                 </div>
             </div>
         </div>
