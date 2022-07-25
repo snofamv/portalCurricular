@@ -21,8 +21,8 @@ function autoLoad()
 
 define("URLBASE", "http://localhost");
 define("BASETITLE", "Portal curricular");
-define("USERDB", "root");
-define("PASSDB", "");
-define("HOSTDB", "localhost");
-define("NAMEDB", "test");
-define("CHARSETDB", "utf8");
+define("USERDB", "kjbjoiuszzve1ph1");
+define("PASSDB", "hrmtv8naal552pxa");
+define("HOSTDB", "lcpbq9az4jklobvq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com");
+define("NAMEDB", "inyz5u2ef0mbxjiq");
+define("CHARSETDB", "utf8mb4");
