@@ -128,14 +128,7 @@ require "views/includes/navbar.user.php";
         </div>
     </div>
 
-    <!--  -->
-    <div class="container me-5">
-        <div class="mx-auto rounded border-bottom border-end" style="width: 22rem;">
 
-            <img src="https://www.svgrepo.com/show/281692/id-card.svg" height="250px;" class="card-img-top m-3" alt="carta alumno">
-
-        </div>
-    </div>
 
 </div>
 
