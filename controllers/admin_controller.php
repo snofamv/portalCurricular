@@ -1,11 +1,7 @@
 <?php
 class AdminController extends SessionController
 {
-    private $pagina_inicial;
-    private $resultadosPorPagina  = 100;
-    private $empezar_desde;
-    private $total_datos;
-    private $totalPaginas;
+   
     public function __construct()
     {
         parent::__construct();
@@ -15,18 +11,7 @@ class AdminController extends SessionController
     {
         $this->vista->render("admin/index", []);
     }
-    public function agregar()
-    {
-        $this->vista->render("admin/agregar", []);
-    }
-    public function registro()
-    {
-        $this->vista->render("admin/registro", []);
-    }
-    public function buscar()
-    {
-        $this->vista->render("admin/buscar", []);
-    }
+      
     public function googledrive()
     {
 
@@ -36,31 +21,10 @@ class AdminController extends SessionController
     {
         $this->vista->render("admin/opciones", []);
     }
-    private function calcularPaginas()
-    {
-        $query = $this->modelo->query("SELECT COUNT(*) AS total FROM data");
-        $this->total_datos = $query->fetch(PDO::FETCH_OBJ)->total;
-        $this->totalPaginas = ceil($this->total_datos / $this->resultadosPorPagina)+2;
-    }
-    public function lista()
-    {
-        $this->cargarModelo("paginacion");
-        $this->pagina_inicial = $_GET["pagina"] ?: 1;
-        $this->empezar_desde = ($this->pagina_inicial - 1) * $this->resultadosPorPagina;
-        $this->calcularPaginas();
-        $d["datos"] = $this->modelo->getDatos($this->empezar_desde, $this->resultadosPorPagina);
-        $d["nroDatos"] = $this->totalPaginas;
-        $this->vista->render("admin/lista", $d);
-    }
+    
     public function pdf()
     {
-        $this->cargarModelo("paginacion");
-        $this->pagina_inicial = $_GET["pagina"] ?: 1;
-        $this->empezar_desde = ($this->pagina_inicial - 1) * $this->resultadosPorPagina;
-        $this->calcularPaginas();
-        $d["datos"] = $this->modelo->getDatos($this->empezar_desde, $this->resultadosPorPagina);
-        $d["nroDatos"] = $this->totalPaginas;
-        $this->vista->render("admin/pdf", $d);
+        $this->vista->render("admin/pdf", []);
     }
     public function activarUsuario()
     {

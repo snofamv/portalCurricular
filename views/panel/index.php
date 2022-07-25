@@ -43,7 +43,7 @@ require "views/includes/navbar.user.php";
                 </div>
                 <div class="d-grid">
 
-                    <a href="/panel/lista" class="btn btn-primary btn-lg">Ver listado alumnos</a>
+                    <a href="/lista" class="btn btn-primary btn-lg">Ver listado alumnos</a>
                 </div>
             </div>
         </div>
@@ -74,8 +74,8 @@ require "views/includes/navbar.user.php";
 
                                 </div>
                                 <div class="modal-footer mx-auto">
-                                    <a type="button" class="btn btn-warning" href="/panel/lista">Buscar RUT/Nombre/Codigo</a>
-                                    <a type="button" class="btn btn-warning" href="/panel/buscar">Buscar Sedes/Carreras</a>
+                                    <a type="button" class="btn btn-warning" href="/lista">Buscar RUT/Nombre/Codigo</a>
+                                    <a type="button" class="btn btn-warning" href="/buscar">Buscar Sedes/Carreras</a>
                                 </div>
                             </div>
                         </div>
@@ -92,7 +92,7 @@ require "views/includes/navbar.user.php";
                 </div>
                 <div class="d-grid">
 
-                    <a href="/panel/agregar" class="btn btn-primary btn-lg">Agregar</a>
+                    <a href="/agregar" class="btn btn-primary btn-lg">Agregar</a>
                 </div>
             </div>
         </div>

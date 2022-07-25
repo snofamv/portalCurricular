@@ -18,7 +18,7 @@ class LectorController extends SessionController
     }
     public function buscar()
     {
-        $this->vista->render("lector/buscar", []);
+        $this->redirect("buscar", []);
     }
     private function calcularPaginas()
     {

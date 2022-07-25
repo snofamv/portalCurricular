@@ -10,7 +10,7 @@ class RegistroController extends SessionController
 
     function render()
     {
-        $this->vista->render("admin/registro", []);
+        $this->vista->render("panel/registro", []);
     }
     private function validarCampoUsuario($dato)
     {

@@ -16,18 +16,8 @@ class PanelController extends SessionController
     {
         $this->vista->render("panel/index", []);
     }
-    public function actualizar()
-    {
-        $this->vista->render("panel/actualizar", []);
-    }
-    public function buscar()
-    {
-        $this->vista->render("panel/buscar", []);
-    }
-    public function agregar()
-    {
-        $this->vista->render("panel/agregar", []);
-    }
+  
+    
     private function calcularPaginas()
     {
         $query = $this->modelo->query("SELECT COUNT(*) AS total FROM data");
