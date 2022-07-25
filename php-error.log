@@ -448,3 +448,13 @@ Stack trace:
 [25-Jul-2022 19:36:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
 [25-Jul-2022 19:36:48 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
 [25-Jul-2022 19:36:48 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 19:44:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 19:44:54 Europe/Berlin] ##############################################
+[25-Jul-2022 19:44:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 19:44:54 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[25-Jul-2022 19:44:54 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[25-Jul-2022 19:44:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[25-Jul-2022 19:44:54 Europe/Berlin] ##############################################
+[25-Jul-2022 19:44:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[25-Jul-2022 19:44:54 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[25-Jul-2022 19:44:54 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA

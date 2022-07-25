@@ -43,7 +43,7 @@ require "views/includes/navbar.admin.php";
                 </div>
                 <div class="d-grid">
 
-                    <a href="/panelAdmin/lista" class="btn btn-primary btn-lg">Ver listado alumnos</a>
+                    <a href="/admin/lista" class="btn btn-primary btn-lg">Ver listado alumnos</a>
                 </div>
             </div>
         </div>
@@ -108,7 +108,7 @@ require "views/includes/navbar.admin.php";
                 </div>
                 <div class="d-grid">
 
-                    <a href="/panelAdmin/googledrive" class="btn btn-success btn-lg">Ir a Google Drive</a>
+                    <a href="/admin/googledrive" class="btn btn-success btn-lg">Ir a Google Drive</a>
                 </div>
             </div>
         </div>
@@ -121,7 +121,7 @@ require "views/includes/navbar.admin.php";
                 </div>
                 <div class="d-grid">
 
-                    <a href="/panelAdmin/pdf" class="btn btn-danger btn-lg">Ir a PDF</a>
+                    <a href="/admin/pdf" class="btn btn-danger btn-lg">Ir a PDF</a>
                 </div>
             </div>
         </div>
@@ -134,7 +134,7 @@ require "views/includes/navbar.admin.php";
                 </div>
                 <div class="d-grid">
 
-                    <a href="/panelAdmin/opciones" class="btn btn-secondary btn-lg">Ver mas operaciones</a>
+                    <a href="/admin/opciones" class="btn btn-secondary btn-lg">Ver mas operaciones</a>
                 </div>
             </div>
         </div>
@@ -148,7 +148,7 @@ require "views/includes/navbar.admin.php";
                 </div>
                 <div class="d-grid">
 
-                    <a href="/panelAdmin/salir" class="btn btn-danger btn-lg  ">Cerrar sesion</a>
+                    <a href="/admin/salir" class="btn btn-danger btn-lg  ">Cerrar sesion</a>
                 </div>
             </div>
         </div>

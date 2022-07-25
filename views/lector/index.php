@@ -71,7 +71,7 @@ require "views/includes/navbar.user.php";
                 </div>
                 <div class="d-grid">
 
-                    <a href="/panelLector/salir" class="btn btn-danger btn-lg  ">Cerrar sesion</a>
+                    <a href="/lector/salir" class="btn btn-danger btn-lg  ">Cerrar sesion</a>
                 </div>
             </div>
         </div>
