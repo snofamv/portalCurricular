@@ -1,6 +1,12 @@
 <?php
 class LectorController extends SessionController
 {
+    private $pagina_inicial;
+    private $resultadosPorPagina  = 100;
+    private $empezar_desde;
+    private $total_datos;
+    private $totalPaginas;
+    
     public function __construct()
     {
         parent::__construct();
