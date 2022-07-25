@@ -6,7 +6,7 @@ class LectorController extends SessionController
     private $empezar_desde;
     private $total_datos;
     private $totalPaginas;
-    
+
     public function __construct()
     {
         parent::__construct();
@@ -36,7 +36,6 @@ class LectorController extends SessionController
         $d["nroDatos"] = $this->totalPaginas;
         $this->vista->render("lector/lista", $d);
     }
-
     public function salir()
     {
         parent::salir();
