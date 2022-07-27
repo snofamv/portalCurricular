@@ -12,10 +12,10 @@ class AdminController extends SessionController
         $this->vista->render("admin/index", []);
     }
       
-    public function googledrive()
+    public function storage()
     {
 
-        $this->vista->render("admin/gdrive/googledrive", []);
+        $this->vista->render("admin/storage", []);
     }
     public function opciones()
     {

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "archivoscurricular",
+  "private_key_id": "be5854a61ce2153c9ce35f79bcafe46238a7222e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDdbozDG/Wloiy8\nwZmFEYE0XBANzwr2oN7tRMbZABVpNZ5JydiR2h9LCtmE5XtIKwPoUBxKtJPtK4sW\naujnsctGvb/s+1/q5eCYUQooy9WgI5p1WBPzTUA8wr6XbHgaVwR2owa6zslA6uC8\nm3Q8EEkqBM/6O0/8atWJYRI6olmNe4Dm5zV2vUmgKSIBbcRW7XJX8xOU8Orp70eS\n9qs6Bb/BjOKVK6U5gFiLfQv6XWbg2YJc/ldiaOAF8JRf77a5mcMwoSes0ajeS52N\nF8wOQ8/2HBEgDH1PW6uluLZXVNLuQ/AgwOiYgQZZskDGEJxSQC8ejf9NSY1b4IWC\n7448TCXDAgMBAAECggEAHqjjn/xWFgS6Mbnoui5t98RWNg3t6a+P+RsQdr7L4tEZ\ncAQdEuI4elkv5yEojG86+ka6tB6uwM8fp2SkMmNBed5kyGPB/dyt2B6YdoT1Y61V\nAgcbtBDajSSLOUeRQFcTd3h5QmfGy/tO+i6CzfI/VIHCvlYfbBxAIZEpnKlwFuZk\ndppdvCEe93wx+Z1E5PsnBaEbN9Lbqztby1bFxkKSiO3ryapeVAVAntjOBS4CMtpL\ngjUe5tuOEGSw0gEwM6o2gtQaCLi4Kmqk1L8he0yr2g2NxdieraW0nzNRRFxZqEfm\n30aGzZ1VoeWbZZvXTnNrXsCsDPQDdLGIRb0wpAt+0QKBgQD+zvIh5eet+Oq5+mNr\ny65IyjjxBgGwL2JNn9AB+k2wrN+f+maLevjZ8dcvwMoEsE1pApGe4jIwxjFNFOiN\n0gdwRgFCeEuxz63/E64S/8GsOmllEQ5tSGmOEuakIys4UvV/jJM095DPQVzHws5A\n1cHgwL3xo8RMVjIf5Wnu5wIZ6QKBgQDed6VcNKS701Cbyp0w3LhUkqREGoz+IMT0\n3vHuRZ/LH8Kr1eMlWzyhqglAviGMk5fVjm3HvroHowyIwJDkQGD+9UVvPUQyrs49\nOlLphWy2o0/S+qQSdu8xV83RGdB+LhC6RYEe5Nuy0urmgTA4RStI74OiVm+fgrSM\nSRmsuhqKywKBgCZf6FtuknvC9ybXLM35OOBBhF3YN7zfBgEGxn7lwXmQL4WaYoMz\nG/NG1s+cS1B1dNMRzfiNvF1YG+it83AYZ4JjKKFoGI5I5r15q0e1OOfFTEYqUW/n\n7e21rwKdQU8UP2DcPPdHKYntIBn9nq5pAu/kVzbjIRcWDCp9lHykUc6xAoGBAJOf\n77JFGL+u1UHcbPz8qrEscibjO4Zzdl9MBlzoBMaEt+jRUR778TsSG3vD731af5nu\nHrk6vjXNI8cnib59XiAx4DaWAEhlqWQF7PkbWe3EZ3cIbZH3LHig3GoSaEEjDmSd\nNLashYGf5tK5Dad5duS6U66JDx9ZW7fv1kLBaFWLAoGAG9v/6bj+1E9boYdV2E6Q\nl8uxlXCRSQZUnXn8EhD/80k8qUv34vr8oWyYYWUowp53lEnTifijJonghK6OgvYs\narvOLDVhlxLD+oAh0U2N7lxWrNBbC+Ignnz6aSw+bK6vJ2/2gVXHhl5EEIApcnFg\nZTakgJazq2kS30k1odjJTWs=\n-----END PRIVATE KEY-----\n",
+  "client_email": "curricular-storage@archivoscurricular.iam.gserviceaccount.com",
+  "client_id": "116962767284885140776",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/curricular-storage%40archivoscurricular.iam.gserviceaccount.com"
+}

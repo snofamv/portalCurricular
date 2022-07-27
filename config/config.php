@@ -19,7 +19,7 @@ function autoLoad()
     require_once("libs/app.php");
 }
 
-define("URLBASE", "https://portal-curricular.herokuapp.com");
+define("URLBASE", "http://localhost");
 define("BASETITLE", "Portal curricular");
 define("USERDB", "kjbjoiuszzve1ph1");
 define("PASSDB", "hrmtv8naal552pxa");
