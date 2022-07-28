@@ -1,28 +1,40 @@
 <?php
-require_once "classes/storage.php";
 
-$storage = new storage();
-$storage->listarBuckets();
-#$storage->listarObjetos("pdf-curricular");
-#$storage->eliminarObjeto("pdf-curricular","BD_OK.sql");
-#$storage->eliminarBucket("probando123kk");
-$storage->descargarobjecto("pdf-curricular", "texto.txt","C:\\Users\\DESKTOP\\Downloads\\texto_new.txt");
+require_once "classes/storage.php";
+require_once "views/includes/navbar.admin.php";
+if ($_GET["carpeta"]) {
+    $storage = new storage();
+    $caja = $_GET["caja"];
+    $subcarpeta = $_GET["carpeta"];
+    $archivo = $_GET["archivo"];
+    $storage->descargarobjecto($caja, $subcarpeta, $archivo, "C:\\Users\\DESKTOP\\Downloads");
+}
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <br>
-    <br>
-    <form action="">
-        <input type="file">
-        <input type="submit" value="Subir">
+<div class="container mt-5">
+
+    <form action="/admin/storage" method="get">
+        <div class="d-inline">
+            <label for="caja">N° Caja</label>
+            <input type="text" name="caja" id="caja">
+        </div>
+        <div class="d-inline">
+            <label for="carpeta">N° Carpeta</label>
+            <input type="text" name="carpeta" id="carpeta">
+        </div>
+        <div class="d-inline">
+            <label for="archivo">Archivo</label>
+            <input list="archivos" name="archivo">
+            <datalist id="archivos">
+                <option value="Acta de Titulo"></option>
+                <option value="Certificado de Nacimiento"></option>
+                <option value="Concentracion de Notas"></option>
+            </datalist>
+        </div>
+
+        <input type="submit" value="Descargar PDF">
     </form>
-</body>
-</html>
+</div>
+
+
+<?php require_once "views/includes/footer.template.php"; ?>

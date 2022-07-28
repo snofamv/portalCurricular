@@ -48,7 +48,7 @@ class storage
         $storage = new StorageClient();
         $file = fopen($source, "r");
         $bucket = $storage->bucket($bucketName);
-        $object = $bucket->uploadFIle($file, ["name" => $objectName]);
+        $object = $bucket->uploadFile($file, ["name" => $objectName]);
         printf("Uploaded: %s to gs://%s/%s" . PHP_EOL, basename($source), $bucketName, $objectName);
     }
 
@@ -57,7 +57,7 @@ class storage
         $bucket = $this->storage->bucket($bucketName);
         foreach ($bucket->objects() as $object) {
             # code...
-            printf("Object: %s" . PHP_EOL, $object->name());
+            printf("Object: %s <br>", $object->name());
         }
     }
     public function eliminarObjeto($bucketName, $objectName, $options = [])
@@ -74,12 +74,34 @@ class storage
         printf("Bucket deleted: gc://%s", $bucketName);
     }
 
-    public function descargarobjecto($bucketName, $objectName, $destination){
-        $bucket = $this->storage->bucket($bucketName);
-        $object = $bucket->object($objectName);
-        $object->downloadToFile($destination);
-        printf("Downloaded GS://%s/%s to %s".PHP_EOL, $bucketName, $objectName, basename($destination));
+    public function descargarobjecto($carpeta, $subcarpeta, $objectName, $destination){
+        $bucket = $this->storage->bucket("pdf-curricular");
+        $object = $bucket->object("$carpeta/$subcarpeta/$objectName.pdf");
+        if($object->downloadToFile("$destination\\$objectName.pdf")){
+            echo "Archivo descargado.";
+        }else{
+            echo "Error al descargar el archivo.";
+        }
+        
 
 
+    }
+
+    /**
+     * Get the value of storage
+     */
+    public function getStorage()
+    {
+        return $this->storage;
+    }
+
+    /**
+     * Set the value of storage
+     */
+    public function setStorage($storage): self
+    {
+        $this->storage = $storage;
+
+        return $this;
     }
 }

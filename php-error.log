@@ -1,369 +1,338 @@
-[27-Jul-2022 17:35:00 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:35:00 Europe/Berlin] ##############################################
-[27-Jul-2022 17:35:00 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:35:01 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:35:02 Europe/Berlin] PHP Warning:  fopen(C:\Users\DESKTOP\Downloads): Failed to open stream: Permission denied in C:\xampp\htdocs\vendor\google\cloud-storage\src\StorageObject.php on line 614
-[27-Jul-2022 17:35:03 Europe/Berlin] PHP Fatal error:  Uncaught Google\Cloud\Core\Exception\NotFoundException: No such object: pdf-curricular/BD_OK.sql in C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php:368
-Stack trace:
-#0 C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php(207): Google\Cloud\Core\RequestWrapper->convertToGoogleException(Object(GuzzleHttp\Exception\ClientException))
-#1 C:\xampp\htdocs\vendor\google\cloud-storage\src\Connection\Rest.php(252): Google\Cloud\Core\RequestWrapper->send(Object(GuzzleHttp\Psr7\Request), Array)
-#2 C:\xampp\htdocs\vendor\google\cloud-storage\src\StorageObject.php(678): Google\Cloud\Storage\Connection\Rest->downloadObject(Array)
-#3 C:\xampp\htdocs\vendor\google\cloud-storage\src\StorageObject.php(617): Google\Cloud\Storage\StorageObject->downloadAsStream(Array)
-#4 C:\xampp\htdocs\classes\storage.php(80): Google\Cloud\Storage\StorageObject->downloadToFile('C:\\Users\\DESKTO...')
-#5 C:\xampp\htdocs\views\admin\storage.php(9): storage->descargarobjecto('pdf-curricular', 'BD_OK.sql', 'C:\\Users\\DESKTO...')
-#6 C:\xampp\htdocs\libs\view.php(18): require('C:\\xampp\\htdocs...')
-#7 C:\xampp\htdocs\controllers\admin_controller.php(18): View->render('admin/storage', Array)
-#8 C:\xampp\htdocs\libs\app.php(53): AdminController->storage()
-#9 C:\xampp\htdocs\index.php(4): App->__construct()
-#10 {main}
-  thrown in C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php on line 368
-[27-Jul-2022 17:35:03 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:35:03 Europe/Berlin] ##############################################
-[27-Jul-2022 17:35:03 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:35:03 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[27-Jul-2022 17:35:04 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:35:04 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[27-Jul-2022 17:35:04 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:35:04 Europe/Berlin] ##############################################
-[27-Jul-2022 17:35:04 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:35:05 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:35:05 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[27-Jul-2022 17:36:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:36:24 Europe/Berlin] ##############################################
-[27-Jul-2022 17:36:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:36:25 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:36:26 Europe/Berlin] PHP Warning:  fopen(C:\Users\DESKTOP\Downloads): Failed to open stream: Permission denied in C:\xampp\htdocs\vendor\google\cloud-storage\src\StorageObject.php on line 614
-[27-Jul-2022 17:36:26 Europe/Berlin] PHP Fatal error:  Uncaught Google\Cloud\Core\Exception\NotFoundException: No such object: pdf-curricular/codigo backup.sql in C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php:368
-Stack trace:
-#0 C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php(207): Google\Cloud\Core\RequestWrapper->convertToGoogleException(Object(GuzzleHttp\Exception\ClientException))
-#1 C:\xampp\htdocs\vendor\google\cloud-storage\src\Connection\Rest.php(252): Google\Cloud\Core\RequestWrapper->send(Object(GuzzleHttp\Psr7\Request), Array)
-#2 C:\xampp\htdocs\vendor\google\cloud-storage\src\StorageObject.php(678): Google\Cloud\Storage\Connection\Rest->downloadObject(Array)
-#3 C:\xampp\htdocs\vendor\google\cloud-storage\src\StorageObject.php(617): Google\Cloud\Storage\StorageObject->downloadAsStream(Array)
-#4 C:\xampp\htdocs\classes\storage.php(80): Google\Cloud\Storage\StorageObject->downloadToFile('C:\\Users\\DESKTO...')
-#5 C:\xampp\htdocs\views\admin\storage.php(9): storage->descargarobjecto('pdf-curricular', 'codigo backup.s...', 'C:\\Users\\DESKTO...')
-#6 C:\xampp\htdocs\libs\view.php(18): require('C:\\xampp\\htdocs...')
-#7 C:\xampp\htdocs\controllers\admin_controller.php(18): View->render('admin/storage', Array)
-#8 C:\xampp\htdocs\libs\app.php(53): AdminController->storage()
-#9 C:\xampp\htdocs\index.php(4): App->__construct()
-#10 {main}
-  thrown in C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php on line 368
-[27-Jul-2022 17:36:26 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:36:26 Europe/Berlin] ##############################################
-[27-Jul-2022 17:36:26 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:36:26 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[27-Jul-2022 17:36:27 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:36:28 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[27-Jul-2022 17:36:28 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:36:28 Europe/Berlin] ##############################################
-[27-Jul-2022 17:36:28 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:36:28 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:36:29 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[27-Jul-2022 17:36:43 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:36:43 Europe/Berlin] ##############################################
-[27-Jul-2022 17:36:43 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:36:46 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:36:47 Europe/Berlin] PHP Warning:  fopen(C:\Users\DESKTOP\Downloads): Failed to open stream: Permission denied in C:\xampp\htdocs\vendor\google\cloud-storage\src\StorageObject.php on line 614
-[27-Jul-2022 17:36:47 Europe/Berlin] PHP Fatal error:  Uncaught Google\Cloud\Core\Exception\NotFoundException: No such object: pdf-curricular/codigo backup.sql in C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php:368
-Stack trace:
-#0 C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php(207): Google\Cloud\Core\RequestWrapper->convertToGoogleException(Object(GuzzleHttp\Exception\ClientException))
-#1 C:\xampp\htdocs\vendor\google\cloud-storage\src\Connection\Rest.php(252): Google\Cloud\Core\RequestWrapper->send(Object(GuzzleHttp\Psr7\Request), Array)
-#2 C:\xampp\htdocs\vendor\google\cloud-storage\src\StorageObject.php(678): Google\Cloud\Storage\Connection\Rest->downloadObject(Array)
-#3 C:\xampp\htdocs\vendor\google\cloud-storage\src\StorageObject.php(617): Google\Cloud\Storage\StorageObject->downloadAsStream(Array)
-#4 C:\xampp\htdocs\classes\storage.php(80): Google\Cloud\Storage\StorageObject->downloadToFile('C:\\Users\\DESKTO...')
-#5 C:\xampp\htdocs\views\admin\storage.php(9): storage->descargarobjecto('pdf-curricular', 'codigo backup.s...', 'C:\\Users\\DESKTO...')
-#6 C:\xampp\htdocs\libs\view.php(18): require('C:\\xampp\\htdocs...')
-#7 C:\xampp\htdocs\controllers\admin_controller.php(18): View->render('admin/storage', Array)
-#8 C:\xampp\htdocs\libs\app.php(53): AdminController->storage()
-#9 C:\xampp\htdocs\index.php(4): App->__construct()
-#10 {main}
-  thrown in C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php on line 368
-[27-Jul-2022 17:36:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:36:47 Europe/Berlin] ##############################################
-[27-Jul-2022 17:36:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:36:47 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[27-Jul-2022 17:36:48 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:36:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[27-Jul-2022 17:36:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:36:48 Europe/Berlin] ##############################################
-[27-Jul-2022 17:36:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:36:49 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:36:49 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[27-Jul-2022 17:41:43 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:41:43 Europe/Berlin] ##############################################
-[27-Jul-2022 17:41:43 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:41:44 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:41:45 Europe/Berlin] PHP Fatal error:  Uncaught Google\Cloud\Core\Exception\NotFoundException: No such object: pdf-curricular/codigo backup.sql in C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php:368
-Stack trace:
-#0 C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php(207): Google\Cloud\Core\RequestWrapper->convertToGoogleException(Object(GuzzleHttp\Exception\ClientException))
-#1 C:\xampp\htdocs\vendor\google\cloud-storage\src\Connection\Rest.php(252): Google\Cloud\Core\RequestWrapper->send(Object(GuzzleHttp\Psr7\Request), Array)
-#2 C:\xampp\htdocs\vendor\google\cloud-storage\src\StorageObject.php(678): Google\Cloud\Storage\Connection\Rest->downloadObject(Array)
-#3 C:\xampp\htdocs\vendor\google\cloud-storage\src\StorageObject.php(617): Google\Cloud\Storage\StorageObject->downloadAsStream(Array)
-#4 C:\xampp\htdocs\classes\storage.php(80): Google\Cloud\Storage\StorageObject->downloadToFile('C:\\Users\\DESKTO...')
-#5 C:\xampp\htdocs\views\admin\storage.php(9): storage->descargarobjecto('pdf-curricular', 'codigo backup.s...', 'C:\\Users\\DESKTO...')
-#6 C:\xampp\htdocs\libs\view.php(18): require('C:\\xampp\\htdocs...')
-#7 C:\xampp\htdocs\controllers\admin_controller.php(18): View->render('admin/storage', Array)
-#8 C:\xampp\htdocs\libs\app.php(53): AdminController->storage()
-#9 C:\xampp\htdocs\index.php(4): App->__construct()
-#10 {main}
-  thrown in C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php on line 368
-[27-Jul-2022 17:41:45 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:41:45 Europe/Berlin] ##############################################
-[27-Jul-2022 17:41:45 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:41:45 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[27-Jul-2022 17:41:46 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:41:47 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[27-Jul-2022 17:41:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:41:47 Europe/Berlin] ##############################################
-[27-Jul-2022 17:41:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:41:48 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:41:48 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[27-Jul-2022 17:41:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:41:54 Europe/Berlin] ##############################################
-[27-Jul-2022 17:41:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:41:55 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:41:57 Europe/Berlin] PHP Fatal error:  Uncaught Google\Cloud\Core\Exception\NotFoundException: No such object: pdf-curricular/codigo backup.sql in C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php:368
-Stack trace:
-#0 C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php(207): Google\Cloud\Core\RequestWrapper->convertToGoogleException(Object(GuzzleHttp\Exception\ClientException))
-#1 C:\xampp\htdocs\vendor\google\cloud-storage\src\Connection\Rest.php(252): Google\Cloud\Core\RequestWrapper->send(Object(GuzzleHttp\Psr7\Request), Array)
-#2 C:\xampp\htdocs\vendor\google\cloud-storage\src\StorageObject.php(678): Google\Cloud\Storage\Connection\Rest->downloadObject(Array)
-#3 C:\xampp\htdocs\vendor\google\cloud-storage\src\StorageObject.php(617): Google\Cloud\Storage\StorageObject->downloadAsStream(Array)
-#4 C:\xampp\htdocs\classes\storage.php(80): Google\Cloud\Storage\StorageObject->downloadToFile('C:\\Users\\DESKTO...')
-#5 C:\xampp\htdocs\views\admin\storage.php(9): storage->descargarobjecto('pdf-curricular', 'codigo backup.s...', 'C:\\Users\\DESKTO...')
-#6 C:\xampp\htdocs\libs\view.php(18): require('C:\\xampp\\htdocs...')
-#7 C:\xampp\htdocs\controllers\admin_controller.php(18): View->render('admin/storage', Array)
-#8 C:\xampp\htdocs\libs\app.php(53): AdminController->storage()
-#9 C:\xampp\htdocs\index.php(4): App->__construct()
-#10 {main}
-  thrown in C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php on line 368
-[27-Jul-2022 17:41:57 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:41:57 Europe/Berlin] ##############################################
-[27-Jul-2022 17:41:57 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:41:57 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[27-Jul-2022 17:41:57 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:41:58 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[27-Jul-2022 17:41:58 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:41:58 Europe/Berlin] ##############################################
-[27-Jul-2022 17:41:58 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:41:58 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:41:59 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[27-Jul-2022 17:42:31 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:42:31 Europe/Berlin] ##############################################
-[27-Jul-2022 17:42:31 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:42:31 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:42:33 Europe/Berlin] PHP Fatal error:  Uncaught Google\Cloud\Core\Exception\NotFoundException: No such object: pdf-curricular/codigo backup.sql in C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php:368
-Stack trace:
-#0 C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php(207): Google\Cloud\Core\RequestWrapper->convertToGoogleException(Object(GuzzleHttp\Exception\ClientException))
-#1 C:\xampp\htdocs\vendor\google\cloud-storage\src\Connection\Rest.php(252): Google\Cloud\Core\RequestWrapper->send(Object(GuzzleHttp\Psr7\Request), Array)
-#2 C:\xampp\htdocs\vendor\google\cloud-storage\src\StorageObject.php(678): Google\Cloud\Storage\Connection\Rest->downloadObject(Array)
-#3 C:\xampp\htdocs\vendor\google\cloud-storage\src\StorageObject.php(617): Google\Cloud\Storage\StorageObject->downloadAsStream(Array)
-#4 C:\xampp\htdocs\classes\storage.php(80): Google\Cloud\Storage\StorageObject->downloadToFile('C:\\Users\\DESKTO...')
-#5 C:\xampp\htdocs\views\admin\storage.php(9): storage->descargarobjecto('pdf-curricular', 'codigo backup.s...', 'C:\\Users\\DESKTO...')
-#6 C:\xampp\htdocs\libs\view.php(18): require('C:\\xampp\\htdocs...')
-#7 C:\xampp\htdocs\controllers\admin_controller.php(18): View->render('admin/storage', Array)
-#8 C:\xampp\htdocs\libs\app.php(53): AdminController->storage()
-#9 C:\xampp\htdocs\index.php(4): App->__construct()
-#10 {main}
-  thrown in C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php on line 368
-[27-Jul-2022 17:42:33 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:42:33 Europe/Berlin] ##############################################
-[27-Jul-2022 17:42:33 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:42:33 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[27-Jul-2022 17:42:34 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:42:34 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[27-Jul-2022 17:42:34 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:42:34 Europe/Berlin] ##############################################
-[27-Jul-2022 17:42:34 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:42:35 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:42:35 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[27-Jul-2022 17:42:45 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:42:45 Europe/Berlin] ##############################################
-[27-Jul-2022 17:42:45 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:42:46 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:42:47 Europe/Berlin] PHP Fatal error:  Uncaught Google\Cloud\Core\Exception\NotFoundException: No such object: pdf-curricular/codigo backup.sql in C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php:368
-Stack trace:
-#0 C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php(207): Google\Cloud\Core\RequestWrapper->convertToGoogleException(Object(GuzzleHttp\Exception\ClientException))
-#1 C:\xampp\htdocs\vendor\google\cloud-storage\src\Connection\Rest.php(252): Google\Cloud\Core\RequestWrapper->send(Object(GuzzleHttp\Psr7\Request), Array)
-#2 C:\xampp\htdocs\vendor\google\cloud-storage\src\StorageObject.php(678): Google\Cloud\Storage\Connection\Rest->downloadObject(Array)
-#3 C:\xampp\htdocs\vendor\google\cloud-storage\src\StorageObject.php(617): Google\Cloud\Storage\StorageObject->downloadAsStream(Array)
-#4 C:\xampp\htdocs\classes\storage.php(80): Google\Cloud\Storage\StorageObject->downloadToFile('C:\\Users\\DESKTO...')
-#5 C:\xampp\htdocs\views\admin\storage.php(9): storage->descargarobjecto('pdf-curricular', 'codigo backup.s...', 'C:\\Users\\DESKTO...')
-#6 C:\xampp\htdocs\libs\view.php(18): require('C:\\xampp\\htdocs...')
-#7 C:\xampp\htdocs\controllers\admin_controller.php(18): View->render('admin/storage', Array)
-#8 C:\xampp\htdocs\libs\app.php(53): AdminController->storage()
-#9 C:\xampp\htdocs\index.php(4): App->__construct()
-#10 {main}
-  thrown in C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php on line 368
-[27-Jul-2022 17:42:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:42:47 Europe/Berlin] ##############################################
-[27-Jul-2022 17:42:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:42:47 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[27-Jul-2022 17:42:48 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:42:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[27-Jul-2022 17:42:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:42:48 Europe/Berlin] ##############################################
-[27-Jul-2022 17:42:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:42:49 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:42:49 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[27-Jul-2022 17:42:52 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:42:52 Europe/Berlin] ##############################################
-[27-Jul-2022 17:42:52 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:42:53 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:42:55 Europe/Berlin] PHP Fatal error:  Uncaught Google\Cloud\Core\Exception\NotFoundException: No such object: pdf-curricular/codigo backup.sql in C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php:368
-Stack trace:
-#0 C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php(207): Google\Cloud\Core\RequestWrapper->convertToGoogleException(Object(GuzzleHttp\Exception\ClientException))
-#1 C:\xampp\htdocs\vendor\google\cloud-storage\src\Connection\Rest.php(252): Google\Cloud\Core\RequestWrapper->send(Object(GuzzleHttp\Psr7\Request), Array)
-#2 C:\xampp\htdocs\vendor\google\cloud-storage\src\StorageObject.php(678): Google\Cloud\Storage\Connection\Rest->downloadObject(Array)
-#3 C:\xampp\htdocs\vendor\google\cloud-storage\src\StorageObject.php(617): Google\Cloud\Storage\StorageObject->downloadAsStream(Array)
-#4 C:\xampp\htdocs\classes\storage.php(80): Google\Cloud\Storage\StorageObject->downloadToFile('C:\\Users\\DESKTO...')
-#5 C:\xampp\htdocs\views\admin\storage.php(9): storage->descargarobjecto('pdf-curricular', 'codigo backup.s...', 'C:\\Users\\DESKTO...')
-#6 C:\xampp\htdocs\libs\view.php(18): require('C:\\xampp\\htdocs...')
-#7 C:\xampp\htdocs\controllers\admin_controller.php(18): View->render('admin/storage', Array)
-#8 C:\xampp\htdocs\libs\app.php(53): AdminController->storage()
-#9 C:\xampp\htdocs\index.php(4): App->__construct()
-#10 {main}
-  thrown in C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php on line 368
-[27-Jul-2022 17:42:55 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:42:55 Europe/Berlin] ##############################################
-[27-Jul-2022 17:42:55 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:42:55 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[27-Jul-2022 17:42:56 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:42:57 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[27-Jul-2022 17:42:57 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:42:57 Europe/Berlin] ##############################################
-[27-Jul-2022 17:42:57 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:42:57 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:42:57 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[27-Jul-2022 17:43:02 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:43:02 Europe/Berlin] ##############################################
-[27-Jul-2022 17:43:02 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:43:04 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:43:05 Europe/Berlin] PHP Fatal error:  Uncaught Google\Cloud\Core\Exception\NotFoundException: No such object: pdf-curricular/codigo backup.sql in C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php:368
-Stack trace:
-#0 C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php(207): Google\Cloud\Core\RequestWrapper->convertToGoogleException(Object(GuzzleHttp\Exception\ClientException))
-#1 C:\xampp\htdocs\vendor\google\cloud-storage\src\Connection\Rest.php(252): Google\Cloud\Core\RequestWrapper->send(Object(GuzzleHttp\Psr7\Request), Array)
-#2 C:\xampp\htdocs\vendor\google\cloud-storage\src\StorageObject.php(678): Google\Cloud\Storage\Connection\Rest->downloadObject(Array)
-#3 C:\xampp\htdocs\vendor\google\cloud-storage\src\StorageObject.php(617): Google\Cloud\Storage\StorageObject->downloadAsStream(Array)
-#4 C:\xampp\htdocs\classes\storage.php(80): Google\Cloud\Storage\StorageObject->downloadToFile('C:\\Users\\DESKTO...')
-#5 C:\xampp\htdocs\views\admin\storage.php(9): storage->descargarobjecto('pdf-curricular', 'codigo backup.s...', 'C:\\Users\\DESKTO...')
-#6 C:\xampp\htdocs\libs\view.php(18): require('C:\\xampp\\htdocs...')
-#7 C:\xampp\htdocs\controllers\admin_controller.php(18): View->render('admin/storage', Array)
-#8 C:\xampp\htdocs\libs\app.php(53): AdminController->storage()
-#9 C:\xampp\htdocs\index.php(4): App->__construct()
-#10 {main}
-  thrown in C:\xampp\htdocs\vendor\google\cloud-core\src\RequestWrapper.php on line 368
-[27-Jul-2022 17:43:05 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:43:05 Europe/Berlin] ##############################################
-[27-Jul-2022 17:43:05 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:43:05 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[27-Jul-2022 17:43:05 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:43:06 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[27-Jul-2022 17:43:06 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:43:06 Europe/Berlin] ##############################################
-[27-Jul-2022 17:43:06 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:43:06 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:43:07 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[27-Jul-2022 17:44:25 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:44:25 Europe/Berlin] ##############################################
-[27-Jul-2022 17:44:25 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:44:26 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:44:28 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:44:28 Europe/Berlin] ##############################################
-[27-Jul-2022 17:44:28 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:44:28 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[27-Jul-2022 17:44:29 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:44:29 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[27-Jul-2022 17:44:29 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:44:29 Europe/Berlin] ##############################################
-[27-Jul-2022 17:44:29 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:44:30 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:44:31 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[27-Jul-2022 17:44:43 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:44:43 Europe/Berlin] ##############################################
-[27-Jul-2022 17:44:43 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:44:43 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:44:45 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:44:45 Europe/Berlin] ##############################################
-[27-Jul-2022 17:44:45 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:44:45 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[27-Jul-2022 17:44:45 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:44:46 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[27-Jul-2022 17:44:46 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:44:46 Europe/Berlin] ##############################################
-[27-Jul-2022 17:44:46 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:44:46 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:44:47 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[27-Jul-2022 17:45:05 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:45:05 Europe/Berlin] ##############################################
-[27-Jul-2022 17:45:05 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:45:06 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:45:09 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:45:09 Europe/Berlin] ##############################################
-[27-Jul-2022 17:45:09 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:45:09 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[27-Jul-2022 17:45:10 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:45:10 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[27-Jul-2022 17:45:10 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:45:10 Europe/Berlin] ##############################################
-[27-Jul-2022 17:45:10 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:45:11 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:45:11 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[27-Jul-2022 17:45:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:45:22 Europe/Berlin] ##############################################
-[27-Jul-2022 17:45:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:45:23 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:45:25 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:45:25 Europe/Berlin] ##############################################
-[27-Jul-2022 17:45:25 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:45:25 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[27-Jul-2022 17:45:25 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:45:25 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[27-Jul-2022 17:45:25 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:45:25 Europe/Berlin] ##############################################
-[27-Jul-2022 17:45:25 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:45:26 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:45:27 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[27-Jul-2022 17:46:09 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:46:09 Europe/Berlin] ##############################################
-[27-Jul-2022 17:46:09 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:46:11 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:46:13 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:46:13 Europe/Berlin] ##############################################
-[27-Jul-2022 17:46:13 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:46:13 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[27-Jul-2022 17:46:14 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:46:15 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[27-Jul-2022 17:46:15 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:46:15 Europe/Berlin] ##############################################
-[27-Jul-2022 17:46:15 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:46:16 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:46:16 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[27-Jul-2022 17:46:18 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:46:18 Europe/Berlin] ##############################################
-[27-Jul-2022 17:46:18 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:46:19 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:46:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:46:21 Europe/Berlin] ##############################################
-[27-Jul-2022 17:46:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:46:21 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[27-Jul-2022 17:46:23 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:46:23 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[27-Jul-2022 17:46:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:46:23 Europe/Berlin] ##############################################
-[27-Jul-2022 17:46:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:46:24 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:46:25 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[27-Jul-2022 17:46:28 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:46:28 Europe/Berlin] ##############################################
-[27-Jul-2022 17:46:28 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:46:30 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:46:36 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:46:36 Europe/Berlin] ##############################################
-[27-Jul-2022 17:46:36 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:46:36 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[27-Jul-2022 17:46:37 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:46:38 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[27-Jul-2022 17:46:38 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[27-Jul-2022 17:46:38 Europe/Berlin] ##############################################
-[27-Jul-2022 17:46:38 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[27-Jul-2022 17:46:39 Europe/Berlin] Conexion a BD Exitosa.
-[27-Jul-2022 17:46:39 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[28-Jul-2022 22:41:28 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:41:28 Europe/Berlin] ##############################################
+[28-Jul-2022 22:41:28 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:41:30 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:41:30 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "}", expecting "," or ";" in C:\xampp\htdocs\classes\storage.php on line 82
+[28-Jul-2022 22:41:37 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:41:37 Europe/Berlin] ##############################################
+[28-Jul-2022 22:41:37 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:41:38 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:41:39 Europe/Berlin] PHP Warning:  Undefined array key "carpeta" in C:\xampp\htdocs\views\admin\storage.php on line 5
+[28-Jul-2022 22:41:39 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:41:39 Europe/Berlin] ##############################################
+[28-Jul-2022 22:41:39 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:41:39 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[28-Jul-2022 22:41:39 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:41:40 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[28-Jul-2022 22:41:40 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:41:40 Europe/Berlin] ##############################################
+[28-Jul-2022 22:41:40 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:41:40 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:41:41 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[28-Jul-2022 22:41:44 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:41:44 Europe/Berlin] ##############################################
+[28-Jul-2022 22:41:44 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:41:45 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:41:46 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:41:46 Europe/Berlin] ##############################################
+[28-Jul-2022 22:41:46 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:41:46 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[28-Jul-2022 22:41:47 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:41:47 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[28-Jul-2022 22:41:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:41:47 Europe/Berlin] ##############################################
+[28-Jul-2022 22:41:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:41:48 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:41:48 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[28-Jul-2022 22:42:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:42:12 Europe/Berlin] ##############################################
+[28-Jul-2022 22:42:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:42:13 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:42:14 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:42:14 Europe/Berlin] ##############################################
+[28-Jul-2022 22:42:14 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:42:14 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[28-Jul-2022 22:42:14 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:42:15 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[28-Jul-2022 22:42:15 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:42:15 Europe/Berlin] ##############################################
+[28-Jul-2022 22:42:15 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:42:16 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:42:17 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[28-Jul-2022 22:42:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:42:21 Europe/Berlin] ##############################################
+[28-Jul-2022 22:42:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:42:21 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:42:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:42:22 Europe/Berlin] ##############################################
+[28-Jul-2022 22:42:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:42:22 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[28-Jul-2022 22:42:23 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:42:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:42:23 Europe/Berlin] ##############################################
+[28-Jul-2022 22:42:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:42:24 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[28-Jul-2022 22:42:24 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:42:25 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[28-Jul-2022 22:42:25 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:42:25 Europe/Berlin] ##############################################
+[28-Jul-2022 22:42:25 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:42:25 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:42:25 Europe/Berlin] ##############################################
+[28-Jul-2022 22:42:25 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:42:25 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[28-Jul-2022 22:42:25 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:42:26 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[28-Jul-2022 22:42:27 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:42:27 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[28-Jul-2022 22:42:27 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:42:27 Europe/Berlin] ##############################################
+[28-Jul-2022 22:42:27 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:42:28 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:42:28 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[28-Jul-2022 22:44:10 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:44:10 Europe/Berlin] ##############################################
+[28-Jul-2022 22:44:10 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:44:10 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:44:11 Europe/Berlin] PHP Warning:  Undefined array key "carpeta" in C:\xampp\htdocs\views\admin\storage.php on line 5
+[28-Jul-2022 22:44:11 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:44:11 Europe/Berlin] ##############################################
+[28-Jul-2022 22:44:11 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:44:11 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[28-Jul-2022 22:44:11 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:44:12 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[28-Jul-2022 22:44:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:44:12 Europe/Berlin] ##############################################
+[28-Jul-2022 22:44:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:44:12 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:44:13 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[28-Jul-2022 22:45:06 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:45:06 Europe/Berlin] ##############################################
+[28-Jul-2022 22:45:07 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:45:07 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:45:07 Europe/Berlin] PHP Warning:  Undefined array key "carpeta" in C:\xampp\htdocs\views\admin\storage.php on line 5
+[28-Jul-2022 22:45:07 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:45:07 Europe/Berlin] ##############################################
+[28-Jul-2022 22:45:07 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:45:07 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[28-Jul-2022 22:45:08 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:45:08 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[28-Jul-2022 22:45:08 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:45:08 Europe/Berlin] ##############################################
+[28-Jul-2022 22:45:08 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:45:09 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:45:09 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[28-Jul-2022 22:45:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:45:53 Europe/Berlin] ##############################################
+[28-Jul-2022 22:45:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:45:54 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:45:55 Europe/Berlin] PHP Warning:  Undefined array key "carpeta" in C:\xampp\htdocs\views\admin\storage.php on line 5
+[28-Jul-2022 22:45:55 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:45:55 Europe/Berlin] ##############################################
+[28-Jul-2022 22:45:55 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:45:55 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[28-Jul-2022 22:45:55 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:45:56 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[28-Jul-2022 22:45:56 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:45:56 Europe/Berlin] ##############################################
+[28-Jul-2022 22:45:56 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:45:56 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:45:57 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[28-Jul-2022 22:46:10 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:46:10 Europe/Berlin] ##############################################
+[28-Jul-2022 22:46:10 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:46:11 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:46:11 Europe/Berlin] PHP Warning:  Undefined array key "carpeta" in C:\xampp\htdocs\views\admin\storage.php on line 5
+[28-Jul-2022 22:46:11 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:46:11 Europe/Berlin] ##############################################
+[28-Jul-2022 22:46:11 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:46:11 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[28-Jul-2022 22:46:12 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:46:12 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[28-Jul-2022 22:46:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:46:12 Europe/Berlin] ##############################################
+[28-Jul-2022 22:46:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:46:13 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:46:13 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[28-Jul-2022 22:46:16 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:46:16 Europe/Berlin] ##############################################
+[28-Jul-2022 22:46:16 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:46:17 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:46:17 Europe/Berlin] PHP Warning:  Undefined array key "carpeta" in C:\xampp\htdocs\views\admin\storage.php on line 5
+[28-Jul-2022 22:46:17 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:46:17 Europe/Berlin] ##############################################
+[28-Jul-2022 22:46:17 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:46:17 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[28-Jul-2022 22:46:18 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:46:18 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[28-Jul-2022 22:46:18 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:46:18 Europe/Berlin] ##############################################
+[28-Jul-2022 22:46:18 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:46:19 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:46:20 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[28-Jul-2022 22:46:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:46:21 Europe/Berlin] ##############################################
+[28-Jul-2022 22:46:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:46:22 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:46:22 Europe/Berlin] PHP Warning:  Undefined array key "carpeta" in C:\xampp\htdocs\views\admin\storage.php on line 5
+[28-Jul-2022 22:46:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:46:22 Europe/Berlin] ##############################################
+[28-Jul-2022 22:46:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:46:22 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[28-Jul-2022 22:46:23 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:46:23 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[28-Jul-2022 22:46:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:46:23 Europe/Berlin] ##############################################
+[28-Jul-2022 22:46:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:46:24 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:46:25 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[28-Jul-2022 22:46:52 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:46:52 Europe/Berlin] ##############################################
+[28-Jul-2022 22:46:52 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:46:53 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:46:53 Europe/Berlin] PHP Warning:  Undefined array key "carpeta" in C:\xampp\htdocs\views\admin\storage.php on line 5
+[28-Jul-2022 22:46:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:46:53 Europe/Berlin] ##############################################
+[28-Jul-2022 22:46:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:46:53 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[28-Jul-2022 22:46:53 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:46:54 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[28-Jul-2022 22:46:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:46:54 Europe/Berlin] ##############################################
+[28-Jul-2022 22:46:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:46:54 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:46:55 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[28-Jul-2022 22:47:04 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:47:04 Europe/Berlin] ##############################################
+[28-Jul-2022 22:47:04 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:47:05 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:47:05 Europe/Berlin] PHP Warning:  Undefined array key "carpeta" in C:\xampp\htdocs\views\admin\storage.php on line 5
+[28-Jul-2022 22:47:05 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:47:05 Europe/Berlin] ##############################################
+[28-Jul-2022 22:47:05 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:47:05 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[28-Jul-2022 22:47:05 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:47:06 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[28-Jul-2022 22:47:06 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:47:06 Europe/Berlin] ##############################################
+[28-Jul-2022 22:47:06 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:47:06 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:47:07 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[28-Jul-2022 22:47:11 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:47:11 Europe/Berlin] ##############################################
+[28-Jul-2022 22:47:11 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:47:12 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:47:12 Europe/Berlin] PHP Warning:  Undefined array key "carpeta" in C:\xampp\htdocs\views\admin\storage.php on line 5
+[28-Jul-2022 22:47:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:47:12 Europe/Berlin] ##############################################
+[28-Jul-2022 22:47:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:47:12 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[28-Jul-2022 22:47:12 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:47:13 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[28-Jul-2022 22:47:13 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:47:13 Europe/Berlin] ##############################################
+[28-Jul-2022 22:47:13 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:47:14 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:47:15 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[28-Jul-2022 22:47:15 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:47:15 Europe/Berlin] ##############################################
+[28-Jul-2022 22:47:15 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:47:16 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:47:16 Europe/Berlin] PHP Warning:  Undefined array key "carpeta" in C:\xampp\htdocs\views\admin\storage.php on line 5
+[28-Jul-2022 22:47:16 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:47:16 Europe/Berlin] ##############################################
+[28-Jul-2022 22:47:16 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:47:16 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[28-Jul-2022 22:47:17 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:47:18 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[28-Jul-2022 22:47:18 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:47:18 Europe/Berlin] ##############################################
+[28-Jul-2022 22:47:18 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:47:19 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:47:19 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[28-Jul-2022 22:47:38 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:47:38 Europe/Berlin] ##############################################
+[28-Jul-2022 22:47:38 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:47:38 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:47:39 Europe/Berlin] PHP Warning:  Undefined array key "carpeta" in C:\xampp\htdocs\views\admin\storage.php on line 5
+[28-Jul-2022 22:47:39 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:47:39 Europe/Berlin] ##############################################
+[28-Jul-2022 22:47:39 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:47:39 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[28-Jul-2022 22:47:39 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:47:40 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[28-Jul-2022 22:47:40 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:47:40 Europe/Berlin] ##############################################
+[28-Jul-2022 22:47:40 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:47:40 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:47:41 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[28-Jul-2022 22:47:46 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:47:46 Europe/Berlin] ##############################################
+[28-Jul-2022 22:47:46 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:47:47 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:47:48 Europe/Berlin] PHP Warning:  Undefined array key "carpeta" in C:\xampp\htdocs\views\admin\storage.php on line 5
+[28-Jul-2022 22:47:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:47:48 Europe/Berlin] ##############################################
+[28-Jul-2022 22:47:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:47:48 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[28-Jul-2022 22:47:48 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:47:49 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[28-Jul-2022 22:47:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:47:49 Europe/Berlin] ##############################################
+[28-Jul-2022 22:47:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:47:49 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:47:50 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[28-Jul-2022 22:47:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:47:53 Europe/Berlin] ##############################################
+[28-Jul-2022 22:47:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:47:53 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:47:53 Europe/Berlin] PHP Warning:  Undefined array key "carpeta" in C:\xampp\htdocs\views\admin\storage.php on line 5
+[28-Jul-2022 22:47:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:47:54 Europe/Berlin] ##############################################
+[28-Jul-2022 22:47:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:47:54 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[28-Jul-2022 22:47:54 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:47:54 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[28-Jul-2022 22:47:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:47:54 Europe/Berlin] ##############################################
+[28-Jul-2022 22:47:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:47:55 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:47:55 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[28-Jul-2022 22:48:01 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:48:01 Europe/Berlin] ##############################################
+[28-Jul-2022 22:48:01 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:48:01 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:48:02 Europe/Berlin] PHP Warning:  Undefined array key "carpeta" in C:\xampp\htdocs\views\admin\storage.php on line 5
+[28-Jul-2022 22:48:02 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:48:02 Europe/Berlin] ##############################################
+[28-Jul-2022 22:48:02 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:48:02 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[28-Jul-2022 22:48:03 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:48:03 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[28-Jul-2022 22:48:03 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:48:03 Europe/Berlin] ##############################################
+[28-Jul-2022 22:48:03 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:48:04 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:48:04 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[28-Jul-2022 22:48:14 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:48:14 Europe/Berlin] ##############################################
+[28-Jul-2022 22:48:14 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:48:15 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:48:15 Europe/Berlin] PHP Warning:  Undefined array key "carpeta" in C:\xampp\htdocs\views\admin\storage.php on line 5
+[28-Jul-2022 22:48:15 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:48:15 Europe/Berlin] ##############################################
+[28-Jul-2022 22:48:15 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:48:15 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[28-Jul-2022 22:48:16 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:48:16 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[28-Jul-2022 22:48:16 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:48:16 Europe/Berlin] ##############################################
+[28-Jul-2022 22:48:16 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:48:17 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:48:18 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[28-Jul-2022 22:48:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:48:24 Europe/Berlin] ##############################################
+[28-Jul-2022 22:48:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:48:25 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:48:25 Europe/Berlin] PHP Warning:  Undefined array key "carpeta" in C:\xampp\htdocs\views\admin\storage.php on line 5
+[28-Jul-2022 22:48:25 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:48:25 Europe/Berlin] ##############################################
+[28-Jul-2022 22:48:25 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:48:25 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[28-Jul-2022 22:48:26 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:48:26 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[28-Jul-2022 22:48:26 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[28-Jul-2022 22:48:26 Europe/Berlin] ##############################################
+[28-Jul-2022 22:48:26 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[28-Jul-2022 22:48:27 Europe/Berlin] Conexion a BD Exitosa.
+[28-Jul-2022 22:48:27 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
