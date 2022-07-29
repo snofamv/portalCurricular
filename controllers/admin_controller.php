@@ -1,7 +1,8 @@
 <?php
+require_once "classes/storage.php";
 class AdminController extends SessionController
 {
-   
+
     public function __construct()
     {
         parent::__construct();
@@ -11,17 +12,31 @@ class AdminController extends SessionController
     {
         $this->vista->render("admin/index", []);
     }
-      
+
     public function storage()
     {
-
-        $this->vista->render("admin/storage", []);
+        if ($this->existsGET(["buscarCaja"])) {
+            $d["caja"] = $this->getGET("buscarCaja");
+            $d["objeto"] = new storage();
+            $this->vista->render("admin/storage", $d);
+        }
+        if ($this->existsGET(["buscarCarpeta"])) {
+            $d["objeto"] = new storage();
+            $d["carpeta"] = $this->getGET("buscarCarpeta");
+            $this->vista->render("admin/storage", $d);
+        }
+        if ($this->existsGET(["descargarArchivo"])) {
+            $storage = new storage();
+            $archivo = explode("/", $this->getGET("descargarArchivo"));
+            $storage->descargarobjecto($archivo[0], $archivo[1], $archivo[2], "C:\\Users\\DESKTOP\\Downloads");
+        }
+        $this->vista->render("admin/storage", $d = new storage());
     }
     public function opciones()
     {
         $this->vista->render("admin/opciones", []);
     }
-    
+
     public function pdf()
     {
         $this->vista->render("admin/pdf", []);
