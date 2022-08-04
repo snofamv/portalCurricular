@@ -108,7 +108,7 @@ require "views/includes/navbar.admin.php";
                 </div>
                 <div class="d-grid">
 
-                    <a href="/admin/storage" class="btn btn-success btn-lg">Ir a Storage</a>
+                    <a href="/storage" class="btn btn-success btn-lg">Ir a Storage</a>
                 </div>
             </div>
         </div>
@@ -121,7 +121,7 @@ require "views/includes/navbar.admin.php";
                 </div>
                 <div class="d-grid">
 
-                    <a href="/admin/pdf" class="btn btn-danger btn-lg">Ir a PDF</a>
+                    <a href="/pdf" class="btn btn-danger btn-lg">Ir a PDF</a>
                 </div>
             </div>
         </div>

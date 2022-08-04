@@ -11,11 +11,11 @@ class PaginacionModel extends Model
     public function __construct()
     {
         parent::__construct();
-        $this->calcularPaginas();
-        $this->pagina_inicial = $_GET["pagina"] ?: 1;
+        $this->pagina_inicial = isset($_GET["pagina"]) ? $_GET["pagina"] : 1;
         $this->empezar_desde = ($this->pagina_inicial - 1) * $this->resultadosPorPagina;
     }
-    public function calcularPaginas()
+
+    public function calcularPaginasLista()
     {
         $query = $this->query("SELECT COUNT(*) AS total FROM data");
         $this->total_datos = $query->fetch(PDO::FETCH_OBJ)->total;
@@ -102,6 +102,24 @@ class PaginacionModel extends Model
     public function setTotalPaginas($totalPaginas): self
     {
         $this->totalPaginas = $totalPaginas;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of pagina_inicial
+     */
+    public function getPaginaInicial()
+    {
+        return $this->pagina_inicial;
+    }
+
+    /**
+     * Set the value of pagina_inicial
+     */
+    public function setPaginaInicial($pagina_inicial): self
+    {
+        $this->pagina_inicial = $pagina_inicial;
 
         return $this;
     }

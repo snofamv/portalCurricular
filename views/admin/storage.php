@@ -5,16 +5,43 @@ require_once "views/includes/navbar.admin.php";
 ?>
 
 <div class="container mt-5">
+    <span class="h3">
+
+        <?php if (!empty($this->datos) && isset($this->datos["success"])) : ?>
+
+            <div class="alert alert-success alert-dismissible d-flex justify-content-center mx-auto" style="width: 70%;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+                <p class="ps-4 font-monospace">
+                    <strong><?php $this->showMessages(); ?></strong>
+                </p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+
+        <?php elseif (!empty($this->datos) && isset($this->datos["error"])) : ?>
+            <div class="alert alert-danger alert-dismissible d-flex justify-content-center mx-auto" style="width: 70%;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-exclamation-triangle-fill" viewBox="0 0 16 16">
+                    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+                <p class="ps-4 font-monospace">
+                    <strong><?php $this->showMessages(); ?></strong>
+                </p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        <?php endif; ?>
+
+    </span class="h3">
     <div class="d-flex">
 
-        <form action="/admin/storage" method="GET">
+        <form action="/storage" method="GET">
             <fieldset>
                 <legend>Busqueda Caja</legend>
                 <label for="">Caja <input type="text" placeholder="Ej: 0001" name="buscarCaja"> </label>
                 <button class="btn btn-primary" type="submit">Buscar</button>
             </fieldset>
         </form>
-        <form action="/admin/storage" method="GET">
+        <form action="/storage" method="GET">
             <fieldset>
                 <legend>Busqueda Carpeta</legend>
                 <label for="">Carpeta <input type="text" placeholder="Ej: 0001-0001" name="buscarCarpeta"> </label>
@@ -36,18 +63,46 @@ require_once "views/includes/navbar.admin.php";
             <th>Archivos</th>
             <th>Descarga</th>
         </thead>
-        <tbody>
-            <?php if (isset($d["caja"])) {
-                
-                $d["objeto"]->buscarCaja();
-            } elseif (isset($d["carpeta"])) {
-                $d["objeto"]->buscarCarpeta($d["carpeta"]);
-            } else {
-                $d["objeto"]->tablaHTML();
-            } ?>
+        <tbody> 
+
+            <?php if (isset($d)) : ?>
+                <?php foreach ($d as $caja) : ?>
+                    <tr class='tablaItem'>
+                        <td><?php echo $caja[0] ?></td>
+                        <td><?php echo $caja[1] ?></td>
+                        <td><?php echo $caja[2] ?></td>
+                        <td>
+                            <form method='GET' action="/storage" target="_self">
+                                <button type='submit' value='<?php printf("%s/%s/%s", $caja[0], $caja[1], $caja[2]) ?>' name='descargarArchivo'>Descargar PDF</button>
+                            </form>
+                        </td>
+                    </tr>
+
+                <?php endforeach; ?>
+            <?php endif; ?>
+
+
+
 
         </tbody>
     </table>
+    <div class="d-flex justify-content-between mb-5">
+        <?php $pagina_actual = isset($_GET["pagina"]) ? $_GET["pagina"] : 1; ?>
+
+        <?php if ($pagina_actual < 20 && $pagina_actual > 1) : ?>
+            <button><a href="/storage?pagina=<?php echo htmlspecialchars($pagina_actual - 1); ?>">←Anterior</a></button>
+        <?php endif; ?>
+
+        <div>
+            <?php for ($i = 1; $i < 20; $i++) : ?>
+                <button class='me-2'><a href='/storage?pagina=<?php echo $i; ?>' style='text-decoration:none;'><?php echo $i; ?></a></button>
+            <?php endfor; ?>
+        </div>
+
+        <?php if ($pagina_actual < 20) : ?>
+            <button><a href="/storage?pagina=<?php echo htmlspecialchars($pagina_actual + 1); ?>">Siguiente→ </a></button>
+        <?php endif; ?>
+    </div>
 </div>
 <script>
     function buscarCaja() {

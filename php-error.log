@@ -1,77 +1,205 @@
-[03-Aug-2022 20:54:51 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[03-Aug-2022 20:54:51 Europe/Berlin] ##############################################
-[03-Aug-2022 20:54:51 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[03-Aug-2022 20:54:52 Europe/Berlin] Conexion a BD Exitosa.
-[03-Aug-2022 20:54:52 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[03-Aug-2022 20:54:52 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[03-Aug-2022 20:54:52 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[03-Aug-2022 20:54:52 Europe/Berlin] PHP Fatal error:  Uncaught Error: Cannot use object of type storage as array in C:\xampp\htdocs\views\admin\storage.php:40
-Stack trace:
-#0 C:\xampp\htdocs\libs\view.php(18): require()
-#1 C:\xampp\htdocs\controllers\admin_controller.php(37): View->render('admin/storage', Object(storage))
-#2 C:\xampp\htdocs\libs\app.php(53): AdminController->storage()
-#3 C:\xampp\htdocs\index.php(4): App->__construct()
-#4 {main}
-  thrown in C:\xampp\htdocs\views\admin\storage.php on line 40
-[03-Aug-2022 20:54:52 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[03-Aug-2022 20:54:52 Europe/Berlin] ##############################################
-[03-Aug-2022 20:54:52 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[03-Aug-2022 20:54:52 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[03-Aug-2022 20:54:53 Europe/Berlin] Conexion a BD Exitosa.
-[03-Aug-2022 20:54:53 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[03-Aug-2022 20:54:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[03-Aug-2022 20:54:53 Europe/Berlin] ##############################################
-[03-Aug-2022 20:54:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[03-Aug-2022 20:54:53 Europe/Berlin] Conexion a BD Exitosa.
-[03-Aug-2022 20:54:54 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[03-Aug-2022 20:57:27 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[03-Aug-2022 20:57:27 Europe/Berlin] ##############################################
-[03-Aug-2022 20:57:27 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[03-Aug-2022 20:57:28 Europe/Berlin] Conexion a BD Exitosa.
-[03-Aug-2022 20:57:28 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[03-Aug-2022 20:57:28 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[03-Aug-2022 20:57:28 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[03-Aug-2022 20:57:30 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[03-Aug-2022 20:57:30 Europe/Berlin] ##############################################
-[03-Aug-2022 20:57:30 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[03-Aug-2022 20:57:30 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[03-Aug-2022 20:57:30 Europe/Berlin] Conexion a BD Exitosa.
-[03-Aug-2022 20:57:30 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[03-Aug-2022 20:57:30 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[03-Aug-2022 20:57:30 Europe/Berlin] ##############################################
-[03-Aug-2022 20:57:30 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[03-Aug-2022 20:57:31 Europe/Berlin] Conexion a BD Exitosa.
-[03-Aug-2022 20:57:32 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[03-Aug-2022 20:59:06 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[03-Aug-2022 20:59:06 Europe/Berlin] ##############################################
-[03-Aug-2022 20:59:06 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[03-Aug-2022 20:59:08 Europe/Berlin] Conexion a BD Exitosa.
-[03-Aug-2022 20:59:09 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[03-Aug-2022 20:59:09 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[03-Aug-2022 20:59:10 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[03-Aug-2022 20:59:10 Europe/Berlin] ##############################################
-[03-Aug-2022 20:59:10 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[03-Aug-2022 20:59:10 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[03-Aug-2022 20:59:11 Europe/Berlin] Conexion a BD Exitosa.
-[03-Aug-2022 20:59:11 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[03-Aug-2022 20:59:11 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[03-Aug-2022 20:59:11 Europe/Berlin] ##############################################
-[03-Aug-2022 20:59:11 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[03-Aug-2022 20:59:12 Europe/Berlin] Conexion a BD Exitosa.
-[03-Aug-2022 20:59:13 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[03-Aug-2022 21:04:41 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[03-Aug-2022 21:04:41 Europe/Berlin] ##############################################
-[03-Aug-2022 21:04:41 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[03-Aug-2022 21:04:41 Europe/Berlin] Conexion a BD Exitosa.
-[03-Aug-2022 21:04:42 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[03-Aug-2022 21:04:42 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[03-Aug-2022 21:04:42 Europe/Berlin] ##############################################
-[03-Aug-2022 21:04:42 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[03-Aug-2022 21:04:42 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[03-Aug-2022 21:04:42 Europe/Berlin] Conexion a BD Exitosa.
-[03-Aug-2022 21:04:43 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[03-Aug-2022 21:04:43 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[03-Aug-2022 21:04:43 Europe/Berlin] ##############################################
-[03-Aug-2022 21:04:43 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[03-Aug-2022 21:04:43 Europe/Berlin] Conexion a BD Exitosa.
-[03-Aug-2022 21:04:44 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[04-Aug-2022 22:11:52 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:11:52 Europe/Berlin] ##############################################
+[04-Aug-2022 22:11:52 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:11:56 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:11:57 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[04-Aug-2022 22:11:57 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
+[04-Aug-2022 22:11:57 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
+[04-Aug-2022 22:11:57 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
+[04-Aug-2022 22:11:57 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:11:57 Europe/Berlin] ##############################################
+[04-Aug-2022 22:11:57 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:11:57 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[04-Aug-2022 22:12:02 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:12:02 Europe/Berlin] ##############################################
+[04-Aug-2022 22:12:02 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:12:06 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:12:07 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[04-Aug-2022 22:12:07 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:12:07 Europe/Berlin] ##############################################
+[04-Aug-2022 22:12:07 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:12:10 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:12:10 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[04-Aug-2022 22:12:10 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
+[04-Aug-2022 22:12:10 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
+[04-Aug-2022 22:12:10 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
+[04-Aug-2022 22:12:11 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:12:11 Europe/Berlin] ##############################################
+[04-Aug-2022 22:12:11 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:12:11 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[04-Aug-2022 22:12:13 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:12:14 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[04-Aug-2022 22:12:16 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:12:16 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[04-Aug-2022 22:12:16 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:12:16 Europe/Berlin] ##############################################
+[04-Aug-2022 22:12:16 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:12:19 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:12:20 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[04-Aug-2022 22:12:27 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:12:27 Europe/Berlin] ##############################################
+[04-Aug-2022 22:12:27 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:12:28 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:12:29 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[04-Aug-2022 22:12:29 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
+[04-Aug-2022 22:12:29 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\controllers\storage_controller.php on line 45
+[04-Aug-2022 22:12:29 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:12:29 Europe/Berlin] ##############################################
+[04-Aug-2022 22:12:29 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:12:31 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:12:32 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[04-Aug-2022 22:12:32 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
+[04-Aug-2022 22:12:32 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
+[04-Aug-2022 22:12:32 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
+[04-Aug-2022 22:12:32 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:12:32 Europe/Berlin] ##############################################
+[04-Aug-2022 22:12:32 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:12:32 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[04-Aug-2022 22:12:33 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:12:33 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[04-Aug-2022 22:12:33 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:12:33 Europe/Berlin] ##############################################
+[04-Aug-2022 22:12:33 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:12:34 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:12:34 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[04-Aug-2022 22:15:04 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:15:04 Europe/Berlin] ##############################################
+[04-Aug-2022 22:15:04 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:15:06 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:15:06 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[04-Aug-2022 22:15:06 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
+[04-Aug-2022 22:15:06 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
+[04-Aug-2022 22:15:06 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
+[04-Aug-2022 22:15:07 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:15:07 Europe/Berlin] ##############################################
+[04-Aug-2022 22:15:07 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:15:07 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:15:08 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[04-Aug-2022 22:15:08 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
+[04-Aug-2022 22:15:08 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
+[04-Aug-2022 22:15:08 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
+[04-Aug-2022 22:15:08 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:15:08 Europe/Berlin] ##############################################
+[04-Aug-2022 22:15:08 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:15:08 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[04-Aug-2022 22:15:09 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:15:10 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[04-Aug-2022 22:15:10 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:15:10 Europe/Berlin] ##############################################
+[04-Aug-2022 22:15:10 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:15:10 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:15:11 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[04-Aug-2022 22:15:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:15:22 Europe/Berlin] ##############################################
+[04-Aug-2022 22:15:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:15:24 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:15:25 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[04-Aug-2022 22:15:25 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
+[04-Aug-2022 22:15:25 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
+[04-Aug-2022 22:15:25 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
+[04-Aug-2022 22:15:26 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:15:26 Europe/Berlin] ##############################################
+[04-Aug-2022 22:15:26 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:15:26 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[04-Aug-2022 22:15:27 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:15:27 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[04-Aug-2022 22:15:27 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:15:27 Europe/Berlin] ##############################################
+[04-Aug-2022 22:15:27 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:15:29 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:15:29 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[04-Aug-2022 22:15:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:15:49 Europe/Berlin] ##############################################
+[04-Aug-2022 22:15:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:15:50 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:15:50 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[04-Aug-2022 22:15:50 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
+[04-Aug-2022 22:15:50 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
+[04-Aug-2022 22:15:50 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
+[04-Aug-2022 22:15:50 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:15:50 Europe/Berlin] ##############################################
+[04-Aug-2022 22:15:50 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:15:50 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[04-Aug-2022 22:15:51 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:15:52 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[04-Aug-2022 22:15:52 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:15:52 Europe/Berlin] ##############################################
+[04-Aug-2022 22:15:52 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:15:52 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:15:53 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[04-Aug-2022 22:15:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:15:53 Europe/Berlin] ##############################################
+[04-Aug-2022 22:15:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:15:54 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:15:54 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[04-Aug-2022 22:15:54 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
+[04-Aug-2022 22:15:54 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
+[04-Aug-2022 22:15:54 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
+[04-Aug-2022 22:15:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:15:54 Europe/Berlin] ##############################################
+[04-Aug-2022 22:15:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:15:54 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[04-Aug-2022 22:15:55 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:15:56 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[04-Aug-2022 22:15:56 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:15:56 Europe/Berlin] ##############################################
+[04-Aug-2022 22:15:56 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:15:56 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:15:58 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[04-Aug-2022 22:16:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:16:12 Europe/Berlin] ##############################################
+[04-Aug-2022 22:16:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:16:14 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:16:14 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[04-Aug-2022 22:16:14 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
+[04-Aug-2022 22:16:14 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
+[04-Aug-2022 22:16:14 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
+[04-Aug-2022 22:16:15 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:16:15 Europe/Berlin] ##############################################
+[04-Aug-2022 22:16:15 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:16:15 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[04-Aug-2022 22:16:15 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:16:16 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[04-Aug-2022 22:16:16 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:16:16 Europe/Berlin] ##############################################
+[04-Aug-2022 22:16:16 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:16:16 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:16:17 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[04-Aug-2022 22:16:38 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:16:38 Europe/Berlin] ##############################################
+[04-Aug-2022 22:16:38 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:16:40 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:16:40 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[04-Aug-2022 22:16:40 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
+[04-Aug-2022 22:16:40 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
+[04-Aug-2022 22:16:40 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
+[04-Aug-2022 22:16:41 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:16:41 Europe/Berlin] ##############################################
+[04-Aug-2022 22:16:41 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:16:41 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[04-Aug-2022 22:16:41 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:16:43 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[04-Aug-2022 22:16:43 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:16:43 Europe/Berlin] ##############################################
+[04-Aug-2022 22:16:43 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:16:43 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:16:44 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[04-Aug-2022 22:16:46 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:16:46 Europe/Berlin] ##############################################
+[04-Aug-2022 22:16:46 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:16:47 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:16:47 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[04-Aug-2022 22:16:47 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
+[04-Aug-2022 22:16:47 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
+[04-Aug-2022 22:16:47 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
+[04-Aug-2022 22:16:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:16:47 Europe/Berlin] ##############################################
+[04-Aug-2022 22:16:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:16:47 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[04-Aug-2022 22:16:48 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:16:49 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[04-Aug-2022 22:16:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[04-Aug-2022 22:16:49 Europe/Berlin] ##############################################
+[04-Aug-2022 22:16:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[04-Aug-2022 22:16:50 Europe/Berlin] Conexion a BD Exitosa.
+[04-Aug-2022 22:16:50 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]

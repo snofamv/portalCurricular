@@ -7,6 +7,7 @@ class storage
 {
     private $projectId;
     private $storage;
+    private $arrayCajas;
 
     public function __construct()
     {
@@ -69,43 +70,63 @@ class storage
         }
         return $datos;
     }
-    public function tablaHTML()
+    public function test1()
     {
-        $arr = array();
+        
         $datos = $this->listaNombreObjetos("pdf-curricular");
+        $lista = array();
         foreach ($datos as $dato) {
-            $arr = explode("/", $dato);
-            echo ("<tr class='tablaItem'>
-                    <td>$arr[0]</td>
-                    <td>$arr[1]</td>
-                    <td>$arr[2]</td>
-                    <td>
-                    <form method='GET' action='/admin/storage'>
-                        <button type='submit' value='$dato' name='descargarArchivo'>Descargar PDF</button>
-                    </form>
-                    </td>
-                </tr>");
+            $listaPalabra = explode("/", $dato);
+            array_push($lista, $listaPalabra);
         }
+
+       
+
+
+        // echo "<pre>";
+        // print_r($lista);
+        // echo "</pre>";
+
     }
-    public function buscarCarpeta($carpeta)
+    public function arrObjetos()
     {
-        $arr = array();
-        $datos = $this->listaNombreObjetos("pdf-curricular");
-        foreach ($datos as $dato) {
-            $arr = explode("/", $dato);
-            if ($carpeta === $arr[1]) {
-                echo ("<tr class='tablaItem'>
-            <td>$arr[0]</td>
-            <td>$arr[1]</td>
-            <td>$arr[2]</td>
-            <td>
-            <form method='GET' action='/admin/storage'>
-                <button type='submit' value='$dato' name='descargarArchivo'>Descargar PDF</button>
-            </form>
-            </td>
-        </tr>");
+        $datos = array();
+        $bucket = $this->storage->bucket("pdf-curricular");
+        foreach ($bucket->objects() as $object) {
+            array_push($datos, $object);
+        }
+        return $datos;
+    }
+
+
+    public function buscarCarpeta($carpetaParam)
+    {
+        $aux = array();
+        foreach ($datos = $this->arrObjetos() as $dato) {
+            $arr = explode("/", $dato->name());
+            if ($carpetaParam === $arr[1]) {
+                array_push($aux, $dato);
             }
         }
+        if (count($aux) === 0) {
+            return NULL;
+        }
+        return $aux;
+    }
+    public function buscarCaja($cajaParam)
+    {
+        $aux = array();
+        foreach ($datos = $this->arrObjetos() as $dato) {
+            $arr = explode("/", $dato->name());
+            if ($cajaParam === $arr[0]) {
+                array_push($aux, $dato);
+            }
+        }
+        if (count($aux) === 0) {
+            return NULL;
+        }
+
+        return $aux;
     }
     public function eliminarObjeto($bucketName, $objectName, $options = [])
     {
@@ -126,7 +147,7 @@ class storage
     {
         $bucket = $this->storage->bucket("pdf-curricular");
         $object = $bucket->object("$carpeta/$subcarpeta/$objectName");
-        if ($object->downloadToFile("$destination\\$objectName")) {
+        if ($object->downloadToFile("$destination\\$carpeta-$subcarpeta-$objectName")) {
             return true;
         } else {
             return false;
