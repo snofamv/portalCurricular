@@ -1,6 +1,5 @@
 <?php
-require_once 'controllers/lista_interface.php';
-class BuscarController extends SessionController implements ListaInterface
+class BuscarController extends SessionController
 {
     function __construct()
     {

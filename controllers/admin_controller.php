@@ -12,6 +12,10 @@ class AdminController extends SessionController
     {
         $this->vista->render("admin/index", []);
     }
+    public function registro()
+    {
+        $this->vista->render("admin/registro", []);
+    }
 
     public function storage()
     {
@@ -30,7 +34,8 @@ class AdminController extends SessionController
             $archivo = explode("/", $this->getGET("descargarArchivo"));
             $storage->descargarobjecto($archivo[0], $archivo[1], $archivo[2], "C:\\Users\\DESKTOP\\Downloads");
         }
-        $this->vista->render("admin/storage", $d = new storage());
+        $d["objeto"] = new storage();
+        $this->vista->render("admin/storage", $d);
     }
     public function opciones()
     {

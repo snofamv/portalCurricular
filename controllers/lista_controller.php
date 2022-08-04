@@ -1,5 +1,4 @@
 <?php
-require_once "controllers/lista_interface.php";
 class ListaController extends SessionController
 {
     private $pagina_inicial;
