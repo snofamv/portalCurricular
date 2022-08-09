@@ -39,7 +39,7 @@ require "views/includes/navbar.admin.php";
                 <img src="https://www.svgrepo.com/show/125846/graduate.svg" class="card-img-top mx-auto" alt="..." style="max-width: 200px;">
                 <div class="card-body">
                     <h5 class="card-title">Alumnos</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">El modulo alumnos esta destinado a mostrar toda la informacion de los titulados.</p>
                 </div>
                 <div class="d-grid">
 
@@ -52,7 +52,7 @@ require "views/includes/navbar.admin.php";
                 <img src="https://www.svgrepo.com/show/286737/update-repeat.svg" class="card-img-top mx-auto" alt="..." style="max-width: 200px;">
                 <div class="card-body">
                     <h5 class="card-title">Actualizar informacion</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">El modulo actualizar esta destinado para modificar toda la informacion sobre un titulado.</p>
                 </div>
                 <div class="d-grid">
 
@@ -88,7 +88,7 @@ require "views/includes/navbar.admin.php";
                 <img src="https://www.svgrepo.com/show/216744/add.svg" class="card-img-top mx-auto" alt="..." style="max-width: 200px;">
                 <div class="card-body">
                     <h5 class="card-title">Agregar informacion</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">El modulo agregar permite insertar informacion de un nuevo titulado al sistema.</p>
                 </div>
                 <div class="d-grid">
 
@@ -104,7 +104,7 @@ require "views/includes/navbar.admin.php";
                 <img src="https://www.svgrepo.com/show/303651/google-cloud-logo.svg" class="card-img-top mx-auto mx-auto" alt="..." style="max-width: 200px;">
                 <div class="card-body">
                     <h5 class="card-title">Buscar archivos</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">El modulo buscar archivos nos permite buscar documentos digitalizados en la nube.</p>
                 </div>
                 <div class="d-grid">
 
@@ -117,11 +117,11 @@ require "views/includes/navbar.admin.php";
                 <img src="https://www.svgrepo.com/show/112621/pdf.svg" class="card-img-top mx-auto mx-auto" alt="..." style="max-width: 200px;">
                 <div class="card-body">
                     <h5 class="card-title">Exportar PDF</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">El modulo PDF permite exportar un registro de un titulado en especifico a PDF.</p>
                 </div>
                 <div class="d-grid">
 
-                    <a href="/pdf" class="btn btn-danger btn-lg">Ir a PDF</a>
+                    <a href="/pdf" class="btn btn-danger btn-lg disabled">Ir a PDF</a>
                 </div>
             </div>
         </div>
@@ -130,7 +130,7 @@ require "views/includes/navbar.admin.php";
                 <img src="https://www.svgrepo.com/show/207527/settings-configuration.svg" class="card-img-top mx-auto mx-auto" alt="..." style="max-width: 200px;">
                 <div class="card-body">
                     <h5 class="card-title">Opciones</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">Este modulo esta destinado a la creacion, activacion de usuarios y cambio de roles.</p>
                 </div>
                 <div class="d-grid">
 

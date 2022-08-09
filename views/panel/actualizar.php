@@ -18,6 +18,10 @@ require "views/includes/navbar.user.php";
 
                 <div class="row m-3">
                     <div class="col">
+                        <label for="codigo">Nuevo pre-codigo</label>
+                        <input class="form-control" type="text" name="precodigo" id="precodigo" placeholder="Ej: 0001">
+                    </div>
+                    <div class="col">
                         <label for="codigo">Nuevo codigo</label>
                         <input class="form-control" type="text" name="codigo" id="codigo" placeholder="Ej: 0001">
                     </div>
@@ -40,10 +44,11 @@ require "views/includes/navbar.user.php";
                         <label for="sedes">Nueva Sede</label>
                         <select class="form-select" name="sedes" id="sedes" required>
                             <option selected disabled hidden>Selecciona una sede</option>
-                            <option value="La Calera">La Calera</option>
-                            <option value="Viña del Mar">Viña del Mar</option>
-                            <option value="Valparaiso">Valparaiso</option>
-                            <option value="Quillota">Quillota</option>
+                            <?php
+                            foreach ($d['sedes'] as $sede) {
+                                echo "<option value='$sede[id]'>$sede[sede]</option>";
+                            }
+                            ?>
                         </select>
                     </div>
 
@@ -51,21 +56,21 @@ require "views/includes/navbar.user.php";
 
                         <label class="label" for="carreras">Nueva Carrera</label>
                         <select class="form-select" name="carreras" id="carreras">
-                        <option selected disabled hidden>Selecciona una carrera</option>
-                        <?php 
-                            foreach ($d['carreras'] as $sede) {
-                            
-                                echo "<option value='".$sede['carrera']."'>".$sede['carrera']."</option>";
+                            <option selected disabled hidden>Selecciona una carrera</option>
+                            <?php
+                            foreach ($d['carreras'] as $carrera) {
+
+                                echo "<option value='$carrera[id]'>$carrera[carrera]</option>";
                             }
-                        ?>
-                    </select>
+                            ?>
+                        </select>
                     </div>
 
                 </div>
                 <div class="row p-4">
                     <div class="col"></div>
                     <div class="col">
-                        <input type="hidden" name="rutModificar" id="rutModificar" value="<?php echo $d['alumno']->getRut();?>">
+                        <input type="hidden" name="rutModificar" id="rutModificar" value="<?php echo $d['alumno']->getRut(); ?>">
                         <input class="btn btn-success" type="submit" name="btnActualizarAlumno" value="Actualizar Alumno">
                     </div>
                     <div class="col">
@@ -78,16 +83,23 @@ require "views/includes/navbar.user.php";
         </div>
 
         <div class="col">
-            <div class="card text-center mx-auto shadow p-3 mb-5 bg-body rounded" style="width: 22rem;">
-                <img src="https://www.svgrepo.com/show/128306/graduate.svg" height="250px;" class="card-img-top" alt="carta alumno<?php echo " {$d['alumno']->getNombres()} {$d['alumno']->getApellidos()}";?>">
+            <div class="card text-center mx-auto shadow bg-body rounded" style="width: 22rem;">
+                <img src="https://www.svgrepo.com/show/128306/graduate.svg" height="200px;" class="card-img-top" alt="carta alumno<?php echo " {$d['alumno']->getNombres()} {$d['alumno']->getApellidos()}"; ?>">
                 <div class="card-body">
                     <h5 class="card-title"><span><?php echo " {$d['alumno']->getNombres()} {$d['alumno']->getApellidos()}"; ?></h5>
                     <p class="card-text"></p>
                 </div>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
-                        <p class="fw-bold">Codigo: <span class="fw-normal"><?php echo $d['alumno']->getCodigo(); ?></span></p>
+                        <p class="fw-bold">PreCodigo: <span class="fw-normal"><?php echo $d["alumno"]->getPreCodigo()?></span></p>
                     </li>
+                    <li class="list-group-item">
+                        <p class="fw-bold">Codigo: <span class="fw-normal"><?php echo $d["alumno"]->getCodigo() ?></span></p>
+                    </li>
+                    <li class="list-group-item">
+                        <p class="fw-bold">Folio: <span class="fw-normal"><?php echo $d["alumno"]->getPreCodigo() ."-". $d["alumno"]->getCodigo() ?></span></p>
+                    </li>
+
                     <li class="list-group-item">
                         <p class="fw-bold">Rut: <span class="fw-normal"><?php echo $d['alumno']->getRut(); ?></span></p>
                     </li>

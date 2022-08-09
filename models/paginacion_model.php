@@ -25,7 +25,7 @@ class PaginacionModel extends Model
     {
         $items = array();
         try {
-            $query = parent::query("SELECT * FROM data ORDER BY codigo DESC LIMIT ". $empezar_desde.",". $resultadosPorPagina);
+            $query = parent::query("SELECT carreras.carrera, sedes.sede, data.pre_cod, data.codigo, data.nom, data.ape, data.rut FROM data JOIN carreras ON carreras.id = data.carrera JOIN sedes ON sedes.id = data.sede ORDER BY codigo DESC LIMIT ". $empezar_desde.",". $resultadosPorPagina);
             while ($p = $query->fetch(PDO::FETCH_ASSOC)) {
                 $objeto = new AlumnoModel();
                 $objeto->setRut($p["rut"]);

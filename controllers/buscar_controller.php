@@ -14,8 +14,8 @@ class BuscarController extends SessionController
     public function alumnoSede()
     {
         $this->cargarModelo("alumno");
-        if ($this->existsPOST(["sede", "btnBuscar"])) {
-            $d = $this->modelo->__getAlumnosBySede($this->getPOST('sede'));
+        if ($this->existsPOST(["sede", "btnBuscarSede"])) {
+            $d["alumnosSede"] = $this->modelo->__getAlumnosBySede($this->getPOST('sede'));
             if (sizeof($d) > 0) {
                 $this->vista->render("panel/buscar", $d);
             } else {
@@ -28,10 +28,27 @@ class BuscarController extends SessionController
     public function alumnoCarrera()
     {
         $this->cargarModelo("alumno");
-        if ($this->existsPOST(["carrera", "btnBuscar"])) {
+        if ($this->existsPOST(["carrera", "btnBuscarCarrera"])) {
             $alumno = new AlumnoModel();
-            $d = $alumno->__getAlumnosByCarrera($this->getPOST('carrera'));
+            $d["alumnosCarrera"] = $alumno->__getAlumnosByCarrera($this->getPOST('carrera'));
             if (count($d) > 0) {
+                $this->vista->render("panel/buscar", $d);
+            } else {
+                $this->redirect("buscar", ["error" => ErrorMessages::ERROR_BUSCAR_ALUMNO_CARRERA_NOEXISTE]);
+            }
+
+            //var_dump($d);
+        } else {
+            $this->redirect("buscar", ["error" => ErrorMessages::ERROR_BUSCAR_ALUMNO_NOENCONTRADO_CAMPO_CARRERA]);
+        }
+    }
+    public function titulado()
+    {
+        $this->cargarModelo("alumno");
+        if ($this->existsPOST(["titulado", "btnBuscarTitulado"])) {
+            $alumno = new AlumnoModel();
+            $d["titulado"] = $alumno->getTituladoRut($this->getPOST('titulado'));
+            if ($d) {
                 $this->vista->render("panel/buscar", $d);
             } else {
                 $this->redirect("buscar", ["error" => ErrorMessages::ERROR_BUSCAR_ALUMNO_CARRERA_NOEXISTE]);

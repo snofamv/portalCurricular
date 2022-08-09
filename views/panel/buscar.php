@@ -60,13 +60,19 @@ require "views/includes/navbar.user.php";
             <div>
                 <form class="d-flex pb-1" action="/buscar/alumnoSede" role="search" method="POST" target="_self">
                     <input class="form-control" type="search" placeholder="Buscar Sedes" aria-label="Buscar" name="sede">
-                    <input class="btn btn-success ms-1" type="submit" name="btnBuscar" value="Buscar"></input>
+                    <input class="btn btn-success ms-1" type="submit" name="btnBuscarSede" value="Buscar"></input>
                 </form>
             </div>
             <div>
-                <form class="d-flex pb-1 mb-5" action="/buscar/alumnoCarrera" role="search" method="POST" target="_self">
+                <form class="d-flex pb-1" action="/buscar/alumnoCarrera" role="search" method="POST" target="_self">
                     <input class="form-control" type="search" placeholder="Buscar Carreras" aria-label="Buscar" name="carrera">
-                    <input class="btn btn-success ms-1" type="submit" name="btnBuscar" value="Buscar"></input>
+                    <input class="btn btn-success ms-1" type="submit" name="btnBuscarCarrera" value="Buscar"></input>
+                </form>
+            </div>
+            <div>
+                <form class="d-flex pb-1 mb-5" action="/buscar/titulado" role="search" method="POST" target="_self">
+                    <input class="form-control" type="search" placeholder="Buscar rut" aria-label="titulado" name="titulado">
+                    <input class="btn btn-success ms-1" type="submit" name="btnBuscarTitulado" value="Buscar"></input>
                 </form>
             </div>
 
@@ -90,10 +96,10 @@ require "views/includes/navbar.user.php";
                         <th>Opciones</th>
                     </tr>
                     
-                    <?php if (isset($d) && isset($_POST["sede"])) : ?>
-                        <?php foreach ($d as  $alumno) : ?>
+                    <?php if (isset($d["alumnosSede"]) && isset($_POST["sede"])) : ?>
+                        <?php foreach ($d["alumnosSede"] as  $alumno) : ?>
                             <tr>
-                                <td> <?php echo $alumno->getCodigo(); ?></td>
+                            <td> <span style='color:red;'><b><?php echo $alumno->getPreCodigo(); ?></span/>-<?php echo $alumno->getCodigo();?></b></td>
                                 <td> <?php echo $alumno->getRut(); ?></td>
                                 <td> <?php echo $alumno->getNombres(); ?></td>
                                 <td> <?php echo $alumno->getApellidos(); ?></td>
@@ -107,10 +113,10 @@ require "views/includes/navbar.user.php";
                                 </td>
                             </tr>
                         <?php endforeach; ?>
-                    <?php elseif (isset($d) && isset($_POST["carrera"])) : ?>
-                        <?php foreach ($d as  $alumno) : ?>
+                    <?php elseif (isset($d["alumnosCarrera"]) && isset($_POST["carrera"])) : ?>
+                        <?php foreach ($d["alumnosCarrera"] as  $alumno) : ?>
                             <tr>
-                                <td> <?php echo $alumno->getCodigo(); ?></td>
+                            <td> <span style='color:red;'><b><?php echo $alumno->getPreCodigo(); ?></span/>-<?php echo $alumno->getCodigo();?></b></td>
                                 <td> <?php echo $alumno->getRut(); ?></td>
                                 <td> <?php echo $alumno->getNombres(); ?></td>
                                 <td> <?php echo $alumno->getApellidos(); ?></td>
@@ -124,6 +130,21 @@ require "views/includes/navbar.user.php";
                                 </td>
                             </tr>
                         <?php endforeach; ?>
+                    <?php elseif (isset($d["titulado"]) && isset($_POST["titulado"])) : ?>
+                            <tr>
+                            <td> <span style='color:red;'><b><?php echo $d["titulado"]->getPreCodigo(); ?></span/>-<?php echo $d["titulado"]->getCodigo();?></b></td>
+                                <td> <?php echo $d["titulado"]->getRut(); ?></td>
+                                <td> <?php echo $d["titulado"]->getNombres(); ?></td>
+                                <td> <?php echo $d["titulado"]->getApellidos(); ?></td>
+                                <td> <?php echo $d["titulado"]->getSede(); ?></td>
+                                <td> <?php echo $d["titulado"]->getCarrera(); ?></td>
+                                <td>
+                                    <form action="/buscar/modificarAlumno" method="post">
+                                        <input type="text" name="rut" id="rut" value="<?php echo $d["titulado"]->getRut(); ?>" hidden>
+                                        <input type="submit" value="Modificar" name="btnModificar"></input>
+                                    </form>
+                                </td>
+                            </tr>
                     <?php else : ?>
                         <tr>
                             <td>No hay datos</td>
