@@ -180,9 +180,23 @@ class AlumnoModel extends Model
             return false;
         }
     }
-    public function update()
+    public function update($rutParam = null)
     {
         try {
+            if(isset($rutParam)){
+
+            $query = $this->prepare("UPDATE data SET pre_cod=:precodigo, rut=:newRut, codigo=:codigo, nom=:nom, ape=:ape, sede=:sede, carrera=:carrera WHERE rut=:oldRut");
+            $query->bindParam(":oldRut",  $this->rut);
+            $query->bindParam(":newRut",  $rutParam);
+            $query->bindParam(":precodigo",  $this->pre_codigo);
+            $query->bindParam(":codigo",  $this->codigo);
+            $query->bindParam(":nom",  $this->nombres);
+            $query->bindParam(":ape",  $this->apellidos);
+            $query->bindParam(":sede",  $this->sede);
+            $query->bindParam(":carrera",  $this->carrera);
+            $query->execute();
+            return true;
+        }else{
             $query = $this->prepare("UPDATE data SET pre_cod=:precodigo, codigo=:codigo, nom=:nom, ape=:ape, sede=:sede, carrera=:carrera WHERE rut=:rut");
             $query->bindParam(":rut",  $this->rut);
             $query->bindParam(":precodigo",  $this->pre_codigo);
@@ -192,15 +206,9 @@ class AlumnoModel extends Model
             $query->bindParam(":sede",  $this->sede);
             $query->bindParam(":carrera",  $this->carrera);
             $query->execute();
-            // $alumno = $query->fetch(PDO::FETCH_ASSOC);
-            // //set data object
-            // $this->setRut($alumno["rut"]);
-            // $this->setCodigo($alumno["codigo"]);
-            // $this->setNombres($alumno["nombres"]);
-            // $this->setApellidos($alumno["apellidos"]);
-            // $this->setSede($alumno["sede"]);
-            // $this->setCarrera($alumno["carrera"]);
             return true;
+        }
+
         } catch (PDOException $th) {
             error_log("ALUMNO::MODELO => METODO_GETActualizarDato::PDOException => " . $th->getMessage());
             return false;

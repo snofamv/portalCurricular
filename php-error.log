@@ -795,3 +795,23 @@ Stack trace:
 [09-Aug-2022 22:45:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
 [09-Aug-2022 22:45:49 Europe/Berlin] Conexion a BD Exitosa.
 [09-Aug-2022 22:45:49 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[10-Aug-2022 15:16:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[10-Aug-2022 15:16:47 Europe/Berlin] ##############################################
+[10-Aug-2022 15:16:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[10-Aug-2022 15:16:47 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[10-Aug-2022 15:16:48 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[10-Aug-2022 15:16:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[10-Aug-2022 15:16:48 Europe/Berlin] ##############################################
+[10-Aug-2022 15:16:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[10-Aug-2022 15:16:48 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[10-Aug-2022 15:16:48 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[10-Aug-2022 15:27:15 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[10-Aug-2022 15:27:15 Europe/Berlin] ##############################################
+[10-Aug-2022 15:27:15 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[10-Aug-2022 15:27:15 Europe/Berlin] APP::RENDERIZANDO VISTA -> [actualizar]
+[10-Aug-2022 15:27:15 Europe/Berlin] Controller::CargarModelo alumno.
+[10-Aug-2022 15:27:16 Europe/Berlin] Conexion a BD Exitosa.
+[10-Aug-2022 15:27:17 Europe/Berlin] Conexion a BD Exitosa.
+[10-Aug-2022 15:27:18 Europe/Berlin] Conexion a BD Exitosa.
+[10-Aug-2022 15:27:18 Europe/Berlin] PHP Warning:  Undefined array key "usuario" in C:\xampp\htdocs\views\includes\navbar.user.php on line 38
+[10-Aug-2022 15:27:18 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\views\includes\navbar.user.php on line 38

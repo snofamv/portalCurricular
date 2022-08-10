@@ -26,6 +26,12 @@ require "views/includes/navbar.user.php";
                         <input class="form-control" type="text" name="codigo" id="codigo" placeholder="Ej: 0001">
                     </div>
                 </div>
+                <div class="row m-3">
+                    <div class="col">
+                        <label for="codigo">Nuevo RUT</label>
+                        <input class="form-control" type="text" name="rut" id="rut" placeholder="Ej: 11.222.333-4">
+                    </div>
+                </div>
 
                 <div class="row m-3">
                     <div class="col">
@@ -42,7 +48,7 @@ require "views/includes/navbar.user.php";
                     <div class="col">
 
                         <label for="sedes">Nueva Sede</label>
-                        <select class="form-select" name="sedes" id="sedes" required>
+                        <select class="form-select" name="sede" id="sede" required>
                             <option selected disabled hidden>Selecciona una sede</option>
                             <?php
                             foreach ($d['sedes'] as $sede) {
@@ -55,7 +61,7 @@ require "views/includes/navbar.user.php";
                     <div class="col">
 
                         <label class="label" for="carreras">Nueva Carrera</label>
-                        <select class="form-select" name="carreras" id="carreras">
+                        <select class="form-select" name="carrera" id="carrera">
                             <option selected disabled hidden>Selecciona una carrera</option>
                             <?php
                             foreach ($d['carreras'] as $carrera) {
