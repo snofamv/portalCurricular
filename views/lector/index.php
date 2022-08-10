@@ -39,7 +39,7 @@ require "views/includes/navbar.user.php";
                 <img src="https://www.svgrepo.com/show/125846/graduate.svg" class="card-img-top mx-auto" alt="..." style="max-width: 200px;">
                 <div class="card-body">
                     <h5 class="card-title">Alumnos</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">El modulo alumnos esta destinado a mostrar toda la informacion de los titulados.</p>
                 </div>
                 <div class="d-grid">
 
@@ -53,7 +53,7 @@ require "views/includes/navbar.user.php";
                 <img src="https://www.svgrepo.com/show/216744/add.svg" class="card-img-top mx-auto" alt="..." style="max-width: 200px;">
                 <div class="card-body">
                     <h5 class="card-title">Buscar informacion</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">El modulo buscar permite a travez de filtros la busqueda de titulados.</p>
                 </div>
                 <div class="d-grid">
 
@@ -67,7 +67,7 @@ require "views/includes/navbar.user.php";
                 <img src="https://www.svgrepo.com/show/94002/logout.svg" class="card-img-top ms-5" alt="..." style="max-width: 200px;">
                 <div class="card-body">
                     <h5 class="card-title">Cerrar sesion</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">Finalizar la sesion actual.</p>
                 </div>
                 <div class="d-grid">
 

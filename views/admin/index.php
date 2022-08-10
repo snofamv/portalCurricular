@@ -144,7 +144,7 @@ require "views/includes/navbar.admin.php";
                 <img src="https://www.svgrepo.com/show/94002/logout.svg" class="card-img-top ms-5" alt="..." style="max-width: 200px;">
                 <div class="card-body">
                     <h5 class="card-title">Cerrar sesion</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">Finalizar la sesion actual.</p>
                 </div>
                 <div class="d-grid">
 
