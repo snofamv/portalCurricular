@@ -20,15 +20,15 @@ function autoLoad()
 }
 
 define("BASETITLE", "Portal curricular");
-define("URLBASE", "http://localhost");
-define("USERDB", "root");
-define("PASSDB", "");
-define("HOSTDB", "localhost");
-define("NAMEDB", "test");
-define("URLBASE2", "https://dev-portalcurricular.herokuapp.com");
-define("USERDB2", "kjbjoiuszzve1ph1");
-define("PASSDB2", "hrmtv8naal552pxa");
-define("HOSTDB2", "lcpbq9az4jklobvq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com");
-define("NAMEDB2", "inyz5u2ef0mbxjiq");
+define("URLBASE2", "http://localhost");
+define("USERDB2", "root");
+define("PASSD2B", "");
+define("HOSTDB2", "localhost");
+define("NAMEDB2", "test");
+define("URLBASE", "https://dev-portalcurricular.herokuapp.com");
+define("USERDB", "kjbjoiuszzve1ph1");
+define("PASSDB", "hrmtv8naal552pxa");
+define("HOSTDB", "lcpbq9az4jklobvq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com");
+define("NAMEDB", "inyz5u2ef0mbxjiq");
 
 define("CHARSETDB", "utf8mb4");
