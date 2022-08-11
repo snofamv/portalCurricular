@@ -74,7 +74,7 @@ require_once "views/includes/navbar.admin.php";
                         <td><?php echo $caja[1] ?></td>
                         <td><?php echo $caja[2] ?></td>
                         <td>
-                            <form method='GET' action="/storage" target="_self">
+                            <form method='GET' action="/storage/descargar" target="_self">
                                 <button type='submit' value='<?php printf("%s/%s/%s", $caja[0], $caja[1], $caja[2]) ?>' name='descargarArchivo'>Descargar PDF</button>
                             </form>
                         </td>

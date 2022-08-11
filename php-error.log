@@ -758,3 +758,214 @@
 [11-Aug-2022 21:12:52 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
 [11-Aug-2022 21:12:52 Europe/Berlin] Conexion a BD Exitosa.
 [11-Aug-2022 21:12:52 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:15:09 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:15:09 Europe/Berlin] ##############################################
+[11-Aug-2022 21:15:09 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:15:09 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:15:09 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:15:09 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:15:09 Europe/Berlin] ##############################################
+[11-Aug-2022 21:15:09 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:15:09 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:15:09 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:15:09 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:15:09 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:15:09 Europe/Berlin] ##############################################
+[11-Aug-2022 21:15:09 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:15:09 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:15:09 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:15:26 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:15:26 Europe/Berlin] ##############################################
+[11-Aug-2022 21:15:26 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:15:26 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:15:26 Europe/Berlin] PanelController::Salir()->cerrando sesion.
+[11-Aug-2022 21:15:26 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:15:26 Europe/Berlin] ##############################################
+[11-Aug-2022 21:15:26 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:15:26 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[11-Aug-2022 21:15:26 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[11-Aug-2022 21:15:26 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:15:26 Europe/Berlin] ##############################################
+[11-Aug-2022 21:15:26 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:15:26 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:15:26 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:15:26 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:15:26 Europe/Berlin] ##############################################
+[11-Aug-2022 21:15:26 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:15:26 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[11-Aug-2022 21:15:26 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[11-Aug-2022 21:16:42 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:16:42 Europe/Berlin] ##############################################
+[11-Aug-2022 21:16:42 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:16:44 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:16:44 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 21:16:44 Europe/Berlin] PHP Warning:  Undefined array key "usuario" in C:\xampp\htdocs\views\includes\navbar.admin.php on line 33
+[11-Aug-2022 21:16:44 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\views\includes\navbar.admin.php on line 33
+[11-Aug-2022 21:16:44 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:16:44 Europe/Berlin] ##############################################
+[11-Aug-2022 21:16:44 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:16:44 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[11-Aug-2022 21:16:44 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[11-Aug-2022 21:16:44 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:16:44 Europe/Berlin] ##############################################
+[11-Aug-2022 21:16:44 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:16:44 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:16:44 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:16:44 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:16:44 Europe/Berlin] ##############################################
+[11-Aug-2022 21:16:44 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:16:44 Europe/Berlin] APP::CARGANDO CONTROLADOR LOGIN
+[11-Aug-2022 21:16:44 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[11-Aug-2022 21:17:03 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:17:03 Europe/Berlin] ##############################################
+[11-Aug-2022 21:17:03 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:17:03 Europe/Berlin] LOGIN::CONTROLLER => CONTROLADOR INICIADO.
+[11-Aug-2022 21:17:03 Europe/Berlin] Controller::CargarModelo login.
+[11-Aug-2022 21:17:03 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:17:03 Europe/Berlin] LoginModel::Login -> credenciales validadas.
+[11-Aug-2022 21:17:03 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:17:03 Europe/Berlin] ##############################################
+[11-Aug-2022 21:17:03 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:17:04 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:17:04 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:17:04 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:17:04 Europe/Berlin] ##############################################
+[11-Aug-2022 21:17:04 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:17:04 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:17:04 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:17:04 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:17:04 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:17:04 Europe/Berlin] ##############################################
+[11-Aug-2022 21:17:04 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:17:04 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:17:04 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:17:06 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:17:06 Europe/Berlin] ##############################################
+[11-Aug-2022 21:17:06 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:17:06 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:17:08 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:17:08 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 21:17:08 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:17:08 Europe/Berlin] ##############################################
+[11-Aug-2022 21:17:08 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:17:08 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:17:08 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:17:08 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:17:08 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:17:08 Europe/Berlin] ##############################################
+[11-Aug-2022 21:17:08 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:17:08 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:17:08 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:17:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:17:12 Europe/Berlin] ##############################################
+[11-Aug-2022 21:17:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:17:12 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:17:13 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:17:13 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 21:17:13 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:17:13 Europe/Berlin] ##############################################
+[11-Aug-2022 21:17:13 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:17:13 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:17:13 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:17:14 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:17:14 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:17:14 Europe/Berlin] ##############################################
+[11-Aug-2022 21:17:14 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:17:14 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:17:14 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:17:15 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:17:15 Europe/Berlin] ##############################################
+[11-Aug-2022 21:17:15 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:17:15 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:17:16 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:17:16 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 21:17:17 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:17:17 Europe/Berlin] ##############################################
+[11-Aug-2022 21:17:17 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:17:17 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:17:17 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:17:17 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:17:17 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:17:17 Europe/Berlin] ##############################################
+[11-Aug-2022 21:17:17 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:17:17 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:17:17 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:17:52 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:17:52 Europe/Berlin] ##############################################
+[11-Aug-2022 21:17:52 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:17:52 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:17:53 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:17:53 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 21:17:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:17:54 Europe/Berlin] ##############################################
+[11-Aug-2022 21:17:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:17:54 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:17:54 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:17:54 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:17:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:17:54 Europe/Berlin] ##############################################
+[11-Aug-2022 21:17:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:17:54 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:17:54 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:17:56 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:17:56 Europe/Berlin] ##############################################
+[11-Aug-2022 21:17:56 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:17:56 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:17:57 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:17:57 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 21:17:58 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:17:58 Europe/Berlin] ##############################################
+[11-Aug-2022 21:17:58 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:17:58 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:17:58 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:17:58 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:17:58 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:17:58 Europe/Berlin] ##############################################
+[11-Aug-2022 21:17:58 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:17:58 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:17:58 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:17:59 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:17:59 Europe/Berlin] ##############################################
+[11-Aug-2022 21:17:59 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:17:59 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:18:00 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:18:00 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 21:18:01 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:18:01 Europe/Berlin] ##############################################
+[11-Aug-2022 21:18:01 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:18:01 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:18:02 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:18:02 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 21:18:03 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:18:03 Europe/Berlin] ##############################################
+[11-Aug-2022 21:18:03 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:18:03 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:18:03 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:18:03 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:18:03 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:18:03 Europe/Berlin] ##############################################
+[11-Aug-2022 21:18:03 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:18:03 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:18:03 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:18:04 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:18:04 Europe/Berlin] ##############################################
+[11-Aug-2022 21:18:04 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:18:04 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:18:05 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:18:07 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:18:07 Europe/Berlin] ##############################################
+[11-Aug-2022 21:18:07 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:18:07 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:18:08 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:18:08 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 21:18:09 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:18:09 Europe/Berlin] ##############################################
+[11-Aug-2022 21:18:09 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:18:09 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:18:09 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:18:09 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:18:09 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:18:09 Europe/Berlin] ##############################################
+[11-Aug-2022 21:18:09 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:18:09 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:18:09 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
