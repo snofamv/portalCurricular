@@ -4,6 +4,7 @@ class StorageController extends SessionController
 {
     private $storage;
     private $cajas;
+    private $caja;
     private $paginaActual;
     private $paginaSiguiente;
     private $paginaAnterior;
@@ -18,6 +19,33 @@ class StorageController extends SessionController
         $this->cajas = $this->paginacionPorCajas();
         $this->paginaAnterior = $this->antPag();
         $this->paginaSiguiente = $this->sigPag();
+    }
+  
+    public function render()
+    {
+        $d["archivos"] = $this->separarCaracteres($this->storage->arrayDeCajas($this->paginaActual));
+        $d["paginas"] = array("paginaActual" => $this->getPaginaActual(), "paginaAnterior" => $this->getPaginaAnterior(), "paginaSiguiente" => $this->getPaginaSiguiente(), "cantidadPaginas" => count($this->getCajas()), "numeroCajas" => $this->getCajas());
+        $this->vista->render("admin/storage", $d);
+    }
+    public function caja()
+    {
+        if ($this->existsGET(["caja"])) {
+            $d["archivos"] = $this->separarCaracteres($this->storage->buscarCaja($this->getGET("caja")));
+            $this->vista->render("admin/storage", $d);
+        } else {
+            $this->redirect("storage", ["error" => ErrorMessages::ERROR_STORAGE_BUSCAR_CAJA]);
+        }
+    }
+    public function carpeta()
+    {
+        if ($this->existsGET(["carpeta"])) {
+            $d["archivos"] = $this->separarCaracteres($this->storage->buscarCarpeta($this->getGET("carpeta")));
+            if ($d != NULL) {
+                $this->vista->render("admin/storage", $d);
+            } else {
+                $this->redirect("storage", ["error" => ErrorMessages::ERROR_STORAGE_BUSCAR_CARPETA]);
+            }
+        }
     }
     private function sigPag()
     {
@@ -40,8 +68,7 @@ class StorageController extends SessionController
             }
         }
         //Una vez guardados las paginas menores se evaluara cual es la anterior
-        $tamanio = sizeof($arrAux);
-        return $arrAux[$tamanio - 1];
+        return $arrAux[sizeof($arrAux) - 1];
     }
     private function paginacionPorCajas()
     {
@@ -60,38 +87,8 @@ class StorageController extends SessionController
         return $arrCajas;
     }
 
-
-    public function render()
-    {
-        if ($this->existsGET(["buscarCaja"])) {
-            $d = $this->separarCaracteres($this->storage->buscarCaja($this->getGET("buscarCaja")));
-            if ($d != NULL) {
-                $this->vista->render("admin/storage", $d);
-            } else {
-                $this->redirect("storage", ["error" => ErrorMessages::ERROR_STORAGE_BUSCAR_CAJA]);
-            }
-        } elseif ($this->existsGET(["buscarCarpeta"])) {
-            $d = $this->separarCaracteres($this->storage->buscarCarpeta($this->getGET("buscarCarpeta")));
-            if ($d != NULL) {
-                $this->vista->render("admin/storage", $d);
-            } else {
-                $this->redirect("storage", ["error" => ErrorMessages::ERROR_STORAGE_BUSCAR_CARPETA]);
-            }
-        } elseif ($this->existsGET(["descargarArchivo"])) {
-            $this->descargar();
-        } else {
-
-            $d["archivos"] = $this->separarCaracteres($this->storage->arrayDeCajas($this->paginaActual));
-            $d["paginas"] = array("paginaActual" => $this->getPaginaActual(), "paginaAnterior" => $this->getPaginaAnterior(), "paginaSiguiente" => $this->getPaginaSiguiente(), "cantidadPaginas" => count($this->getCajas()), "numeroCajas" => $this->getCajas());
-            $this->vista->render("admin/storage", $d);
-        }
-    }
-
     private function separarCaracteres($arr)
     {
-        if (isset($arr["error"])) {
-            return null;
-        }
         $lista = array();
         foreach ($arr as $d) {
             $letras = explode("/", $d->name());
@@ -101,12 +98,14 @@ class StorageController extends SessionController
     }
     public function descargar()
     {
-        $this->storage = new storage();
-        $archivo = explode("/", $this->getGET("descargarArchivo"));
-        if ($this->storage->descargarobjecto($archivo[0], $archivo[1], $archivo[2], "C:\\Users\\DESKTOP\\Downloads")) {
-            $this->redirect("storage", ["success" => SuccessMessages::SUCCESS_STORAGE_DESCARGAR_DOCUMENTO]);
-        } else {
-            $this->redirect("storage", ["success" => ErrorMessages::ERROR_STORAGE_DESCARGAR_DOCUMENTO]);
+        if ($this->existsGET(["descargarArchivo"])) {
+            $this->storage = new storage();
+            $archivo = explode("/", $this->getGET("descargarArchivo"));
+            if ($this->storage->descargarobjecto($archivo[0], $archivo[1], $archivo[2], "C:\\Users\\DESKTOP\\Downloads")) {
+                $this->redirect("storage", ["success" => SuccessMessages::SUCCESS_STORAGE_DESCARGAR_DOCUMENTO]);
+            } else {
+                $this->redirect("storage", ["success" => ErrorMessages::ERROR_STORAGE_DESCARGAR_DOCUMENTO]);
+            }
         }
     }
 

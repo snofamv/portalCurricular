@@ -1,1025 +1,760 @@
-[11-Aug-2022 20:08:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:08:48 Europe/Berlin] ##############################################
-[11-Aug-2022 20:08:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:08:48 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:08:49 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:08:49 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:08:49 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 44
-[11-Aug-2022 20:08:49 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:08:49 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:08:49 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:08:49 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:08:49 Europe/Berlin] PHP Warning:  Undefined array key "paginaActual" in C:\xampp\htdocs\views\admin\storage.php on line 90
-[11-Aug-2022 20:08:49 Europe/Berlin] PHP Warning:  Undefined array key "paginaAnterior" in C:\xampp\htdocs\views\admin\storage.php on line 91
-[11-Aug-2022 20:08:49 Europe/Berlin] PHP Warning:  Undefined array key "paginaActual" in C:\xampp\htdocs\views\admin\storage.php on line 100
-[11-Aug-2022 20:08:49 Europe/Berlin] PHP Warning:  Undefined array key "nPaginas" in C:\xampp\htdocs\views\admin\storage.php on line 100
-[11-Aug-2022 20:08:49 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\views\admin\storage.php on line 100
-[11-Aug-2022 20:08:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:08:49 Europe/Berlin] ##############################################
-[11-Aug-2022 20:08:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:08:49 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:08:49 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:08:49 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:08:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:08:49 Europe/Berlin] ##############################################
-[11-Aug-2022 20:08:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:08:49 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:08:49 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:09:34 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:09:34 Europe/Berlin] ##############################################
-[11-Aug-2022 20:09:34 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:09:34 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:09:36 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:09:36 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:09:36 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 44
-[11-Aug-2022 20:09:36 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:09:36 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:09:36 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:09:36 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:09:36 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\controllers\storage_controller.php on line 104
-[11-Aug-2022 20:09:36 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: print_r() expects at least 1 argument, 0 given in C:\xampp\htdocs\views\admin\storage.php:3
-Stack trace:
-#0 C:\xampp\htdocs\views\admin\storage.php(3): print_r()
-#1 C:\xampp\htdocs\libs\view.php(18): require('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\controllers\storage_controller.php(94): View->render('admin/storage', Array)
-#3 C:\xampp\htdocs\libs\app.php(67): StorageController->render()
-#4 C:\xampp\htdocs\index.php(4): App->__construct()
-#5 {main}
-  thrown in C:\xampp\htdocs\views\admin\storage.php on line 3
-[11-Aug-2022 20:09:36 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:09:36 Europe/Berlin] ##############################################
-[11-Aug-2022 20:09:37 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:09:37 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:09:37 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:09:37 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:09:37 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:09:37 Europe/Berlin] ##############################################
-[11-Aug-2022 20:09:37 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:09:37 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:09:37 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:09:39 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:09:39 Europe/Berlin] ##############################################
-[11-Aug-2022 20:09:39 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:09:39 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:09:40 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:09:40 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:09:40 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 44
-[11-Aug-2022 20:09:40 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:09:40 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:09:40 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:09:40 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:09:41 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: print_r() expects at least 1 argument, 0 given in C:\xampp\htdocs\views\admin\storage.php:3
-Stack trace:
-#0 C:\xampp\htdocs\views\admin\storage.php(3): print_r()
-#1 C:\xampp\htdocs\libs\view.php(18): require('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\controllers\storage_controller.php(94): View->render('admin/storage', Array)
-#3 C:\xampp\htdocs\libs\app.php(67): StorageController->render()
-#4 C:\xampp\htdocs\index.php(4): App->__construct()
-#5 {main}
-  thrown in C:\xampp\htdocs\views\admin\storage.php on line 3
-[11-Aug-2022 20:09:41 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:09:41 Europe/Berlin] ##############################################
-[11-Aug-2022 20:09:41 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:09:41 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:09:41 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:09:41 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:09:41 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:09:41 Europe/Berlin] ##############################################
-[11-Aug-2022 20:09:41 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:09:41 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:09:41 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:09:44 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:09:44 Europe/Berlin] ##############################################
-[11-Aug-2022 20:09:44 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:09:44 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:09:45 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:09:45 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:09:45 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 44
-[11-Aug-2022 20:09:45 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:09:45 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:09:45 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:09:45 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:09:45 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: print_r() expects at least 1 argument, 0 given in C:\xampp\htdocs\views\admin\storage.php:3
-Stack trace:
-#0 C:\xampp\htdocs\views\admin\storage.php(3): print_r()
-#1 C:\xampp\htdocs\libs\view.php(18): require('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\controllers\storage_controller.php(94): View->render('admin/storage', Array)
-#3 C:\xampp\htdocs\libs\app.php(67): StorageController->render()
-#4 C:\xampp\htdocs\index.php(4): App->__construct()
-#5 {main}
-  thrown in C:\xampp\htdocs\views\admin\storage.php on line 3
-[11-Aug-2022 20:09:45 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:09:45 Europe/Berlin] ##############################################
-[11-Aug-2022 20:09:45 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:09:45 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:09:45 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:09:45 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:09:45 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:09:45 Europe/Berlin] ##############################################
-[11-Aug-2022 20:09:45 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:09:45 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:09:45 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:09:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:09:47 Europe/Berlin] ##############################################
-[11-Aug-2022 20:09:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:09:47 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:09:48 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:09:48 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:09:48 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 44
-[11-Aug-2022 20:09:48 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:09:48 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:09:48 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:09:48 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:09:49 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: print_r() expects at least 1 argument, 0 given in C:\xampp\htdocs\views\admin\storage.php:3
-Stack trace:
-#0 C:\xampp\htdocs\views\admin\storage.php(3): print_r()
-#1 C:\xampp\htdocs\libs\view.php(18): require('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\controllers\storage_controller.php(94): View->render('admin/storage', Array)
-#3 C:\xampp\htdocs\libs\app.php(67): StorageController->render()
-#4 C:\xampp\htdocs\index.php(4): App->__construct()
-#5 {main}
-  thrown in C:\xampp\htdocs\views\admin\storage.php on line 3
-[11-Aug-2022 20:09:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:09:49 Europe/Berlin] ##############################################
-[11-Aug-2022 20:09:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:09:49 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:09:49 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:09:49 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:09:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:09:49 Europe/Berlin] ##############################################
-[11-Aug-2022 20:09:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:09:49 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:09:49 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:09:50 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:09:50 Europe/Berlin] ##############################################
-[11-Aug-2022 20:09:50 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:09:50 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:09:51 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:09:51 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:09:51 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 44
-[11-Aug-2022 20:09:51 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:09:51 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:09:51 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:09:51 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:09:52 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: print_r() expects at least 1 argument, 0 given in C:\xampp\htdocs\views\admin\storage.php:3
-Stack trace:
-#0 C:\xampp\htdocs\views\admin\storage.php(3): print_r()
-#1 C:\xampp\htdocs\libs\view.php(18): require('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\controllers\storage_controller.php(94): View->render('admin/storage', Array)
-#3 C:\xampp\htdocs\libs\app.php(67): StorageController->render()
-#4 C:\xampp\htdocs\index.php(4): App->__construct()
-#5 {main}
-  thrown in C:\xampp\htdocs\views\admin\storage.php on line 3
-[11-Aug-2022 20:09:52 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:09:52 Europe/Berlin] ##############################################
-[11-Aug-2022 20:09:52 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:09:52 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:09:53 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:09:53 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:09:53 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 44
-[11-Aug-2022 20:09:53 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:09:53 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:09:53 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:09:53 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:09:53 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: print_r() expects at least 1 argument, 0 given in C:\xampp\htdocs\views\admin\storage.php:3
-Stack trace:
-#0 C:\xampp\htdocs\views\admin\storage.php(3): print_r()
-#1 C:\xampp\htdocs\libs\view.php(18): require('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\controllers\storage_controller.php(94): View->render('admin/storage', Array)
-#3 C:\xampp\htdocs\libs\app.php(67): StorageController->render()
-#4 C:\xampp\htdocs\index.php(4): App->__construct()
-#5 {main}
-  thrown in C:\xampp\htdocs\views\admin\storage.php on line 3
-[11-Aug-2022 20:09:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:09:53 Europe/Berlin] ##############################################
-[11-Aug-2022 20:09:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:09:53 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:09:53 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:09:53 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:09:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:09:53 Europe/Berlin] ##############################################
-[11-Aug-2022 20:09:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:09:53 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:09:53 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:09:58 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:09:58 Europe/Berlin] ##############################################
-[11-Aug-2022 20:09:58 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:09:58 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:09:59 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:09:59 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:09:59 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 44
-[11-Aug-2022 20:09:59 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:09:59 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:09:59 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:09:59 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:09:59 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: print_r() expects at least 1 argument, 0 given in C:\xampp\htdocs\views\admin\storage.php:3
-Stack trace:
-#0 C:\xampp\htdocs\views\admin\storage.php(3): print_r()
-#1 C:\xampp\htdocs\libs\view.php(18): require('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\controllers\storage_controller.php(94): View->render('admin/storage', Array)
-#3 C:\xampp\htdocs\libs\app.php(67): StorageController->render()
-#4 C:\xampp\htdocs\index.php(4): App->__construct()
-#5 {main}
-  thrown in C:\xampp\htdocs\views\admin\storage.php on line 3
-[11-Aug-2022 20:10:00 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:10:00 Europe/Berlin] ##############################################
-[11-Aug-2022 20:10:00 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:10:00 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:10:00 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:10:00 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:10:00 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:10:00 Europe/Berlin] ##############################################
-[11-Aug-2022 20:10:00 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:10:00 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:10:00 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:10:01 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:10:01 Europe/Berlin] ##############################################
-[11-Aug-2022 20:10:01 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:10:01 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:10:01 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:10:01 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:10:01 Europe/Berlin] ##############################################
-[11-Aug-2022 20:10:01 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:10:01 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:10:01 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:10:01 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:10:01 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:10:01 Europe/Berlin] ##############################################
-[11-Aug-2022 20:10:01 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:10:01 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:10:01 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:10:05 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:10:05 Europe/Berlin] ##############################################
-[11-Aug-2022 20:10:05 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:10:05 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:10:06 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:10:06 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:10:06 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 44
-[11-Aug-2022 20:10:06 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:10:06 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:10:06 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:10:06 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:10:06 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: print_r() expects at least 1 argument, 0 given in C:\xampp\htdocs\views\admin\storage.php:3
-Stack trace:
-#0 C:\xampp\htdocs\views\admin\storage.php(3): print_r()
-#1 C:\xampp\htdocs\libs\view.php(18): require('C:\\xampp\\htdocs...')
-#2 C:\xampp\htdocs\controllers\storage_controller.php(94): View->render('admin/storage', Array)
-#3 C:\xampp\htdocs\libs\app.php(67): StorageController->render()
-#4 C:\xampp\htdocs\index.php(4): App->__construct()
-#5 {main}
-  thrown in C:\xampp\htdocs\views\admin\storage.php on line 3
-[11-Aug-2022 20:10:06 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:10:06 Europe/Berlin] ##############################################
-[11-Aug-2022 20:10:06 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:10:06 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:10:06 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:10:06 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:10:06 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:10:06 Europe/Berlin] ##############################################
-[11-Aug-2022 20:10:06 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:10:06 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:10:06 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:10:28 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:10:28 Europe/Berlin] ##############################################
-[11-Aug-2022 20:10:28 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:10:28 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:10:30 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:10:30 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:10:30 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 44
-[11-Aug-2022 20:10:30 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:10:30 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:10:30 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:10:30 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:10:30 Europe/Berlin] PHP Warning:  Undefined array key "paginaActual" in C:\xampp\htdocs\views\admin\storage.php on line 91
-[11-Aug-2022 20:10:30 Europe/Berlin] PHP Warning:  Undefined array key "paginaAnterior" in C:\xampp\htdocs\views\admin\storage.php on line 92
-[11-Aug-2022 20:10:30 Europe/Berlin] PHP Warning:  Undefined array key "paginaActual" in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:10:30 Europe/Berlin] PHP Warning:  Undefined array key "nPaginas" in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:10:30 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:10:30 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:10:30 Europe/Berlin] ##############################################
-[11-Aug-2022 20:10:30 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:10:30 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:10:30 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:10:30 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:10:30 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:10:30 Europe/Berlin] ##############################################
-[11-Aug-2022 20:10:30 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:10:30 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:10:30 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:11:16 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:11:16 Europe/Berlin] ##############################################
-[11-Aug-2022 20:11:16 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:11:16 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:11:17 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:11:17 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:11:17 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 44
-[11-Aug-2022 20:11:17 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:11:17 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:11:17 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:11:17 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:11:18 Europe/Berlin] PHP Warning:  Undefined array key "paginaActual" in C:\xampp\htdocs\views\admin\storage.php on line 91
-[11-Aug-2022 20:11:18 Europe/Berlin] PHP Warning:  Undefined array key "paginaActual" in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:11:18 Europe/Berlin] PHP Warning:  Undefined array key "nPaginas" in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:11:18 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:11:18 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:11:18 Europe/Berlin] ##############################################
-[11-Aug-2022 20:11:18 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:11:18 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:11:18 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:11:18 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:11:18 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:11:18 Europe/Berlin] ##############################################
-[11-Aug-2022 20:11:18 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:11:18 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:11:18 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:11:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:11:22 Europe/Berlin] ##############################################
-[11-Aug-2022 20:11:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:11:23 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:11:24 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:11:24 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:11:24 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:11:24 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:11:24 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:11:24 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:11:24 Europe/Berlin] PHP Warning:  Undefined array key "paginaActual" in C:\xampp\htdocs\views\admin\storage.php on line 91
-[11-Aug-2022 20:11:24 Europe/Berlin] PHP Warning:  Undefined array key "paginaActual" in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:11:24 Europe/Berlin] PHP Warning:  Undefined array key "nPaginas" in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:11:24 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:11:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:11:24 Europe/Berlin] ##############################################
-[11-Aug-2022 20:11:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:11:24 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:11:24 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:11:24 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:11:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:11:24 Europe/Berlin] ##############################################
-[11-Aug-2022 20:11:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:11:24 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:11:24 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:11:28 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:11:28 Europe/Berlin] ##############################################
-[11-Aug-2022 20:11:28 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:11:28 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:11:29 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:11:29 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:11:29 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:11:29 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:11:29 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:11:29 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:11:29 Europe/Berlin] PHP Warning:  Undefined array key "paginaActual" in C:\xampp\htdocs\views\admin\storage.php on line 91
-[11-Aug-2022 20:11:29 Europe/Berlin] PHP Warning:  Undefined array key "paginaActual" in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:11:29 Europe/Berlin] PHP Warning:  Undefined array key "nPaginas" in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:11:29 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:11:29 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:11:29 Europe/Berlin] ##############################################
-[11-Aug-2022 20:11:29 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:11:29 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:11:29 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:11:29 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:11:29 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:11:29 Europe/Berlin] ##############################################
-[11-Aug-2022 20:11:29 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:11:29 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:11:29 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:11:31 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:11:31 Europe/Berlin] ##############################################
-[11-Aug-2022 20:11:31 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:11:31 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:11:32 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:11:32 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:11:32 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:11:32 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:11:32 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:11:32 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:11:32 Europe/Berlin] PHP Warning:  Undefined array key "paginaActual" in C:\xampp\htdocs\views\admin\storage.php on line 91
-[11-Aug-2022 20:11:32 Europe/Berlin] PHP Warning:  Undefined array key "paginaActual" in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:11:32 Europe/Berlin] PHP Warning:  Undefined array key "nPaginas" in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:11:32 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:11:32 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:11:32 Europe/Berlin] ##############################################
-[11-Aug-2022 20:11:32 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:11:32 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:11:32 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:11:32 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:11:32 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:11:32 Europe/Berlin] ##############################################
-[11-Aug-2022 20:11:32 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:11:32 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:11:32 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:13:03 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:13:03 Europe/Berlin] ##############################################
-[11-Aug-2022 20:13:03 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:13:03 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:13:05 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:13:05 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:13:05 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:13:05 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:13:05 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:13:05 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:13:05 Europe/Berlin] PHP Warning:  Undefined array key "nPaginas" in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:13:05 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:13:05 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:13:05 Europe/Berlin] ##############################################
-[11-Aug-2022 20:13:05 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:13:05 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:13:05 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:13:05 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:13:05 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:13:05 Europe/Berlin] ##############################################
-[11-Aug-2022 20:13:05 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:13:05 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:13:05 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:13:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:13:53 Europe/Berlin] ##############################################
-[11-Aug-2022 20:13:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:13:53 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:13:54 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:13:54 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:13:54 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:13:54 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:13:54 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:13:54 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:13:54 Europe/Berlin] PHP Warning:  Undefined array key "numeroCajas" in C:\xampp\htdocs\views\admin\storage.php on line 91
-[11-Aug-2022 20:13:54 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\views\admin\storage.php on line 91
-[11-Aug-2022 20:13:54 Europe/Berlin] PHP Warning:  Undefined array key "numeroCajas" in C:\xampp\htdocs\views\admin\storage.php on line 98
-[11-Aug-2022 20:13:54 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\views\admin\storage.php on line 98
-[11-Aug-2022 20:13:54 Europe/Berlin] PHP Warning:  Undefined array key "numeroCajas" in C:\xampp\htdocs\views\admin\storage.php on line 98
-[11-Aug-2022 20:13:54 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\views\admin\storage.php on line 98
-[11-Aug-2022 20:13:54 Europe/Berlin] PHP Warning:  Undefined array key "numeroCajas" in C:\xampp\htdocs\views\admin\storage.php on line 98
-[11-Aug-2022 20:13:54 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\views\admin\storage.php on line 98
-[11-Aug-2022 20:13:54 Europe/Berlin] PHP Warning:  Undefined array key "numeroCajas" in C:\xampp\htdocs\views\admin\storage.php on line 98
-[11-Aug-2022 20:13:54 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\views\admin\storage.php on line 98
-[11-Aug-2022 20:13:54 Europe/Berlin] PHP Warning:  Undefined array key "nPaginas" in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:13:54 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:13:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:13:54 Europe/Berlin] ##############################################
-[11-Aug-2022 20:13:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:13:54 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:13:54 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:13:54 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:13:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:13:54 Europe/Berlin] ##############################################
-[11-Aug-2022 20:13:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:13:54 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:13:54 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:14:02 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:14:02 Europe/Berlin] ##############################################
-[11-Aug-2022 20:14:02 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:14:02 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:14:03 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:14:03 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:14:03 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:14:03 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:14:03 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:14:03 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:14:03 Europe/Berlin] PHP Warning:  Undefined array key "numeroCajas" in C:\xampp\htdocs\views\admin\storage.php on line 91
-[11-Aug-2022 20:14:03 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\views\admin\storage.php on line 91
-[11-Aug-2022 20:14:03 Europe/Berlin] PHP Warning:  Undefined array key "nPaginas" in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:14:03 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:14:03 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:14:03 Europe/Berlin] ##############################################
-[11-Aug-2022 20:14:03 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:14:03 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:14:03 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:14:04 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:14:04 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:14:04 Europe/Berlin] ##############################################
-[11-Aug-2022 20:14:04 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:14:04 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:14:04 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:14:09 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:14:09 Europe/Berlin] ##############################################
-[11-Aug-2022 20:14:09 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:14:09 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:14:10 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:14:10 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:14:10 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:14:10 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:14:10 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:14:10 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:14:11 Europe/Berlin] PHP Warning:  Undefined array key "numeroCajas" in C:\xampp\htdocs\views\admin\storage.php on line 91
-[11-Aug-2022 20:14:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\views\admin\storage.php on line 91
-[11-Aug-2022 20:14:11 Europe/Berlin] PHP Warning:  Undefined array key "numeroCajass" in C:\xampp\htdocs\views\admin\storage.php on line 98
-[11-Aug-2022 20:14:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\views\admin\storage.php on line 98
-[11-Aug-2022 20:14:11 Europe/Berlin] PHP Warning:  Undefined array key "numeroCajass" in C:\xampp\htdocs\views\admin\storage.php on line 98
-[11-Aug-2022 20:14:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\views\admin\storage.php on line 98
-[11-Aug-2022 20:14:11 Europe/Berlin] PHP Warning:  Undefined array key "numeroCajass" in C:\xampp\htdocs\views\admin\storage.php on line 98
-[11-Aug-2022 20:14:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\views\admin\storage.php on line 98
-[11-Aug-2022 20:14:11 Europe/Berlin] PHP Warning:  Undefined array key "numeroCajass" in C:\xampp\htdocs\views\admin\storage.php on line 98
-[11-Aug-2022 20:14:11 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\views\admin\storage.php on line 98
-[11-Aug-2022 20:14:11 Europe/Berlin] PHP Warning:  Undefined array key "nPaginas" in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:14:11 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:14:11 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:14:11 Europe/Berlin] ##############################################
-[11-Aug-2022 20:14:11 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:14:11 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:14:11 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:14:11 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:14:11 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:14:11 Europe/Berlin] ##############################################
-[11-Aug-2022 20:14:11 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:14:11 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:14:11 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:14:14 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:14:14 Europe/Berlin] ##############################################
-[11-Aug-2022 20:14:14 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:14:14 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:14:15 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:14:15 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:14:15 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:14:15 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:14:15 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:14:15 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:14:16 Europe/Berlin] PHP Warning:  Undefined array key "numeroCajas" in C:\xampp\htdocs\views\admin\storage.php on line 91
-[11-Aug-2022 20:14:16 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\views\admin\storage.php on line 91
-[11-Aug-2022 20:14:16 Europe/Berlin] PHP Warning:  Undefined array key "nPaginas" in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:14:16 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:14:16 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:14:16 Europe/Berlin] ##############################################
-[11-Aug-2022 20:14:16 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:14:16 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:14:16 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:14:16 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:14:16 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:14:16 Europe/Berlin] ##############################################
-[11-Aug-2022 20:14:16 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:14:16 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:14:16 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:14:57 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:14:57 Europe/Berlin] ##############################################
-[11-Aug-2022 20:14:57 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:14:57 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:14:59 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:14:59 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:14:59 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:14:59 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:14:59 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:14:59 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:14:59 Europe/Berlin] PHP Warning:  Undefined array key "numeroCajas" in C:\xampp\htdocs\views\admin\storage.php on line 91
-[11-Aug-2022 20:14:59 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\views\admin\storage.php on line 91
-[11-Aug-2022 20:14:59 Europe/Berlin] PHP Warning:  Undefined array key "nPaginas" in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:14:59 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:14:59 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:14:59 Europe/Berlin] ##############################################
-[11-Aug-2022 20:14:59 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:14:59 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:14:59 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:14:59 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:14:59 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:14:59 Europe/Berlin] ##############################################
-[11-Aug-2022 20:14:59 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:14:59 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:14:59 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:15:00 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:15:00 Europe/Berlin] ##############################################
-[11-Aug-2022 20:15:00 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:15:00 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:15:02 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:15:02 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:15:02 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 44
-[11-Aug-2022 20:15:02 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:15:02 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:15:02 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:15:02 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:15:02 Europe/Berlin] PHP Warning:  Undefined array key "numeroCajas" in C:\xampp\htdocs\views\admin\storage.php on line 91
-[11-Aug-2022 20:15:02 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\views\admin\storage.php on line 91
-[11-Aug-2022 20:15:02 Europe/Berlin] PHP Warning:  Undefined array key "nPaginas" in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:15:02 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:15:02 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:15:02 Europe/Berlin] ##############################################
-[11-Aug-2022 20:15:02 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:15:02 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:15:03 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:15:03 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:15:03 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:15:03 Europe/Berlin] ##############################################
-[11-Aug-2022 20:15:03 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:15:03 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:15:03 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:15:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:15:22 Europe/Berlin] ##############################################
-[11-Aug-2022 20:15:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:15:22 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:15:23 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:15:23 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:15:23 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 44
-[11-Aug-2022 20:15:23 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:15:23 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:15:23 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:15:23 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:15:24 Europe/Berlin] PHP Warning:  Undefined array key "nPaginas" in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:15:24 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:15:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:15:24 Europe/Berlin] ##############################################
-[11-Aug-2022 20:15:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:15:24 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:15:24 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:15:24 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:15:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:15:24 Europe/Berlin] ##############################################
-[11-Aug-2022 20:15:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:15:24 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:15:25 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:15:27 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:15:27 Europe/Berlin] ##############################################
-[11-Aug-2022 20:15:27 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:15:27 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:15:28 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:15:28 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:15:28 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:15:28 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:15:28 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:15:28 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:15:28 Europe/Berlin] PHP Warning:  Undefined array key "nPaginas" in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:15:28 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:15:28 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:15:28 Europe/Berlin] ##############################################
-[11-Aug-2022 20:15:28 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:15:28 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:15:28 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:15:28 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:15:28 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:15:28 Europe/Berlin] ##############################################
-[11-Aug-2022 20:15:28 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:15:28 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:15:28 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:15:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:15:49 Europe/Berlin] ##############################################
-[11-Aug-2022 20:15:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:15:49 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:15:50 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:15:50 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:15:50 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:15:50 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:15:50 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:15:50 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:15:50 Europe/Berlin] PHP Warning:  Undefined array key "cantidadPaginas" in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:15:50 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:15:50 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:15:50 Europe/Berlin] ##############################################
-[11-Aug-2022 20:15:50 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:15:50 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:15:50 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:15:50 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:15:50 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:15:50 Europe/Berlin] ##############################################
-[11-Aug-2022 20:15:50 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:15:50 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:15:50 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:15:53 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:15:53 Europe/Berlin] ##############################################
-[11-Aug-2022 20:15:53 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:15:53 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:15:54 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:15:54 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:15:54 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:15:54 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:15:54 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:15:54 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:15:54 Europe/Berlin] PHP Warning:  Undefined array key "cantidadPaginas" in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:15:54 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:15:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:15:54 Europe/Berlin] ##############################################
-[11-Aug-2022 20:15:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:15:54 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:15:54 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:15:54 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:15:54 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:15:54 Europe/Berlin] ##############################################
-[11-Aug-2022 20:15:54 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:15:54 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:15:55 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:16:09 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:16:09 Europe/Berlin] ##############################################
-[11-Aug-2022 20:16:09 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:16:09 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:16:10 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:16:10 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:16:10 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:16:10 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:16:10 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:16:10 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:16:10 Europe/Berlin] PHP Parse error:  Unclosed '(' does not match ']' in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:16:17 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:16:17 Europe/Berlin] ##############################################
-[11-Aug-2022 20:16:17 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:16:17 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:16:18 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:16:18 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:16:18 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:16:18 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:16:18 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:16:18 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:16:18 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:16:18 Europe/Berlin] ##############################################
-[11-Aug-2022 20:16:18 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:16:18 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:16:18 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:16:18 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:16:18 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:16:18 Europe/Berlin] ##############################################
-[11-Aug-2022 20:16:18 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:16:18 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:16:18 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:16:31 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:16:31 Europe/Berlin] ##############################################
-[11-Aug-2022 20:16:31 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:16:31 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:16:32 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:16:32 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:16:32 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:16:32 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:16:32 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:16:32 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:16:33 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:16:33 Europe/Berlin] ##############################################
-[11-Aug-2022 20:16:33 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:16:33 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:16:33 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:16:33 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:16:33 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:16:33 Europe/Berlin] ##############################################
-[11-Aug-2022 20:16:33 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:16:33 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:16:33 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:16:34 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:16:34 Europe/Berlin] ##############################################
-[11-Aug-2022 20:16:34 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:16:34 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:16:35 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:16:35 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:16:35 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:16:35 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:16:35 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:16:35 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:16:36 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:16:36 Europe/Berlin] ##############################################
-[11-Aug-2022 20:16:36 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:16:36 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:16:36 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:16:36 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:16:36 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:16:36 Europe/Berlin] ##############################################
-[11-Aug-2022 20:16:36 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:16:36 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:16:36 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:17:31 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:17:31 Europe/Berlin] ##############################################
-[11-Aug-2022 20:17:31 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:17:31 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:17:33 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:17:33 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:17:33 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:17:33 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:17:33 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:17:33 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:17:34 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:17:34 Europe/Berlin] ##############################################
-[11-Aug-2022 20:17:34 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:17:34 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:17:34 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:17:34 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:17:34 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:17:34 Europe/Berlin] ##############################################
-[11-Aug-2022 20:17:34 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:17:34 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:17:34 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:17:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:17:49 Europe/Berlin] ##############################################
-[11-Aug-2022 20:17:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:17:49 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:17:50 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:17:50 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:17:50 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:17:50 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:17:50 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:17:50 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:17:51 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:17:51 Europe/Berlin] ##############################################
-[11-Aug-2022 20:17:51 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:17:51 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:17:51 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:17:51 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:17:51 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:17:51 Europe/Berlin] ##############################################
-[11-Aug-2022 20:17:51 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:17:51 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:17:51 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:18:01 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:18:01 Europe/Berlin] ##############################################
-[11-Aug-2022 20:18:01 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:18:01 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:18:02 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:18:02 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:18:02 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:18:02 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:18:02 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:18:02 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:18:02 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:18:02 Europe/Berlin] ##############################################
-[11-Aug-2022 20:18:02 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:18:02 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:18:02 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:18:02 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:18:02 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:18:02 Europe/Berlin] ##############################################
-[11-Aug-2022 20:18:02 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:18:02 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:18:02 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:18:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:18:12 Europe/Berlin] ##############################################
-[11-Aug-2022 20:18:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:18:12 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:18:13 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:18:13 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:18:13 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:18:13 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:18:13 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:18:13 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:18:14 Europe/Berlin] PHP Warning:  Undefined array key "nPaginas" in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:18:14 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:18:14 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:18:14 Europe/Berlin] ##############################################
-[11-Aug-2022 20:18:14 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:18:14 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:18:14 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:18:14 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:18:14 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:18:14 Europe/Berlin] ##############################################
-[11-Aug-2022 20:18:14 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:18:14 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:18:14 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:20:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:20:49 Europe/Berlin] ##############################################
-[11-Aug-2022 20:20:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:20:49 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:20:50 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:20:50 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:20:50 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:20:50 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:20:50 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:20:50 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:20:51 Europe/Berlin] PHP Warning:  Undefined array key "cantidadCajas" in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:20:51 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\views\admin\storage.php on line 101
-[11-Aug-2022 20:20:51 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:20:51 Europe/Berlin] ##############################################
-[11-Aug-2022 20:20:51 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:20:51 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:20:51 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:20:51 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:20:51 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:20:51 Europe/Berlin] ##############################################
-[11-Aug-2022 20:20:51 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:20:51 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:20:51 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:21:13 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:21:13 Europe/Berlin] ##############################################
-[11-Aug-2022 20:21:13 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:21:13 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:21:14 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:21:14 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:21:14 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:21:14 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:21:14 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:21:14 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:21:15 Europe/Berlin] PHP Warning:  Undefined array key "cantidadCajas" in C:\xampp\htdocs\views\admin\storage.php on line 102
-[11-Aug-2022 20:21:15 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\views\admin\storage.php on line 102
-[11-Aug-2022 20:21:15 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:21:15 Europe/Berlin] ##############################################
-[11-Aug-2022 20:21:15 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:21:15 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:21:15 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:21:15 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:21:15 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:21:15 Europe/Berlin] ##############################################
-[11-Aug-2022 20:21:15 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:21:15 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:21:15 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:21:59 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:21:59 Europe/Berlin] ##############################################
-[11-Aug-2022 20:21:59 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:21:59 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:22:00 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:22:00 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:22:00 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:22:00 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:22:00 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:22:00 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:22:01 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:22:01 Europe/Berlin] ##############################################
-[11-Aug-2022 20:22:01 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:22:01 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:22:01 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:22:01 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:22:01 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:22:01 Europe/Berlin] ##############################################
-[11-Aug-2022 20:22:01 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:22:01 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:22:01 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:22:05 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:22:05 Europe/Berlin] ##############################################
-[11-Aug-2022 20:22:05 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:22:05 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:22:06 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:22:06 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:22:06 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:22:06 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:22:06 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:22:06 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:22:06 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:22:06 Europe/Berlin] ##############################################
-[11-Aug-2022 20:22:06 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:22:06 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:22:06 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:22:06 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:22:06 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:22:06 Europe/Berlin] ##############################################
-[11-Aug-2022 20:22:06 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:22:06 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:22:06 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:22:10 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:22:10 Europe/Berlin] ##############################################
-[11-Aug-2022 20:22:10 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:22:10 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:22:11 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:22:11 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:22:11 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:22:11 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:22:11 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:22:11 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:22:11 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:22:11 Europe/Berlin] ##############################################
-[11-Aug-2022 20:22:11 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:22:11 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:22:11 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:22:11 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:22:11 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:22:11 Europe/Berlin] ##############################################
-[11-Aug-2022 20:22:11 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:22:11 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:22:11 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:22:13 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:22:13 Europe/Berlin] ##############################################
-[11-Aug-2022 20:22:13 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:22:13 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:22:14 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:22:14 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:22:14 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 44
-[11-Aug-2022 20:22:14 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:22:14 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:22:14 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:22:14 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:22:15 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:22:15 Europe/Berlin] ##############################################
-[11-Aug-2022 20:22:15 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:22:15 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:22:15 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:22:15 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:22:15 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:22:15 Europe/Berlin] ##############################################
-[11-Aug-2022 20:22:15 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:22:15 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:22:15 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:22:19 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:22:19 Europe/Berlin] ##############################################
-[11-Aug-2022 20:22:19 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:22:19 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:22:20 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:22:20 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:22:20 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:22:20 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:22:20 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:22:20 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:22:20 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:22:20 Europe/Berlin] ##############################################
-[11-Aug-2022 20:22:20 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:22:20 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:22:20 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:22:20 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:22:20 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:22:20 Europe/Berlin] ##############################################
-[11-Aug-2022 20:22:20 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:22:20 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:22:20 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
-[11-Aug-2022 20:23:32 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:23:32 Europe/Berlin] ##############################################
-[11-Aug-2022 20:23:32 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:23:32 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:23:33 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 53
-[11-Aug-2022 20:23:33 Europe/Berlin] PHP Warning:  Undefined property: StorageController::$caja in C:\xampp\htdocs\controllers\storage_controller.php on line 54
-[11-Aug-2022 20:23:33 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
-[11-Aug-2022 20:23:33 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCaja
-[11-Aug-2022 20:23:33 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro buscarCarpeta
-[11-Aug-2022 20:23:33 Europe/Berlin] Controlador::ExistsPOST => No existe el parametro descargarArchivo
-[11-Aug-2022 20:23:34 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:23:34 Europe/Berlin] ##############################################
-[11-Aug-2022 20:23:34 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:23:34 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
-[11-Aug-2022 20:23:34 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:23:34 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
-[11-Aug-2022 20:23:34 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
-[11-Aug-2022 20:23:34 Europe/Berlin] ##############################################
-[11-Aug-2022 20:23:34 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
-[11-Aug-2022 20:23:34 Europe/Berlin] Conexion a BD Exitosa.
-[11-Aug-2022 20:23:34 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 20:54:38 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 20:54:38 Europe/Berlin] ##############################################
+[11-Aug-2022 20:54:38 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 20:54:38 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 20:54:40 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 44
+[11-Aug-2022 20:54:40 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 20:54:40 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 20:54:40 Europe/Berlin] ##############################################
+[11-Aug-2022 20:54:40 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 20:54:40 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 20:54:40 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 20:54:40 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 20:54:40 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 20:54:40 Europe/Berlin] ##############################################
+[11-Aug-2022 20:54:40 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 20:54:40 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 20:54:40 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 20:55:00 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 20:55:00 Europe/Berlin] ##############################################
+[11-Aug-2022 20:55:00 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 20:55:00 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 20:55:01 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 44
+[11-Aug-2022 20:55:01 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 20:55:01 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 20:55:01 Europe/Berlin] ##############################################
+[11-Aug-2022 20:55:01 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 20:55:01 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 20:55:01 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 20:55:01 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 20:55:01 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 20:55:01 Europe/Berlin] ##############################################
+[11-Aug-2022 20:55:01 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 20:55:01 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 20:55:01 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 20:55:18 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 20:55:18 Europe/Berlin] ##############################################
+[11-Aug-2022 20:55:18 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 20:55:18 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 20:55:19 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 44
+[11-Aug-2022 20:55:19 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 20:55:20 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 20:55:20 Europe/Berlin] ##############################################
+[11-Aug-2022 20:55:20 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 20:55:20 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 20:55:20 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 20:55:20 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 20:55:20 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 20:55:20 Europe/Berlin] ##############################################
+[11-Aug-2022 20:55:20 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 20:55:20 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 20:55:20 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 20:56:02 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 20:56:02 Europe/Berlin] ##############################################
+[11-Aug-2022 20:56:02 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 20:56:02 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 20:56:03 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 44
+[11-Aug-2022 20:56:03 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 20:56:03 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 20:56:03 Europe/Berlin] ##############################################
+[11-Aug-2022 20:56:03 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 20:56:03 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 20:56:03 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 20:56:03 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 20:56:03 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 20:56:03 Europe/Berlin] ##############################################
+[11-Aug-2022 20:56:03 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 20:56:03 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 20:56:03 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 20:58:58 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 20:58:58 Europe/Berlin] ##############################################
+[11-Aug-2022 20:58:58 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 20:58:58 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 20:58:59 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 72
+[11-Aug-2022 20:58:59 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 20:58:59 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 20:58:59 Europe/Berlin] ##############################################
+[11-Aug-2022 20:58:59 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 20:58:59 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 20:58:59 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 20:58:59 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 20:58:59 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 20:58:59 Europe/Berlin] ##############################################
+[11-Aug-2022 20:58:59 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 20:58:59 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 20:59:00 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:00:09 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:00:09 Europe/Berlin] ##############################################
+[11-Aug-2022 21:00:09 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:00:09 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:00:10 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 72
+[11-Aug-2022 21:00:10 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 21:00:10 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:00:10 Europe/Berlin] ##############################################
+[11-Aug-2022 21:00:10 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:00:10 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:00:10 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:00:10 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:00:10 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:00:10 Europe/Berlin] ##############################################
+[11-Aug-2022 21:00:10 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:00:10 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:00:10 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:00:12 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:00:12 Europe/Berlin] ##############################################
+[11-Aug-2022 21:00:12 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:00:12 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:00:13 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 72
+[11-Aug-2022 21:00:14 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:00:14 Europe/Berlin] ##############################################
+[11-Aug-2022 21:00:14 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:00:14 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:00:14 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:00:14 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:00:14 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:00:14 Europe/Berlin] ##############################################
+[11-Aug-2022 21:00:14 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:00:14 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:00:14 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:00:15 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:00:15 Europe/Berlin] ##############################################
+[11-Aug-2022 21:00:15 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:00:15 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:00:16 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 72
+[11-Aug-2022 21:00:17 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:00:17 Europe/Berlin] ##############################################
+[11-Aug-2022 21:00:17 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:00:17 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:00:17 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:00:17 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:00:17 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:00:17 Europe/Berlin] ##############################################
+[11-Aug-2022 21:00:17 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:00:17 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:00:17 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:00:22 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:00:22 Europe/Berlin] ##############################################
+[11-Aug-2022 21:00:22 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:00:22 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:00:23 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 72
+[11-Aug-2022 21:00:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:00:24 Europe/Berlin] ##############################################
+[11-Aug-2022 21:00:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:00:24 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:00:24 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:00:24 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:00:24 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:00:24 Europe/Berlin] ##############################################
+[11-Aug-2022 21:00:24 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:00:24 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:00:24 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:00:55 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:00:55 Europe/Berlin] ##############################################
+[11-Aug-2022 21:00:55 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:00:55 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:00:56 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 72
+[11-Aug-2022 21:00:57 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:00:57 Europe/Berlin] ##############################################
+[11-Aug-2022 21:00:57 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:00:57 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:00:57 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:00:57 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:00:57 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:00:57 Europe/Berlin] ##############################################
+[11-Aug-2022 21:00:57 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:00:57 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:00:57 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:01:07 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:01:07 Europe/Berlin] ##############################################
+[11-Aug-2022 21:01:07 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:01:07 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:01:08 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 72
+[11-Aug-2022 21:01:09 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:01:09 Europe/Berlin] ##############################################
+[11-Aug-2022 21:01:09 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:01:09 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:01:09 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:01:09 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:01:09 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:01:09 Europe/Berlin] ##############################################
+[11-Aug-2022 21:01:09 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:01:09 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:01:09 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:01:30 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:01:30 Europe/Berlin] ##############################################
+[11-Aug-2022 21:01:31 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:01:31 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:01:31 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 73
+[11-Aug-2022 21:01:32 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:01:32 Europe/Berlin] ##############################################
+[11-Aug-2022 21:01:32 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:01:32 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:01:32 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:01:32 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:01:32 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:01:32 Europe/Berlin] ##############################################
+[11-Aug-2022 21:01:32 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:01:32 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:01:32 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:02:15 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:02:15 Europe/Berlin] ##############################################
+[11-Aug-2022 21:02:15 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:02:15 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:02:16 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 72
+[11-Aug-2022 21:02:16 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:02:16 Europe/Berlin] ##############################################
+[11-Aug-2022 21:02:16 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:02:16 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:02:16 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:02:16 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:02:16 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:02:16 Europe/Berlin] ##############################################
+[11-Aug-2022 21:02:16 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:02:16 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:02:16 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:02:25 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:02:25 Europe/Berlin] ##############################################
+[11-Aug-2022 21:02:25 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:02:25 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:02:26 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:02:27 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:02:27 Europe/Berlin] ##############################################
+[11-Aug-2022 21:02:27 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:02:27 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:02:27 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:02:27 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:02:27 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:02:27 Europe/Berlin] ##############################################
+[11-Aug-2022 21:02:27 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:02:27 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:02:27 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:02:29 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:02:29 Europe/Berlin] ##############################################
+[11-Aug-2022 21:02:29 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:02:29 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:02:30 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:02:31 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:02:31 Europe/Berlin] ##############################################
+[11-Aug-2022 21:02:31 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:02:31 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:02:31 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:02:31 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:02:31 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:02:31 Europe/Berlin] ##############################################
+[11-Aug-2022 21:02:31 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:02:31 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:02:31 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:03:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:03:21 Europe/Berlin] ##############################################
+[11-Aug-2022 21:03:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:03:21 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:03:22 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:03:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:03:23 Europe/Berlin] ##############################################
+[11-Aug-2022 21:03:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:03:23 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:03:23 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:03:23 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:03:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:03:23 Europe/Berlin] ##############################################
+[11-Aug-2022 21:03:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:03:23 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:03:23 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:03:38 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:03:38 Europe/Berlin] ##############################################
+[11-Aug-2022 21:03:38 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:03:38 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:03:39 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:03:40 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:03:40 Europe/Berlin] ##############################################
+[11-Aug-2022 21:03:40 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:03:40 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:03:40 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:03:40 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:03:40 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:03:40 Europe/Berlin] ##############################################
+[11-Aug-2022 21:03:40 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:03:40 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:03:40 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:03:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:03:47 Europe/Berlin] ##############################################
+[11-Aug-2022 21:03:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:03:47 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:03:49 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:03:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:03:49 Europe/Berlin] ##############################################
+[11-Aug-2022 21:03:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:03:49 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:03:49 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:03:49 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:03:49 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:03:49 Europe/Berlin] ##############################################
+[11-Aug-2022 21:03:49 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:03:49 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:03:49 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:04:08 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:04:08 Europe/Berlin] ##############################################
+[11-Aug-2022 21:04:08 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:04:08 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:04:11 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:04:11 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:04:11 Europe/Berlin] ##############################################
+[11-Aug-2022 21:04:11 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:04:11 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:04:11 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:04:11 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:04:11 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:04:11 Europe/Berlin] ##############################################
+[11-Aug-2022 21:04:11 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:04:11 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:04:11 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:04:19 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:04:19 Europe/Berlin] ##############################################
+[11-Aug-2022 21:04:19 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:04:19 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:04:20 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:04:20 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:04:20 Europe/Berlin] ##############################################
+[11-Aug-2022 21:04:20 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:04:20 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:04:20 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:04:20 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:04:20 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:04:20 Europe/Berlin] ##############################################
+[11-Aug-2022 21:04:20 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:04:20 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:04:20 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:04:29 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:04:29 Europe/Berlin] ##############################################
+[11-Aug-2022 21:04:29 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:04:29 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:04:30 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:04:31 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:04:31 Europe/Berlin] ##############################################
+[11-Aug-2022 21:04:31 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:04:31 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:04:31 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:04:31 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:04:31 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:04:31 Europe/Berlin] ##############################################
+[11-Aug-2022 21:04:31 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:04:31 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:04:31 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:04:35 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:04:35 Europe/Berlin] ##############################################
+[11-Aug-2022 21:04:35 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:04:35 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:04:37 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:04:38 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:04:38 Europe/Berlin] ##############################################
+[11-Aug-2022 21:04:38 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:04:38 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:04:38 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:04:38 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:04:38 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:04:38 Europe/Berlin] ##############################################
+[11-Aug-2022 21:04:38 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:04:38 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:04:38 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:04:46 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:04:46 Europe/Berlin] ##############################################
+[11-Aug-2022 21:04:46 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:04:46 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:04:47 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:04:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:04:47 Europe/Berlin] ##############################################
+[11-Aug-2022 21:04:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:04:47 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:04:47 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:04:47 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:04:47 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:04:47 Europe/Berlin] ##############################################
+[11-Aug-2022 21:04:47 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:04:47 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:04:47 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:05:16 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:05:16 Europe/Berlin] ##############################################
+[11-Aug-2022 21:05:16 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:05:16 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:05:17 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:05:18 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:05:18 Europe/Berlin] ##############################################
+[11-Aug-2022 21:05:18 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:05:18 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:05:18 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:05:18 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:05:18 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:05:18 Europe/Berlin] ##############################################
+[11-Aug-2022 21:05:18 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:05:18 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:05:18 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:05:31 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:05:31 Europe/Berlin] ##############################################
+[11-Aug-2022 21:05:31 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:05:31 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:05:32 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:05:33 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:05:33 Europe/Berlin] ##############################################
+[11-Aug-2022 21:05:33 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:05:33 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:05:33 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:05:33 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:05:33 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:05:33 Europe/Berlin] ##############################################
+[11-Aug-2022 21:05:33 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:05:33 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:05:33 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:05:41 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:05:41 Europe/Berlin] ##############################################
+[11-Aug-2022 21:05:41 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:05:41 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:05:43 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:05:43 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:05:43 Europe/Berlin] ##############################################
+[11-Aug-2022 21:05:43 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:05:43 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:05:43 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:05:43 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:05:43 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:05:43 Europe/Berlin] ##############################################
+[11-Aug-2022 21:05:43 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:05:43 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:05:43 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:05:59 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:05:59 Europe/Berlin] ##############################################
+[11-Aug-2022 21:05:59 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:05:59 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:06:00 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:06:00 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:06:00 Europe/Berlin] ##############################################
+[11-Aug-2022 21:06:00 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:06:00 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:06:00 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:06:00 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:06:00 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:06:00 Europe/Berlin] ##############################################
+[11-Aug-2022 21:06:00 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:06:00 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:06:00 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:06:13 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:06:13 Europe/Berlin] ##############################################
+[11-Aug-2022 21:06:13 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:06:13 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:06:14 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:06:15 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:06:15 Europe/Berlin] ##############################################
+[11-Aug-2022 21:06:15 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:06:15 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:06:15 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:06:15 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:06:15 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:06:15 Europe/Berlin] ##############################################
+[11-Aug-2022 21:06:15 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:06:15 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:06:15 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:06:39 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:06:39 Europe/Berlin] ##############################################
+[11-Aug-2022 21:06:39 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:06:39 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:06:40 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:06:41 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:06:41 Europe/Berlin] ##############################################
+[11-Aug-2022 21:06:41 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:06:41 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:06:41 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:06:41 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:06:41 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:06:41 Europe/Berlin] ##############################################
+[11-Aug-2022 21:06:41 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:06:41 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:06:41 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:06:48 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:06:48 Europe/Berlin] ##############################################
+[11-Aug-2022 21:06:48 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:06:48 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:06:50 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:06:50 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:06:50 Europe/Berlin] ##############################################
+[11-Aug-2022 21:06:50 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:06:50 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:06:50 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:06:50 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:06:50 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:06:50 Europe/Berlin] ##############################################
+[11-Aug-2022 21:06:50 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:06:50 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:06:50 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:07:03 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:07:03 Europe/Berlin] ##############################################
+[11-Aug-2022 21:07:03 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:07:03 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:07:04 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:07:04 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:07:04 Europe/Berlin] ##############################################
+[11-Aug-2022 21:07:04 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:07:04 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:07:04 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:07:04 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:07:04 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:07:04 Europe/Berlin] ##############################################
+[11-Aug-2022 21:07:04 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:07:04 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:07:04 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:07:21 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:07:21 Europe/Berlin] ##############################################
+[11-Aug-2022 21:07:21 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:07:21 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:07:24 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:07:25 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:07:25 Europe/Berlin] ##############################################
+[11-Aug-2022 21:07:25 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:07:25 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:07:25 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:07:25 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:07:25 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:07:25 Europe/Berlin] ##############################################
+[11-Aug-2022 21:07:25 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:07:25 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:07:25 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:07:26 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:07:26 Europe/Berlin] ##############################################
+[11-Aug-2022 21:07:26 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:07:26 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:07:27 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:07:27 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 21:07:28 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:07:28 Europe/Berlin] ##############################################
+[11-Aug-2022 21:07:28 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:07:28 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:07:28 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:07:28 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:07:28 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:07:28 Europe/Berlin] ##############################################
+[11-Aug-2022 21:07:28 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:07:28 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:07:28 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:08:23 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:08:23 Europe/Berlin] ##############################################
+[11-Aug-2022 21:08:23 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:08:23 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:08:24 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:08:24 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 21:08:25 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:08:25 Europe/Berlin] ##############################################
+[11-Aug-2022 21:08:25 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:08:25 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:08:25 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:08:25 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:08:25 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:08:25 Europe/Berlin] ##############################################
+[11-Aug-2022 21:08:25 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:08:25 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:08:25 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:09:27 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:09:27 Europe/Berlin] ##############################################
+[11-Aug-2022 21:09:27 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:09:27 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:09:28 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:09:28 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 21:09:28 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:09:28 Europe/Berlin] ##############################################
+[11-Aug-2022 21:09:28 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:09:28 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:09:28 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:09:28 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:09:28 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:09:28 Europe/Berlin] ##############################################
+[11-Aug-2022 21:09:28 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:09:28 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:09:28 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:09:40 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:09:40 Europe/Berlin] ##############################################
+[11-Aug-2022 21:09:40 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:09:40 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:09:42 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:09:42 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 21:09:42 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:09:42 Europe/Berlin] ##############################################
+[11-Aug-2022 21:09:42 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:09:42 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:09:42 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:09:42 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:09:42 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:09:42 Europe/Berlin] ##############################################
+[11-Aug-2022 21:09:42 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:09:42 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:09:42 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:10:10 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:10:10 Europe/Berlin] ##############################################
+[11-Aug-2022 21:10:10 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:10:10 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:10:11 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:10:11 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 21:10:11 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:10:11 Europe/Berlin] ##############################################
+[11-Aug-2022 21:10:11 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:10:11 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:10:11 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:10:11 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:10:11 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:10:11 Europe/Berlin] ##############################################
+[11-Aug-2022 21:10:11 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:10:11 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:10:11 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:10:15 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:10:15 Europe/Berlin] ##############################################
+[11-Aug-2022 21:10:15 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:10:15 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:10:16 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 21:10:16 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:10:16 Europe/Berlin] ##############################################
+[11-Aug-2022 21:10:16 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:10:16 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:10:16 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:10:16 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:10:16 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:10:16 Europe/Berlin] ##############################################
+[11-Aug-2022 21:10:16 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:10:16 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:10:16 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:10:17 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:10:17 Europe/Berlin] ##############################################
+[11-Aug-2022 21:10:17 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:10:17 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:10:18 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:10:18 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 21:10:19 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:10:19 Europe/Berlin] ##############################################
+[11-Aug-2022 21:10:19 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:10:19 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:10:19 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:10:19 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:10:19 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:10:19 Europe/Berlin] ##############################################
+[11-Aug-2022 21:10:19 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:10:19 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:10:19 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:10:58 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:10:58 Europe/Berlin] ##############################################
+[11-Aug-2022 21:10:58 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:10:58 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:11:00 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:11:00 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 21:11:00 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:11:00 Europe/Berlin] ##############################################
+[11-Aug-2022 21:11:00 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:11:00 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:11:00 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:11:00 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:11:00 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:11:00 Europe/Berlin] ##############################################
+[11-Aug-2022 21:11:00 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:11:00 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:11:00 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:11:42 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:11:42 Europe/Berlin] ##############################################
+[11-Aug-2022 21:11:42 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:11:42 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:11:43 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:11:43 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 21:11:43 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:11:43 Europe/Berlin] ##############################################
+[11-Aug-2022 21:11:43 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:11:43 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:11:43 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:11:43 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:11:43 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:11:43 Europe/Berlin] ##############################################
+[11-Aug-2022 21:11:43 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:11:43 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:11:44 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:12:26 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:12:26 Europe/Berlin] ##############################################
+[11-Aug-2022 21:12:26 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:12:26 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:12:27 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 21:12:27 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:12:27 Europe/Berlin] ##############################################
+[11-Aug-2022 21:12:27 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:12:27 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:12:27 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:12:27 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:12:27 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:12:27 Europe/Berlin] ##############################################
+[11-Aug-2022 21:12:27 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:12:27 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:12:28 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:12:30 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:12:30 Europe/Berlin] ##############################################
+[11-Aug-2022 21:12:30 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:12:30 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:12:30 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:12:30 Europe/Berlin] APP::RENDERIZANDO VISTA -> [storage]
+[11-Aug-2022 21:12:31 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:12:31 Europe/Berlin] ##############################################
+[11-Aug-2022 21:12:31 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:12:31 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:12:31 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:12:31 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:12:31 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:12:31 Europe/Berlin] ##############################################
+[11-Aug-2022 21:12:31 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:12:31 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:12:31 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:12:33 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:12:33 Europe/Berlin] ##############################################
+[11-Aug-2022 21:12:33 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:12:33 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:12:34 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:12:34 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\controllers\storage_controller.php on line 93
+[11-Aug-2022 21:12:34 Europe/Berlin] PHP Warning:  Undefined array key "paginas" in C:\xampp\htdocs\views\admin\storage.php on line 53
+[11-Aug-2022 21:12:34 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\views\admin\storage.php on line 53
+[11-Aug-2022 21:12:34 Europe/Berlin] PHP Warning:  Undefined array key "paginas" in C:\xampp\htdocs\views\admin\storage.php on line 53
+[11-Aug-2022 21:12:34 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\views\admin\storage.php on line 53
+[11-Aug-2022 21:12:34 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:12:34 Europe/Berlin] ##############################################
+[11-Aug-2022 21:12:34 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:12:34 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:12:34 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:12:34 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:12:34 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:12:34 Europe/Berlin] ##############################################
+[11-Aug-2022 21:12:34 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:12:34 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:12:34 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:12:36 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:12:36 Europe/Berlin] ##############################################
+[11-Aug-2022 21:12:36 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:12:36 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:12:37 Europe/Berlin] PHP Warning:  Undefined array key -1 in C:\xampp\htdocs\controllers\storage_controller.php on line 71
+[11-Aug-2022 21:12:37 Europe/Berlin] PHP Warning:  Undefined array key "paginas" in C:\xampp\htdocs\views\admin\storage.php on line 53
+[11-Aug-2022 21:12:37 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\views\admin\storage.php on line 53
+[11-Aug-2022 21:12:37 Europe/Berlin] PHP Warning:  Undefined array key "paginas" in C:\xampp\htdocs\views\admin\storage.php on line 53
+[11-Aug-2022 21:12:37 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\views\admin\storage.php on line 53
+[11-Aug-2022 21:12:37 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:12:37 Europe/Berlin] ##############################################
+[11-Aug-2022 21:12:37 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:12:37 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:12:38 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:12:38 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:12:38 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:12:38 Europe/Berlin] ##############################################
+[11-Aug-2022 21:12:38 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:12:38 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:12:38 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:12:52 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:12:52 Europe/Berlin] ##############################################
+[11-Aug-2022 21:12:52 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:12:52 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:12:52 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]
+[11-Aug-2022 21:12:52 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:12:52 Europe/Berlin] ##############################################
+[11-Aug-2022 21:12:52 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:12:52 Europe/Berlin] APP::CONTROLADOR NO ENCONTRADO.
+[11-Aug-2022 21:12:52 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:12:52 Europe/Berlin] Errores::__construct => CLASE_INSTANCIADA
+[11-Aug-2022 21:12:52 Europe/Berlin] ###########  INICIO DE APLICACION  ###########
+[11-Aug-2022 21:12:52 Europe/Berlin] ##############################################
+[11-Aug-2022 21:12:52 Europe/Berlin] APP::__CONSTRUCT INSTANCIADO.
+[11-Aug-2022 21:12:52 Europe/Berlin] Conexion a BD Exitosa.
+[11-Aug-2022 21:12:52 Europe/Berlin] APP::RENDERIZANDO VISTA -> [admin]

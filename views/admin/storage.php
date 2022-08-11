@@ -33,38 +33,41 @@ require_once "views/includes/navbar.admin.php";
 
     <div class="d-flex">
 
-        <form action="/storage" method="GET">
+        <form action="/storage/caja" method="GET">
             <fieldset>
                 <legend>Busqueda Caja</legend>
-                <label for="">Caja <input type="text" placeholder="Ej: 0001" name="buscarCaja"> </label>
+                <label for="">Caja <input type="text" placeholder="Ej: 0001" name="caja"> </label>
                 <button class="btn btn-primary" type="submit">Buscar</button>
             </fieldset>
         </form>
-        <form action="/storage" method="GET">
+        <form action="/storage/carpeta" method="GET">
             <fieldset>
                 <legend>Busqueda Carpeta</legend>
-                <label for="">Carpeta <input type="text" placeholder="Ej: 0001-0001" name="buscarCarpeta"> </label>
+                <label for="">Carpeta <input type="text" placeholder="Ej: 0001-0001" name="carpeta"> </label>
                 <button class="btn btn-primary" type="submit">Buscar</button>
             </fieldset>
         </form>
     </div>
+
     <hr>
-    <div class="d-flex justify-content-between">
-        <input class="myInput" type="text" id="myInput" onkeyup="buscarCaja();" placeholder="Filtrar caja">
-        <input class="myInput" type="text" id="myInput2" onkeyup="buscarCarpeta();" placeholder="Filtrar carpeta">
+    <?php if($d["paginas"]["paginaActual"]!=$d["paginas"]["numeroCajas"][0]):?>
+    <div class="d-flex justify-content-end">
+        <a class="btn btn-danger" href="/storage">Volver</a>
     </div>
+    <?php endif;?>
     <table id='myTable2' class='table table-success table-striped table-hover table-bordered border-primary'>
 
 
         <thead class='table-dark'>
+            
             <th>N° caja</th>
-            <th>Carpeta</th>
+            <th><input class="myInput" type="text" id="myInput2" onkeyup="buscarCarpeta();" placeholder="Filtrar carpeta"><br>Carpeta</th>
             <th>Archivos</th>
             <th>Descarga</th>
         </thead>
         <tbody>
 
-            <?php if (isset($d)) : ?>
+            <?php if (isset($d["archivos"])) : ?>
                 <?php foreach ($d["archivos"] as $caja) : ?>
                     <tr class='tablaItem'>
                         <td><?php echo $caja[0] ?></td>
@@ -86,19 +89,20 @@ require_once "views/includes/navbar.admin.php";
         </tbody>
     </table>
     <div class="d-flex justify-content-between mb-5">
+        <?php if (isset($d["paginas"])) : ?>
+            <?php if ($d["paginas"]["paginaActual"] != $d["paginas"]["numeroCajas"][0]) : ?>
+                <button><a href="/storage?pagina=<?php echo htmlspecialchars($d["paginas"]["paginaAnterior"]); ?>">←Anterior</a></button>
+            <?php endif; ?>
 
-        <?php if ($d["paginas"]["paginaActual"] != $d["paginas"]["numeroCajas"][0]) : ?>
-            <button><a href="/storage?pagina=<?php echo htmlspecialchars($d["paginas"]["paginaAnterior"]); ?>">←Anterior</a></button>
-        <?php endif; ?>
-
-        <div>
-            <?php
-            for ($i = 0; $i < $d["paginas"]["cantidadPaginas"]; $i++) : ?>
-                <button class='me-2'><a href='/storage?pagina=<?php echo $d["paginas"]["numeroCajas"][$i]; ?>' style='text-decoration:none;'><?php echo $i + 1; ?></a></button>
-            <?php endfor; ?>
-        </div>
-        <?php if ($d["paginas"]["paginaActual"] != $d["paginas"]["numeroCajas"][$d["paginas"]["cantidadPaginas"]-1]) : ?>
-            <button><a href="/storage?pagina=<?php echo htmlspecialchars($d["paginas"]["paginaSiguiente"]); ?>">Siguiente→ </a></button>
+            <div>
+                <?php
+                for ($i = 0; $i < $d["paginas"]["cantidadPaginas"]; $i++) : ?>
+                    <button class='me-2'><a href='/storage?pagina=<?php echo $d["paginas"]["numeroCajas"][$i]; ?>' style='text-decoration:none;'><?php echo $i + 1; ?></a></button>
+                <?php endfor; ?>
+            </div>
+            <?php if ($d["paginas"]["paginaActual"] != $d["paginas"]["numeroCajas"][$d["paginas"]["cantidadPaginas"] - 1]) : ?>
+                <button><a href="/storage?pagina=<?php echo htmlspecialchars($d["paginas"]["paginaSiguiente"]); ?>">Siguiente→ </a></button>
+            <?php endif; ?>
         <?php endif; ?>
 
 
@@ -106,27 +110,6 @@ require_once "views/includes/navbar.admin.php";
     </div>
 </div>
 <script>
-    function buscarCaja() {
-        // Declare variables
-        var input, filter, table, tr, td, i, txtValue;
-        input = document.getElementById("myInput");
-        filter = input.value.toUpperCase();
-        table = document.getElementById("myTable2");
-        tr = table.getElementsByTagName("tr");
-
-        // Loop through all table rows, and hide those who don't match the search query
-        for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[0];
-            if (td) {
-                txtValue = td.textContent || td.innerText;
-                if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    tr[i].style.display = "";
-                } else {
-                    tr[i].style.display = "none";
-                }
-            }
-        }
-    }
 
     function buscarCarpeta() {
         // Declare variables
@@ -150,57 +133,6 @@ require_once "views/includes/navbar.admin.php";
         }
     }
 
-
-
-    function sortTable(n) {
-        var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-        table = document.getElementById("myTable2");
-        switching = true;
-        // Seleccionar una direccion a ordenar: asc:
-        dir = "asc";
-        /* Loop hasta que el switch se apague */
-        while (switching) {
-            // iniciando el validador en false para el bucle
-            switching = false;
-            rows = table.rows;
-            /*Se busca en todas las filas de las tablas exepto en la priemera que es la thead o cabezera */
-            for (i = 1; i < (rows.length - 1); i++) {
-                // Se inicializa el switch apagado nuevamente
-                shouldSwitch = false;
-                /* Se recojen los elementos a comparar para ir iterando */
-                x = rows[i].getElementsByTagName("TD")[n];
-                y = rows[i + 1].getElementsByTagName("TD")[n];
-                /* se valida la direccion de ordenamiento de las tablas segun asc o desc */
-                if (dir == "asc") {
-                    if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-                        //Se activa el switch y se apaga el bucle con el ordenamiento finalizado
-                        shouldSwitch = true;
-                        break;
-                    }
-                } else if (dir == "desc") {
-                    if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-                        shouldSwitch = true;
-                        break;
-                    }
-                }
-            }
-            if (shouldSwitch) {
-                /* If a switch has been marked, make the switch
-                and mark that a switch has been done: */
-                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-                switching = true;
-                // Each time a switch is done, increase this count by 1:
-                switchcount++;
-            } else {
-                /* If no switching has been done AND the direction is "asc",
-                set the direction to "desc" and run the while loop again. */
-                if (switchcount == 0 && dir == "asc") {
-                    dir = "desc";
-                    switching = true;
-                }
-            }
-        }
-    }
 </script>
 
 <?php require_once "views/includes/footer.template.php"; ?>
