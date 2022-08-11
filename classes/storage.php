@@ -52,41 +52,64 @@ class storage
         # $object = $bucket->uploadFile($file, ["name" => $objectName]);
         printf("Uploaded: %s to gs://%s/%s" . PHP_EOL, basename($source), $bucketName, $objectName);
     }
+  
 
-    public function listarObjetos($bucketName)
-    {
-        $bucket = $this->storage->bucket($bucketName);
-        foreach ($bucket->objects() as $object) {
-            # code...
-            printf("Object: %s <br>", $object->name());
-        }
-    }
-    public function listaNombreObjetos($bucketName)
+    public function listaNombreObjetos()
     {
         $datos = array();
-        $bucket = $this->storage->bucket($bucketName);
+        $bucket = $this->storage->bucket("pdf-curricular");
         foreach ($bucket->objects() as $object) {
             array_push($datos, $object->name());
         }
         return $datos;
     }
-    public function test1()
+    public function contarDatosDelBucket()
+    {
+
+        $datos = array();
+        $bucket = $this->storage->bucket("pdf-curricular");
+        $i = 0;
+        foreach ($bucket->objects() as $object) {
+            $i++;
+        }
+        return $i;
+    }
+    //////////////////////////////////
+
+    public function arrayDeCajas($cajaParam)
     {
         
-        $datos = $this->listaNombreObjetos("pdf-curricular");
-        $lista = array();
-        foreach ($datos as $dato) {
-            $listaPalabra = explode("/", $dato);
-            array_push($lista, $listaPalabra);
+        $aux = array();
+        foreach ($datos = $this->arrObjetos() as $dato) {
+            $arr = explode("/", $dato->name());
+            if ($cajaParam === $arr[0]) {
+                array_push($aux, $dato);
+            }
+        }
+        if (count($aux) === 0) {
+            return NULL;
         }
 
-       
+        return $aux;
+    }
+    public function arrayDeCajasSiguiente($param)
+    {
+        $elementos = array();
+        $buckets = $this->storage->bucket("pdf-curricular")->objects();
+        $cajaAnterior = intval($param);
+        $aux = NULL;
+        foreach ($buckets as $object) {
 
-
-        // echo "<pre>";
-        // print_r($lista);
-        // echo "</pre>";
-
+            $palabras = explode("/", $object->name());
+            if((intval($palabras[0]) > $cajaAnterior) && $aux === NULL){
+                $aux = $palabras[0];
+            }
+            
+            if (intval($palabras[0]) > $cajaAnterior && intval($palabras[0]) < $aux) {
+                array_push($elementos, $object);
+            }
+        }
+        return $elementos;
     }
     public function arrObjetos()
     {

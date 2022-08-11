@@ -52,7 +52,7 @@ require "views/includes/navbar.admin.php";
                 <img src="https://www.svgrepo.com/show/286737/update-repeat.svg" class="card-img-top mx-auto" alt="..." style="max-width: 200px;">
                 <div class="card-body">
                     <h5 class="card-title">Actualizar informacion</h5>
-                    <p class="card-text">El modulo actualizar esta destinado para modificar toda la informacion sobre un titulado.</p>
+                    <p class="card-text">El modulo actualizar esta destinado para modificar y buscar toda la informacion sobre un titulado.</p>
                 </div>
                 <div class="d-grid">
 

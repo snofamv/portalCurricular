@@ -2,43 +2,76 @@
 require_once "classes/storage.php";
 class StorageController extends SessionController
 {
-    private $caja;
-    private $carpeta;
-    private $pagina_inicial;
-    private $resultadosPorPagina  = 100;
-    private $empezar_desde;
-    private $total_datos;
-    private $totalPaginas;
+    private $storage;
+    private $cajas;
+    private $paginaActual;
+    private $paginaSiguiente;
+    private $paginaAnterior;
+    //Variables de la paginacion
 
     public function __construct()
     {
         parent::__construct();
-        $this->pagina_inicial = isset($_GET["pagina"]) ? $_GET["pagina"] : 1;
-        $this->empezar_desde = ($this->pagina_inicial - 1) * $this->resultadosPorPagina;
+        $this->storage = new storage();
+        $this->paginaActual = isset($_GET["pagina"]) ? $_GET["pagina"] : "033";
+        $this->total_paginas = 0;
+        $this->cajas = $this->paginacionPorCajas();
+        $this->paginaAnterior = $this->antPag();
+        $this->paginaSiguiente = $this->sigPag();
+    }
+    private function sigPag()
+    {
+        $pagActual = intval($this->getPaginaActual());
+        foreach ($this->getCajas() as $caja) {
+            if (intval($caja) > $pagActual) {
+                return $caja;
+            }
+        }
+    }
+    private function antPag()
+    {
+        $paginaActual = $this->paginaActual; //pagina actual 046
+        $arrAux = array();
+        $aux = 0;
+        foreach ($this->cajas as $nCaja) { //todas las cajas
+            $aux = intval($nCaja); //numero de la caja 046
+            if (intval($nCaja) < intval($paginaActual)) { //? 033 > 046 ? FALSE
+                array_push($arrAux, $nCaja); //guarda el valor si es menor a la pagina actual 
+            }
+        }
+        //Una vez guardados las paginas menores se evaluara cual es la anterior
+        $tamanio = sizeof($arrAux);
+        return $arrAux[$tamanio - 1];
+    }
+    private function paginacionPorCajas()
+    {
+        $arrCajas = array();
+        foreach ($this->storage->listaNombreObjetos() as $dato) {
+            $aux = NULL; //aqui va el valor anterior
+            $palabras = explode("/", $dato);
+
+            if (intval($palabras[0]) > $this->caja) {
+                $aux = $this->caja; //valor anterior al auxiliar 033
+                $this->caja = $palabras[0]; //valor nuevo 035
+                array_push($arrCajas, $palabras[0]);
+            }
+        }
+
+        return $arrCajas;
     }
 
-    public function calcularPaginasBuckets()
-    {
-        $this->total_datos = 1;
-        $this->totalPaginas = ceil($this->total_datos / $this->resultadosPorPagina) + 2;
-    }
-    public function getDatos($empezar_desde, $resultadosPorPagina)
-    {
-       
-    }
+
     public function render()
     {
         if ($this->existsGET(["buscarCaja"])) {
-            $storage = new storage();
-            $d = $this->separarCaracteres($storage->buscarCaja($this->getGET("buscarCaja")));
+            $d = $this->separarCaracteres($this->storage->buscarCaja($this->getGET("buscarCaja")));
             if ($d != NULL) {
                 $this->vista->render("admin/storage", $d);
             } else {
                 $this->redirect("storage", ["error" => ErrorMessages::ERROR_STORAGE_BUSCAR_CAJA]);
             }
         } elseif ($this->existsGET(["buscarCarpeta"])) {
-            $storage = new storage();
-            $d = $this->separarCaracteres($storage->buscarCarpeta($this->getGET("buscarCarpeta")));
+            $d = $this->separarCaracteres($this->storage->buscarCarpeta($this->getGET("buscarCarpeta")));
             if ($d != NULL) {
                 $this->vista->render("admin/storage", $d);
             } else {
@@ -47,11 +80,13 @@ class StorageController extends SessionController
         } elseif ($this->existsGET(["descargarArchivo"])) {
             $this->descargar();
         } else {
-            $storage = new storage();
-            $d = $this->separarCaracteres($storage->arrObjetos());
+
+            $d["archivos"] = $this->separarCaracteres($this->storage->arrayDeCajas($this->paginaActual));
+            $d["paginas"] = array("paginaActual" => $this->getPaginaActual(), "paginaAnterior" => $this->getPaginaAnterior(), "paginaSiguiente" => $this->getPaginaSiguiente(), "cantidadPaginas" => count($this->getCajas()), "numeroCajas" => $this->getCajas());
             $this->vista->render("admin/storage", $d);
         }
     }
+
     private function separarCaracteres($arr)
     {
         if (isset($arr["error"])) {
@@ -66,9 +101,9 @@ class StorageController extends SessionController
     }
     public function descargar()
     {
-        $storage = new storage();
+        $this->storage = new storage();
         $archivo = explode("/", $this->getGET("descargarArchivo"));
-        if ($storage->descargarobjecto($archivo[0], $archivo[1], $archivo[2], "C:\\Users\\DESKTOP\\Downloads")) {
+        if ($this->storage->descargarobjecto($archivo[0], $archivo[1], $archivo[2], "C:\\Users\\DESKTOP\\Downloads")) {
             $this->redirect("storage", ["success" => SuccessMessages::SUCCESS_STORAGE_DESCARGAR_DOCUMENTO]);
         } else {
             $this->redirect("storage", ["success" => ErrorMessages::ERROR_STORAGE_DESCARGAR_DOCUMENTO]);
@@ -78,128 +113,75 @@ class StorageController extends SessionController
 
 
     // METODOS
+
     /**
-     * Get the value of caja
+     * Get the value of cajas
      */
-    public function getCaja()
+    public function getCajas()
     {
-        return $this->caja;
+        return $this->cajas;
     }
 
     /**
-     * Set the value of caja
+     * Set the value of cajas
      */
-    public function setCaja($caja): self
+    public function setCajas($cajas): self
     {
-        $this->caja = $caja;
+        $this->cajas = $cajas;
 
         return $this;
     }
 
     /**
-     * Get the value of carpeta
+     * Get the value of paginaActual
      */
-    public function getCarpeta()
+    public function getPaginaActual()
     {
-        return $this->carpeta;
+        return $this->paginaActual;
     }
 
     /**
-     * Set the value of carpeta
+     * Set the value of paginaActual
      */
-    public function setCarpeta($carpeta): self
+    public function setPaginaActual($paginaActual): self
     {
-        $this->carpeta = $carpeta;
+        $this->paginaActual = $paginaActual;
 
         return $this;
     }
 
     /**
-     * Get the value of pagina_inicial
+     * Get the value of paginaSiguiente
      */
-    public function getPaginaInicial()
+    public function getPaginaSiguiente()
     {
-        return $this->pagina_inicial;
+        return $this->paginaSiguiente;
     }
 
     /**
-     * Set the value of pagina_inicial
+     * Set the value of paginaSiguiente
      */
-    public function setPaginaInicial($pagina_inicial): self
+    public function setPaginaSiguiente($paginaSiguiente): self
     {
-        $this->pagina_inicial = $pagina_inicial;
+        $this->paginaSiguiente = $paginaSiguiente;
 
         return $this;
     }
 
     /**
-     * Get the value of resultadosPorPagina
+     * Get the value of paginaAnterior
      */
-    public function getResultadosPorPagina()
+    public function getPaginaAnterior()
     {
-        return $this->resultadosPorPagina;
+        return $this->paginaAnterior;
     }
 
     /**
-     * Set the value of resultadosPorPagina
+     * Set the value of paginaAnterior
      */
-    public function setResultadosPorPagina($resultadosPorPagina): self
+    public function setPaginaAnterior($paginaAnterior): self
     {
-        $this->resultadosPorPagina = $resultadosPorPagina;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of empezar_desde
-     */
-    public function getEmpezarDesde()
-    {
-        return $this->empezar_desde;
-    }
-
-    /**
-     * Set the value of empezar_desde
-     */
-    public function setEmpezarDesde($empezar_desde): self
-    {
-        $this->empezar_desde = $empezar_desde;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of total_datos
-     */
-    public function getTotalDatos()
-    {
-        return $this->total_datos;
-    }
-
-    /**
-     * Set the value of total_datos
-     */
-    public function setTotalDatos($total_datos): self
-    {
-        $this->total_datos = $total_datos;
-
-        return $this;
-    }
-
-    /**
-     * Get the value of totalPaginas
-     */
-    public function getTotalPaginas()
-    {
-        return $this->totalPaginas;
-    }
-
-    /**
-     * Set the value of totalPaginas
-     */
-    public function setTotalPaginas($totalPaginas): self
-    {
-        $this->totalPaginas = $totalPaginas;
+        $this->paginaAnterior = $paginaAnterior;
 
         return $this;
     }

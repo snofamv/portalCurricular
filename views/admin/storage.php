@@ -1,7 +1,5 @@
 <?php
-
 require_once "views/includes/navbar.admin.php";
-
 ?>
 
 <div class="container mt-5">
@@ -32,6 +30,7 @@ require_once "views/includes/navbar.admin.php";
         <?php endif; ?>
 
     </span class="h3">
+
     <div class="d-flex">
 
         <form action="/storage" method="GET">
@@ -63,10 +62,10 @@ require_once "views/includes/navbar.admin.php";
             <th>Archivos</th>
             <th>Descarga</th>
         </thead>
-        <tbody> 
+        <tbody>
 
             <?php if (isset($d)) : ?>
-                <?php foreach ($d as $caja) : ?>
+                <?php foreach ($d["archivos"] as $caja) : ?>
                     <tr class='tablaItem'>
                         <td><?php echo $caja[0] ?></td>
                         <td><?php echo $caja[1] ?></td>
@@ -87,21 +86,23 @@ require_once "views/includes/navbar.admin.php";
         </tbody>
     </table>
     <div class="d-flex justify-content-between mb-5">
-        <?php $pagina_actual = isset($_GET["pagina"]) ? $_GET["pagina"] : 1; ?>
 
-        <?php if ($pagina_actual < 20 && $pagina_actual > 1) : ?>
-            <button><a href="/storage?pagina=<?php echo htmlspecialchars($pagina_actual - 1); ?>">←Anterior</a></button>
+        <?php if ($d["paginas"]["paginaActual"] != $d["paginas"]["numeroCajas"][0]) : ?>
+            <button><a href="/storage?pagina=<?php echo htmlspecialchars($d["paginas"]["paginaAnterior"]); ?>">←Anterior</a></button>
         <?php endif; ?>
 
         <div>
-            <?php for ($i = 1; $i < 20; $i++) : ?>
-                <button class='me-2'><a href='/storage?pagina=<?php echo $i; ?>' style='text-decoration:none;'><?php echo $i; ?></a></button>
+            <?php
+            for ($i = 0; $i < $d["paginas"]["cantidadPaginas"]; $i++) : ?>
+                <button class='me-2'><a href='/storage?pagina=<?php echo $d["paginas"]["numeroCajas"][$i]; ?>' style='text-decoration:none;'><?php echo $i + 1; ?></a></button>
             <?php endfor; ?>
         </div>
-
-        <?php if ($pagina_actual < 20) : ?>
-            <button><a href="/storage?pagina=<?php echo htmlspecialchars($pagina_actual + 1); ?>">Siguiente→ </a></button>
+        <?php if ($d["paginas"]["paginaActual"] != $d["paginas"]["numeroCajas"][$d["paginas"]["cantidadPaginas"]-1]) : ?>
+            <button><a href="/storage?pagina=<?php echo htmlspecialchars($d["paginas"]["paginaSiguiente"]); ?>">Siguiente→ </a></button>
         <?php endif; ?>
+
+
+
     </div>
 </div>
 <script>

@@ -180,14 +180,14 @@ class AlumnoModel extends Model
             return false;
         }
     }
-    public function update($rutParam = null)
+    public function update($rutBuscar = NULL)
     {
         try {
-            if(isset($rutParam)){
+            if($rutBuscar != NULL){
 
-            $query = $this->prepare("UPDATE data SET pre_cod=:precodigo, rut=:newRut, codigo=:codigo, nom=:nom, ape=:ape, sede=:sede, carrera=:carrera WHERE rut=:oldRut");
-            $query->bindParam(":oldRut",  $this->rut);
-            $query->bindParam(":newRut",  $rutParam);
+            $query = $this->prepare("UPDATE data SET pre_cod=:precodigo, rut=:newRut, codigo=:codigo, nom=:nom, ape=:ape, sede=:sede, carrera=:carrera WHERE rut=:rut");
+            $query->bindParam(":newRut",  $this->rut);
+            $query->bindParam(":rut",  $rutBuscar);
             $query->bindParam(":precodigo",  $this->pre_codigo);
             $query->bindParam(":codigo",  $this->codigo);
             $query->bindParam(":nom",  $this->nombres);

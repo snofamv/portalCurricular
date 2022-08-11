@@ -11,8 +11,6 @@ class PaginacionModel extends Model
     public function __construct()
     {
         parent::__construct();
-        $this->pagina_inicial = isset($_GET["pagina"]) ? $_GET["pagina"] : 1;
-        $this->empezar_desde = ($this->pagina_inicial - 1) * $this->resultadosPorPagina;
     }
 
     public function calcularPaginasLista()
