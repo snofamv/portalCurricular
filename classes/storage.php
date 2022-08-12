@@ -170,7 +170,9 @@ class storage
     {
         $bucket = $this->storage->bucket("pdf-curricular");
         $object = $bucket->object("$carpeta/$subcarpeta/$objectName");
-        if ($object->downloadToFile("$destination\\$carpeta-$subcarpeta-$objectName")) {
+        if ($object->downloadToFile("$destination\\$carpeta-$subcarpeta-$objectName",[
+            'shouldSignRequest' => false,
+        ])) {
             return true;
         } else {
             return false;
