@@ -5,7 +5,7 @@ use Google\Cloud\Storage\StorageClient;
 
 class storage
 {
-    private $projectId;
+    private $projectId = "archivoscurricular";
     private $storage;
     private $arrayCajas;
 
