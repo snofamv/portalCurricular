@@ -9,7 +9,9 @@ class AgregarController extends SessionController
     public function render()
     {
         $this->cargarModelo("alumno");
-        $this->vista->render("panel/agregar", $d = $this->modelo->getCarreras());
+        $d["carreras"] = $this->modelo->getCarreras();
+        $d["sedes"] = $this->modelo->getSedes();
+        $this->vista->render("panel/agregar", $d);
     }
 
 
@@ -17,17 +19,17 @@ class AgregarController extends SessionController
     {
         $this->cargarModelo("alumno");
         if ($this->existsPOST(['codigo', 'rut', 'nombres', 'apellidos', 'sedes', 'carreras'])) {
-            $codigos = explode("-",$this->getPOST("codigo"));
+            $codigos = explode("-", $this->getPOST("codigo"));
             $precodigo = $codigos[0];
             $codigo = $codigos[1];
-            $this->modelo->setCodigo($codigo);
-            $this->modelo->setPreCodigo($precodigo);
-            $this->modelo->setRut($this->getPOST("rut"));
-            $this->modelo->setNombres($this->getPOST("nombres"));
-            $this->modelo->setApellidos($this->getPOST("apellidos"));
-            $this->modelo->setSede($this->getPOST("sedes"));
-            $this->modelo->setCarrera($this->getPOST("carreras"));
-            if ($this->modelo->existeAlumno($this->getPOST("rut")) === FALSE) {
+            if ($this->modelo->existeAlumno($this->getPOST("rut"), $codigo) === FALSE) {
+                $this->modelo->setCodigo($codigo);
+                $this->modelo->setPreCodigo($precodigo);
+                $this->modelo->setRut($this->getPOST("rut"));
+                $this->modelo->setNombres($this->getPOST("nombres"));
+                $this->modelo->setApellidos($this->getPOST("apellidos"));
+                $this->modelo->setSede($this->getPOST("sedes"));
+                $this->modelo->setCarrera($this->getPOST("carreras"));
                 if ($this->modelo->save()) {
                     $this->redirect("agregar", ["success" => SuccessMessages::SUCCESS_REGISTRO_NUEVOALUMNO]);
                 } else {

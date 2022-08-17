@@ -1,7 +1,8 @@
 <?php
+require_once "classes/storage.php";
 class AdminController extends SessionController
 {
-   
+
     public function __construct()
     {
         parent::__construct();
@@ -11,21 +12,15 @@ class AdminController extends SessionController
     {
         $this->vista->render("admin/index", []);
     }
-      
-    public function storage()
+    public function registro()
     {
-
-        $this->vista->render("admin/storage", []);
+        $this->vista->render("admin/registro", []);
     }
     public function opciones()
     {
         $this->vista->render("admin/opciones", []);
     }
-    
-    public function pdf()
-    {
-        $this->vista->render("admin/pdf", []);
-    }
+
     public function activarUsuario()
     {
         $this->cargarModelo("usuario");

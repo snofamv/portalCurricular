@@ -1,6 +1,5 @@
 <?php
-require_once "models/alumno_interface.php";
-class AlumnoModel extends Model implements AlumnoInterface
+class AlumnoModel extends Model
 {
     //class atributos
     private $codigo;
@@ -14,13 +13,13 @@ class AlumnoModel extends Model implements AlumnoInterface
     public function __construct()
     {
         parent::__construct();
-        $this->codigo = "";
-        $this->pre_codigo = "";
+        $this->codigo = 0;
+        $this->pre_codigo = 0;
+        $this->rut = "";
         $this->nombres = "";
         $this->apellidos = "";
-        $this->sede = "";
-        $this->carrera = "";
-        $this->rut = "";
+        $this->sede = 0;
+        $this->carrera = 0;
     }
 
     public function getCarreras()
@@ -33,6 +32,19 @@ class AlumnoModel extends Model implements AlumnoInterface
             }
             return $items;
         } catch (PDOException $th) {
+            error_log("ALUMNO::MODELO => METODO_GETCARRERAS::PDOException => " . $th->getMessage());
+        }
+    }
+    public function getSedes()
+    {
+        $items = array();
+        try {
+            $query = parent::query("SELECT * FROM sedes");
+            while ($p = $query->fetch(PDO::FETCH_ASSOC)) {
+                array_push($items, $p);
+            }
+            return $items;
+        } catch (PDOException $th) {
             error_log("ALUMNO::MODELO => METODO_GETSEDES::PDOException => " . $th->getMessage());
         }
     }
@@ -40,7 +52,7 @@ class AlumnoModel extends Model implements AlumnoInterface
     {
         $items = array();
         try {
-            $query = parent::query("SELECT * FROM `data` ORDER BY codigo DESC");
+            $query = parent::query("SELECT  (carreras.carrera, sedes.sede, data.pre_cod, data.codigo, data.nom, data.ape, data.rut) FROM data JOIN carreras ON carreras.id = data.carrera JOIN sedes ON sedes.id = data.sede ORDER BY codigo DESC");
             while ($p = $query->fetch(PDO::FETCH_ASSOC)) {
                 $objeto = new AlumnoModel();
                 $objeto->setRut($p["rut"]);
@@ -58,10 +70,30 @@ class AlumnoModel extends Model implements AlumnoInterface
             error_log("ALUMNO::MODELO => METODO_GETALL::PDOException => " . $th->getMessage());
         }
     }
+    public function getTituladoRut($rut)
+    {
+        try {
+            $query = $this->prepare("SELECT data.pre_cod, data.codigo, data.nom, data.ape, carreras.carrera, sedes.sede, data.rut FROM data JOIN carreras ON carreras.id = data.carrera JOIN sedes ON sedes.id = data.sede WHERE rut=:rut");
+            $query->bindParam(":rut", $rut);
+            $query->execute();
+            $alumno = $query->fetch(PDO::FETCH_ASSOC);
+            //set data object
+            $this->setCodigo($alumno["codigo"]);
+            $this->setPreCodigo($alumno["pre_cod"]);
+            $this->setRut($alumno["rut"]);
+            $this->setNombres($alumno["nom"]);
+            $this->setApellidos($alumno["ape"]);
+            $this->setSede($alumno["sede"]);
+            $this->setCarrera($alumno["carrera"]);
+            return $this;
+        } catch (PDOException $th) {
+            error_log("ALUMNO::MODELO => METODO_GetByRut::PDOException => " . $th->getMessage());
+        }
+    }
     public function get($rut)
     {
         try {
-            $query = $this->prepare("SELECT * FROM data WHERE rut=:rut");
+            $query = $this->prepare("SELECT data.pre_cod, data.codigo, data.nom, data.ape, data.carrera, data.sede, data.rut FROM data WHERE rut=:rut");
             $query->bindParam(":rut", $rut);
             $query->execute();
             $alumno = $query->fetch(PDO::FETCH_ASSOC);
@@ -82,7 +114,10 @@ class AlumnoModel extends Model implements AlumnoInterface
     {
         $items = array();
         try {
-            $query = $this->query("SELECT * FROM data WHERE sede LIKE '%$sede%'");
+            $query = $this->query("SELECT data.pre_cod, data.codigo, data.nom, data.ape, carreras.carrera, sedes.sede, data.rut FROM data 
+            JOIN carreras ON carreras.id = data.carrera 
+            JOIN sedes ON sedes.id = data.sede 
+            WHERE sedes.sede LIKE '%$sede%'");
             while ($p = $query->fetch(PDO::FETCH_ASSOC)) {
                 $objeto = new AlumnoModel();
                 $objeto->setRut($p["rut"]);
@@ -104,7 +139,10 @@ class AlumnoModel extends Model implements AlumnoInterface
     {
         $items = array();
         try {
-            $query = $this->query("SELECT * FROM data WHERE carrera LIKE '%$carrera%'");
+            $query = $this->query("SELECT data.pre_cod, data.codigo, data.nom, data.ape, carreras.carrera, sedes.sede, data.rut FROM data 
+            JOIN carreras ON carreras.id = data.carrera 
+            JOIN sedes ON sedes.id = data.sede
+            WHERE carreras.carrera LIKE '%$carrera%'");
             while ($p = $query->fetch(PDO::FETCH_ASSOC)) {
                 $objeto = new AlumnoModel();
                 $objeto->setRut($p["rut"]);
@@ -126,7 +164,7 @@ class AlumnoModel extends Model implements AlumnoInterface
     public function save()
     {
         try {
-            $query = $this->prepare("INSERT INTO data values(null, :precod, :codigo, :nom, :ape, :sede, :carrera, :rut)");
+            $query = $this->prepare("INSERT INTO data (codigo, rut, pre_cod, nom, ape, sede, carrera) VALUES(:codigo, :rut ,:precod, :nom, :ape, :sede, :carrera);");
             $query->execute([
                 ":precod" => $this->getPreCodigo(),
                 ":codigo" => $this->getCodigo(),
@@ -142,9 +180,23 @@ class AlumnoModel extends Model implements AlumnoInterface
             return false;
         }
     }
-    public function update()
+    public function update($rutBuscar = NULL)
     {
         try {
+            if($rutBuscar != NULL){
+
+            $query = $this->prepare("UPDATE data SET pre_cod=:precodigo, rut=:newRut, codigo=:codigo, nom=:nom, ape=:ape, sede=:sede, carrera=:carrera WHERE rut=:rut");
+            $query->bindParam(":newRut",  $this->rut);
+            $query->bindParam(":rut",  $rutBuscar);
+            $query->bindParam(":precodigo",  $this->pre_codigo);
+            $query->bindParam(":codigo",  $this->codigo);
+            $query->bindParam(":nom",  $this->nombres);
+            $query->bindParam(":ape",  $this->apellidos);
+            $query->bindParam(":sede",  $this->sede);
+            $query->bindParam(":carrera",  $this->carrera);
+            $query->execute();
+            return true;
+        }else{
             $query = $this->prepare("UPDATE data SET pre_cod=:precodigo, codigo=:codigo, nom=:nom, ape=:ape, sede=:sede, carrera=:carrera WHERE rut=:rut");
             $query->bindParam(":rut",  $this->rut);
             $query->bindParam(":precodigo",  $this->pre_codigo);
@@ -154,15 +206,9 @@ class AlumnoModel extends Model implements AlumnoInterface
             $query->bindParam(":sede",  $this->sede);
             $query->bindParam(":carrera",  $this->carrera);
             $query->execute();
-            // $alumno = $query->fetch(PDO::FETCH_ASSOC);
-            // //set data object
-            // $this->setRut($alumno["rut"]);
-            // $this->setCodigo($alumno["codigo"]);
-            // $this->setNombres($alumno["nombres"]);
-            // $this->setApellidos($alumno["apellidos"]);
-            // $this->setSede($alumno["sede"]);
-            // $this->setCarrera($alumno["carrera"]);
             return true;
+        }
+
         } catch (PDOException $th) {
             error_log("ALUMNO::MODELO => METODO_GETActualizarDato::PDOException => " . $th->getMessage());
             return false;
@@ -200,11 +246,13 @@ class AlumnoModel extends Model implements AlumnoInterface
             "carrera" => $this->getCarrera()
         );
     }
-    public function existeAlumno($rut)
+    public function existeAlumno($rut, $codigo)
     {
         try {
-            $query = $this->prepare("SELECT * FROM data WHERE rut=:rut");
-            $query->execute([":rut" => $rut]);
+            $query = $this->prepare("SELECT * FROM data WHERE rut=:rut and codigo=:codigo");
+            $query->bindParam(":rut",$rut);
+            $query->bindParam(":codigo", $codigo);
+            $query->execute();
             if ($query->rowCount() > 0) {
                 return true;
             } else {

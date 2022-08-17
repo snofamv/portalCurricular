@@ -27,6 +27,9 @@ class ErrorMessages
     const ERROR_DESACTIVACION_USUARIO = "886987K12154ññlpo12qu87p0LLL01576" ;
     const ERROR_ACTIVACION_USUARIO = "886987K12154ññlpo12qu098popL01576" ;
     const ERROR_CAMBIO_USUARIO_ROL = "886987K1216666opLo12qu098popL01576" ;
+    const ERROR_STORAGE_BUSCAR_CAJA = "5845kk12345ñL12347u1hhhyyqi8215OO8cd" ;
+    const ERROR_STORAGE_BUSCAR_CARPETA = "5845kk12345ñ54888785K121PPPO1cd" ;
+    const ERROR_STORAGE_DESCARGAR_DOCUMENTO = "5845kk12345ñLK545878pppo215OO8cd" ;
     private $errorList = array();
 
     function __construct()
@@ -57,6 +60,9 @@ class ErrorMessages
             ErrorMessages::ERROR_DESACTIVACION_USUARIO => "Error, no se pudo desactivar el usuario.",
             ErrorMessages::ERROR_ACTIVACION_USUARIO => "Error, no se pudo activar el usuario.",
             ErrorMessages::ERROR_CAMBIO_USUARIO_ROL => "Error, no se pudo cambiar el rol de usuario.",
+            ErrorMessages::ERROR_STORAGE_BUSCAR_CAJA => "Error, no se pudo encontrar la caja solicitada.",
+            ErrorMessages::ERROR_STORAGE_BUSCAR_CARPETA => "Error, no se pudo encontrar la carpeta solicitada.",
+            ErrorMessages::ERROR_STORAGE_DESCARGAR_DOCUMENTO => "Error, no se pudo descargar el documento solicitada.",
         ];
     }
 

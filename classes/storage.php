@@ -1,12 +1,14 @@
 <?php
-require "classes/vendor/autoload.php";
+require "classes/google/autoload.php";
 
 use Google\Cloud\Storage\StorageClient;
 
 class storage
 {
-    private $projectId;
+    private $projectId = "archivoscurricular";
+    private $bucketId = "pdf-curricular";
     private $storage;
+    private $arrayCajas;
 
     public function __construct()
     {
@@ -48,17 +50,107 @@ class storage
         $storage = new StorageClient();
         $file = fopen($source, "r");
         $bucket = $storage->bucket($bucketName);
-        $object = $bucket->uploadFIle($file, ["name" => $objectName]);
+        # $object = $bucket->uploadFile($file, ["name" => $objectName]);
         printf("Uploaded: %s to gs://%s/%s" . PHP_EOL, basename($source), $bucketName, $objectName);
     }
 
-    public function listarObjetos($bucketName)
+
+    public function listaNombreObjetos()
     {
-        $bucket = $this->storage->bucket($bucketName);
+        $datos = array();
+        $bucket = $this->storage->bucket($this->bucketId);
         foreach ($bucket->objects() as $object) {
-            # code...
-            printf("Object: %s" . PHP_EOL, $object->name());
+            array_push($datos, $object->name());
         }
+        return $datos;
+    }
+    public function contarDatosDelBucket()
+    {
+
+        $datos = array();
+        $bucket = $this->storage->bucket($this->bucketId);
+        $i = 0;
+        foreach ($bucket->objects() as $object) {
+            $i++;
+        }
+        return $i;
+    }
+    //////////////////////////////////
+
+    public function arrayDeCajas($cajaParam)
+    {
+
+        $aux = array();
+        foreach ($datos = $this->arrObjetos() as $dato) {
+            $arr = explode("/", $dato->name());
+            if ($cajaParam === $arr[0]) {
+                array_push($aux, $dato);
+            }
+        }
+        if (count($aux) === 0) {
+            return NULL;
+        }
+
+        return $aux;
+    }
+    public function arrayDeCajasSiguiente($param)
+    {
+        $elementos = array();
+        $buckets = $this->storage->bucket($this->bucketId)->objects();
+        $cajaAnterior = intval($param);
+        $aux = NULL;
+        foreach ($buckets as $object) {
+
+            $palabras = explode("/", $object->name());
+            if ((intval($palabras[0]) > $cajaAnterior) && $aux === NULL) {
+                $aux = $palabras[0];
+            }
+
+            if (intval($palabras[0]) > $cajaAnterior && intval($palabras[0]) < $aux) {
+                array_push($elementos, $object);
+            }
+        }
+        return $elementos;
+    }
+    public function arrObjetos()
+    {
+        $datos = array();
+        $bucket = $this->storage->bucket($this->bucketId);
+        foreach ($bucket->objects() as $object) {
+            array_push($datos, $object);
+        }
+        return $datos;
+    }
+
+
+    public function buscarCarpeta($carpetaParam)
+    {
+        $aux = array();
+        foreach ($datos = $this->arrObjetos() as $dato) {
+            $arr = explode("/", $dato->name());
+            if ($carpetaParam === $arr[1]) {
+                array_push($aux, $dato);
+            }
+        }
+        if (count($aux) === 0) {
+            return NULL;
+        }
+        return $aux;
+    }
+    public function buscarCaja($cajaParam)
+    {
+        $aux = array();
+        foreach ($datos = $this->arrObjetos() as $dato) {
+            $arr = explode("/", $dato->name());
+            if ($cajaParam === $arr[0]) {
+                array_push($aux, $dato);
+            }
+        }
+        if (count($aux) === 0) {
+            return NULL;
+        }
+
+        return $aux;
     }
     public function eliminarObjeto($bucketName, $objectName, $options = [])
     {
@@ -68,18 +160,40 @@ class storage
         printf("Deleted object: gs//%s/%s" . PHP_EOL, $bucketName, $objectName);
     }
 
-    public function eliminarBucket($bucketName){
+    public function eliminarBucket($bucketName)
+    {
         $bucket = $this->storage->bucket($bucketName);
         $bucket->delete();
         printf("Bucket deleted: gc://%s", $bucketName);
     }
 
-    public function descargarobjecto($bucketName, $objectName, $destination){
-        $bucket = $this->storage->bucket($bucketName);
-        $object = $bucket->object($objectName);
-        $object->downloadToFile($destination);
-        printf("Downloaded GS://%s/%s to %s".PHP_EOL, $bucketName, $objectName, basename($destination));
+    public function descargarobjecto($carpeta, $subcarpeta, $objectName, $destination)
+    {
+        $bucket = $this->storage->bucket($this->bucketId);
+        $object = $bucket->object("$carpeta/$subcarpeta/$objectName");
+        if ($object->downloadToFile("$destination\\$carpeta-$subcarpeta-$objectName")) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
 
+    /**
+     * Get the value of storage
+     */
+    public function getStorage()
+    {
+        return $this->storage;
+    }
 
+    /**
+     * Set the value of storage
+     */
+    public function setStorage($storage): self
+    {
+        $this->storage = $storage;
+
+        return $this;
     }
 }

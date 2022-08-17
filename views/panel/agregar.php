@@ -70,11 +70,11 @@ require "views/includes/navbar.user.php";
                     <label class="m-2" for="sedes" style="color:#FFFFFF;">Sede</label>
                     <select class="form-select" name="sedes" id="sedes">
                         <option selected disabled hidden>Selecciona una sede</option>
-                        <option value="La Calera">La Calera</option>
-                        <option value="Viña del Mar">Viña del Mar</option>
-                        <option value="Valparaiso">Valparaiso</option>
-                        <option value="Quillota">Quillota</option>
-                        <option value="Limache">Limache</option>
+                        <?php
+                            foreach ($d['sedes'] as $sedes) {
+                                echo "<option value='$sedes[id]'>$sedes[sede]</option>";
+                            }
+                            ?>
                     </select>
                 </div>
 
@@ -83,11 +83,12 @@ require "views/includes/navbar.user.php";
                     <label class="label m-2" for="carreras"  style="color:#FFFFFF;">Carrera</label>
                     <select class="form-select" name="carreras" id="carreras">
                         <option selected disabled hidden>Selecciona una carrera</option>
-                        <?php 
-                            foreach ($d as $sede) {
-                                echo "<option value='".$sede['carrera']."'>".$sede['carrera']."</option>";
+                        <?php
+                            foreach ($d['carreras'] as $carrera) {
+
+                                echo "<option value='$carrera[id]'>$carrera[carrera]</option>";
                             }
-                        ?>
+                            ?>
                     </select>
                 </div>
 
