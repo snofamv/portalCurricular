@@ -3,6 +3,9 @@ Portal curricular cuenta con 5 modulos los cuales 2 de ellos estan instalados me
 Se requiere una base de datos conectada y configurada directamente con el archivo config.php
 -PHP 8.
 -mysql
+User defaults:
+1230 - 1234
+1234 - 1234
 
 
 # Controladores
