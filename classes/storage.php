@@ -6,6 +6,7 @@ use Google\Cloud\Storage\StorageClient;
 class storage
 {
     private $projectId = "archivoscurricular";
+    private $bucketId = "pdf-curricular";
     private $storage;
     private $arrayCajas;
 
@@ -57,7 +58,7 @@ class storage
     public function listaNombreObjetos()
     {
         $datos = array();
-        $bucket = $this->storage->bucket("pdf-curricular");
+        $bucket = $this->storage->bucket($this->bucketId);
         foreach ($bucket->objects() as $object) {
             array_push($datos, $object->name());
         }
@@ -67,7 +68,7 @@ class storage
     {
 
         $datos = array();
-        $bucket = $this->storage->bucket("pdf-curricular");
+        $bucket = $this->storage->bucket($this->bucketId);
         $i = 0;
         foreach ($bucket->objects() as $object) {
             $i++;
@@ -95,7 +96,7 @@ class storage
     public function arrayDeCajasSiguiente($param)
     {
         $elementos = array();
-        $buckets = $this->storage->bucket("pdf-curricular")->objects();
+        $buckets = $this->storage->bucket($this->bucketId)->objects();
         $cajaAnterior = intval($param);
         $aux = NULL;
         foreach ($buckets as $object) {
@@ -114,7 +115,7 @@ class storage
     public function arrObjetos()
     {
         $datos = array();
-        $bucket = $this->storage->bucket("pdf-curricular");
+        $bucket = $this->storage->bucket($this->bucketId);
         foreach ($bucket->objects() as $object) {
             array_push($datos, $object);
         }
@@ -168,7 +169,7 @@ class storage
 
     public function descargarobjecto($carpeta, $subcarpeta, $objectName, $destination)
     {
-        $bucket = $this->storage->bucket("pdf-curricular");
+        $bucket = $this->storage->bucket($this->bucketId);
         $object = $bucket->object("$carpeta/$subcarpeta/$objectName");
         if ($object->downloadToFile("$destination\\$carpeta-$subcarpeta-$objectName")) {
             return true;
@@ -176,6 +177,7 @@ class storage
             return false;
         }
     }
+    
 
     /**
      * Get the value of storage

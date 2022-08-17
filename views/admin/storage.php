@@ -82,9 +82,7 @@ if ($method == "OPTIONS") {
                         <td><?php echo $caja[1] ?></td>
                         <td><?php echo $caja[2] ?></td>
                         <td>
-                            <form method='GET' action="/storage/descargar" target="_self">
-                                <button type='submit' value='<?php printf("%s/%s/%s", $caja[0], $caja[1], $caja[2]) ?>' name='descargarArchivo'>Descargar PDF</button>
-                            </form>
+                            <a class="btn btn-primary" href="https://<?php echo $d["bucketBase"] ?>.storage.googleapis.com/<?php echo "$caja[0]/$caja[1]/$caja[2]"; ?>" target="_blank">Descargar PDF</a>
                         </td>
                     </tr>
 

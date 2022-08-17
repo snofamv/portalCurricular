@@ -26,6 +26,7 @@ class StorageController extends SessionController
     public function render()
     {
         $d["archivos"] = $this->separarCaracteres($this->storage->arrayDeCajas($this->paginaActual));
+        $d["bucketBase"] = "pdf-curricular";
         $d["paginas"] = array("paginaActual" => $this->getPaginaActual(), "paginaAnterior" => $this->getPaginaAnterior(), "paginaSiguiente" => $this->getPaginaSiguiente(), "cantidadPaginas" => count($this->getCajas()), "numeroCajas" => $this->getCajas());
         $this->vista->render("admin/storage", $d);
     }
@@ -98,18 +99,7 @@ class StorageController extends SessionController
         }
         return $lista;
     }
-    public function descargar()
-    {
-        if ($this->existsGET(["descargarArchivo"])) {
-            $this->storage = new storage();
-            $archivo = explode("/", $this->getGET("descargarArchivo"));
-            if ($this->storage->descargarobjecto($archivo[0], $archivo[1], $archivo[2], "C:\\Users\\DESKTOP\\Downloads")) {
-                $this->redirect("storage", ["success" => SuccessMessages::SUCCESS_STORAGE_DESCARGAR_DOCUMENTO]);
-            } else {
-                $this->redirect("storage", ["success" => ErrorMessages::ERROR_STORAGE_DESCARGAR_DOCUMENTO]);
-            }
-        }
-    }
+
 
 
 
