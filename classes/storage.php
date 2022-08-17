@@ -1,5 +1,5 @@
 <?php
-require "classes/vendor/autoload.php";
+require "classes/google/autoload.php";
 
 use Google\Cloud\Storage\StorageClient;
 
