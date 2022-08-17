@@ -10,15 +10,7 @@ class storage
     private $arrayCajas;
 
     public function __construct()
-    {  header('Access-Control-Allow-Origin: *');
-        header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
-        header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
-        header("Allow: GET, POST, OPTIONS, PUT, DELETE");
-        $method = $_SERVER['REQUEST_METHOD'];
-        if ($method == "OPTIONS") {
-            die();
-        }
-
+    {
         $this->storage = new StorageClient([
             'projectId' => $this->projectId,
             'keyFilePath' => 'config/credencial.json',
@@ -60,7 +52,7 @@ class storage
         # $object = $bucket->uploadFile($file, ["name" => $objectName]);
         printf("Uploaded: %s to gs://%s/%s" . PHP_EOL, basename($source), $bucketName, $objectName);
     }
-  
+
 
     public function listaNombreObjetos()
     {
@@ -86,7 +78,7 @@ class storage
 
     public function arrayDeCajas($cajaParam)
     {
-        
+
         $aux = array();
         foreach ($datos = $this->arrObjetos() as $dato) {
             $arr = explode("/", $dato->name());
@@ -109,10 +101,10 @@ class storage
         foreach ($buckets as $object) {
 
             $palabras = explode("/", $object->name());
-            if((intval($palabras[0]) > $cajaAnterior) && $aux === NULL){
+            if ((intval($palabras[0]) > $cajaAnterior) && $aux === NULL) {
                 $aux = $palabras[0];
             }
-            
+
             if (intval($palabras[0]) > $cajaAnterior && intval($palabras[0]) < $aux) {
                 array_push($elementos, $object);
             }

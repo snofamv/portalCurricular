@@ -1,5 +1,13 @@
 <?php
 require_once "views/includes/navbar.admin.php";
+header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
+header("Allow: GET, POST, OPTIONS, PUT, DELETE");
+$method = $_SERVER['REQUEST_METHOD'];
+if ($method == "OPTIONS") {
+    die();
+}
 ?>
 
 <div class="container mt-5">
@@ -50,16 +58,16 @@ require_once "views/includes/navbar.admin.php";
     </div>
 
     <hr>
-    <?php if($d["paginas"]["paginaActual"]!=$d["paginas"]["numeroCajas"][0]):?>
-    <div class="d-flex justify-content-end">
-        <a class="btn btn-danger" href="/storage">Volver</a>
-    </div>
-    <?php endif;?>
+    <?php if ($d["paginas"]["paginaActual"] != $d["paginas"]["numeroCajas"][0]) : ?>
+        <div class="d-flex justify-content-end">
+            <a class="btn btn-danger" href="/storage">Volver</a>
+        </div>
+    <?php endif; ?>
     <table id='myTable2' class='table table-success table-striped table-hover table-bordered border-primary'>
 
 
         <thead class='table-dark'>
-            
+
             <th>N° caja</th>
             <th><input class="myInput" type="text" id="myInput2" onkeyup="buscarCarpeta();" placeholder="Filtrar carpeta"><br>Carpeta</th>
             <th>Archivos</th>
@@ -110,7 +118,6 @@ require_once "views/includes/navbar.admin.php";
     </div>
 </div>
 <script>
-
     function buscarCarpeta() {
         // Declare variables
         var input, filter, table, tr, td, i, txtValue;
@@ -132,7 +139,6 @@ require_once "views/includes/navbar.admin.php";
             }
         }
     }
-
 </script>
 
 <?php require_once "views/includes/footer.template.php"; ?>
