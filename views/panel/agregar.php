@@ -30,82 +30,116 @@ require "views/includes/navbar.user.php";
         <?php endif; ?>
     </span>
 
-    <div class="text-center mb-4">
-        <h1 class="pt-4" style="color: #FFFFFF;">Formulario</h1>
+    <div class="text-center">
+        <h1 class="h2" style="color: #FFFFFF;">Formulario</h1>
     </div>
 
-    <div class="">
 
-        <form action="/agregar/nuevoAlumno" method="POST" target="_self">
-            <!--  -->
-            <!--  -->
+    <form action="/agregar/nuevoAlumno" method="POST" target="_self">
+        <!--  -->
+        <!--  -->
 
-            <div class="row m-3">
-                
-                <div class="col">
-                    <label class="m-2" for="codigo" style="color:#FFFFFF;">Codigo</label>
-                    <input class="form-control" type="text" name="codigo" id="codigo" placeholder="Ej: 001-0001">
-                </div>
-                <div class="col">
-                    <label class="m-2" for="codigo" style="color:#FFFFFF;">Rut</label>
-                    <input class="form-control" type="text" name="rut" placeholder="Ej: 11.111.111-0">
-                </div>
+        <div class="row">
 
+            <div class="col">
+                <label class="m-2" for="codigo" style="color:#FFFFFF;">Codigo/Folio</label>
+                <input class="form-control" type="text" name="codigo" id="codigo" placeholder="Ej: 001-0001" required>
+            </div>
+            <div class="col">
+                <label class="m-2" for="codigo" style="color:#FFFFFF;">Rut</label>
+                <input class="form-control" type="text" name="rut" placeholder="Ej: 11.111.111-0" required>
             </div>
 
-            <div class="row m-3">
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label class="m-2" for="codigo" style="color:#FFFFFF;">Nombres</label>
+                <input class="form-control" type="text" name="nombres" placeholder="Introducir Nombres" required>
+            </div>
+            <div class="col">
+                <label class="m-2" for="codigo" style="color:#FFFFFF;">Apellidos</label>
+                <input class="form-control" type="text" name="apellidos" placeholder="Introducir Apellidos" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                <label class="m-2" for="sedes" style="color:#FFFFFF;">Sede</label>
+                <select class="form-select" name="sedes" id="sedes" required>
+                    <option selected disabled hidden>Selecciona una sede</option>
+                    <?php
+                    foreach ($d['sedes'] as $sedes) {
+                        echo "<option value='$sedes[id]'>$sedes[sede]</option>";
+                    }
+                    ?>
+                </select>
+            </div>
+
+            <div class="col">
+
+                <label class="label m-2" for="carreras" style="color:#FFFFFF;">Carrera</label>
+                <select class="form-select" name="carreras" id="carreras" required>
+                    <option selected disabled hidden>Selecciona una carrera</option>
+                    <?php
+                    foreach ($d['carreras'] as $carrera) {
+
+                        echo "<option value='$carrera[id]'>$carrera[carrera]</option>";
+                    }
+                    ?>
+                </select>
+            </div>
+
+        </div>
+        <div class="row mt-2">
+            <div class="col"></div>
+            <div class="col">
+                <input class="btn btn-success" type="submit" value="Agregar Alumno">
+            </div>
+            <div class="col">
+                <button class="btn btn-danger" type="reset">Limpiar campos</button>
+            </div>
+            <div class="col"></div>
+        </div>
+    </form>
+
+    <hr>
+    <div class="row ms-5">
+        <h2 class="text-center h3" style="color: #FFFFFF;">Carga de documentos</h2>
+
+        <form action="/agregar/subirPDF" method="POST" target="_self"  enctype="multipart/form-data">
+            <div class="row">
+
                 <div class="col">
-                    <label class="m-2" for="codigo" style="color:#FFFFFF;">Nombres</label>
-                    <input class="form-control" type="text" name="nombres" placeholder="Introducir Nombres">
+                    <label class="" for="nroCajaDoc" style="color:#FFFFFF;">N° caja</label>
+                    <input class="form-control" type="text" name="nroCajaDoc" id="nroCajaDoc" placeholder="Ej: 0001" required>
                 </div>
                 <div class="col">
-                    <label class="m-2" for="codigo" style="color:#FFFFFF;">Apellidos</label>
-                    <input class="form-control" type="text" name="apellidos" placeholder="Introducir Apellidos">
+                    <label class="" for="nroFolioDoc" style="color:#FFFFFF;">N° Folio</label>
+                    <input class="form-control" type="text" name="nroFolioDoc" id="nroFolioDoc" placeholder="Ej: 0001-0001" required>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col">
+                    <label for="archivos" class="form-label" style="color:#FFFFFF;">Adjuntar documentos PDF</label>
+                    <input class="form-control" type="file" name="archivos[]" multiple="" required>
+                </div>
+
+                <div class="col mt-4">
+                    <input class="btn btn-warning" type="submit" value="Subir documentacion" name="btnSubirDocumentos">
                 </div>
             </div>
 
-            <div class="row m-3">
-                <div class="col">
-
-                    <label class="m-2" for="sedes" style="color:#FFFFFF;">Sede</label>
-                    <select class="form-select" name="sedes" id="sedes">
-                        <option selected disabled hidden>Selecciona una sede</option>
-                        <?php
-                            foreach ($d['sedes'] as $sedes) {
-                                echo "<option value='$sedes[id]'>$sedes[sede]</option>";
-                            }
-                            ?>
-                    </select>
-                </div>
-
-                <div class="col">
-
-                    <label class="label m-2" for="carreras"  style="color:#FFFFFF;">Carrera</label>
-                    <select class="form-select" name="carreras" id="carreras">
-                        <option selected disabled hidden>Selecciona una carrera</option>
-                        <?php
-                            foreach ($d['carreras'] as $carrera) {
-
-                                echo "<option value='$carrera[id]'>$carrera[carrera]</option>";
-                            }
-                            ?>
-                    </select>
-                </div>
-
-            </div>
-            <div class="row p-4">
-                <div class="col"></div>
-                <div class="col">
-                    <input class="btn btn-success" type="submit" value="Agregar Alumno">
-                </div>
-                <div class="col">
-                    <button class="btn btn-danger" type="reset">Limpiar campos</button>
-                </div>
-                <div class="col"></div>
-
-            </div>
         </form>
+
     </div>
+
+</div>
+<br>
+<hr>
+</div>
 
 </div>
 

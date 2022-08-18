@@ -30,6 +30,7 @@ class ErrorMessages
     const ERROR_STORAGE_BUSCAR_CAJA = "5845kk12345ñL12347u1hhhyyqi8215OO8cd" ;
     const ERROR_STORAGE_BUSCAR_CARPETA = "5845kk12345ñ54888785K121PPPO1cd" ;
     const ERROR_STORAGE_DESCARGAR_DOCUMENTO = "5845kk12345ñLK545878pppo215OO8cd" ;
+    const ERROR_STORAGE_SUBIR_DOCUMENTO = "5845kk1234500012128ppp9895OO8cd" ;
     private $errorList = array();
 
     function __construct()
@@ -63,6 +64,7 @@ class ErrorMessages
             ErrorMessages::ERROR_STORAGE_BUSCAR_CAJA => "Error, no se pudo encontrar la caja solicitada.",
             ErrorMessages::ERROR_STORAGE_BUSCAR_CARPETA => "Error, no se pudo encontrar la carpeta solicitada.",
             ErrorMessages::ERROR_STORAGE_DESCARGAR_DOCUMENTO => "Error, no se pudo descargar el documento solicitada.",
+            ErrorMessages::ERROR_STORAGE_SUBIR_DOCUMENTO => "Error, no se pudo subir el documento adjunto.",
         ];
     }
 

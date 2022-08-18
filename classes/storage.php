@@ -12,6 +12,7 @@ class storage
 
     public function __construct()
     {
+        putenv("GOOGLE_APPLICATION_CREDENTIALS=config/credencial.json");
         $this->storage = new StorageClient([
             'projectId' => $this->projectId,
             'keyFilePath' => 'config/credencial.json',
@@ -45,13 +46,23 @@ class storage
         }
     }
 
-    public function subirArchivo($bucketName, $objectName, $source)
+    public function subirArchivo($objectName, $source)
     {
+        // $bucketName = 'my-bucket';
+        // $objectName = 'my-object';
+        // $source = '/path/to/your/file';
+
         $storage = new StorageClient();
-        $file = fopen($source, "r");
-        $bucket = $storage->bucket($bucketName);
-        # $object = $bucket->uploadFile($file, ["name" => $objectName]);
-        printf("Uploaded: %s to gs://%s/%s" . PHP_EOL, basename($source), $bucketName, $objectName);
+        $file = fopen($source, 'r');
+        $bucket = $storage->bucket($this->bucketId);
+
+        if ($object = $bucket->upload($file, [
+            'name' => "$objectName"
+        ])) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 
@@ -177,7 +188,7 @@ class storage
             return false;
         }
     }
-    
+
 
     /**
      * Get the value of storage

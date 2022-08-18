@@ -12,6 +12,7 @@ class SuccessMessages
     const SUCCESS_DESACTIVACION_USUARIO = "5845kk10215LLLKKL6Y09OOOOd7478cd" ;
     const SUCCESS_CAMBIO_ROL = "5845kk10215LLLKKL6054LLñju7478cd" ;
     const SUCCESS_STORAGE_DESCARGAR_DOCUMENTO = "5845kk10215LLKJIU9987LK1215OO8cd" ;
+    const SUCCESS_STORAGE_SUBIR_DOCUMENTOS = "5845kk1021500000121KKLK1215OO8cd" ;
 
 
     private $successList = array();
@@ -29,6 +30,7 @@ class SuccessMessages
             SuccessMessages::SUCCESS_DESACTIVACION_USUARIO => "Usuario desactivado correctamente!",
             SuccessMessages::SUCCESS_CAMBIO_ROL => "Rol de Usuario modificado correctamente!",
             SuccessMessages::SUCCESS_STORAGE_DESCARGAR_DOCUMENTO => "Documento PDF descargado correctamente!",
+            SuccessMessages::SUCCESS_STORAGE_SUBIR_DOCUMENTOS => "Documento/s PDF subido a la nube correctamente!",
  
 
         ];

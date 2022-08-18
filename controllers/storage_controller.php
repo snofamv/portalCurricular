@@ -14,7 +14,6 @@ class StorageController extends SessionController
     {
         
         parent::__construct();
-        
         $this->storage = new storage();
         $this->paginaActual = isset($_GET["pagina"]) ? $_GET["pagina"] : "033";
         $this->total_paginas = 0;
