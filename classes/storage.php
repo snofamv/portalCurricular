@@ -240,4 +240,22 @@ class storage
 
         return $this;
     }
+
+    /**
+     * Get the value of bucketId
+     */
+    public function getBucketId()
+    {
+        return $this->bucketId;
+    }
+
+    /**
+     * Set the value of bucketId
+     */
+    public function setBucketId($bucketId): self
+    {
+        $this->bucketId = $bucketId;
+
+        return $this;
+    }
 }
