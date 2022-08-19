@@ -26,7 +26,7 @@ class StorageController extends SessionController
     public function render()
     {
         $d["archivos"] = $this->separarCaracteres($this->storage->arrayDeCajas($this->paginaActual));
-        $d["bucketBase"] = "pdf-curricular";
+        $d["bucketBase"] = "67b8da2d3c54197788fe418dda2834fc";
         $d["paginas"] = array("paginaActual" => $this->getPaginaActual(), "paginaAnterior" => $this->getPaginaAnterior(), "paginaSiguiente" => $this->getPaginaSiguiente(), "cantidadPaginas" => count($this->getCajas()), "numeroCajas" => $this->getCajas());
         $this->vista->render("admin/storage", $d);
     }
