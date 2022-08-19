@@ -6,12 +6,13 @@ use Google\Cloud\Storage\StorageClient;
 class storage
 {
     private $projectId = "archivoscurricular";
-    private $bucketId = "pdf-curricular";
+    private $bucketId = "67b8da2d3c54197788fe418dda2834fc";
     private $storage;
     private $arrayCajas;
 
     public function __construct()
     {
+        putenv("GOOGLE_APPLICATION_CREDENTIALS=config/credencial.json");
         $this->storage = new StorageClient([
             'projectId' => $this->projectId,
             'keyFilePath' => 'config/credencial.json',
@@ -45,13 +46,23 @@ class storage
         }
     }
 
-    public function subirArchivo($bucketName, $objectName, $source)
+    public function subirArchivo($objectName, $source)
     {
+        // $bucketName = 'my-bucket';
+        // $objectName = 'my-object';
+        // $source = '/path/to/your/file';
+
         $storage = new StorageClient();
-        $file = fopen($source, "r");
-        $bucket = $storage->bucket($bucketName);
-        # $object = $bucket->uploadFile($file, ["name" => $objectName]);
-        printf("Uploaded: %s to gs://%s/%s" . PHP_EOL, basename($source), $bucketName, $objectName);
+        $file = fopen($source, 'r');
+        $bucket = $storage->bucket($this->bucketId);
+
+        if ($object = $bucket->upload($file, [
+            'name' => "$objectName"
+        ])) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 
@@ -167,17 +178,50 @@ class storage
         printf("Bucket deleted: gc://%s", $bucketName);
     }
 
-    public function descargarobjecto($carpeta, $subcarpeta, $objectName, $destination)
+    public function descargarobjecto($texto, $destination)
     {
+        $ex = explode("/", $texto);
+
         $bucket = $this->storage->bucket($this->bucketId);
-        $object = $bucket->object("$carpeta/$subcarpeta/$objectName");
-        if ($object->downloadToFile("$destination\\$carpeta-$subcarpeta-$objectName")) {
+        $object = $bucket->object("$ex[0]/$ex[1]/$ex[2]");
+        if ($object->downloadToFile("$destination\\$ex[0]-$ex[1]-$ex[2]")) {
             return true;
         } else {
             return false;
         }
     }
+    function make_public($bucketName, $objectName)
+    {
+        // $bucketName = 'my-bucket';
+        // $objectName = 'my-object';
     
+        $storage = new StorageClient();
+        $bucket = $storage->bucket($this->bucketId);
+        $object = $bucket->object($objectName);
+        $object->update(['acl' => []], ['predefinedAcl' => 'PUBLICREAD']);
+    }
+    function set_bucket_public_iam()
+{
+    // $bucketName = 'my-bucket';
+
+    $storage = new StorageClient();
+    $bucket = $storage->bucket($this->bucketId);
+
+    $policy = $bucket->iam()->policy(['requestedPolicyVersion' => 3]);
+    $policy['version'] = 3;
+
+    $role = 'roles/storage.objectViewer';
+    $members = ['allUsers'];
+
+    $policy['bindings'][] = [
+        'role' => $role,
+        'members' => $members
+    ];
+
+    $bucket->iam()->setPolicy($policy);
+
+    printf('Bucket %s is now public');
+}
 
     /**
      * Get the value of storage
@@ -193,6 +237,24 @@ class storage
     public function setStorage($storage): self
     {
         $this->storage = $storage;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of bucketId
+     */
+    public function getBucketId()
+    {
+        return $this->bucketId;
+    }
+
+    /**
+     * Set the value of bucketId
+     */
+    public function setBucketId($bucketId): self
+    {
+        $this->bucketId = $bucketId;
 
         return $this;
     }

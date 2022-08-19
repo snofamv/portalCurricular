@@ -12,9 +12,9 @@ class StorageController extends SessionController
 
     public function __construct()
     {
-        
+
         parent::__construct();
-        
+
         $this->storage = new storage();
         $this->paginaActual = isset($_GET["pagina"]) ? $_GET["pagina"] : "033";
         $this->total_paginas = 0;
@@ -22,11 +22,11 @@ class StorageController extends SessionController
         $this->paginaAnterior = $this->antPag();
         $this->paginaSiguiente = $this->sigPag();
     }
-  
+
     public function render()
     {
         $d["archivos"] = $this->separarCaracteres($this->storage->arrayDeCajas($this->paginaActual));
-        $d["bucketBase"] = "pdf-curricular";
+        $d["bucketBase"] = "https://storage.googleapis.com/" . $this->storage->getBucketId();
         $d["paginas"] = array("paginaActual" => $this->getPaginaActual(), "paginaAnterior" => $this->getPaginaAnterior(), "paginaSiguiente" => $this->getPaginaSiguiente(), "cantidadPaginas" => count($this->getCajas()), "numeroCajas" => $this->getCajas());
         $this->vista->render("admin/storage", $d);
     }
@@ -100,6 +100,14 @@ class StorageController extends SessionController
         return $lista;
     }
 
+    public function descargar2()
+    {
+        // // try {
+        // //     $this->storage->descargarobjecto($this->getPOST("archivo"), "C:\Users\DESKTOP\Downloads");
+        // // } catch (\Throwable $th) {
+        // //     echo "ERROR: " . $th;
+        // // }
+    }
 
 
 

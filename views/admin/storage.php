@@ -82,7 +82,7 @@ if ($method == "OPTIONS") {
                         <td><?php echo $caja[1] ?></td>
                         <td><?php echo $caja[2] ?></td>
                         <td>
-                            <a class="btn btn-primary" href="https://<?php echo $d["bucketBase"] ?>.storage.googleapis.com/<?php echo "$caja[0]/$caja[1]/$caja[2]"; ?>" target="_blank">Descargar PDF</a>
+                            <a class="btn btn-primary" href="<?php echo "$d[bucketBase]/$caja[0]/$caja[1]/$caja[2]" ?>" target="_blank">Descargar PDF</a>
                         </td>
                     </tr>
 
