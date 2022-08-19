@@ -190,7 +190,38 @@ class storage
             return false;
         }
     }
+    function make_public($bucketName, $objectName)
+    {
+        // $bucketName = 'my-bucket';
+        // $objectName = 'my-object';
+    
+        $storage = new StorageClient();
+        $bucket = $storage->bucket($this->bucketId);
+        $object = $bucket->object($objectName);
+        $object->update(['acl' => []], ['predefinedAcl' => 'PUBLICREAD']);
+    }
+    function set_bucket_public_iam()
+{
+    // $bucketName = 'my-bucket';
 
+    $storage = new StorageClient();
+    $bucket = $storage->bucket($this->bucketId);
+
+    $policy = $bucket->iam()->policy(['requestedPolicyVersion' => 3]);
+    $policy['version'] = 3;
+
+    $role = 'roles/storage.objectViewer';
+    $members = ['allUsers'];
+
+    $policy['bindings'][] = [
+        'role' => $role,
+        'members' => $members
+    ];
+
+    $bucket->iam()->setPolicy($policy);
+
+    printf('Bucket %s is now public');
+}
 
     /**
      * Get the value of storage

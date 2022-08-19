@@ -26,7 +26,7 @@ class StorageController extends SessionController
     public function render()
     {
         $d["archivos"] = $this->separarCaracteres($this->storage->arrayDeCajas($this->paginaActual));
-        $d["bucketBase"] = "67b8da2d3c54197788fe418dda2834fc";
+        $d["bucketBase"] = $this->storage->getbucketId();
         $d["paginas"] = array("paginaActual" => $this->getPaginaActual(), "paginaAnterior" => $this->getPaginaAnterior(), "paginaSiguiente" => $this->getPaginaSiguiente(), "cantidadPaginas" => count($this->getCajas()), "numeroCajas" => $this->getCajas());
         $this->vista->render("admin/storage", $d);
     }
@@ -102,12 +102,11 @@ class StorageController extends SessionController
 
     public function descargar2()
     {
-
-        try {
-            $this->storage->descargarobjecto($this->getPOST("archivo"), "C:\Users\DESKTOP\Downloads");
-        } catch (\Throwable $th) {
-            echo "ERROR: " . $th;
-        }
+        // // try {
+        // //     $this->storage->descargarobjecto($this->getPOST("archivo"), "C:\Users\DESKTOP\Downloads");
+        // // } catch (\Throwable $th) {
+        // //     echo "ERROR: " . $th;
+        // // }
     }
 
 
