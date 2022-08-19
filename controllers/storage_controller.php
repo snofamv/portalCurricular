@@ -110,11 +110,14 @@ class StorageController extends SessionController
 
     public function descargar2(){
 
-        if($this->storage->descargarobjecto($this->getPOST("archivo"), "C:\Users\DESKTOP\Downloads")){
-            echo "si";
-        }else{
-            echo "no";
+        try {
+            if($this->storage->descargarobjecto($this->getPOST("archivo"), "C:\Users\DESKTOP\Downloads")){
+                echo "si";
+            }
+        } catch (\Throwable $th) {
+            echo "ERROR: ".$th;
         }
+       
     }
 
 
