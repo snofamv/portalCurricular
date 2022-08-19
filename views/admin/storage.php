@@ -1,6 +1,13 @@
 <?php
 require_once "views/includes/navbar.admin.php";
-
+header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
+header("Allow: GET, POST, OPTIONS, PUT, DELETE");
+$method = $_SERVER['REQUEST_METHOD'];
+if ($method == "OPTIONS") {
+    die();
+}
 ?>
 
 <div class="container mt-5">
@@ -76,10 +83,6 @@ require_once "views/includes/navbar.admin.php";
                         <td><?php echo $caja[2] ?></td>
                         <td>
                             <a class="btn btn-primary" href="https://<?php echo $d["bucketBase"] ?>.storage.googleapis.com/<?php echo "$caja[0]/$caja[1]/$caja[2]"; ?>" target="_blank">Descargar PDF</a>
-                            <form action="storage/descargar2" method="POST" target="_self">
-                                <input type="hidden" name="archivo" value="<?php echo "$caja[0]/$caja[1]/$caja[2]"?>">
-                                <input type="submit" value="Descargar">
-                            </form>
                         </td>
                     </tr>
 
