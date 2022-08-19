@@ -6,7 +6,7 @@ use Google\Cloud\Storage\StorageClient;
 class storage
 {
     private $projectId = "archivoscurricular";
-    private $bucketId = "pdf-curricular";
+    private $bucketId = "67b8da2d3c54197788fe418dda2834fc";
     private $storage;
     private $arrayCajas;
 
