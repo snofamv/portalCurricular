@@ -12,8 +12,9 @@ class StorageController extends SessionController
 
     public function __construct()
     {
-        
+
         parent::__construct();
+
         $this->storage = new storage();
         $this->paginaActual = isset($_GET["pagina"]) ? $_GET["pagina"] : "033";
         $this->total_paginas = 0;
@@ -21,9 +22,17 @@ class StorageController extends SessionController
         $this->paginaAnterior = $this->antPag();
         $this->paginaSiguiente = $this->sigPag();
     }
-  
+
     public function render()
     {
+        header('Access-Control-Allow-Origin: *');
+        header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
+        header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
+        header("Allow: GET, POST, OPTIONS, PUT, DELETE");
+        $method = $_SERVER['REQUEST_METHOD'];
+        if ($method == "OPTIONS") {
+            die();
+        }
         $d["archivos"] = $this->separarCaracteres($this->storage->arrayDeCajas($this->paginaActual));
         $d["bucketBase"] = "pdf-curricular";
         $d["paginas"] = array("paginaActual" => $this->getPaginaActual(), "paginaAnterior" => $this->getPaginaAnterior(), "paginaSiguiente" => $this->getPaginaSiguiente(), "cantidadPaginas" => count($this->getCajas()), "numeroCajas" => $this->getCajas());
@@ -99,6 +108,14 @@ class StorageController extends SessionController
         return $lista;
     }
 
+    public function descargar2(){
+
+        if($this->storage->descargarobjecto($this->getPOST("archivo"), "C:\Users\DESKTOP\Downloads")){
+            echo "si";
+        }else{
+            echo "no";
+        }
+    }
 
 
 

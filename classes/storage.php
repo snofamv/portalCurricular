@@ -178,11 +178,13 @@ class storage
         printf("Bucket deleted: gc://%s", $bucketName);
     }
 
-    public function descargarobjecto($carpeta, $subcarpeta, $objectName, $destination)
+    public function descargarobjecto($texto, $destination)
     {
+        $ex = explode("/", $texto);
+
         $bucket = $this->storage->bucket($this->bucketId);
-        $object = $bucket->object("$carpeta/$subcarpeta/$objectName");
-        if ($object->downloadToFile("$destination\\$carpeta-$subcarpeta-$objectName")) {
+        $object = $bucket->object("$ex[0]/$ex[1]/$ex[2]");
+        if ($object->downloadToFile("$destination\\$ex[0]-$ex[1]-$ex[2]")) {
             return true;
         } else {
             return false;
