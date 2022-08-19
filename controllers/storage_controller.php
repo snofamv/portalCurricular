@@ -26,7 +26,7 @@ class StorageController extends SessionController
     public function render()
     {
         $d["archivos"] = $this->separarCaracteres($this->storage->arrayDeCajas($this->paginaActual));
-        $d["bucketBase"] = $this->storage->getBucketId();
+        $d["bucketBase"] = "https://storage.googleapis.com/" . $this->storage->getBucketId();
         $d["paginas"] = array("paginaActual" => $this->getPaginaActual(), "paginaAnterior" => $this->getPaginaAnterior(), "paginaSiguiente" => $this->getPaginaSiguiente(), "cantidadPaginas" => count($this->getCajas()), "numeroCajas" => $this->getCajas());
         $this->vista->render("admin/storage", $d);
     }
