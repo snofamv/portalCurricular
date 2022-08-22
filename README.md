@@ -1,12 +1,14 @@
 # portalCurricular
 Portal curricular cuenta con 5 modulos los cuales 2 de ellos estan instalados mediante composer
 Se requiere una base de datos conectada y configurada directamente con el archivo config.php       
+La base de datos debe ser previamente exportada a mysql, ya que cuenta con las caracteristicas propias de la aplicacion.
 
 	-PHP 8.                                                                                                                                      
 	-mysql                                
 	-User defaults:                                                          
 	1230 - 1234                                                 
-	1234 - 1234                                                             
+	1234 - 1234  
+
 
 # Creando un nuevo modulo/vista
 Para la creacion de un nuevo modulo primero debemos contemplar si el modulo estara publico o privado (dentro del panel login).
