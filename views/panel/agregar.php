@@ -31,7 +31,7 @@ require "views/includes/navbar.user.php";
     </span>
 
     <div class="text-center">
-        <h1 class="h2" style="color: #FFFFFF;">Formulario</h1>
+        <h1 class="h2" style="color: #FFFFFF;">Formulario de titulado</h1>
     </div>
 
 
