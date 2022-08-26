@@ -78,7 +78,7 @@ require "views/includes/navbar.user.php";
                 <tbody>
                     <?php foreach ($d["datos"] as  $alumno) : ?>
                         <tr class="tablaItem">
-                            <td> <?php echo $alumno->getCodigo(); ?></td>
+                            <td> <?php echo $alumno->getPreCodigo() . "-" .$alumno->getCodigo(); ?></td>
                             <td> <?php echo $alumno->getRut(); ?></td>
                             <td> <?php echo $alumno->getNombres(); ?></td>
                             <td> <?php echo $alumno->getApellidos(); ?></td>
